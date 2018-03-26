@@ -1,0 +1,352 @@
+%!TEX root = thesis_name.tex
+
+% for wirting a thesis: use book and openright with twoside!
+\documentclass[11pt, a4paper, twoside, openright, final]{book}
+
+%%% input encoding
+\usepackage{ucs}				% contains support for using UTF-8 as input encoding. Could in most cases be ommited
+\usepackage[utf8x]{inputenc}	% use utf8 as document encoding.
+								% Therefore, umlaute (ä,ö,ü,ß,...) could be used as they are, without any special latex commands
+
+%%% language
+\usepackage[english]{babel}	% english hyphonation and english as default language
+								% change here to "ngerman" for automatic translation from "figure" to "Abbildung" and so on
+\usepackage[german=guillemets]{csquotes} % German guillemets quotes
+
+%%% better readable fonts
+\usepackage{libertine}					% standard font
+\usepackage[scaled=0.83]{beramono}		% monospace font
+%\usepackage[libertine]{newtxmath}		% math font
+
+%%% standard packages
+\usepackage{float}				% float environments for images, tables, ... for flexible and better layouts
+\usepackage{array}				% arrays, matrices, inner table environment
+\usepackage[bf,small]{caption}	% captions beneath pictures; text smaller than normal text; "Figure" printed in bold
+\usepackage{fancyhdr}			% add headers and footers to the document
+\usepackage{ifthen}			% if-then-else constructions could be used; needed for redefining \cleardoublepage
+\usepackage{multirow}			% span multiple cols, rows in tables
+\usepackage{microtype}			% better typesetting
+\usepackage{booktabs}			% nicer tables
+\usepackage{enumitem}			% for correct indentations in long line items in itemize
+
+%%% math
+\usepackage{amsmath}			% better math output. needed for \dfrac = fracs in matrices
+\usepackage{amsfonts}			% nice math fonts
+\usepackage{amssymb}			% nice math symbols
+\usepackage{amsthm}				% theorem definitions
+\usepackage{units}				% units, i.e. \unit[23]{m} (23 meters)
+\usepackage{nicefrac}			% smaller frac's due to diagonal line \nicefrac{1}{2}
+\usepackage{mathtools}			% for shortinertext in equations with description
+
+%%% graphics
+\usepackage{graphicx}			% builds upon the graphics package (thus, is newer). offers more op­tional ar­gu­ments
+\usepackage{grffile}			% graphic filename extensions
+\usepackage{subcaption}		% multiple images in one figure environment. subfigure is deprecated!
+\usepackage[usenames,dvipsnames]{color}		% some standard and predefined colors
+\usepackage{tikz}				% draw stuff in LaTeX directly
+\usepackage{colortbl}			% colour in tables
+
+%%% links
+\usepackage{url}				% clickable url's inside the text
+\usepackage{hyperref}			% clickable inner-document hyperlinks (e.g. in Table Of Content) and e-mail-adresses
+
+%%% computer science
+\usepackage{listings}			% for printing sourcecode
+\usepackage{algpseudocode}		% pseudo-code, \begin{algorithmic} environment
+\usepackage{algorithm}			% float environment for pseudo-codes. i.e captions, labels, ...
+
+%%% miscellaneous
+\usepackage{todonotes}			% todonotes. very useful during the wirting process
+\usepackage{hvfloat}			% tables in landscape format on portrait page (aka table turned by 90degree)
+\usepackage{lscape}			% single page in landscape (Querformat)
+\usepackage{pdflscape}			% lscape, if using PDFLaTeX
+\usepackage{parskip}			% no indention on new paragraphs but new line - might not be good style for german texts...
+\usepackage{alltt}				% like verbatime but interprets LaTeX commands
+\usepackage{lipsum}			% filler text, e.g. \lipsum[3-8]
+%\usepackage[left, displaymath]{lineno}		% line numbers; left,right,switch  ;  
+
+
+%%% Thesis specific
+\usepackage{changepage}			% change the margin of a single page, e.g. the title page to be horz. centered
+\usepackage{titlesec}			% change style of headings
+\usepackage[square, numbers]{natbib}		% references on literature, options: (round, square) and (authoryear, numbers)
+%\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}	% change the page layout (Seitenränder)
+
+%%% Line numbering
+%\renewcommand\linenumberfont{\normalfont\tiny\sffamily\color{MidnightBlue}}	% default: \normalfont\tiny\sffamily		;		\normalfont\bfseries\small
+
+%%% configure listing package; this is a complete list of all options of the listing package 
+\definecolor{comment}{rgb}{0.12, 0.38, 0.18 }	% #3F6A4D	green
+\definecolor{keyword}{rgb}{0.37, 0.08, 0.25}	% #5F1441	purple
+\definecolor{string}{rgb}{0.06, 0.10, 0.98}		% #101AF9	blue
+\definecolor{linenumbers}{rgb}{0.5, 0.5, 0.5}	% ???		gray
+\lstset{
+	language=Matlab,			% the language of the code
+	%morekeywords={print, ...},	% if you want to add more keywords to the set
+	%deletekeywords={...},		% if you want to delete keywords from the given language
+	%escapeinside={\%*}{*)},	% if you want to add LaTeX within your code
+	basicstyle=\tiny ,			% the size of the font that is used for the code
+	backgroundcolor=\color{white},			% choose the background color	
+	keywordstyle=\color{keyword}\bfseries,	% keyword style
+	stringstyle=\color{string},				% string literal style
+	commentstyle=\color{comment}\itshape,	% comment style
+	numbers=left,				% where to put the line-numbers. (none, left, right)
+	numberstyle=\tiny\color{linenumbers}, % the size of the fonts + style that are used for the line-numbers
+	stepnumber=1,				% the step between two line-numbers. 
+	numbersep=6pt,				% how far the line-numbers are from the code
+	rulecolor=\color{black},	% if not set, the frame-color may be changed on line-breaks within not-black text (comments)
+	showspaces=false, 			% show spaces adding particular underscores
+	showstringspaces=false,		% underline spaces within strings only
+	showtabs=false, 			% show tabs within strings adding particular underscores
+	frame=single,				% adds a frame around the code
+	tabsize=2,					% sets default tabsize to <x> spaces
+	captionpos=b,				% sets the caption-position to bottom
+	breaklines=true,			% sets automatic line breaking
+	breakatwhitespace=true,		% if automatic break should only only happen at whitespace
+	keepspaces=true				% keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)	
+	%extendedchars=true,		% lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	%title=\lstname				% show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+
+
+
+%%% graphic-path, itemize, chapter numbering, comments
+\graphicspath{ {./pics/} }				% default path for pictures
+\renewcommand{\labelitemi}{-}			% use a - instead of a circle in lists
+\numberwithin{equation}{chapter}		% use chapter number within equations. Needs amsmath package
+%\renewcommand{\theequation}{\thechapter--\arabic{equation}}	% use -- instead of . in equation numbering
+\newcommand{\comment}[1]{}				% own command: write inline comments 
+
+
+%%% tables; % change p{#1} to m{#1} for vertical centering or b{#1} for bottom
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.35}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}	
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+%%% redefine \cleardoublepage to be without headings
+\makeatletter
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}%
+\thispagestyle{empty}%
+\newpage%
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+%%% subsubsection numbering. default is 2 levels in both cases
+\setcounter{secnumdepth}{3}  	% in text
+\setcounter{tocdepth}{3} 		% in table of content
+
+%%% math abbreviations. Symbols for real, natural and complex numbers. and identity matrix symbol
+\newcommand{\R}{\mathbbm{R}}
+\newcommand{\N}{\mathbbm{N}}
+\newcommand{\C}{\mathbbm{C}}
+\newcommand{\1}{\mathbbm{1}}
+
+%%% Headings and Footer
+\pagestyle{fancy}				% use custom headers and footers
+\fancyhf{}						% clear all header and footer definitions so far
+\lhead[\thepage]{\rightmark}	% header, left:		on even pages: page number  	| on odd pages: current section 
+\chead{}						% header, center:	empty
+\rhead[\leftmark]{\thepage}		% header, right:	on even pages: current chapter  | on odd pages: page number
+\lfoot{}						% footer, left:		empty
+\cfoot{}						% footer, center:	empty
+\rfoot{}						% footer, right:	empty
+\renewcommand{\headrulewidth}{0.4pt}	% line beneath heading
+\renewcommand{\footrulewidth}{0.0pt}	% line above footer
+\addtolength{\headsep}{0.3cm}	% add some extra space between the header and the text, because of the horizontal line
+\setlength{\headheight}{13.6pt}	% otherwise errors on chapter pages
+
+
+%%% information about the thesis -- is done manually for the title page
+% but keep this for metainformation in the pdf
+\author{Forname Surname, myname@the.net}
+\title{The fancy title of this thesis}
+\date{\today} % This will not change the date on the title page!!!
+
+
+
+\begin{document}
+%\linenumbers	
+
+%%% create an own title page that looks more nicely than the standard LaTeX one
+\begin{titlepage}
+	\begin{adjustwidth*}{}{-2cm}
+		\begin{center}
+			~\\		% ~\\ has to stand here to start a paragraph and to use spacing
+			\textbf{\Huge \sffamily	Leipzig University	\\	\small ~					\\
+					\large \sffamily	Faculty of Mathematics and Computer Science	 \\
+										Institute of Computer Science				\\}
+			
+			\vspace{0.3cm}
+			\begin{figure}[H]
+	        	\hspace{5.1cm}
+	       		\includegraphics[width=4cm]{siegel.png}
+	        \end{figure}
+	        \vspace{0.15cm}
+			\textbf{\Large \sffamily -- Bachelor/Master Thesis --}
+			\vspace{0.5cm}
+			
+			 \textsc{ \LARGE
+			Fancy Title goes here. Please check if this layout is permitted by your study office and study regulations!!!}
+			
+			\vspace{1.0cm}
+			\textbf{Author} \\
+		Forename Surname \\ 
+		\href{mailto:yourmail@studserv.uni-leipzig.de}{yormail@studserv.uni-leipzig.de} \\
+		Institute of Computer Science \\
+		\end{center}
+		
+		\vfill
+		
+		\begin{tabular}{*{3}{C{4cm}}}
+			\small \textbf{First Supervisor} & 
+			\small \textbf{Second Supervisor} & 
+			\small \textbf{External Supervisor} \\
+			
+			\small Prof. Nummer 1 & 
+			\small Prof. Nummer 2 & 
+			\small Extern Nummer 1 \\
+			
+			\small \href{mailto:ggg@informatik.uni-leipzig.de}{ggg@informatik.uni-leipzig.de} & 
+			\small \href{mailto:ttt@uni-leipzig.de}{ttt@uni-leipzig.de} &
+			\small \href{mailto:rrr.eee@uuu.com}{rrr.eee@uuu.com} \\
+			
+			\small Fancy Computer Science & 
+			\small Institute of Rocket Science & 
+			\small Something AG\\
+		\end{tabular}
+		
+		\vspace{1.0cm}
+		\centering{\today}
+	\end{adjustwidth*}
+\end{titlepage}
+\cleardoublepage
+
+
+
+
+
+\pagenumbering{roman}	% roman numbers: I, II, III, IV, V ... in front matter
+\setcounter{page}{1}	% start with I in Abstract
+
+\chapter*{Abstract}
+\label{c:abstract}
+An abstract is a brief summary of a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, and is often used to help the reader quickly ascertain the paper's purpose. When used, an abstract always appears at the beginning of a manuscript or typescript, acting as the point-of-entry for any given academic paper or patent application.
+
+An academic abstract typically outlines four elements relevant to the completed work:
+\begin{itemize}
+   \item The research focus (i.e. statement of the problem(s)/research issue(s) addressed);
+   \item The research methods used (experimental research, case studies, questionnaires, etc.);
+   \item The results/findings of the research; and
+   \item The main conclusions and recommendations
+\end{itemize}
+
+It may also contain brief references,[8] although some publications' standard style omits references from the abstract, reserving them for the article body (which, by definition, treats the same topics but in more depth). Typical length ranges from 100 to 500 words.
+
+(source: \url{https://en.wikipedia.org/wiki/Abstract_\%28summary\%29})
+
+%%% end abstract
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+% show a table of contents (Inhaltsverzeichnis)
+\tableofcontents
+% add some blank pages
+\cleardoublepage
+
+
+\pagenumbering{arabic}	% arabic numbers: 1,2,3,4,5 ... when NOT in front matter
+\setcounter{page}{1}	% start with 1 in first Chapter
+
+%%% now add all sub-latex files here to form the complete document
+
+% abstract is done directly in this file. see above
+% add the single chapters from external files:
+\input{01_introduction.tex}
+\input{02_preliminaries.tex}
+\input{03_mainpart_1.tex}
+\input{04_mainpart_2.tex}
+\input{05_finaldiscussion.tex}
+\input{06_appendix.tex}
+% acknowledgement is done directly is this file. see below
+% bibliography is done directly is this file. see below
+
+
+
+%%% Acknowledgement
+\cleardoublepage
+\chapter*{Acknowledgement}
+\label{c:acknowledgement}
+
+First of all, I would like to express my gratitude to ... for the aspiring guidance, useful comments and invaluably support throughout the whole process of this Master Thesis. Furthermore, I would like to thanks ..., ... and the other members of the research team for helpful discussions and constructive criticism. In addition, I would like to thank my University supervisor ... for all the helpful remarks, advises and discussions.
+
+Also, I would like to thank my parents and ... who have supported me throughout the entire process by keeping me harmonious and motivated. 
+
+Last but not least, I like to thank ... for funding my research and providing me with the facilities being required.
+
+
+
+%%% list of all figures in this thesis
+\listoffigures
+
+
+
+%%% bibliography // references
+\cleardoublepage
+\bibliographystyle{abbrvnat}
+\bibliography{papers}
+
+
+
+%%% closing - conformation on non-cheating
+\cleardoublepage
+\chapter*{Proclamation}
+Hereby I confirm that I wrote this thesis independently and that I have not made use of any other resources or means than those indicated.
+\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip\bigskip
+\begin{flushright}
+	Forname Surname, Place, \today
+\end{flushright}
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
