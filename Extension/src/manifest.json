@@ -1,0 +1,10 @@
+{
+  "name": "PGuard AppRating",
+  "description": "rates PlayStore Applications based on 30 data safety criteria",
+  "version": "0.1",
+  "page_action":{
+    "default_popup": "/popup/popup.html",
+    "default_icon": "../lib/pGuard.png"
+  },
+  "manifest_version": 2,
+}
