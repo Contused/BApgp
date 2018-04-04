@@ -3,8 +3,12 @@
   "description": "rates PlayStore Applications based on 30 data safety criteria",
   "version": "0.1",
   "page_action":{
-    "default_popup": "/popup/popup.html",
-    "default_icon": "../lib/pGuard.png"
+    "default_popup": "/popup/popup.html"
   },
   "manifest_version": 2,
+  "permissions": ["storage", "declarativeContent" ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
 }
