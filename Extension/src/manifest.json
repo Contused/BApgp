@@ -6,7 +6,13 @@
     "default_popup": "/popup/popup.html"
   },
   "manifest_version": 2,
-  "permissions": ["storage", "declarativeContent" ],
+  "permissions": ["storage", "declarativeContent", "activeTab" ],
+  "content_scripts": [
+    {
+      "matches": ["*://play.google.com/store/*"],
+      "js": ["pguard.js"]
+    }
+  ],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
