@@ -1,0 +1,369 @@
+[
+  {
+    "id": "1",
+    "is_red_line": "true",
+    "titel": "Ihre Zahlungsdaten werden unverschlüsselt übermittelt",
+    "description": "",
+    "pros": [
+      {
+        "first_layer": "",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "",
+        "second_layer": ""
+      }
+    ],
+    "cons": [
+      {
+        "first_layer": "Unbefugte können diese Daten missbrauchen, um z.B. Zahlungen zu veranlassen.",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "In öffentlichen WLANs können Zahlungsinformationen besonders leicht mitgelesen werden.",
+        "second_layer": ""
+      }
+    ],
+    "recommendations": "Unterlassen Sie die Übermittlung von Zahlungsdaten über die App. Wenn Sie das nicht möchten, nutzen Sie zur Übermittlung von Zahlungsdaten Online-Bezahlsysteme mit eigener Verschlüsselung. Wenn Sie bereits Zahlungsdaten über die App übermittelt haben, kontaktieren Sie Ihr Bankinstitut, beobachten Sie Ihre Kontoumsätze und beantragen Sie gegebenenfalls neue Zahlungsmittel.",
+    "actions": [
+      "Sicher bezahlen",
+      "Deinstallieren"
+    ]
+  },
+  {
+    "id": "2",
+    "is_red_line": "false",
+    "titel": "Die App hat Internetzugriff",
+    "description": "",
+    "pros": [
+      {
+        "first_layer": "",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "",
+        "second_layer": ""
+      }
+    ],
+    "cons": [
+      {
+        "first_layer": "",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "",
+        "second_layer": ""
+      }
+    ],
+    "recommendations": "",
+    "actions": [
+      "",
+      ""
+    ]
+  },
+  {
+    "id": "3",
+    "is_red_line": "false",
+    "titel": "Die App benennt keine Kontaktmöglichkeit für datenschutzrechtliche Anliegen",
+    "description": "Sie haben eine Vielzahl von Betroffenenrechten - insbesondere die Rechte auf Auskunft, Berichtigung und Löschung. Der Gesetzgeber verlangt, dass diese Rechte leicht und ohne besondere Hürden ausgeübt werden können. Daher müssen Anbieter eine direkte Kontaktmöglichkeit angeben.",
+    "pros": [
+      {
+        "first_layer": "",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "",
+        "second_layer": ""
+      }
+    ],
+    "cons": [
+      {
+        "first_layer": "Es handelt sich um einen Gesetzesverstoß.",
+        "second_layer": "Dies hat nicht zwingend einen Missbrauch Ihrer Daten zur Folge."
+      },
+      {
+        "first_layer": "Sie können Ihre datenschutzrechtlichen Anliegen dem Anbieter nicht mitteilen oder erreichen möglicherweise den falschen Ansprechpartner. ",
+        "second_layer": ""
+      }
+    ],
+    "recommendations": "Stellen Sie Ihre datenschutzrechtlichen Anliegen über die allgemeinen Kontaktmöglichkeiten des Anbieters, z.B. diejenigen aus dem Impressum.. Weisen Sie bereits im Betreff eindeutig auf den datenschutzrechtlichen Bezug hin.",
+    "actions": [
+      "Betroffenenrechtfunktion",
+      "Kontaktsuche + nutzen",
+      "Deinstallieren der App"
+    ]
+  },
+  {
+    "id": "4",
+    "is_red_line": "true",
+    "titel": "Ihre Login-Daten werden unverschlüsselt  übermittelt",
+    "description": "",
+    "pros": [
+      {
+        "first_layer": "",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "",
+        "second_layer": ""
+      }
+    ],
+    "cons": [
+      {
+        "first_layer": "Unbefugte können diese Daten missbrauchen.",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "In öffentlichen WLANs können Anmeldeinformationen besonders leicht mitgelesen werden.",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "Sollten Sie bei anderen Nutzerkonten diese Zugangsdaten (häufig E-Mailadresse und Passwort) ebenfalls verwenden, können Dritte dort unbefugten Zugang erhalten.",
+        "second_layer": ""
+      }
+    ],
+    "recommendations": "Loggen Sie sich nicht über die App ein. Wenn Sie sich trotzdem einloggen möchten, verwenden Sie ein für die App regelmäßig wechselndes Passwort, das Sie bei keinem anderen Nutzerkonto verwenden. Soweit verfügbar, nutzen Sie fortgeschrittene Authentifizierungsverfahren, wie z.B. Mehrfaktorauthentifizierung. Wenn Sie bereits Login-Daten über die App übermittelt haben, ändern Sie diese umgehend für andere Nutzerkonten, bei denen Sie dieselben verwenden.",
+    "actions": [
+      "2FA-Erl.",
+      "Deinstallieren der App"
+    ]
+  },
+  {
+    "id": "5",
+    "is_red_line": "false",
+    "titel": "Die App stellt keine Datenschutzerklärung auf Deutsch bereit",
+    "description": "Anbieter sind gesetzlich verpflichtet, Sie verständlich über die Verarbeitung personenbezogener Daten zu informieren. Dies erfordert grundsätzlich eine deutsche Datenschutzerklärung.",
+    "pros": [
+      {
+        "first_layer": "",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "",
+        "second_layer": ""
+      }
+    ],
+    "cons": [
+      {
+        "first_layer": "Es handelt sich um einen Gesetzesverstoß.",
+        "second_layer": "Dies hat nicht zwingend einen Missbrauch Ihrer Daten zur Folge."
+      },
+      {
+        "first_layer": "Ihre Daten werden bereits verarbeitet, ohne dass Sie sich auf Deutsch hierüber informieren können.",
+        "second_layer": "Dies hat nicht zwingend einen Missbrauch Ihrer Daten zur Folge."
+      }
+    ],
+    "recommendations": "Verbieten Sie der App alle Zugriffe auf Daten, die aus Ihrer Sicht besonders schützenswert sind (z.B. Fotos, Adressbuch, Standort oder Kalender). Informieren Sie sich durch Medien, ob die Datenverarbeitung der App mit Ihren Vorstellungen übereinstimmt.",
+    "actions": [
+      "Zugriffsrechte verbieten",
+      "Infos über Portale",
+      "Deinstallieren der App"
+    ]
+  },
+  {
+    "id": "6",
+    "is_red_line": "false",
+    "titel": "Die Datenschutzerklärung verwendet ungenaue Formulierungen",
+    "description": "Die Datenschutzerklärung nutzt Formulierungen wie 'z.B.', 'in der Regel' oder 'grundsätzlich'. Sie können sich nicht sicher sein, welche und wie Ihre Daten tatsächlich durch die App verarbeitet werden.",
+    "pros": [
+      {
+        "first_layer": "Die Datenschutzerklärung kann hierdurch kürzer und übersichtlicher werden.",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "",
+        "second_layer": ""
+      }
+    ],
+    "cons": [
+      {
+        "first_layer": "Der Anbieter kann den Umfang der Datenverarbeitungen so verändern, ohne dass Sie die Änderungen im Text erkennen können. ",
+        "second_layer": "Die ist zulässig, soweit die Änderungen geringfügig sind. Erhebliche Änderungen müssen Ihnen mitgeteilt werden."
+      },
+      {
+        "first_layer": "Der Anbieter kommt seiner Aufklärungspflicht nur teilweise nach, sodass Sie sich nicht hinreichend über die Datenverarbeitungen informieren können.",
+        "second_layer": ""
+      }
+    ],
+    "recommendations": "Lesen Sie diese Textabschnitte und entscheiden Sie selbst, ob Sie die App unter diesen Umständen weiter verwenden möchten. Wenn Sie unsicher sind, ob die Datenverarbeitung Ihren Vorstellungen entspricht, verbieten Sie der App alle Zugriffe auf Daten, die aus Ihrer Sicht besonders schützenswert sind (z.B. Fotos, Adressbuch, Standort oder Kalender).",
+    "actions": [
+      "Zugriffsrechte verbieten",
+      "Deinstallieren der App"
+    ]
+  },
+  {
+    "id": "7",
+    "is_red_line": "false",
+    "titel": "Die Verschlüsselung der App ist unsicher",
+    "description": "Die App nutzt eine veraltete oder fehlerhafte Verschlüsselung.",
+    "pros": [
+      {
+        "first_layer": "",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "",
+        "second_layer": ""
+      }
+    ],
+    "cons": [
+      {
+        "first_layer": "Unbefugte können Ihre Daten gegebenenfalls mitlesen und missbrauchen.",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "",
+        "second_layer": ""
+      }
+    ],
+    "recommendations": "Verzichten Sie auf die Übermittlung von Daten, die aus Ihrer Sicht besonders schützenswert sind (die Dritte nicht erfahren sollen, insbesondere in Ihren Nachrichten oder sonstigen Inhalten). Wenn Sie das nicht möchten, verbieten Sie der App alle Zugriffe auf Daten, die aus Ihrer Sicht besonders schützenswert sind (z.B. Fotos, Adressbuch, Standort oder Kalender).",
+    "actions": [
+      "Zugriffsrechte verbieten",
+      "Deinstallieren der App"
+    ]
+  },
+  {
+    "id": "8",
+    "is_red_line": "false",
+    "titel": "Die App nutzt Standortdaten",
+    "description": "Die App erfasst Ihre Position. Dies kann sowohl durch GPS als auch die Auswertung des Netzwerkempfangs Ihres Mobilfunkbetreibers oder WLAN-Signals geschehen.",
+    "pros": [
+      {
+        "first_layer": "Standortbezogene Funktionen können genutzt werden, ohne dass Sie den Standort extra eingeben müssen.",
+        "second_layer": "Beispiele sind Navigation und Umgebungssuche oder standortbasierte Werbung."
+      },
+      {
+        "first_layer": "",
+        "second_layer": ""
+      }
+    ],
+    "cons": [
+      {
+        "first_layer": "Ein dauerhafter Zugriff ermöglicht die Erstellung von Bewegungsprofilen.",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "",
+        "second_layer": ""
+      }
+    ],
+    "recommendations": "Aktivieren Sie nur die standortbezogenen Funktionen Ihres Smartphones, die zum jeweiligen Zeitpunkt benötigt werden (GPS, WLAN, Bluetooth, etc.). Wenn Sie das nicht möchten, verbieten Sie der App den Zugriff auf den Standort. Gewähren Sie der App nur Zugriff auf den genauen Standort (GPS), wenn dies wirklich erforderlich ist. Wenn Sie das nicht möchten, deaktivieren Sie die Standort-Funktion.",
+    "actions": [
+      "Zugriff verbieten auf den individuellen Standort",
+      "Deaktivierung der globalen Standortfunktion",
+      "Deinstallieren der App"
+    ]
+  },
+  {
+    "id": "9",
+    "is_red_line": "true",
+    "titel": "Die Datenschutzerklärung kann geändert werden, ohne Sie hierüber zu informieren",
+    "description": "Der Anbieter behält sich das Recht vor, die Datenverarbeitung jederzeit ohne vorherige Information zu ändern. Beachten Sie: Dieser Hinweis betrifft nur die direkten Datenverarbeitungen des Anbieters. Etwaige Änderungsvorbehalte von Drittservices werden von uns nicht geprüft und werden somit nicht angezeigt.",
+    "pros": [
+      {
+        "first_layer": "",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "",
+        "second_layer": ""
+      }
+    ],
+    "cons": [
+      {
+        "first_layer": "Es handelt sich um einen Gesetzesverstoß.",
+        "second_layer": "Dies hat nicht zwingend einen Missbrauch Ihrer Daten zur Folge."
+      },
+      {
+        "first_layer": "Der Anbieter kann die Datenverarbeitungen so verändern, dass sie nicht mehr mit Ihren Vorstellungen übereinstimmen.",
+        "second_layer": "Soweit der Anbieter die Datenverarbeitungen der App reduziert oder die Änderung keine Datenverarbeitungen betrifft, kann dies im Ausnahmefall keinen Gesetzesverstoß darstellen."
+      }
+    ],
+    "recommendations": "Schauen Sie regelmäßig in die Datenschutzerklärung und achten Sie insbesondere auf den Stand der letzten Fassung. Fordern Sie gegebenenfalls beim Anbieter eine Übersicht der Änderungen an.",
+    "actions": [
+      "Differenz anfordern",
+      "Betroffenenrechtfunktion",
+      "Deinstallieren der App"
+    ]
+  },
+  {
+    "id": "10",
+    "is_red_line": "false",
+    "titel": "Das über Sie erstellte Profil wird durch öffentliche Informationen über Sie ergänzt",
+    "description": "Öffentliche Informationen über Sie werden Ihrem Profil automatisch hinzugefügt, das durch den Anbieter, einen Partner oder integrierten Dritten über Sie erstellt wurde. Diese öffentlichen Informationen können z.B. aus Ihren Social-Media-Konten, allgemeinen Medienberichten, privaten Webseiten oder öffentlichen Registern entnommen werden. Eine solche Anreicherung, ist gesetzlich grundsätzlich zulässig.",
+    "pros": [
+      {
+        "first_layer": "Dies ermöglicht eine bessere Personalisierung des Angebots.",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "Der Anbieter kann Ihnen die App kostengünstig anbieten.",
+        "second_layer": ""
+      }
+    ],
+    "cons": [
+      {
+        "first_layer": "Detaillierte Profile bieten ein erhöhtes Missbrauchspotential.",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "Sie haben keine Kontrolle darüber, welche Informationen ergänzt werden.",
+        "second_layer": ""
+      }
+    ],
+    "recommendations": "Entscheiden Sie sorgfältig, welche Informationen Sie über andere Apps und Medien veröffentlichen. Wenn Sie wissen möchten, welche öffentlichen Informationen die App in Ihrem Profil ergänzt, verlangen Sie eine Auskunft bei dem App-Anbieter. Werden öffentliche Informationen zu ihrem Profil hinzugefügt und der App-Anbieter kann hierfür keinen hinreichenden Grund nennen, beantragen Sie bei diesem die Löschung dieser Daten.",
+    "actions": [
+      "Betroffenenfunktion, Auskunftsersuchen",
+      "Betroffenenfunktion, Löschen",
+      "Deinstallieren der App"
+    ]
+  },
+  {
+    "id": "11",
+    "is_red_line": "false",
+    "titel": "Ihre Daten werden durch Dienstleister verarbeitet",
+    "description": "Dienstleister ist jedes Unternehmen, welches den Anbieter beim Angebot der Services unterstützt. Dieses Verhältnis nennt das Gesetz Auftragsverarbeitung. Das Gesetz erleichtert den Einsatz von Auftragsverarbeitern, stellt dafür aber strenge Anforderungen, um die personenbezogenen Daten vor Missbrauch zu schützen.",
+    "pros":
+    [
+      {"first_layer": "Dies ermöglicht dem Anbieter, die App kos­tengünstig anzubieten.", "second_layer": ""},
+      {"first_layer": "Dies kann die Qualität und Sicherheit der App erhöhen.", "second_layer": "Dies erfolgt z.B. durch den Einsatz spezialisierter Dienstleister oder erprobter Plugins und Infrastruktur."}
+    ],
+    "cons":
+    [
+      {"first_layer": "Sie können die Weitergabe Ihrer Daten nur begrenzt kontrollieren.", "second_layer": "Ihre personenbezogenen Daten werden grundsätzlich vom Anbieter und nach dessen Vorgaben verarbeitet. Jedoch ist es möglich, dass ein unseriöser Dienst­leister Ihre Daten ohne Ihr Wissen und das Wissen des App-Anbieters weiter­ver­ar­beitet."},
+      {"first_layer": "Sie wissen nicht, ob diese Dienstleister den gleichen Standard wie der Anbieter im Umgang mit Ihren Daten haben.", "second_layer": "Ihre personenbezogenen Daten werden grundsätzlich vom Anbieter und nach dessen Vorgaben verarbeitet. Jedoch ist es möglich, dass ein unseriöser Dienst­leister Ihre Daten ohne Ihr Wissen und das Wissen des App-Anbieters weiter­ver­ar­beitet."}
+    ],
+    "recommendations": "Verbieten Sie der App Zugriffe auf Daten, die aus Ihrer Sicht besonders schützenswert sind (z.B. Fotos, Adressbuch, Standort oder Kalender).",
+    "actions": ["Zugriffsrechte verbieten", "Deinstallieren der App"]
+  },
+  {
+    "id": "12",
+    "is_red_line": "false",
+    "titel": "Die App integriert Werbenetzwerke",
+    "description": "Die App zeigt Werbung externer Werbenetzwerke an. Somit erhalten neben dem Anbieter auch Dritte Daten über Sie. Beachten Sie: Die Integration von Werbenetzwerken geht nicht zwingend mit personalisierter Werbung einher. Wenn Ihre Daten laut Datenschutzerklärung auch für personalisierte Werbung genutzt werden, wird ein entsprechender Fund angezeigt.",
+    "pros": [
+      {
+        "first_layer": "Der Anbieter kann Ihnen die App kostengünstig anbieten.",
+        "second_layer": "Durch die Nutzung von Werbenetzwerken muss der Anbieter z.B. keine kostenintensive, eigene Werbekundenverwaltung finanzieren."
+      },
+      {
+        "first_layer": "",
+        "second_layer": ""
+      }
+    ],
+    "cons": [
+      {
+        "first_layer": "Ihr Nutzungsverhalten kann über mehrere Anwendungen und einen längeren Zeitraum hinweg nachververfolgt werden.",
+        "second_layer": ""
+      },
+      {
+        "first_layer": "Diese Drittanbieter haben grundsätzlich die gleichen Zugriffsrechte wie die App, sodass neben den Nutzungsdaten auch Ihre sonstigen Daten übermittelt werden können.",
+        "second_layer": ""
+      }
+    ],
+    "recommendations": "Wenn Sie nicht möchten, dass Werbenetzwerke Daten über Sie erhalten, deinstallieren Sie die App!",
+    "actions": [
+      "Deinstallieren der App."
+    ]
+  }
+]
