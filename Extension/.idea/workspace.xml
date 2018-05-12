@@ -61,13 +61,56 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pguard.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pguard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pguard.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
               <caret line="28" column="11" lean-forward="true" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
               <folding>
                 <element signature="n#!!doc;n#createTextElement#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IB_texte.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="721" column="4" lean-forward="true" selection-start-line="721" selection-start-column="4" selection-end-line="721" selection-end-column="4" />
+              <folding>
+                <element signature="e#4#1102#0" />
+                <element signature="e#1106#1614#0" />
+                <element signature="e#1618#2992#0" />
+                <element signature="e#2996#4369#0" />
+                <element signature="e#4373#5687#0" />
+                <element signature="e#5691#7279#0" />
+                <element signature="e#7283#8345#0" />
+                <element signature="e#8349#9779#0" />
+                <element signature="e#9783#11308#0" />
+                <element signature="e#11312#13047#0" />
+                <element signature="e#13051#14858#0" />
+                <element signature="e#14862#16289#0" />
+                <element signature="e#16293#16802#0" />
+                <element signature="e#17450#17959#0" />
+                <element signature="e#18775#19284#0" />
+                <element signature="e#20198#20707#0" />
+                <element signature="e#21123#21632#0" />
+                <element signature="e#22417#22926#0" />
+                <element signature="e#23874#24383#0" />
+                <element signature="e#24387#24896#0" />
+                <element signature="e#20002#20150#0" />
+                <element signature="e#25824#26333#0" />
+                <element signature="e#27483#27992#0" />
+                <element signature="e#29139#29648#0" />
+                <element signature="e#30415#30924#0" />
+                <element signature="e#31355#31864#0" />
+                <element signature="e#31883#32392#0" />
+                <element signature="e#33178#33687#0" />
+                <element signature="e#34731#35240#0" />
+                <element signature="e#36208#36717#0" />
+                <element signature="e#37307#37816#0" />
+                <element signature="e#38502#39011#0" />
               </folding>
             </state>
           </provider>
@@ -93,6 +136,7 @@
         <option value="$PROJECT_DIR$/src/popup/popup.html" />
         <option value="$PROJECT_DIR$/src/manifest.json" />
         <option value="$PROJECT_DIR$/src/pguard.js" />
+        <option value="$PROJECT_DIR$/src/lib/data/IB_texte.json" />
       </list>
     </option>
   </component>
@@ -112,10 +156,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -199,18 +242,18 @@
       <option name="presentableId" value="Default" />
       <updated>1522328542633</updated>
       <workItem from="1522863874402" duration="342000" />
-      <workItem from="1526121533724" duration="5095000" />
+      <workItem from="1526121533724" duration="9641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5437000" />
+    <option name="totallyTimeSpent" value="9983000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14791666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.009394572" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -507,6 +550,47 @@
           <caret line="28" column="11" lean-forward="true" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
           <folding>
             <element signature="n#!!doc;n#createTextElement#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="721" column="4" lean-forward="true" selection-start-line="721" selection-start-column="4" selection-end-line="721" selection-end-column="4" />
+          <folding>
+            <element signature="e#4#1102#0" />
+            <element signature="e#1106#1614#0" />
+            <element signature="e#1618#2992#0" />
+            <element signature="e#2996#4369#0" />
+            <element signature="e#4373#5687#0" />
+            <element signature="e#5691#7279#0" />
+            <element signature="e#7283#8345#0" />
+            <element signature="e#8349#9779#0" />
+            <element signature="e#9783#11308#0" />
+            <element signature="e#11312#13047#0" />
+            <element signature="e#13051#14858#0" />
+            <element signature="e#14862#16289#0" />
+            <element signature="e#16293#16802#0" />
+            <element signature="e#17450#17959#0" />
+            <element signature="e#18775#19284#0" />
+            <element signature="e#20198#20707#0" />
+            <element signature="e#21123#21632#0" />
+            <element signature="e#22417#22926#0" />
+            <element signature="e#23874#24383#0" />
+            <element signature="e#24387#24896#0" />
+            <element signature="e#20002#20150#0" />
+            <element signature="e#25824#26333#0" />
+            <element signature="e#27483#27992#0" />
+            <element signature="e#29139#29648#0" />
+            <element signature="e#30415#30924#0" />
+            <element signature="e#31355#31864#0" />
+            <element signature="e#31883#32392#0" />
+            <element signature="e#33178#33687#0" />
+            <element signature="e#34731#35240#0" />
+            <element signature="e#36208#36717#0" />
+            <element signature="e#37307#37816#0" />
+            <element signature="e#38502#39011#0" />
           </folding>
         </state>
       </provider>
