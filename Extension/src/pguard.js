@@ -1,19 +1,34 @@
 /**
  * Created by Alexander on 03.05.2018.
  */
-function createTextElement(){
-    var frame = document.createElement('div');
-    frame.setAttribute('test-atr','1');
+function createTextElement(appSquare){
+    var appID = $(appSquare).attr("data-docid");
+    if(appID){
+        $.ajax({
+            url: "https://pgadmin.datenschutz-scanner.de/api/apps?bundleId=" + appID,
+            data: null,
+            success: function(data) {
+                console.log($(appSquare).attr("data-docid"));
+                console.log(data);
 
-    const testSpan = document.createElement('span');
-    testSpan.textContent = 'TestText';
-    frame.appendChild(testSpan);
+                var frame = document.createElement('div');
+                frame.setAttribute('test-atr','1');
 
-    return frame;
+                var testSpan = document.createElement('span');
+                if(data[0]){
+                    testSpan.textContent = "Funde: " + data[0].infoboxes.length;
+                } else {
+                    testSpan.textContent = "Funde: 0";
+                }
+
+                frame.appendChild(testSpan);
+
+                appSquare.insertBefore(frame,appSquare.childNodes[0]);
+            },
+            dataType: "json"
+        });
+    }
 }
-
-
-var appBoxes = document.querySelectorAll('.reason-set');
-for(var i = 0; i < appBoxes.length; i++){
-    appBoxes[i].appendChild(createTextElement());
-}
+$(".square-cover").each(function(){
+    createTextElement(this);
+});

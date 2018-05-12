@@ -3,14 +3,14 @@
   "description": "rates PlayStore Applications based on 30 data safety criteria",
   "version": "0.1",
   "page_action":{
-    "default_popup": "/popup/popup.html"
+    "default_popup": "popup/popup.html"
   },
   "manifest_version": 2,
   "permissions": ["storage", "declarativeContent", "activeTab" ],
   "content_scripts": [
     {
       "matches": ["*://play.google.com/store/*"],
-      "js": ["pguard.js"]
+      "js": ["lib/js/jquery-3.3.1.min.js", "pguard.js"]
     }
   ],
   "background": {
