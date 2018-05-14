@@ -5,14 +5,6 @@
     "titel": "Ihre Zahlungsdaten werden unverschlüsselt übermittelt",
     "description": "",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
       {
@@ -36,29 +28,11 @@
     "titel": "Die App hat Internetzugriff",
     "description": "",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "recommendations": "",
     "actions": [
-      "",
-      ""
     ]
   },
   {
@@ -67,14 +41,6 @@
     "titel": "Die App benennt keine Kontaktmöglichkeit für datenschutzrechtliche Anliegen",
     "description": "Sie haben eine Vielzahl von Betroffenenrechten - insbesondere die Rechte auf Auskunft, Berichtigung und Löschung. Der Gesetzgeber verlangt, dass diese Rechte leicht und ohne besondere Hürden ausgeübt werden können. Daher müssen Anbieter eine direkte Kontaktmöglichkeit angeben.",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
       {
@@ -99,14 +65,6 @@
     "titel": "Ihre Login-Daten werden unverschlüsselt übermittelt",
     "description": "",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
       {
@@ -134,14 +92,6 @@
     "titel": "Die App stellt keine Datenschutzerklärung auf Deutsch bereit",
     "description": "Anbieter sind gesetzlich verpflichtet, Sie verständlich über die Verarbeitung personenbezogener Daten zu informieren. Dies erfordert grundsätzlich eine deutsche Datenschutzerklärung.",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
       {
@@ -169,10 +119,6 @@
       {
         "first_layer": "Die Datenschutzerklärung kann hierdurch kürzer und übersichtlicher werden.",
         "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
       }
     ],
     "cons": [
@@ -197,22 +143,10 @@
     "titel": "Die Verschlüsselung der App ist unsicher",
     "description": "Die App nutzt eine veraltete oder fehlerhafte Verschlüsselung.",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
       {
         "first_layer": "Unbefugte können Ihre Daten gegebenenfalls mitlesen und missbrauchen.",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
         "second_layer": ""
       }
     ],
@@ -231,19 +165,11 @@
       {
         "first_layer": "Standortbezogene Funktionen können genutzt werden, ohne dass Sie den Standort extra eingeben müssen.",
         "second_layer": "Beispiele sind Navigation und Umgebungssuche oder standortbasierte Werbung."
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
       }
     ],
     "cons": [
       {
         "first_layer": "Ein dauerhafter Zugriff ermöglicht die Erstellung von Bewegungsprofilen.",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
         "second_layer": ""
       }
     ],
@@ -260,14 +186,6 @@
     "titel": "Die Datenschutzerklärung kann geändert werden, ohne Sie hierüber zu informieren",
     "description": "Der Anbieter behält sich das Recht vor, die Datenverarbeitung jederzeit ohne vorherige Information zu ändern. Beachten Sie: Dieser Hinweis betrifft nur die direkten Datenverarbeitungen des Anbieters. Etwaige Änderungsvorbehalte von Drittservices werden von uns nicht geprüft und werden somit nicht angezeigt.",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
       {
@@ -325,13 +243,25 @@
     "description": "Dienstleister ist jedes Unternehmen, welches den Anbieter beim Angebot der Services unterstützt. Dieses Verhältnis nennt das Gesetz Auftragsverarbeitung. Das Gesetz erleichtert den Einsatz von Auftragsverarbeitern, stellt dafür aber strenge Anforderungen, um die personenbezogenen Daten vor Missbrauch zu schützen.",
     "pros":
     [
-      {"first_layer": "Dies ermöglicht dem Anbieter, die App kos­tengünstig anzubieten.", "second_layer": ""},
-      {"first_layer": "Dies kann die Qualität und Sicherheit der App erhöhen.", "second_layer": "Dies erfolgt z.B. durch den Einsatz spezialisierter Dienstleister oder erprobter Plugins und Infrastruktur."}
+      {
+        "first_layer": "Dies ermöglicht dem Anbieter, die App kos­tengünstig anzubieten.", 
+        "second_layer": ""
+      },
+      {
+        "first_layer": "Dies kann die Qualität und Sicherheit der App erhöhen.", 
+        "second_layer": "Dies erfolgt z.B. durch den Einsatz spezialisierter Dienstleister oder erprobter Plugins und Infrastruktur."
+      }
     ],
     "cons":
     [
-      {"first_layer": "Sie können die Weitergabe Ihrer Daten nur begrenzt kontrollieren.", "second_layer": "Ihre personenbezogenen Daten werden grundsätzlich vom Anbieter und nach dessen Vorgaben verarbeitet. Jedoch ist es möglich, dass ein unseriöser Dienst­leister Ihre Daten ohne Ihr Wissen und das Wissen des App-Anbieters weiter­ver­ar­beitet."},
-      {"first_layer": "Sie wissen nicht, ob diese Dienstleister den gleichen Standard wie der Anbieter im Umgang mit Ihren Daten haben.", "second_layer": "Ihre personenbezogenen Daten werden grundsätzlich vom Anbieter und nach dessen Vorgaben verarbeitet. Jedoch ist es möglich, dass ein unseriöser Dienst­leister Ihre Daten ohne Ihr Wissen und das Wissen des App-Anbieters weiter­ver­ar­beitet."}
+      {
+        "first_layer": "Sie können die Weitergabe Ihrer Daten nur begrenzt kontrollieren.", 
+        "second_layer": "Ihre personenbezogenen Daten werden grundsätzlich vom Anbieter und nach dessen Vorgaben verarbeitet. Jedoch ist es möglich, dass ein unseriöser Dienst­leister Ihre Daten ohne Ihr Wissen und das Wissen des App-Anbieters weiter­ver­ar­beitet."
+      },
+      {
+        "first_layer": "Sie wissen nicht, ob diese Dienstleister den gleichen Standard wie der Anbieter im Umgang mit Ihren Daten haben.", 
+        "second_layer": "Ihre personenbezogenen Daten werden grundsätzlich vom Anbieter und nach dessen Vorgaben verarbeitet. Jedoch ist es möglich, dass ein unseriöser Dienst­leister Ihre Daten ohne Ihr Wissen und das Wissen des App-Anbieters weiter­ver­ar­beitet."
+      }
     ],
     "recommendations": "Verbieten Sie der App Zugriffe auf Daten, die aus Ihrer Sicht besonders schützenswert sind (z.B. Fotos, Adressbuch, Standort oder Kalender).",
     "actions": ["Zugriffsrechte verbieten", "Deinstallieren der App"]
@@ -345,10 +275,6 @@
       {
         "first_layer": "Der Anbieter kann Ihnen die App kostengünstig anbieten.",
         "second_layer": "Durch die Nutzung von Werbenetzwerken muss der Anbieter z.B. keine kostenintensive, eigene Werbekundenverwaltung finanzieren."
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
       }
     ],
     "cons": [
@@ -375,19 +301,11 @@
       {
         "first_layer": "Ihr mobiles Gerät kann hierdurch eindeutig identifiziert werden. Die App erhebt neben den zulässigen Werbe-IDs auch sonstige zur Identifikation dienliche Geräteinformationen (inistallierte Apps, Spracheinstellungen, Netzbetreiber, Netzempfang, etc.).",
         "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
       }
     ],
     "cons": [
       {
-        "first_layer": "Ihr Nutzerverhalten kann über mehrere Anwendungen und einen längeren Zeitraum hinweg nachver¬folget werden. ",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
+        "first_layer": "Ihr Nutzerverhalten kann über mehrere Anwendungen und einen längeren Zeitraum hinweg nachverfolget werden. ",
         "second_layer": ""
       }
     ],
@@ -402,14 +320,6 @@
     "titel": "Die App stellt die Datenschutzerklärung erst nach Start der App bereit",
     "description": "Anbieter sind gesetzlich verpflichtet, Sie bei der Erhebung personenbezogener Daten hierüber zu informieren. Damit Sie selbstbestimmt über Ihre Daten verfügen können, genügt eine Bereitstellung nach Start einer App häufig nicht. Deswegen verlangen auch die App Store-Richtilinien die Bereitstellung bereits vor dem Start, nämlich im App Store.",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
       {
@@ -417,7 +327,7 @@
         "second_layer": ""
       },
       {
-        "first_layer": "Dies verstößt gegen die App Store-Richt-linien.",
+        "first_layer": "Dies verstößt gegen die App Store-Richtlinien.",
         "second_layer": "Dies hat nicht zwingend einen Missbrauch Ihrer Daten zur Folge."
       }
     ],
@@ -435,22 +345,14 @@
     "description": "Die App nutzt Kontaktinformationen, die Sie in Ihrem lokalen Adressbuch gespeichert haben. Dadurch können Ihre Kontakte z.B. auf einer Karte angezeigt oder direkt aus der App heraus kontaktiert werden.",
     "pros": [
       {
-        "first_layer": "Die App kann Kontaktinformationen Ihres Adres¬sbuchsnutzen, ohne dass Sie diese extra eingeben oder bearbeiten müssen.",
+        "first_layer": "Die App kann Kontaktinformationen Ihres Adressbuchsnutzen, ohne dass Sie diese extra eingeben oder bearbeiten müssen.",
         "second_layer": "Die App kann das Adressbuch aktualisieren oder Kontakte verknüpfen."
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
       }
     ],
     "cons": [
       {
-        "first_layer": "Alle gespeicherten Kon¬takt¬in¬for¬mat¬ion¬en können Ihnen unbekannte. dauerhaft ausgelesen und gespeichert werden",
+        "first_layer": "Alle gespeicherten Kontaktinformationen können Ihnen unbekannte. dauerhaft ausgelesen und gespeichert werden",
         "second_layer": "Sie riskieren damit nicht nur die Übermittlung Ihrer eigenen Daten, sondern auch diejenige Ihrer Kontakte."
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
       }
     ],
     "recommendations": "Verbieten Sie der App den Zugriff auf Ihr Adressbuch. Wenn Sie das nicht möchten, prüfen Sie, ob Sie besonders schützenswerte Kontakte gespeichert haben und löschen Sie diese gegebenenfalls. ",
@@ -466,14 +368,6 @@
     "titel": "Die App enthält Malware",
     "description": "Die App kann Schadcode ausführen. Beispiele für Malware sind Viren, Trojaner und ähnliches.",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
       {
@@ -503,19 +397,11 @@
       {
         "first_layer": "Kann Rechtsdurchsetzung erleichtern ",
         "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
       }
     ],
     "cons": [
       {
         "first_layer": "Dritte können Ihre Daten zu unbekannten Zwecken verarbeiten. ",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
         "second_layer": ""
       }
     ],
@@ -531,20 +417,16 @@
     "id": "18",
     "is_red_line": "false",
     "titel": "Die App erhebt statische Gerätekennungen",
-    "description": "Statische Gerätekennungen sind Kennziffern, die untrennbar mit Ihrem Gerät verbunden sind, z.B. die IMEI, IMSI oder MAC-Adresse. Nicht nur die Kennziffer Ihres mobilen Endgerätes kann betroffen sein, auch die Ihrer verbundenen Geräte und Zubehör (z.B. Kameras oder Docking-Stations). Diese können ohne Spezialkentnisse nicht vom Nutzer verändert werden. Laut Richtlinien der Be¬triebs¬sys¬tem¬her¬stel¬ler dürfen statische Gerätekennungen nur für Sicherheitszwecke bei sensiblen Services erhoben werden, nicht jedoch für Werbezwecke.",
+    "description": "Statische Gerätekennungen sind Kennziffern, die untrennbar mit Ihrem Gerät verbunden sind, z.B. die IMEI, IMSI oder MAC-Adresse. Nicht nur die Kennziffer Ihres mobilen Endgerätes kann betroffen sein, auch die Ihrer verbundenen Geräte und Zubehör (z.B. Kameras oder Docking-Stations). Diese können ohne Spezialkentnisse nicht vom Nutzer verändert werden. Laut Richtlinien der Betriebssystemhersteller dürfen statische Gerätekennungen nur für Sicherheitszwecke bei sensiblen Services erhoben werden, nicht jedoch für Werbezwecke.",
     "pros": [
       {
         "first_layer": "Dies kann Ihre Sicherheit erhöhen.",
-        "second_layer": "Neben der Authentifizierung durch Ihre Login Daten, kann ein Zugriff über ein be¬rech¬tig¬tes Gerät bestätigt werden."
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
+        "second_layer": "Neben der Authentifizierung durch Ihre Login Daten, kann ein Zugriff über ein berechtigtes Gerät bestätigt werden."
       }
     ],
     "cons": [
       {
-        "first_layer": "Ihr Nutzerverhalten kann üb¬er mehrere Anwendungen und einen läng¬eren Zeitraum hinweg nachverfolgt werden.",
+        "first_layer": "Ihr Nutzerverhalten kann über mehrere Anwendungen und einen längeren Zeitraum hinweg nachverfolgt werden.",
         "second_layer": ""
       },
       {
@@ -564,11 +446,7 @@
     "description": "",
     "pros": [
       {
-        "first_layer": "Dies ermöglicht es, die App um Kom¬fort-funktionen zu erweitern (z.B. Ka¬len¬der-einträge, Kartendarstellung).",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
+        "first_layer": "Dies ermöglicht es, die App um Komfortfunktionen zu erweitern (z.B. Kalendereinträge, Kartendarstellung).",
         "second_layer": ""
       }
     ],
@@ -578,7 +456,7 @@
         "second_layer": ""
       },
       {
-        "first_layer": "Ihre Daten können zu detaillierten Pro-filen zusammengeführt werden.",
+        "first_layer": "Ihre Daten können zu detaillierten Profilen zusammengeführt werden.",
         "second_layer": ""
       },
       {
@@ -588,8 +466,6 @@
     ],
     "recommendations": "",
     "actions": [
-      "",
-      ""
     ]
   },
   {
@@ -598,14 +474,6 @@
     "titel": "Die App verarbeitet Daten, die ausdrücklich ausgeschlossen wurden",
     "description": "Unsere technische Analyse zeigt, dass die App personenbezogene Daten verarbeitet, die in der Datenschutzerklärung ausdrücklich ausgeschlossen wurden. Hierunter fällt auch eine abweichende Form der konkreten Verarbeitung, z.B. wenn der Anbieter angibt, Daten pseudonymisiert zu erheben, aber trotzdem Ihre Daten im Klartext versendet.",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
       {
@@ -618,7 +486,7 @@
       },
       {
         "first_layer": "Es besteht eine erhöhte Missbrauchsgefahr für Ihre Daten.",
-        "second_layer": "Das konkrete Risiko hängt von den be-trof¬fenen Daten und dem konkreten Missbrauch ab. "
+        "second_layer": "Das konkrete Risiko hängt von den betroffenen Daten und dem konkreten Missbrauch ab. "
       }
     ],
     "recommendations": "Deinstallieren Sie die App. Wenn sie das nicht möchten, verbieten Sie der App alle Zugriffe auf Daten, die aus Ihrer Sicht besonders schützenswert sind (z.B. Fotos, Adressbuch, Standort oder Kalender).",
@@ -634,11 +502,11 @@
     "description": "Ein Drittanbieter ist jede datenverarbeitende Stelle, die personenbezogene Daten von Ihnen erhält, aber nicht selbst Anbieter der App ist. Hierzu zählen neben Analyse-, Tracking- und Werbetools auch Social-Media-Services. Nutzungsdaten sind insbesondere Merkmale zur Identifikation des Nutzers, Angaben über Beginn und Ende der jeweiligen Nutzung sowie Angaben über die vom Nutzer in Anspruch genommene Internetdienste",
     "pros": [
       {
-        "first_layer": "Die App kann Funktionen der Drittanbieter in gewohnter Form be¬reit-stel¬len.",
+        "first_layer": "Die App kann Funktionen der Drittanbieter in gewohnter Form bereitstellen.",
         "second_layer": ""
       },
       {
-        "first_layer": "Der Anbieter kann Ihnen die App kosten¬günstig anbieten.",
+        "first_layer": "Der Anbieter kann Ihnen die App kostengünstig anbieten.",
         "second_layer": ""
       }
     ],
@@ -667,19 +535,11 @@
       {
         "first_layer": "Beachten Sie: Eine Profilbildung ist nicht zwingend mit personalisierter Werbung gleichzusetzen. Wenn Ihre Daten laut Datenschutzerklärung auch für personalisierte Werbung genutzt werden, wird ein entsprechender Fund angezeigt.",
         "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
       }
     ],
     "cons": [
       {
         "first_layer": "Sie können auf Grund Ihres Profils von einzelnen Inhalten und Angeboten ausgeschlossen werden.",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
         "second_layer": ""
       }
     ],
@@ -708,10 +568,6 @@
       {
         "first_layer": "Sie können die Weitergabe Ihrer Daten nur begrenzt kontrollieren.",
         "second_layer": "Ihre personenbezogenen Daten müssen jedoch grundsätzlich nach einheitlichen Standards verarbeitet werden."
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
       }
     ],
     "recommendations": "Achten Sie darauf, welche Ihrer personenbezogenen Daten laut Datenschutzerklärung in der Unternehmensgruppe geteilt werden können. ",
@@ -724,15 +580,11 @@
     "id": "24",
     "is_red_line": "false",
     "titel": "Die App kann sich im Hintergrund unbemerkt aktualisieren",
-    "description": "",
+    "description": "Die App kann Programmcode ohne Ihre Kenntnis nachladen (Sideloads). Eine Aktualisierung erfolgt nicht über den Play-Store, sondern ohne Hinweis im Hintergrund.",
     "pros": [
       {
-        "first_layer": "Der Anbieter kann die App mit Funk-tionen erweitern, ohne dass Sie die App updaten müssen.",
-        "second_layer": "Dies kann z.B. die Integration von Funk-tio¬nen von Drittanbietern umfassen."
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
+        "first_layer": "Der Anbieter kann die App mit Funktionen erweitern, ohne dass Sie die App updaten müssen.",
+        "second_layer": "Dies kann z.B. die Integration von Funktionen von Drittanbietern umfassen."
       }
     ],
     "cons": [
@@ -756,29 +608,11 @@
     "titel": "Die Herkunft der App ist unbekannt",
     "description": "GELÖSCHT",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "recommendations": "",
     "actions": [
-      "",
-      ""
     ]
   },
   {
@@ -787,18 +621,10 @@
     "titel": "Die App stellt keine Datenschutzerklärung bereit",
     "description": "Anbieter sind gesetzlich verpflichtet, Sie über die Verarbeitung personenbezogener Daten zu informieren. Dies erfordert grundsätzlich eine Datenschutzerklärung.",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
       {
-        "first_layer": "Es handelt sich um einen Gesetzes-verstoß.",
+        "first_layer": "Es handelt sich um einen Gesetzesverstoß.",
         "second_layer": "Dies hat nicht zwingend einen Missbrauch Ihrer Daten zur Folge"
       },
       {
@@ -820,21 +646,13 @@
     "description": "",
     "pros": [
       {
-        "first_layer": "Der Anbieter kann Ihnen die App kosten¬günstig anbieten.",
-        "second_layer": "Der Anbieter kann über verkaufte Wer-be¬plätze Geld verdienen und hierdurch die App finanzieren. Personalisierte Werbung erzielt im Vergleich zu un¬per¬sonalisierter Werbung deutlich hö¬here Erlöse für den Anbieter."
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
+        "first_layer": "Der Anbieter kann Ihnen die App kostengünstig anbieten.",
+        "second_layer": "Der Anbieter kann über verkaufte Werbeplätze Geld verdienen und hierdurch die App finanzieren. Personalisierte Werbung erzielt im Vergleich zu unpersonalisierter Werbung deutlich höhere Erlöse für den Anbieter."
       }
     ],
     "cons": [
       {
         "first_layer": "Voraussetzung für personalisierte Werbung ist eine Profilbildung.",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
         "second_layer": ""
       }
     ],
@@ -851,14 +669,6 @@
     "titel": "Die App klärt nicht ordnungsgemäß über Datenverarbeitungen im Ausland auf",
     "description": "Wenn und soweit Ihre Daten außerhalb der EU verarbeitet werden, müssen Sie darüber aufgeklärt werden. Hierzu zählt auch, Sie darüber aufzuklären, wie der Anbieter den europäischen Datenschutzstandard außerhalb der EU sicherstellt. Der Standort der Verarbeitung der Daten ist grundsätzlich unabhängig von Ihrem Aufenthaltsort. ",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
       {
@@ -866,7 +676,7 @@
         "second_layer": ""
       },
       {
-        "first_layer": "Sie wissen gegebenenfalls nicht, wo Ihre per¬so¬nen¬be¬zo¬genen Daten verarbeitet werden.",
+        "first_layer": "Sie wissen gegebenenfalls nicht, wo Ihre personenbezogenen Daten verarbeitet werden.",
         "second_layer": ""
       },
       {
@@ -886,14 +696,6 @@
     "titel": "Die App stellt unterschiedliche Datenschutzerklärungen in der App und im App-Store bereit",
     "description": "",
     "pros": [
-      {
-        "first_layer": "",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
-      }
     ],
     "cons": [
       {
@@ -924,19 +726,11 @@
       {
         "first_layer": "Sie können Ihre Beiträge leichter einem breiten Publikum zugänglich machen.",
         "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
       }
     ],
     "cons": [
       {
         "first_layer": "Sind Ihre Beiträge öffentlich im Internet verfügbar, haben Sie keine Kontrolle, wer auf diese zugreift und zu welchen Zwecken diese Daten weiter verarbeitet werden. ",
-        "second_layer": ""
-      },
-      {
-        "first_layer": "",
         "second_layer": ""
       }
     ],
@@ -955,20 +749,12 @@
       {
         "first_layer": "Sie können Ihr mobiles Endgerät und die App per Sprache steuern.",
         "second_layer": ""
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
       }
     ],
     "cons": [
       {
         "first_layer": "Alle Gespräche und Umgebungsgeräusche können dauerhaft aufgenommen und gespeichert werden.",
         "second_layer": "Sie riskieren damit nicht nur die Übermittlung Ihrer eigenen Daten, sondern auch diejenige Ihres Umfeldes."
-      },
-      {
-        "first_layer": "",
-        "second_layer": ""
       }
     ],
     "recommendations": "Verbieten Sie den Zugriff der App auf das Mikrofon. Wenn Sie das nicht möchten, achten Sie darauf, dass die Sprachsteuerung erst nach einem Signalwort aktiviert wird und ansonsten keine Übertragung der aufgenommenen Gespräche und Umgebungsgeräusche stattfindet. ",

@@ -19,11 +19,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="popup.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="popup.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/popup/popup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+            <state relative-caret-position="85">
+              <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/MaterialDesign-Webfont-master/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -44,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/src/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -61,57 +71,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pguard.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pguard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pguard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="29" column="62" lean-forward="true" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
-              <folding>
-                <element signature="n#!!doc;n#createTextElement#0" />
-              </folding>
+            <state relative-caret-position="587">
+              <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IB_texte.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
+      <file leaf-file-name="bootstrapMDI.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/css/bootstrapMDI.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="980" column="1" lean-forward="true" selection-start-line="980" selection-start-column="1" selection-end-line="980" selection-end-column="1" />
-              <folding>
-                <element signature="e#4#1102#0" />
-                <element signature="e#1106#1614#0" />
-                <element signature="e#1618#2992#0" />
-                <element signature="e#2996#4369#0" />
-                <element signature="e#4373#5687#0" />
-                <element signature="e#5691#7279#0" />
-                <element signature="e#7283#8345#0" />
-                <element signature="e#8349#9779#0" />
-                <element signature="e#9783#11308#0" />
-                <element signature="e#11312#13047#0" />
-                <element signature="e#13051#14858#0" />
-                <element signature="e#14862#16289#0" />
-                <element signature="e#16293#16802#0" />
-                <element signature="e#17450#17959#0" />
-                <element signature="e#18775#19284#0" />
-                <element signature="e#20198#20707#0" />
-                <element signature="e#21123#21632#0" />
-                <element signature="e#22417#22926#0" />
-                <element signature="e#23874#24383#0" />
-                <element signature="e#24387#24896#0" />
-                <element signature="e#20002#20150#0" />
-                <element signature="e#25824#26333#0" />
-                <element signature="e#27483#27992#0" />
-                <element signature="e#29139#29648#0" />
-                <element signature="e#30415#30924#0" />
-                <element signature="e#31355#31864#0" />
-                <element signature="e#31883#32392#0" />
-                <element signature="e#33178#33687#0" />
-                <element signature="e#34731#35240#0" />
-                <element signature="e#36208#36717#0" />
-                <element signature="e#37307#37816#0" />
-                <element signature="e#38502#39011#0" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -123,6 +96,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -133,10 +107,11 @@
         <option value="$PROJECT_DIR$/src/background.js" />
         <option value="$PROJECT_DIR$/src/popup/popup-controller.js" />
         <option value="$PROJECT_DIR$/src/popup.html" />
-        <option value="$PROJECT_DIR$/src/popup/popup.html" />
         <option value="$PROJECT_DIR$/src/lib/data/IB_texte.json" />
         <option value="$PROJECT_DIR$/src/manifest.json" />
         <option value="$PROJECT_DIR$/src/pguard.js" />
+        <option value="$PROJECT_DIR$/src/lib/css/bootstrapMDI.css" />
+        <option value="$PROJECT_DIR$/src/popup/popup.html" />
       </list>
     </option>
   </component>
@@ -155,9 +130,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-15" />
-    <option name="y" value="190" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="64" />
+    <option name="y" value="-25" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -166,6 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,13 +165,18 @@
               <item name="Extension" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Extension" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Extension" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="popup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,6 +185,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
@@ -257,20 +239,21 @@
       <updated>1522328542633</updated>
       <workItem from="1522863874402" duration="342000" />
       <workItem from="1526121533724" duration="13659000" />
+      <workItem from="1526311186082" duration="2520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14001000" />
+    <option name="totallyTimeSpent" value="16521000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-15" y="190" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12291667" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" visible="true" weight="0.32943678" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32943678" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -279,8 +262,9 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
@@ -305,6 +289,58 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/popup/popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/popup/popup-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#46#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#714#760#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15640">
+          <caret line="980" column="1" lean-forward="true" selection-start-line="980" selection-start-column="1" selection-end-line="980" selection-end-column="1" />
+          <folding>
+            <element signature="e#4#1102#0" />
+            <element signature="e#1106#1614#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pguard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="62" lean-forward="true" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/popup/popup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -343,9 +379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc;n#createTextElement#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -384,13 +417,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pguard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc;n#createTextElement#0" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/popup/popup.html">
       <provider selected="true" editor-type-id="text-editor" />
@@ -425,9 +452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc;n#createTextElement#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -456,13 +480,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pguard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc;n#createTextElement#0" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/popup/popup.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -533,13 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/popup/popup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/background.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -552,41 +563,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="980" column="1" lean-forward="true" selection-start-line="980" selection-start-column="1" selection-end-line="980" selection-end-column="1" />
+        <state relative-caret-position="15640">
+          <caret line="980" column="1" selection-start-line="980" selection-start-column="1" selection-end-line="980" selection-end-column="1" />
           <folding>
             <element signature="e#4#1102#0" />
             <element signature="e#1106#1614#0" />
-            <element signature="e#1618#2992#0" />
-            <element signature="e#2996#4369#0" />
-            <element signature="e#4373#5687#0" />
-            <element signature="e#5691#7279#0" />
-            <element signature="e#7283#8345#0" />
-            <element signature="e#8349#9779#0" />
-            <element signature="e#9783#11308#0" />
-            <element signature="e#11312#13047#0" />
-            <element signature="e#13051#14858#0" />
-            <element signature="e#14862#16289#0" />
-            <element signature="e#16293#16802#0" />
-            <element signature="e#17450#17959#0" />
-            <element signature="e#18775#19284#0" />
-            <element signature="e#20198#20707#0" />
-            <element signature="e#21123#21632#0" />
-            <element signature="e#22417#22926#0" />
-            <element signature="e#23874#24383#0" />
-            <element signature="e#24387#24896#0" />
-            <element signature="e#20002#20150#0" />
-            <element signature="e#25824#26333#0" />
-            <element signature="e#27483#27992#0" />
-            <element signature="e#29139#29648#0" />
-            <element signature="e#30415#30924#0" />
-            <element signature="e#31355#31864#0" />
-            <element signature="e#31883#32392#0" />
-            <element signature="e#33178#33687#0" />
-            <element signature="e#34731#35240#0" />
-            <element signature="e#36208#36717#0" />
-            <element signature="e#37307#37816#0" />
-            <element signature="e#38502#39011#0" />
           </folding>
         </state>
       </provider>
@@ -594,17 +575,36 @@
     <entry file="file://$PROJECT_DIR$/src/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pguard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="29" column="62" lean-forward="true" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
-          <folding>
-            <element signature="n#!!doc;n#createTextElement#0" />
-          </folding>
+        <state relative-caret-position="587">
+          <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/css/bootstrapMDI.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/MaterialDesign-Webfont-master/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/popup/popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
         </state>
       </provider>
     </entry>

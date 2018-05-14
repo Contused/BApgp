@@ -40,6 +40,7 @@ function createTextElement(appSquare){
                     testSpan.textContent = "Funde: " + data[0].infoboxes.length;
                 } else {
                     testSpan.textContent = "Ergebnisse anzeigen";
+                    frame.style.backgroundColor = "#d1d1d1";
                 }
                 frame.appendChild(testSpan);
 
