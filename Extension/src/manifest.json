@@ -10,7 +10,7 @@
   "content_scripts": [
     {
       "matches": ["*://play.google.com/store/*"],
-      "js": ["lib/js/jquery-3.3.1.min.js", "lib/js/bootstrap.min.js", "lib/js/fontawesome-all.js", "pguard.js"],
+      "js": ["lib/js/jquery-3.3.1.min.js", "lib/js/popper.js", "lib/js/bootstrap.min.js", "lib/js/fontawesome-all.js", "pguard.js"],
       "css": ["lib/css/bootstrap.min.css", "lib/css/multiapp.css"]
     }
   ],
