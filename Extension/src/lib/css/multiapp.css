@@ -4,3 +4,16 @@
     right: 7px;
     top: 3px;
 }
+
+.pguard{
+    height: 30px;
+}
+
+
+body .cluster.square-cover.normal .card-list{
+    height: 285px   !important;
+}
+
+body .card.small.square-cover{
+    height: 285px   !important;
+}
