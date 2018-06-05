@@ -23,7 +23,6 @@ var urlTriggerNewAnalysis = "https://139.18.2.209:9595/"+ route +"?api_token="+ 
     +"&trigger_link_guesser="+ "true" + "&trigger_dse_lcm_download="+ "true"
     +"&trigger_dse_mtd_download="+ "true" +"&trigger_dse_inapp_search="+ "true" +"&bundle_id=";
 
-
 function storageAvailable(type) {
     try {
         var storage = window[type],
@@ -59,9 +58,30 @@ function isRedLine(id) {
         return false;
     });
 }
+function castDseToStorageString(appID, dse, ibs){
+    var extractionDate;
+    var ibString = "";
+    var freqCount = "1";
+    if(dse.origin === "dummy"){
+        extractionDate = dse.date_extracted;
+    } else {
+        extractionDate = dse.date_infobox_calculation_finished;
+    }
+    for(var i = 0; i < ibs.length; i++){
+        if(i === (ibs.length - 1)){
+            ibString += ibs[i];
+        } else {
+            ibString += ibs[i] + trennZeichen;
+        }
+    }
+    var storageString = "" + extractionDate + trennZeichen + freqCount + trennZeichen + ibString;
+    localStorage.setItem(appID,storageString);
+}
+function getTextFromIB(IB){
 
+}
 //Erstellt die Header für die Multiapp-Ansicht
-function createTextElement(appSquare) {
+function createTextElement(appSquare, ibJSON) {
     var appID = $(appSquare).attr("data-docid");
     //Wurde eine App-ID gefunden?
     if (appID) {
@@ -71,6 +91,7 @@ function createTextElement(appSquare) {
             var appDataArray = [];
             //Prüft ob bereits Daten im localStorage vorhanden und aktuell sind.
             if(appDataString && appDataString.split(trennZeichen)[0]){
+                console.log("STORAGE GEFUNDEN: ", appDataString);
                 var lastUpdate = new Date(appDataString.split(trennZeichen)[0]);
                 //TODO nach besseren origin fragen?
                 if((lastUpdate.getDate() + 3) >= today.getDate()){
@@ -89,21 +110,20 @@ function createTextElement(appSquare) {
                     method: "POST",
                     success: function (response) {
                         var data = response.data;
-                        console.log(appID, data);
                         var frame = document.createElement('div');
                         frame.classList.add("pguard");
 
                         var testSpan = document.createElement('span');
                         var clickDiv = document.createElement('div');
-                        var useDummy = false;
                         //Wurden bereits DSEs für die App gefunden?
-                        if (data.dses) {
-                            console.log(data.dses);
+                        if (data.dses && data.dses.length > 0) {
+                            console.log("Folgende dses gefunden für:",appID, data.dses);
                             frame.style.backgroundColor = "#adccff";
                             var newestDse = null;
                             //Dummy-DSEs haben Vorang, ansonsten werden die Analysezeiträume in ein Array aufgenommen
                             for (var i = 0; i < data.dses.length; i++) {
                                 if(data.dses[i].origin === "dummy"){
+                                    console.log("dummy gefunden", data.dses[i]);
                                     newestDse = data.dses[i];
                                     break;
                                 }
@@ -113,7 +133,7 @@ function createTextElement(appSquare) {
                                     } else {
                                         var candidateTimeStamp = new Date(data.dses[i].date_infobox_calculation_finished);
                                         var dseTimeStamp = new Date(newestDse.date_infobox_calculation_finished);
-                                        if(candidateTimeStamp.getTime() < dseTimeStamp.getTime()){
+                                        if(candidateTimeStamp.getTime() > dseTimeStamp.getTime()){
                                             newestDse = data.dses[i];
                                         } else if (candidateTimeStamp.getTime() === dseTimeStamp.getTime()){
                                             if(dseOrigins.indexOf(data.dses[i].origin) < dseOrigins.indexOf(newestDse.origin)){
@@ -123,66 +143,31 @@ function createTextElement(appSquare) {
                                     }
                                 }
                             }
-                            //Wurde eine Dummy-DSE gefunden?
-                            if(!useDummy){
-                                dseDates.sort();
-                                console.log("Daten: " + dseDates + " " + dseDates.length);
-                                var sameDseDateCounter = 0;
-                                //Zeitgleiche Analysen?
-                                if(dseDates.length > 1){
-                                    for(var j = 0; j < dseDates.length - 1; j++){
-                                        if(dseDates[j].getTime() !== dseDates[j+1].getTime()){
-                                            sameDseDateCounter = j;
-                                            break;
-                                        }
-                                    }
-                                }
-                                var originDataCandidates = [];
-                                console.log(sameDseDateCounter);
-                                if(sameDseDateCounter > 0){
-                                    //Alle Origins von zeitgleichen Analysen werden aufgenommen
-                                    for(var k = 0; k < data.dses.length; k++){
-                                        var originCandidate = new Date(data.dses[k].date_infobox_calculation_finished);
-                                        if(dseDates[0].getTime() === originCandidate.getTime()){
-                                            originDataCandidates[k] = data.dses[k].origin;
-                                        }
-                                    }
-                                    foundDse:
-                                        //Origins werden nach Priorität abgelaufen
-                                        for(var m = 0; m < dseOrigins.length; m++){
-                                            for(var n = 0; n < originDataCandidates.length; n++){
-                                                if(dseOrigins[m] === originDataCandidates[n]){
-                                                    newestDse = data.dses[n];
-                                                    break foundDse;
-                                                }
-                                            }
-                                        }
-                                } else {
-                                    //Falls ein eindeutiger Zeitpunkt existiert, wird die DSE mit diesem herausgesucht.
-                                    for(var l = 0; l < data.dses.length; l++){
-                                        var candidate = new Date(data.dses[l].date_infobox_calculation_finished);
-                                        if(dseDates[0].getTime() === candidate.getTime()){
-                                            newestDse = data.dses[l];
-                                            break;
-                                        }
-                                    }
-                                }
-                            }
-                            var ibCouter = 0;
+                            var ibs = [];
                             //Dse nicht leer?
                             if(newestDse){
+                                console.log("Wähle: ", newestDse.origin , newestDse.date_infobox_calculation_finished);
                                 for(var o = 0; o < newestDse.infoboxes.length; o++){
                                     // 20 und 28 werden ignoriert
                                     if(newestDse.infoboxes[o].id !== 28 && newestDse.infoboxes[o].id !== 20 && newestDse.infoboxes[o].result.short === "yes"){
                                         // 13 und 21 setzten mehrere Elemente bei den jeweiligen Eigenschaften voraus
                                         if((newestDse.infoboxes[o].id !== 13 && newestDse.infoboxes[o].id !== 21) || (newestDse.infoboxes[o].id === 13 && newestDse.infoboxes[o].result.details.which_device_infos.length > 1) ||
                                             (newestDse.infoboxes[o].id === 21 && newestDse.infoboxes[o].result.details.which_third_parties.length > 1)){
-                                            ibCouter++;
+                                            console.log("ib gefunden:",newestDse.infoboxes[o].id);
+                                            ibs.push("" + newestDse.infoboxes[o].id);
                                         }
                                     }
                                 }
+                                castDseToStorageString(appID,newestDse,ibs);
                             }
-                            testSpan.textContent = "Funde: " + ibCouter;
+                            for(var j = 0; j < ibs.length; j++){
+                                for(i = 0; i < ibJSON.length; i++){
+                                    if(ibs[j] === ibJSON[i].id){
+                                        console.log("IB: " + ibs[j]+ " = " + ibJSON[i].titel);
+                                    }
+                                }
+                            }
+                            testSpan.textContent = "Funde: " + ibs.length;
 
                             var infoHover = document.createElement("i");
                             var popoverWrapper = document.createElement("a");
@@ -286,11 +271,16 @@ function createTextElement(appSquare) {
 
     }
 }
-if(storageAvailable("localStorage")){
-    $(".square-cover").each(function () {
-        createTextElement(this);
-    });
-} else {
-    console.log("kein local Storage verfügbar.")
-}
+
+$.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (ibJSON) {
+    console.log("Lokale Json geladen.");
+    if(storageAvailable("localStorage")){
+        $(".square-cover").each(function () {
+            createTextElement(this, ibJSON);
+        });
+    } else {
+        console.log("kein local Storage verfügbar.")
+    }
+});
+
 
