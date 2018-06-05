@@ -59,9 +59,29 @@ function isRedLine(id) {
         return false;
     });
 }
+function createPanels(appSquare){
+    var dummy = document.createElement("div");
+    $(dummy).load(chrome.extension.getURL("lib/templates/multiAppBanner.html"));
+    appSquare.insertBefore(dummy,appSquare.childNodes[0]);
+    $(dummy).attr({"data-toggle": "popover"});
+    $(dummy).click(function () {
+        $.get(chrome.extension.getURL("lib/templates/showResults.html")).then(function (data) {
+            $('[data-toggle="popover"]').popover({
+                html: true,
+                content: function(){
+                    return data;
+                }
+            });
+        }, function (reason) {
+            console.log("nä"+reason);
+        });
 
+        console.log("HI!");
+        //$(this).load(chrome.extension.getURL("lib/templates/showResults.html")).fadeIn(100);
+    });
+}
 //Erstellt die Header für die Multiapp-Ansicht
-function createTextElement(appSquare) {
+function loadInfoPanels(appSquare) {
     var appID = $(appSquare).attr("data-docid");
     //Wurde eine App-ID gefunden?
     if (appID) {
@@ -79,10 +99,11 @@ function createTextElement(appSquare) {
                     console.log("Aktuallisiere Daten für " + appID);
                 }
             }
+            //Falls Daten vorhanden baue das Element darauß
             if(appDataArray.length > 0){
-
+                createPanels(appDataArray);
+            //Ansonsten lade die Informationen aus dem Backend
             } else {
-
                 console.log("Frage erstmalig Daten ab für " + appID);
                 $.ajax({
                     url: urlWholeDataSetNoRequest + "" +appID,
@@ -90,17 +111,12 @@ function createTextElement(appSquare) {
                     success: function (response) {
                         var data = response.data;
                         console.log(appID, data);
-                        var frame = document.createElement('div');
-                        frame.classList.add("pguard");
 
-                        var testSpan = document.createElement('span');
-                        var clickDiv = document.createElement('div');
-                        var useDummy = false;
                         //Wurden bereits DSEs für die App gefunden?
                         if (data.dses) {
                             console.log(data.dses);
-                            frame.style.backgroundColor = "#adccff";
                             var newestDse = null;
+
                             //Dummy-DSEs haben Vorang, ansonsten werden die Analysezeiträume in ein Array aufgenommen
                             for (var i = 0; i < data.dses.length; i++) {
                                 if(data.dses[i].origin === "dummy"){
@@ -123,52 +139,7 @@ function createTextElement(appSquare) {
                                     }
                                 }
                             }
-                            //Wurde eine Dummy-DSE gefunden?
-                            if(!useDummy){
-                                dseDates.sort();
-                                console.log("Daten: " + dseDates + " " + dseDates.length);
-                                var sameDseDateCounter = 0;
-                                //Zeitgleiche Analysen?
-                                if(dseDates.length > 1){
-                                    for(var j = 0; j < dseDates.length - 1; j++){
-                                        if(dseDates[j].getTime() !== dseDates[j+1].getTime()){
-                                            sameDseDateCounter = j;
-                                            break;
-                                        }
-                                    }
-                                }
-                                var originDataCandidates = [];
-                                console.log(sameDseDateCounter);
-                                if(sameDseDateCounter > 0){
-                                    //Alle Origins von zeitgleichen Analysen werden aufgenommen
-                                    for(var k = 0; k < data.dses.length; k++){
-                                        var originCandidate = new Date(data.dses[k].date_infobox_calculation_finished);
-                                        if(dseDates[0].getTime() === originCandidate.getTime()){
-                                            originDataCandidates[k] = data.dses[k].origin;
-                                        }
-                                    }
-                                    foundDse:
-                                        //Origins werden nach Priorität abgelaufen
-                                        for(var m = 0; m < dseOrigins.length; m++){
-                                            for(var n = 0; n < originDataCandidates.length; n++){
-                                                if(dseOrigins[m] === originDataCandidates[n]){
-                                                    newestDse = data.dses[n];
-                                                    break foundDse;
-                                                }
-                                            }
-                                        }
-                                } else {
-                                    //Falls ein eindeutiger Zeitpunkt existiert, wird die DSE mit diesem herausgesucht.
-                                    for(var l = 0; l < data.dses.length; l++){
-                                        var candidate = new Date(data.dses[l].date_infobox_calculation_finished);
-                                        if(dseDates[0].getTime() === candidate.getTime()){
-                                            newestDse = data.dses[l];
-                                            break;
-                                        }
-                                    }
-                                }
-                            }
-                            var ibCouter = 0;
+
                             //Dse nicht leer?
                             if(newestDse){
                                 for(var o = 0; o < newestDse.infoboxes.length; o++){
@@ -277,7 +248,7 @@ function createTextElement(appSquare) {
 
                     $(clickDiv).click(function () {
                         console.log("HI!");
-                        $(this).load(chrome.extension.getURL("lib/templates/showResults.html")).fadeIn(100);
+                        $(this).load(chrome.extension.getURL("lib/templates/showResults.html"));
                     });
                 },
                 dataType: "json"
@@ -288,9 +259,10 @@ function createTextElement(appSquare) {
 }
 if(storageAvailable("localStorage")){
     $(".square-cover").each(function () {
-        createTextElement(this);
+        createPanels(this);
     });
 } else {
-    console.log("kein local Storage verfügbar.")
+    console.log("kein local Storage verfügbar.");
 }
+$(".JHTxhe").load(chrome.extension.getURL("lib/templates/showResults.html"));
 

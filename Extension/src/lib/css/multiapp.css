@@ -6,9 +6,20 @@
 }
 
 .pguard{
-    height: 30px;
+    height: 20px;
 }
 
+.pguard > span{
+    font-size: 14px;
+}
+
+.popover{
+    min-width: 500px !important;
+}
+
+.badge {
+    font-size: 100% !important;
+}
 
 body .cluster.square-cover.normal .card-list{
     height: 285px   !important;
@@ -16,4 +27,8 @@ body .cluster.square-cover.normal .card-list{
 
 body .card.small.square-cover{
     height: 285px   !important;
+}
+
+.btn {
+    width: 100%;
 }
