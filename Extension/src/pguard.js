@@ -8,20 +8,21 @@ var dseOrigins = ["lcm", "playstore", "link_guesser", "app", "mtd", "manuall"];
 var route = "get_infai_dataset_by_bundle_id";
 var token = "uni_leipzig_ba_prull_2018_01_17_Aihungaem5ie7opheeme";
 var verbosity = "0";
-var priority = "1";
+var priority = "5";
 var trgDsePlay = "false";
 var trgLinkGuess = "false";
 var trgDseLcm = "false";
 var trgDseMtd = "false";
 var trgDseInApp = "false";
-var urlWholeDataSetNoRequest = "https://139.18.2.209:9595/"+ route +"?api_token="+ token
+//var forceExec = "&force_execution=true";
+var urlWholeDataSetNoRequest = "https://infaibackend.pguard-tools.de/"+ route +"?api_token="+ token
     +"&verbosity="+ verbosity +"&priority="+ priority + "&trigger_dse_playstore_download="+ trgDsePlay
     +"&trigger_link_guesser="+ trgLinkGuess + "&trigger_dse_lcm_download="+ trgDseLcm
     +"&trigger_dse_mtd_download="+ trgDseMtd +"&trigger_dse_inapp_search="+ trgDseInApp +"&bundle_id=";
-var urlTriggerNewAnalysis = "https://139.18.2.209:9595/"+ route +"?api_token="+ token
+var urlTriggerNewAnalysis = "https://infaibackend.pguard-tools.de/"+ route +"?api_token="+ token
     +"&verbosity="+ "3" +"&priority="+ priority + "&trigger_dse_playstore_download="+ "true"
     +"&trigger_link_guesser="+ "true" + "&trigger_dse_lcm_download="+ "true"
-    +"&trigger_dse_mtd_download="+ "true" +"&trigger_dse_inapp_search="+ "true" +"&bundle_id=";
+    +"&trigger_dse_mtd_download="+ "true" +"&trigger_dse_inapp_search="+ "true"+ "&bundle_id=";
 
 //Funktion von Mozilla die Browser auf localStorage-Verfügbarkeit überprüft.
 function storageAvailable(type) {
@@ -87,9 +88,11 @@ function castDseToStorageString(dse){
 
 //Baut den entsprechenden Banner für die Multiapp-Ansicht
 function createPanel(appSquare, appDataArray, hasResults){
-
-    // var dummy = document.createElement("div");
-    // $(dummy).load(chrome.extension.getURL("lib/templates/multiAppBanner.html"));
+    var ibs = appDataArray.slice(2,appDataArray.length + 1);
+    var redLine = false;
+    var banner = document.createElement("div");
+    banner.classList.add("pguard");
+    var funde = document.createElement("span");
     // appSquare.insertBefore(dummy,appSquare.childNodes[0]);
     // $(dummy).attr({"data-toggle": "popover"});
 
@@ -100,25 +103,48 @@ function createPanel(appSquare, appDataArray, hasResults){
     //     }
     // }
 
-
     if(hasResults){
         console.log("result works");
-        // $(dummy).click(function () {
-        //     $.get(chrome.extension.getURL("lib/templates/showResults.html")).then(function (data) {
-        //         $('[data-toggle="popover"]').popover({
-        //             html: true,
-        //             content: function(){
-        //                 return data;
-        //             }
-        //         });
-        //     }, function (reason) {
-        //         console.log("nä"+reason);
-        //     });
-        //
-        //     console.log("Popover triggered");
-        // });
+        funde.textContent = "Funde: ";
+
+        var badge = document.createElement("span");
+        badge.classList.add("badge", "badge-secondary", "float-right");
+        badge.textContent = "" + ibs.length;
+        funde.appendChild(badge);
+        for(var j = 0; j < ibs.length; j++){
+            for(var i = 0; i < ibJson.length; i++){
+                if(ibs[j] === ibJson[i].id && ibJson[i].is_red_line === "true"){
+                    redLine = true;
+                    break;
+                }
+            }
+        }
+
+        if(redLine){
+            banner.style.backgroundColor = "#ff8c8c";
+        }else{
+            banner.style.backgroundColor = "#99ccff";
+        }
+
+        $(banner).attr({"data-toggle": "popover"});
+        $(banner).click(function () {
+            $.get(chrome.extension.getURL("lib/templates/showResults.html")).then(function (data) {
+                $('[data-toggle="popover"]').popover({
+                    html: true,
+                    content: function(){
+                        return data;
+                    }
+                });
+            }, function (reason) {
+                console.log("nä"+reason);
+            });
+
+            console.log("Popover triggered");
+        });
     } else {
         console.log("no result works");
+        funde.textContent = "Keine Ergebnisse";
+        banner.style.backgroundColor = "#d1d1d1";
         // testSpan.textContent = "Ergebnisse anzeigen";
         // $(testSpan).click(function () {
         //     console.log("hole Ergebnisse");
@@ -135,8 +161,8 @@ function createPanel(appSquare, appDataArray, hasResults){
         // frame.style.backgroundColor = "#d1d1d1";
     }
 
-    //appSquare.insertBefore(frame, appSquare.childNodes[0]);
-
+    banner.appendChild(funde);
+    appSquare.insertBefore(banner,appSquare.childNodes[0]);
 }
 
 function getNewestDseFromData(data){
@@ -201,6 +227,7 @@ function loadInfoPanels(appSquare) {
                 method: "POST",
                 success: function (response) {
                     var data = response.data;
+                    console.log(data);
                     //Wurden bereits DSEs für die App gefunden?
                     if (data.dses && data.dses.length > 0) {
                         var storageString = castDseToStorageString(getNewestDseFromData(data));
@@ -210,6 +237,14 @@ function loadInfoPanels(appSquare) {
                         createPanel(appSquare, appDataArray, true);
                     } else {
                         console.log("KEINE DSE VORHANDEN", appID);
+                            $.ajax({
+                                url: urlTriggerNewAnalysis,
+                                method: "POST",
+                                success: function(data){
+                                    console.log("Anfrage erfolgreich: " + data);
+                                },
+                                dataType: "json"
+                            });
                         createPanel(appSquare, [], false);
                     }
                 },
