@@ -85,10 +85,85 @@ function castDseToStorageString(dse){
 
     return "" + extractionDate + trennZeichen + freqCount + trennZeichen + ibString;
 }
+function getInfoForIB(attr, ib){
+        for(var i = 0; i < ibJson.length; i++){
+            if(ib === ibJson[i].id){
+                return ibJson[i][attr];
+            }
+        }
+        return "";
+}
+function createPopover(parentElement, ibArray){
+    var eleToRemove;
+    $(parentElement).attr({"data-toggle": "popover"});
+    var cardContainer = document.createElement("div");
+    cardContainer.id = "accordion";
+    for(var i = 0; i < ibArray.length; i++){
+        //Template
+        $(cardContainer).load(chrome.extension.getURL("lib/templates/ibCardTemplate.html"));
 
+        //Titel
+        $(".ibtitel").textContent = getStringFromIB("titel", ibArray[i]);
+
+        //Beschreibung
+        if(getInfoForIB(description,ibArray[i]) === ""){
+            eleToRemove = $(".theader");
+            eleToRemove.parentNode.removeChild(eleToRemove);
+            eleToRemove = $(".description");
+            eleToRemove.parentNode.removeChild(eleToRemove);
+        }else{
+            $(".description").childNodes[0].textContent = getStringFromIB("description", ibArray[i]);
+        }
+
+        //Pro
+        if(getInfoForIB("pros", ibArray[i]).length > 0){
+            var pros = getInfoForIB("pros", ibArray[i]);
+            var proElement = $(".pros");
+            for(var j = 0; j < pros.length; j++){
+                var row = document.createElement("tr");
+                var tData = document.createElement("td");
+                tData.textContent = pros[j]["first_layer"];
+                if(pros[j]["second_layer"] !== 0){
+
+                }
+                row.appendChild(tData);
+                row.insertAfter(proElement.childNodes[proElement.childNodes.length - 1]);
+            }
+
+        } else {
+            eleToRemove = $(".pro");
+            eleToRemove.parentNode.removeChild(eleToRemove);
+        }
+
+
+        //Contra
+        if(getInfoForIB("cons", ibArray[i]).length > 0){
+
+        } else {
+            eleToRemove = $(".contra");
+            eleToRemove.parentNode.removeChild(eleToRemove);
+        }
+    }
+
+    // $(parentElement).click(function () {
+    //     $.get().then(function (data) {
+    //         $('[data-toggle="popover"]').popover({
+    //             html: true,
+    //             content: function(){
+    //                 return data;
+    //             }
+    //         });
+    //     }, function (reason) {
+    //         console.log("nä"+reason);
+    //     });
+    //
+    //     console.log("Popover triggered");
+    // });
+
+}
 //Baut den entsprechenden Banner für die Multiapp-Ansicht
 function createPanel(appSquare, appDataArray, hasResults){
-    var ibs = appDataArray.slice(2,appDataArray.length + 1);
+    var ibArray = appDataArray.slice(2,appDataArray.length + 1);
     var redLine = false;
     var banner = document.createElement("div");
     banner.classList.add("pguard");
@@ -96,53 +171,36 @@ function createPanel(appSquare, appDataArray, hasResults){
     // appSquare.insertBefore(dummy,appSquare.childNodes[0]);
     // $(dummy).attr({"data-toggle": "popover"});
 
-    // for(var j = 0; j < ibs.length; j++){
+    // for(var j = 0; j < ibArray.length; j++){
     //     for(i = 0; i < ibJson.length; i++){
-    //         if(ibs[j] === ibJson[i].id){
+    //         if(ibArray[j] === ibJson[i].id){
     //         }
     //     }
     // }
 
     if(hasResults){
-        console.log("result works");
         funde.textContent = "Funde: ";
 
         var badge = document.createElement("span");
         badge.classList.add("badge", "badge-secondary", "float-right");
-        badge.textContent = "" + ibs.length;
+        badge.textContent = "" + ibArray.length;
         funde.appendChild(badge);
-        for(var j = 0; j < ibs.length; j++){
+        for(var j = 0; j < ibArray.length; j++){
             for(var i = 0; i < ibJson.length; i++){
-                if(ibs[j] === ibJson[i].id && ibJson[i].is_red_line === "true"){
+                if(ibArray[j] === ibJson[i].id && ibJson[i]["is_red_line"] === "true"){
                     redLine = true;
                     break;
                 }
             }
         }
-
         if(redLine){
             banner.style.backgroundColor = "#ff8c8c";
         }else{
             banner.style.backgroundColor = "#99ccff";
         }
 
-        $(banner).attr({"data-toggle": "popover"});
-        $(banner).click(function () {
-            $.get(chrome.extension.getURL("lib/templates/showResults.html")).then(function (data) {
-                $('[data-toggle="popover"]').popover({
-                    html: true,
-                    content: function(){
-                        return data;
-                    }
-                });
-            }, function (reason) {
-                console.log("nä"+reason);
-            });
-
-            console.log("Popover triggered");
-        });
+        createPopover(banner,ibArray);
     } else {
-        console.log("no result works");
         funde.textContent = "Keine Ergebnisse";
         banner.style.backgroundColor = "#d1d1d1";
         // testSpan.textContent = "Ergebnisse anzeigen";
@@ -201,6 +259,7 @@ function loadInfoPanels(appSquare) {
     //Wurde eine App-ID gefunden?
     if (appID) {
         var appDataString = localStorage.getItem(appID);
+        console.log(appID, " hat folgenden Storage String: ", appDataString);
         var appDataArray = [];
         //Prüft ob bereits Daten im localStorage vorhanden und aktuell sind.
         if(appDataString && appDataString.split(trennZeichen)[0]){
@@ -237,14 +296,14 @@ function loadInfoPanels(appSquare) {
                         createPanel(appSquare, appDataArray, true);
                     } else {
                         console.log("KEINE DSE VORHANDEN", appID);
-                            $.ajax({
-                                url: urlTriggerNewAnalysis,
-                                method: "POST",
-                                success: function(data){
-                                    console.log("Anfrage erfolgreich: " + data);
-                                },
-                                dataType: "json"
-                            });
+                            // $.ajax({
+                            //     url: urlTriggerNewAnalysis,
+                            //     method: "POST",
+                            //     success: function(data){
+                            //         console.log("Anfrage erfolgreich: " + data);
+                            //     },
+                            //     dataType: "json"
+                            // });
                         createPanel(appSquare, [], false);
                     }
                 },

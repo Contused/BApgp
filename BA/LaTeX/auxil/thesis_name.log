@@ -1,0 +1,2294 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  18 JUN 2018 14:36
+entering extended mode
+**./thesis_name.tex
+(thesis_name.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls"
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk11.clo"
+File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) ("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucs.sty"
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-global
+.def"
+File: uni-global.def 2013/05/13 UCS: Unicode global data
+)
+\uc@secondtry=\count88
+\uc@combtoks=\toks14
+\uc@combtoksb=\toks15
+\uc@temptokena=\toks16
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.
+sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\utf8x.def"
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.
+sty"
+Package: babel 2018/02/14 3.18 The Babel package
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch
+.def"
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.
+cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\g
+erman.ldf"
+Language: german 2016/11/02 v2.9 German support for babel (traditional orthogra
+phy)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\g
+ermanb.ldf"
+Language: germanb 2016/11/02 v2.9 German support for babel (traditional orthogr
+aphy)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.
+def"
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count89
+\U@D=\dimen103
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbab
+el.def")
+\bbl@dirlevel=\count90
+)
+Package babel Info: Making " an active character on input line 139.
+)))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquo
+tes.sty"
+Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etool
+box.sty"
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count91
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyva
+l.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+\csq@reset=\count92
+\csq@gtype=\count93
+\csq@glevel=\count94
+\csq@qlevel=\count95
+\csq@maxlvl=\count96
+\csq@tshold=\count97
+\csq@ltx@everypar=\toks20
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquo
+tes.def"
+File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquo
+tes.cfg"
+File: csquotes.cfg 
+)
+Package csquotes Info: Redefining alias 'german' -> 'german/guillemets'.
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\libe
+rtine.sty"
+Package: libertine 2018/01/03 (Bob Tennent) Supports Libertine and Biolinum fon
+ts for all LaTeX engines.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxe
+tex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifl
+uatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyva
+l.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkey
+val.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvu
+tils.tex"
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+)
+\XKV@depth=\count98
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.
+sty"
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.de
+f"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mweights\mweig
+hts.sty"
+Package: mweights 2017/03/30 (Bob Tennent) Support package for multiple-weight 
+font packages. 
+LaTeX Info: Redefining \bfseries on input line 22.
+LaTeX Info: Redefining \mdseries on input line 30.
+LaTeX Info: Redefining \rmfamily on input line 38.
+LaTeX Info: Redefining \sffamily on input line 66.
+LaTeX Info: Redefining \ttfamily on input line 94.
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.s
+ty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fontaxes\fonta
+xes.sty"
+Package: fontaxes 2014/03/23 v1.0d Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \scshape on input line 37.
+)
+LaTeX Info: Redefining \oldstylenums on input line 490.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\LinL
+ibertine_I.tex"))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bera\beramono.
+sty"
+Package: beramono 2004/01/31 (WaS)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.st
+y"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count99
+\float@exts=\toks23
+\float@box=\box26
+\@float@everytoks=\toks24
+\@floatcapt=\box27
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.st
+y"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen104
+\extrarowheight=\dimen105
+\NC@list=\toks25
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\captio
+n.sty"
+Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\captio
+n3.sty"
+Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen106
+\captionmargin@=\dimen107
+\captionwidth=\dimen108
+\caption@tempdima=\dimen109
+\caption@indent=\dimen110
+\caption@parindent=\dimen111
+\caption@hangindent=\dimen112
+)
+\c@ContinuedFloat=\count100
+Package caption Info: float package is loaded.
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancy
+hdr.sty"
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip45
+\f@nch@O@elh=\skip46
+\f@nch@O@erh=\skip47
+\f@nch@O@olh=\skip48
+\f@nch@O@orh=\skip49
+\f@nch@O@elf=\skip50
+\f@nch@O@erf=\skip51
+\f@nch@O@olf=\skip52
+\f@nch@O@orf=\skip53
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.st
+y"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multi
+row.sty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip54
+\multirow@cntb=\count101
+\multirow@dima=\skip55
+\bigstrutjot=\dimen113
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\micr
+otype.sty"
+Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
+\MT@toks=\toks26
+\MT@count=\count102
+LaTeX Info: Redefining \textls on input line 793.
+\MT@outer@kern=\dimen114
+LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
+\MT@listname@count=\count103
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\micr
+otype-pdftex.def"
+File: microtype-pdftex.def 2018/01/14 v2.7a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 913.
+LaTeX Info: Redefining \lslig on input line 913.
+\MT@outer@space=\skip56
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\micr
+otype.cfg"
+File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\bookt
+abs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen115
+\lightrulewidth=\dimen116
+\cmidrulewidth=\dimen117
+\belowrulesep=\dimen118
+\belowbottomsep=\dimen119
+\aboverulesep=\dimen120
+\abovetopsep=\dimen121
+\cmidrulesep=\dimen122
+\cmidrulekern=\dimen123
+\defaultaddspace=\dimen124
+\@cmidla=\count104
+\@cmidlb=\count105
+\@aboverulesep=\dimen125
+\@belowrulesep=\dimen126
+\@thisruleclass=\count106
+\@lastruleclass=\count107
+\@thisrulewidth=\dimen127
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumi
+tem.sty"
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip57
+\enit@outerparindent=\dimen128
+\enit@toks=\toks27
+\enit@inbox=\box28
+\enitdp@description=\count108
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmat
+h.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip58
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstex
+t.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen
+.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks28
+\ex@=\dimen129
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy
+.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen130
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn
+.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count109
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count110
+\leftroot@=\count111
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count112
+\DOTSCASE@=\count113
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen131
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count114
+\c@MaxMatrixCols=\count115
+\dotsspace@=\muskip10
+\c@parentequation=\count116
+\dspbrk@lvl=\count117
+\tag@help=\toks29
+\row@=\count118
+\column@=\count119
+\maxfields@=\count120
+\andhelp@=\toks30
+\eqnshift@=\dimen132
+\alignsep@=\dimen133
+\tagshift@=\dimen134
+\tagwidth@=\dimen135
+\totwidth@=\dimen136
+\lineht@=\dimen137
+\@envbody=\toks31
+\multlinegap=\skip59
+\multlinetaggap=\skip60
+\mathdisplay@stack=\toks32
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfo
+nts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssy
+mb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.
+sty"
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks33
+\thm@bodyfont=\toks34
+\thm@headfont=\toks35
+\thm@notefont=\toks36
+\thm@headpunct=\toks37
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
+\dth@everypar=\toks38
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\units\units.st
+y"
+Package: units 1998/08/04 v0.9b Typesetting units
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\units\nicefrac
+.sty"
+Package: nicefrac 1998/08/04 v0.9b Nice fractions
+\L@UnitsRaiseDisplaystyle=\skip64
+\L@UnitsRaiseTextstyle=\skip65
+\L@UnitsRaiseScriptstyle=\skip66
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\math
+tools.sty"
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
+"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count121
+\calc@Bcount=\count122
+\calc@Adimen=\dimen138
+\calc@Bdimen=\dimen139
+\calc@Askip=\skip67
+\calc@Bskip=\skip68
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count123
+\calc@Cskip=\skip69
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhse
+tup.sty"
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count124
+\l_MT_multwidth_dim=\dimen140
+\origjot=\skip70
+\l_MT_shortvdotswithinadjustabove_dim=\dimen141
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen142
+\l_MT_above_intertext_sep=\dimen143
+\l_MT_below_intertext_sep=\dimen144
+\l_MT_above_shortintertext_sep=\dimen145
+\l_MT_below_shortintertext_sep=\dimen146
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graph
+icx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graph
+ics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.
+sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\g
+raphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\p
+dftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grffi
+le.sty"
+Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifp
+df.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvopt
+ions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltx
+cmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvs
+etkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\inf
+warerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ete
+xcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdf
+texcmds.sty"
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grffile Info: Option `multidot' is set to `true'.
+Package grffile Info: Option `extendedchars' is set to `false'.
+Package grffile Info: Option `space' is set to `true'.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcap
+tion.sty"
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
+\c@subfigure=\count125
+\c@subtable=\count126
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color
+.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\c
+olor.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\dvips
+nam.def"
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendla
+yer\tikz.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer
+\pgf.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\
+pgfrcs.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfutil-common.tex"
+\pgfutil@everybye=\toks39
+\pgfutil@tempdima=\dimen149
+\pgfutil@tempdimb=\dimen150
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfutil-common-lists.tex"))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfutil-latex.def"
+\pgfutil@abb=\box31
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.st
+y"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer
+\pgfcore.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlaye
+r\pgfsys.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemla
+yer\pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks40
+\pgfkeys@temptoks=\toks41
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks42
+))
+\pgf@x=\dimen151
+\pgf@y=\dimen152
+\pgf@xa=\dimen153
+\pgf@ya=\dimen154
+\pgf@xb=\dimen155
+\pgf@yb=\dimen156
+\pgf@xc=\dimen157
+\pgf@yc=\dimen158
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count127
+\c@pgf@countb=\count128
+\c@pgf@countc=\count129
+\c@pgf@countd=\count130
+\t@pgf@toka=\toks43
+\t@pgf@tokb=\toks44
+\t@pgf@tokc=\toks45
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemla
+yer\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemla
+yer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemla
+yer\pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemla
+yer\pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count131
+\pgfsyssoftpath@bigbuffer@items=\count132
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemla
+yer\pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.
+sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\c
+olor.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+math.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathcalc.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathutil.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathparser.code.tex"
+\pgfmath@dimen=\dimen159
+\pgfmath@count=\count133
+\pgfmath@box=\box32
+\pgfmath@toks=\toks46
+\pgfmath@stack@operand=\toks47
+\pgfmath@stack@operation=\toks48
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.basic.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.trigonometric.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.random.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.comparison.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.base.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.round.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.misc.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.integerarithmetics.code.tex")))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count134
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen160
+\pgf@picmaxx=\dimen161
+\pgf@picminy=\dimen162
+\pgf@picmaxy=\dimen163
+\pgf@pathminx=\dimen164
+\pgf@pathmaxx=\dimen165
+\pgf@pathminy=\dimen166
+\pgf@pathmaxy=\dimen167
+\pgf@xx=\dimen168
+\pgf@xy=\dimen169
+\pgf@yx=\dimen170
+\pgf@yy=\dimen171
+\pgf@zx=\dimen172
+\pgf@zy=\dimen173
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen174
+\pgf@path@lasty=\dimen175
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen176
+\pgf@shorten@start@additional=\dimen177
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box33
+\pgf@hbox=\box34
+\pgf@layerbox@main=\box35
+\pgf@picture@serial@count=\count135
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen178
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen179
+\pgf@pt@y=\dimen180
+\pgf@pt@temp=\dimen181
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen182
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen183
+\pgf@sys@shading@range@num=\count136
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box36
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\
+pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box37
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\
+pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibil
+ity\pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen184
+\pgf@nodesepend=\dimen185
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibil
+ity\pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\
+pgffor.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\
+pgfkeys.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfkeys.code.tex"))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfma
+th.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+math.code.tex"))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+math.code.tex")
+\pgffor@iter=\dimen186
+\pgffor@skip=\dimen187
+\pgffor@stack=\toks49
+\pgffor@toks=\toks50
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontend
+layer\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\librarie
+s\pgflibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count137
+\pgfplotmarksize=\dimen188
+)
+\tikz@lastx=\dimen189
+\tikz@lasty=\dimen190
+\tikz@lastxsaved=\dimen191
+\tikz@lastysaved=\dimen192
+\tikzleveldistance=\dimen193
+\tikzsiblingdistance=\dimen194
+\tikz@figbox=\box38
+\tikz@figbox@bg=\box39
+\tikz@tempbox=\box40
+\tikz@tempbox@bg=\box41
+\tikztreelevel=\count138
+\tikznumberofchildren=\count139
+\tikznumberofcurrentchild=\count140
+\tikz@fig@count=\count141
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\
+pgfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count142
+\pgfmatrixcurrentcolumn=\count143
+\pgf@matrix@numberofcolumns=\count144
+)
+\tikz@expandcount=\count145
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontend
+layer\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\color
+tbl.sty"
+Package: colortbl 2018/05/02 v1.0c Color table columns (DPC)
+\everycr=\toks51
+\minrowclearance=\skip71
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyper
+ref.sty"
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hob
+sub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hob
+sub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxho
+ok.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen195
+\Hy@linkcounter=\count146
+\Hy@pagecounter=\count147
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1en
+c.def"
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count148
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyper
+ref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `final' set `true' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count149
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen196
+\Fld@menulength=\count150
+\Field@Width=\dimen197
+\Fld@charsize=\dimen198
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count151
+\c@Item=\count152
+\c@Hfootnote=\count153
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdft
+ex.def"
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count154
+\c@bookmark@seq@number=\count155
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerun
+filecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip72
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listi
+ngs.sty"
+\lst@mode=\count156
+\lst@gtempboxa=\box42
+\lst@token=\toks52
+\lst@length=\count157
+\lst@currlwidth=\dimen199
+\lst@column=\count158
+\lst@pos=\count159
+\lst@lostspace=\dimen256
+\lst@width=\dimen257
+\lst@newlines=\count160
+\lst@lineno=\count161
+\lst@maxwidth=\dimen258
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmi
+sc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count162
+\lst@skipnumbers=\count163
+\lst@framebox=\box43
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listi
+ngs.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\a
+lgpseudocode.sty"
+Package: algpseudocode 
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\a
+lgorithmicx.sty"
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count164
+\c@ALG@rem=\count165
+\c@ALG@nested=\count166
+\ALG@tlm=\skip73
+\ALG@thistlm=\skip74
+\c@ALG@Lnr=\count167
+\c@ALG@blocknr=\count168
+\c@ALG@storecount=\count169
+\c@ALG@tmpcounter=\count170
+\ALG@tmplength=\skip75
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\alg
+orithm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks53
+\c@algorithm=\count171
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\todonotes\todo
+notes.sty"
+Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontend
+layer\tikz\libraries\tikzlibrarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+\c@@todonotes@numberoftodonotes=\count172
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hvfloat\hvfloa
+t.sty"
+Package: hvfloat 2017/01/28 rotating of floating objects
+ `hvfloat' v1.2b, 2017/12/22 (Herbert Voss)
+\hvObjectWidth=\skip76
+\hvCapWidth=\skip77
+\hvMaxCapWidth=\skip78
+\hvObjectBox=\box44
+\hvCaptionBox=\box45
+\hvOBox=\box46
+\hvAboveCaptionSkip=\skip79
+\hvBelowCaptionSkip=\skip80
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscap
+e.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\pdfls
+cape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ltxmisc\parski
+p.sty"
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\alltt.sty
+"
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.
+sty"
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count173
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\changepage\cha
+ngepage.sty"
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count174
+\cp@tempcnt=\count175
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\title
+sec.sty"
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box47
+\beforetitleunit=\skip81
+\aftertitleunit=\skip82
+\ttl@plus=\dimen259
+\ttl@minus=\dimen260
+\ttl@toksa=\toks54
+\titlewidth=\dimen261
+\titlewidthlast=\dimen262
+\titlewidthfirst=\dimen263
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\natbib.
+sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip83
+\bibsep=\skip84
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count176
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstla
+ng1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'german'.
+ (thesis_name.aux)
+\openout1 = `thesis_name.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 171.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 171.
+
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd
+"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 171.
+LaTeX Font Info:    ... okay on input line 171.
+LaTeX Font Info:    Try loading font information for OT1+LinuxLibertineT-TLF on
+ input line 171.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\ot1l
+inuxlibertinet-tlf.fd"
+File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/
+LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 171.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucsencs.de
+f"
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+)
+\c@mv@tabular=\count177
+\c@mv@boldtabular=\count178
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Info: Redefining \microtypecontext on input line 171.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pd
+f.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count179
+\scratchdimen=\dimen264
+\scratchbox=\box48
+\nofMPsegments=\count180
+\nofMParguments=\count181
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count182
+\MPscratchDim=\dimen265
+\MPnumerator=\count183
+\makeMPintoPDFobject=\count184
+\everyMPtoPDFconversion=\toks56
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epsto
+pdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfex
+t.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+) ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box49
+Package hyperref Info: Link coloring OFF on input line 171.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\namer
+ef.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\get
+titlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count185
+)
+LaTeX Info: Redefining \ref on input line 171.
+LaTeX Info: Redefining \pageref on input line 171.
+LaTeX Info: Redefining \nameref on input line 171.
+ (thesis_name.out) (thesis_name.out)
+\@outlinefile=\write4
+\openout4 = `thesis_name.out'.
+
+\c@lstlisting=\count186
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 181.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 24.88pt on input line 181.
+LaTeX Font Info:    Try loading font information for OT1+LinuxBiolinumT-TLF on 
+input line 181.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\ot1l
+inuxbiolinumt-tlf.fd"
+File: OT1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/L
+inuxBiolinumT-TLF.
+)
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 24.88pt on input line 181.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LinuxBiolinumT-TLF' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 181.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 181.
+<./pics/siegel.png, id=154, 564.1075pt x 561.09625pt>
+File: ./pics/siegel.png Graphic file (type png)
+<use ./pics/siegel.png>
+Package pdftex.def Info: ./pics/siegel.png  used on input line 186.
+(pdftex.def)             Requested size: 113.81102pt x 113.20184pt.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 189.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 189.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
+(Font)              scaled to size 10.95pt on input line 193.
+Package microtype Info: Character `013' is missing
+(microtype)             in font `OT1/LinuxLibertineT-TLF/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
+(Font)              scaled to size 17.28pt on input line 193.
+Package microtype Info: Character `013' is missing
+(microtype)             in font `OT1/LinuxLibertineT-TLF/m/sc/17.28'.
+(microtype)             Ignoring protrusion settings for this character.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt-c
+mr.cfg"
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 204.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.
+fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt-m
+sa.cfg"
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 204.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.
+fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt-m
+sb.cfg"
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 205.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 205.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 225.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 225.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 225.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 225.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 225.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 225.
+ [1
+
+
+{C:/Users/Alexander/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./pics/
+siegel.png>]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 226.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 226.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 226.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 226.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 226.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 226.
+ [2
+
+]
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 24.88pt on input line 235.
+LaTeX Font Info:    Try loading font information for OT1+fvm on input line 249.
+
+LaTeX Font Info:    No file OT1fvm.fd. on input line 249.
+
+
+LaTeX Font Warning: Font shape `OT1/fvm/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 249.
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fvm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 257.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 257.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 257.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 257.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 257.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 257.
+[1
+
+]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 257.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 257.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 257.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 257.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 257.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 257.
+ [2
+
+] (thesis_name.toc
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 33.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 33.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 33.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 33.
+ [3])
+\tf@toc=\write5
+\openout5 = `thesis_name.toc'.
+
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 259.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 259.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 259.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 259.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 259.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 259.
+ [4] (01_introduction.tex
+Kapitel 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 20.74pt on input line 1.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 20.74pt on input line 1.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 8.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 8.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 8.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 20.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 20.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 20.
+) (02_preliminaries.tex
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Preliminaries} [1
+
+
+]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Preliminaries} [2
+
+]
+Kapitel 2.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 10.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 10.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 10.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 16.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 16.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 23.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 23.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 23.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 28.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 28.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 28.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 28.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 28.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 33.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 33.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 33.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 33.
+[3]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 33.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 33.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 38.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 38.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 43.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 43.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 43.
+) (03_mainpart_1.tex
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+ [4]
+Kapitel 3.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 8.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 8.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 24.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 24.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 31.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 31.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 31.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 36.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 36.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 36.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 36.
+[5
+
+]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 36.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 36.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 42.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 42.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 50.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 50.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 50.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 61.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 61.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 61.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 68.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 68.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 73.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 73.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 73.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 79.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 79.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 79.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 83.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 83.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 83.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 83.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 83.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 83.
+ [6]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 87.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 87.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 87.
+) (04_mainpart_2.tex
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+ [7]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+ [8
+
+]
+Kapitel 4.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 5.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 5.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 5.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 38.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 38.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 42.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 42.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 42.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 42.
+[9]
+<./pics/mvn_appendix_iso.png, id=297, 1681.482pt x 991.705pt>
+File: ./pics/mvn_appendix_iso.png Graphic file (type png)
+<use ./pics/mvn_appendix_iso.png>
+Package pdftex.def Info: ./pics/mvn_appendix_iso.png  used on input line 54.
+(pdftex.def)             Requested size: 360.0pt x 212.31963pt.
+File: ./pics/mvn_appendix_iso.png Graphic file (type png)
+<use ./pics/mvn_appendix_iso.png>
+Package pdftex.def Info: ./pics/mvn_appendix_iso.png  used on input line 64.
+(pdftex.def)             Requested size: 108.0011pt x 63.69135pt.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 65.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 65.
+File: ./pics/mvn_appendix_iso.png Graphic file (type png)
+<use ./pics/mvn_appendix_iso.png>
+Package pdftex.def Info: ./pics/mvn_appendix_iso.png  used on input line 71.
+(pdftex.def)             Requested size: 108.0011pt x 63.69135pt.
+File: ./pics/mvn_appendix_iso.png Graphic file (type png)
+<use ./pics/mvn_appendix_iso.png>
+Package pdftex.def Info: ./pics/mvn_appendix_iso.png  used on input line 78.
+(pdftex.def)             Requested size: 108.0011pt x 63.69135pt.
+File: ./pics/mvn_appendix_iso.png Graphic file (type png)
+<use ./pics/mvn_appendix_iso.png>
+Package pdftex.def Info: ./pics/mvn_appendix_iso.png  used on input line 91.
+(pdftex.def)             Requested size: 284.52756pt x 167.80075pt.
+<./pics/mvn_appendix_bird.png, id=298, 1619.651pt x 1003.75pt>
+File: ./pics/mvn_appendix_bird.png Graphic file (type png)
+<use ./pics/mvn_appendix_bird.png>
+Package pdftex.def Info: ./pics/mvn_appendix_bird.png  used on input line 97.
+(pdftex.def)             Requested size: 284.52756pt x 176.33278pt.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 120.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 120.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 120.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 120.
+ [10 <./pics/mvn_appendix_iso.png>]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 120.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 120.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 120.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 120.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 120.
+ [11 <./pics/mvn_appendix_bird.png>]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 121.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 121.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 121.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 162.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 162.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 162.
+
+
+Package natbib Warning: Citation `adac_night' on page 12 undefined on input lin
+e 164.
+
+
+Package natbib Warning: Citation `mitchell1997' on page 12 undefined on input l
+ine 164.
+
+
+Package natbib Warning: Citation `julier97' on page 12 undefined on input line 
+164.
+
+
+Package natbib Warning: Citation `Jin2003' on page 12 undefined on input line 1
+64.
+
+
+Package natbib Warning: Citation `adma' on page 12 undefined on input line 164.
+
+
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 165.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 165.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 165.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 165.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 165.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 165.
+[12]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 167.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 167.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 167.
+LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
+ input line 182.
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\ts1l
+inuxlibertinet-tlf.fd"
+File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
+LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 182.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 221.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 221.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 221.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 221.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 221.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 221.
+ [13]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 270.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 270.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 270.
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 288.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 290.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 290.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 290.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 290.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 290.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 290.
+ [14]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 298.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 298.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 298.
+
+Overfull \hbox (9.23862pt too wide) in paragraph at lines 362--362
+[]$  \OT1/fvm/m/n/10.95 + [][] [] \OMS/cmsy/m/n/10.95 g$|  
+ []
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 362.
+See the caption package documentation for explanation.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 363.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 363.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 363.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 363.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 363.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 363.
+ [15]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 364.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 364.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 364.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 364.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 364.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 364.
+
+[16]) (05_finaldiscussion.tex
+Kapitel 5.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 19.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 19.
+) (06_appendix.tex
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+ [17
+
+
+]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+ [18
+
+]
+Kapitel 6.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 6.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 12.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 12.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 12.
+[19]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 13.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 13.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 16.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 18.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 18.
+ (simple_kalman_example.m
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 6.0pt on input line 1.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 6.0pt on input line 6.
+LaTeX Font Info:    Try loading font information for OMS+LinuxLibertineT-TLF on
+ input line 10.
+LaTeX Font Info:    No file OMSLinuxLibertineT-TLF.fd. on input line 10.
+
+
+LaTeX Font Warning: Font shape `OMS/LinuxLibertineT-TLF/m/it' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbackslash' on input line 10.
+
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 20.
+)
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 18.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 18.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 18.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 18.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 18.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 18.
+ [20])
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 294.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 294.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 294.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 294.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 294.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 294.
+ [21
+
+
+]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 294.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 294.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 294.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 294.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 294.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 294.
+ [22
+
+] (thesis_name.lof)
+\tf@lof=\write6
+\openout6 = `thesis_name.lof'.
+
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 299.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 299.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 299.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 299.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 299.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 299.
+ [23]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 299.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 299.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 299.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 299.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 299.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 299.
+ [24
+
+]
+(C:/Users\Alexander\Desktop\Main\Studium\BApgp\BA\LaTeX\auxil\thesis_name.bbl
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 16.
+)
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 306.
+
+[25
+
+]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 306.
+ [26
+
+]
+
+Package natbib Warning: There were undefined citations.
+
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 316.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 316.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 316.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 316.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 316.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 316.
+[27
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
+ (thesis_name.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
+Package rerunfilecheck Info: File `thesis_name.out' has not changed.
+(rerunfilecheck)             Checksum: 904565EB95CE08A0CE49FBD2DDF00B2A;2239.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 28426 strings out of 493305
+ 510333 string characters out of 3128062
+ 1064644 words of memory out of 3000000
+ 31057 multiletter control sequences out of 15000+200000
+ 62885 words of font info for 171 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,19n,92p,802b,1935s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{subsection.2.4.2} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.4.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.2.3.2.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.3.2} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.2.1.3.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+{C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine
+/lbtn_kijugd.enc}{C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/en
+c/dvips/libertine/lbtn_naooyc.enc}{C:/Users/Alexander/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/Alexander/AppData/
+Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}{C:/Users/A
+lexander/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_n3gv2
+c.enc}{C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lib
+ertine/lbtn_edcawa.enc}<C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/Alexander/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/Al
+exander/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLiber
+tineTB.pfb><C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/libertine/LinLibertineTI.pfb><C:/Users/Alexander/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Alexander/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/A
+lexander/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb><C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmi8.pfb><C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Alexander/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Alexander/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
+Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+6.pfb><C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb>
+Output written on C:/Users\Alexander\Desktop\Main\Studium\BApgp\BA\LaTeX\out\th
+esis_name.pdf (33 pages, 720966 bytes).
+PDF statistics:
+ 581 PDF objects out of 1000 (max. 8388607)
+ 189 named destinations out of 1000 (max. 500000)
+ 34628 words of extra memory for PDF output out of 35830 (max. 10000000)
+
