@@ -3,8 +3,8 @@
  */
 var today = new Date();
 var ibJson = [];
-var ibCardTemplate;
-var innerCollapseTemplate;
+var ibCardTemplate = document.createElement("div");
+var innerCollapseTemplate = document.createElement("div");
 var trennZeichen = "§";
 var dseOrigins = ["lcm", "playstore", "link_guesser", "app", "mtd", "manuall"];
 var route = "get_infai_dataset_by_bundle_id";
@@ -101,122 +101,107 @@ function createPopover(parentElement, ibArray){
     var cardContainer = document.createElement("div");
     cardContainer.id = "accordion";
     for(var i = 0; i < ibArray.length; i++){
+
         //Template
-        (function(i) {
-            $(cardContainer).load(chrome.extension.getURL("lib/templates/ibCardTemplate.html"), function () {
-                //Titel
-                var titel = cardContainer.getElementsByClassName("ibtitel")[0];
-                titel.innerText = getInfoForIB("titel", ibArray[i]);
+        cardContainer.appendChild(ibCardTemplate.cloneNode(true));
+
+        //Titel
+        var titel = cardContainer.getElementsByClassName("ibtitel")[0];
+        titel.innerText = getInfoForIB("titel", ibArray[i]);
 
 
-                //Einzigartige collapse-id
-                $(titel).attr("href", "#collapse" + i);
-                $(titel.parentNode.parentNode.children[1]).attr("id", "collapse" + i);
-                console.log("|Titel: ",titel);
+        //Einzigartige collapse-id
+        $(titel).attr("href", "#collapse" + i);
+        $(titel.parentNode.parentNode.children[1]).attr("id", "collapse" + i);
 
-                //Beschreibungs
-                if (getInfoForIB("description", ibArray[i]) === "") {
-                    eleToRemove = cardContainer.getElementsByClassName("theader")[0];
-                    eleToRemove.parentNode.removeChild(eleToRemove);
-                    eleToRemove = cardContainer.getElementsByClassName("description")[0];
-                    eleToRemove.parentNode.removeChild(eleToRemove);
+        //Beschreibungs
+        if (getInfoForIB("description", ibArray[i]) === "") {
+            eleToRemove = cardContainer.getElementsByClassName("theader")[0];
+            eleToRemove.parentNode.removeChild(eleToRemove);
+            eleToRemove = cardContainer.getElementsByClassName("description")[0];
+            eleToRemove.parentNode.removeChild(eleToRemove);
+        } else {
+            cardContainer.getElementsByClassName("description")[0].children[0].innerText = getInfoForIB("description", ibArray[i]);
+        }
+
+
+        //Pro
+        if (getInfoForIB("pros", ibArray[i]).length > 0) {
+            var pros = getInfoForIB("pros", ibArray[i]);
+            var proElement = cardContainer.getElementsByClassName("pro")[0];
+            for (var j = 0; j < pros.length; j++) {
+                var row = document.createElement("tr");
+                var tData = document.createElement("td");
+                if (pros[j]["second_layer"] !== "") {
+                    tData.appendChild(innerCollapseTemplate.cloneNode(true));
+                    var firstLayerElement = tData.getElementsByClassName("firstlayer")[0];
+                    $(firstLayerElement).attr({"href": "#collapseSecondPro" + i});
+                    firstLayerElement.innerText = pros[j]["first_layer"];
+                    $(firstLayerElement.parentNode.parentNode.parentNode).attr("id","accordionSecondPro" + j + "_" + i);
+                    var secondLayerElement = firstLayerElement.parentNode.nextElementSibling;
+                    $(secondLayerElement).attr({
+                        "data-parent": ("#accordionSecondPro" + j + "_" + i),
+                        "id": "collapseSecondPro" + i
+                    });
+                    secondLayerElement.children[0].innerText = pros[j]["second_layer"];
                 } else {
-                    cardContainer.getElementsByClassName("description")[0].children[0].innerText = getInfoForIB("description", ibArray[i]);
-                    console.log("|Beschreibung: ", cardContainer.getElementsByClassName("description")[0].children[0]);
+                    tData.innerText = pros[j]["first_layer"];
                 }
 
+                row.appendChild(tData);
+                $(row).insertAfter(proElement.children[proElement.children.length - 1]);
+            }
 
-                //Pro
-                if (getInfoForIB("pros", ibArray[i]).length > 0) {
-                    var pros = getInfoForIB("pros", ibArray[i]);
-                    var proElement = cardContainer.getElementsByClassName("pro")[0];
-                    for (var j = 0; j < pros.length; j++) {
-                        var row = document.createElement("tr");
-                        var tData = document.createElement("td");
+        } else {
+            eleToRemove = cardContainer.getElementsByClassName("pro")[0];
+            eleToRemove.parentNode.removeChild(eleToRemove);
+        }
 
-                        if (pros[j]["second_layer"] !== "") {
-                            (function (i,j,tData) {
-                                $(tData).load(chrome.extension.getURL("lib/templates/innerCollapseTemplate.html"), function () {
-                                    var firstLayerElement = tData.getElementsByClassName("firstlayer")[0];
-                                    $(firstLayerElement).attr({"href": "#collapseSecondPro" + i});
-                                    firstLayerElement.innerText = pros[j]["first_layer"];
-                                    $(firstLayerElement.parentNode.parentNode.parentNode).attr("id","accordionSecondPro" + j + "_" + i);
-                                    var secondLayerElement = firstLayerElement.parentNode.nextElementSibling;
-                                    $(secondLayerElement).attr({
-                                        "data-parent": ("#accordionSecondPro" + j + "_" + i),
-                                        "id": "collapseSecondPro" + i
-                                    });
-                                    secondLayerElement.children[0].innerText = pros[j]["second_layer"];
-                                });
-                            })(i,j,tData);
 
-                        } else {
-                            tData.innerText = pros[j]["first_layer"];
-                        }
-
-                        row.appendChild(tData);
-                        $(row).insertAfter(proElement.children[proElement.children.length - 1]);
-                    }
-                    console.log("| Pro: ",proElement);
+        //Contra
+        if (getInfoForIB("cons", ibArray[i]).length > 0) {
+            var cons = getInfoForIB("cons", ibArray[i]);
+            var contraElement = cardContainer.getElementsByClassName("contra")[0];
+            for (j = 0; j < cons.length; j++) {
+                var rowCon = document.createElement("tr");
+                var tDataCon = document.createElement("td");
+                if (cons[j]["second_layer"] !== "") {
+                    tDataCon.appendChild(innerCollapseTemplate.cloneNode(true));
+                    firstLayerElement = tDataCon.getElementsByClassName("firstlayer")[0];
+                    $(firstLayerElement).attr({"href": "#collapseSecondCon" + i});
+                    firstLayerElement.innerText = cons[j]["first_layer"];
+                    $(firstLayerElement.parentNode.parentNode.parentNode).attr("id","accordionSecondCon" + j + "_" + i);
+                    secondLayerElement = firstLayerElement.parentNode.nextElementSibling;
+                    $(secondLayerElement).attr({
+                        "data-parent": ("#accordionSecondCon" + j + "_" + i),
+                        "id": "collapseSecondCon" + i
+                    });
+                    secondLayerElement.children[0].innerText = cons[j]["second_layer"];
 
                 } else {
-                    eleToRemove = cardContainer.getElementsByClassName("pro")[0];
-                    eleToRemove.parentNode.removeChild(eleToRemove);
-                    console.log("| Kein Pro");
+                    tDataCon.innerText = cons[j]["first_layer"];
                 }
 
+                rowCon.appendChild(tDataCon);
+                $(rowCon).insertAfter(contraElement.children[contraElement.children.length - 1]);
+            }
 
-                //Contra
-                if (getInfoForIB("cons", ibArray[i]).length > 0) {
-                    var cons = getInfoForIB("cons", ibArray[i]);
-                    var contraElement = cardContainer.getElementsByClassName("contra")[0];
-                    for (j = 0; j < cons.length; j++) {
-                        var rowCon = document.createElement("tr");
-                        var tDataCon = document.createElement("td");
-                        if (cons[j]["second_layer"] !== "") {
-                            (function(i,j, tDataCon){
-                                $(tDataCon).load(chrome.extension.getURL("lib/templates/innerCollapseTemplate.html"), function () {
-                                    var firstLayerElement = tDataCon.getElementsByClassName("firstlayer")[0];
-                                    $(firstLayerElement).attr({"href": "#collapseSecondCon" + i});
-                                    firstLayerElement.innerText = cons[j]["first_layer"];
-                                    $(firstLayerElement.parentNode.parentNode.parentNode).attr("id","accordionSecondCon" + j + "_" + i);
-                                    var secondLayerElement = firstLayerElement.parentNode.nextElementSibling;
-                                    $(secondLayerElement).attr({
-                                        "data-parent": ("#accordionSecondCon" + j + "_" + i),
-                                        "id": "collapseSecondCon" + i
-                                    });
-                                    secondLayerElement.children[0].innerText = cons[j]["second_layer"];
-                                });
-                            })(i,j, tDataCon);
+        } else {
+            eleToRemove = cardContainer.getElementsByClassName("contra")[0];
+            eleToRemove.parentNode.removeChild(eleToRemove);
+        }
 
-                        } else {
-                            tDataCon.innerText = cons[j]["first_layer"];
-                        }
-
-                        rowCon.appendChild(tDataCon);
-                        $(rowCon).insertAfter(contraElement.children[contraElement.children.length - 1]);
-                    }
-                    console.log("| Contra: ", contraElement);
-
-                } else {
-                    eleToRemove = cardContainer.getElementsByClassName("contra")[0];
-                    eleToRemove.parentNode.removeChild(eleToRemove);
-                    console.log("| Kein Contra");
-                }
-
-                //Empfehlung
-                if (getInfoForIB("recommendations", ibArray[i]) === "") {
-                    eleToRemove = cardContainer.getElementsByClassName("recommendations")[0];
-                    eleToRemove.parentNode.removeChild(eleToRemove.nextElementSibling);
-                    eleToRemove.parentNode.removeChild(eleToRemove);
-                } else {
-                    cardContainer.getElementsByClassName("recommendations")[0].nextElementSibling.children[0].innerText = getInfoForIB("recommendations", ibArray[i]);
-                }
-                console.log("| " + i +" Fertige Karte: ",cardContainer);
-            });
-        })(i);
+        //Empfehlung
+        if (getInfoForIB("recommendations", ibArray[i]) === "") {
+            eleToRemove = cardContainer.getElementsByClassName("recommendations")[0];
+            eleToRemove.parentNode.removeChild(eleToRemove.nextElementSibling);
+            eleToRemove.parentNode.removeChild(eleToRemove);
+        } else {
+            cardContainer.getElementsByClassName("recommendations")[0].nextElementSibling.children[0].innerText = getInfoForIB("recommendations", ibArray[i]);
+        }
     }
-    console.log("komplette Karte: ", cardContainer);
+    console.log("Karte erstellt: ", cardContainer);
+    return cardContainer;
 
 }
 //Baut den entsprechenden Banner für die Multiapp-Ansicht
@@ -375,9 +360,8 @@ function loadInfoPanels(appSquare) {
 //Lädt lokale Json-Bibliothek für
 $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
     ibJson = input;
-    console.log("Lokale Json geladen.");
-    $(ibCardTemplate).load(chrome.extension.getURL("lib/templates/ibCardTemplate.html"), function () {
-        $(innerCollapseTemplate).load(chrome.extension.getURL("lib/templates/innerCollapseTemplate"), function(){
+    $(ibCardTemplate).load(chrome.extension.getURL("lib/templates/ibCardTemplate.html"), function (data) {
+        $(innerCollapseTemplate).load(chrome.extension.getURL("lib/templates/innerCollapseTemplate.html"), function(){
             if(storageAvailable("localStorage")){
                 $(".square-cover").each(function () {
                     loadInfoPanels(this);
@@ -387,6 +371,7 @@ $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
             }
         });
     });
+    console.log("Lokale Json geladen.");
 
 
     //TODO SingleApp
