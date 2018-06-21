@@ -3,6 +3,8 @@
  */
 var today = new Date();
 var ibJson = [];
+var ibCardTemplate;
+var innerCollapseTemplate;
 var trennZeichen = "§";
 var dseOrigins = ["lcm", "playstore", "link_guesser", "app", "mtd", "manuall"];
 var route = "get_infai_dataset_by_bundle_id";
@@ -95,70 +97,126 @@ function getInfoForIB(attr, ib){
 }
 function createPopover(parentElement, ibArray){
     var eleToRemove;
-    $(parentElement).attr({"data-toggle": "popover"});
+    $(parentElement).attr({"data-toggle": "popover","data-trigger": "focus"});
     var cardContainer = document.createElement("div");
     cardContainer.id = "accordion";
     for(var i = 0; i < ibArray.length; i++){
         //Template
-        $(cardContainer).load(chrome.extension.getURL("lib/templates/ibCardTemplate.html"));
+        (function(i) {
+            $(cardContainer).load(chrome.extension.getURL("lib/templates/ibCardTemplate.html"), function () {
+                //Titel
+                var titel = cardContainer.getElementsByClassName("ibtitel")[0];
+                titel.innerText = getInfoForIB("titel", ibArray[i]);
 
-        //Titel
-        $(".ibtitel").textContent = getStringFromIB("titel", ibArray[i]);
 
-        //Beschreibung
-        if(getInfoForIB(description,ibArray[i]) === ""){
-            eleToRemove = $(".theader");
-            eleToRemove.parentNode.removeChild(eleToRemove);
-            eleToRemove = $(".description");
-            eleToRemove.parentNode.removeChild(eleToRemove);
-        }else{
-            $(".description").childNodes[0].textContent = getStringFromIB("description", ibArray[i]);
-        }
+                //Einzigartige collapse-id
+                $(titel).attr("href", "#collapse" + i);
+                $(titel.parentNode.parentNode.children[1]).attr("id", "collapse" + i);
+                console.log("|Titel: ",titel);
 
-        //Pro
-        if(getInfoForIB("pros", ibArray[i]).length > 0){
-            var pros = getInfoForIB("pros", ibArray[i]);
-            var proElement = $(".pros");
-            for(var j = 0; j < pros.length; j++){
-                var row = document.createElement("tr");
-                var tData = document.createElement("td");
-                tData.textContent = pros[j]["first_layer"];
-                if(pros[j]["second_layer"] !== 0){
-
+                //Beschreibungs
+                if (getInfoForIB("description", ibArray[i]) === "") {
+                    eleToRemove = cardContainer.getElementsByClassName("theader")[0];
+                    eleToRemove.parentNode.removeChild(eleToRemove);
+                    eleToRemove = cardContainer.getElementsByClassName("description")[0];
+                    eleToRemove.parentNode.removeChild(eleToRemove);
+                } else {
+                    cardContainer.getElementsByClassName("description")[0].children[0].innerText = getInfoForIB("description", ibArray[i]);
+                    console.log("|Beschreibung: ", cardContainer.getElementsByClassName("description")[0].children[0]);
                 }
-                row.appendChild(tData);
-                row.insertAfter(proElement.childNodes[proElement.childNodes.length - 1]);
-            }
-
-        } else {
-            eleToRemove = $(".pro");
-            eleToRemove.parentNode.removeChild(eleToRemove);
-        }
 
 
-        //Contra
-        if(getInfoForIB("cons", ibArray[i]).length > 0){
+                //Pro
+                if (getInfoForIB("pros", ibArray[i]).length > 0) {
+                    var pros = getInfoForIB("pros", ibArray[i]);
+                    var proElement = cardContainer.getElementsByClassName("pro")[0];
+                    for (var j = 0; j < pros.length; j++) {
+                        var row = document.createElement("tr");
+                        var tData = document.createElement("td");
 
-        } else {
-            eleToRemove = $(".contra");
-            eleToRemove.parentNode.removeChild(eleToRemove);
-        }
+                        if (pros[j]["second_layer"] !== "") {
+                            (function (i,j,tData) {
+                                $(tData).load(chrome.extension.getURL("lib/templates/innerCollapseTemplate.html"), function () {
+                                    var firstLayerElement = tData.getElementsByClassName("firstlayer")[0];
+                                    $(firstLayerElement).attr({"href": "#collapseSecondPro" + i});
+                                    firstLayerElement.innerText = pros[j]["first_layer"];
+                                    $(firstLayerElement.parentNode.parentNode.parentNode).attr("id","accordionSecondPro" + j + "_" + i);
+                                    var secondLayerElement = firstLayerElement.parentNode.nextElementSibling;
+                                    $(secondLayerElement).attr({
+                                        "data-parent": ("#accordionSecondPro" + j + "_" + i),
+                                        "id": "collapseSecondPro" + i
+                                    });
+                                    secondLayerElement.children[0].innerText = pros[j]["second_layer"];
+                                });
+                            })(i,j,tData);
+
+                        } else {
+                            tData.innerText = pros[j]["first_layer"];
+                        }
+
+                        row.appendChild(tData);
+                        $(row).insertAfter(proElement.children[proElement.children.length - 1]);
+                    }
+                    console.log("| Pro: ",proElement);
+
+                } else {
+                    eleToRemove = cardContainer.getElementsByClassName("pro")[0];
+                    eleToRemove.parentNode.removeChild(eleToRemove);
+                    console.log("| Kein Pro");
+                }
+
+
+                //Contra
+                if (getInfoForIB("cons", ibArray[i]).length > 0) {
+                    var cons = getInfoForIB("cons", ibArray[i]);
+                    var contraElement = cardContainer.getElementsByClassName("contra")[0];
+                    for (j = 0; j < cons.length; j++) {
+                        var rowCon = document.createElement("tr");
+                        var tDataCon = document.createElement("td");
+                        if (cons[j]["second_layer"] !== "") {
+                            (function(i,j, tDataCon){
+                                $(tDataCon).load(chrome.extension.getURL("lib/templates/innerCollapseTemplate.html"), function () {
+                                    var firstLayerElement = tDataCon.getElementsByClassName("firstlayer")[0];
+                                    $(firstLayerElement).attr({"href": "#collapseSecondCon" + i});
+                                    firstLayerElement.innerText = cons[j]["first_layer"];
+                                    $(firstLayerElement.parentNode.parentNode.parentNode).attr("id","accordionSecondCon" + j + "_" + i);
+                                    var secondLayerElement = firstLayerElement.parentNode.nextElementSibling;
+                                    $(secondLayerElement).attr({
+                                        "data-parent": ("#accordionSecondCon" + j + "_" + i),
+                                        "id": "collapseSecondCon" + i
+                                    });
+                                    secondLayerElement.children[0].innerText = cons[j]["second_layer"];
+                                });
+                            })(i,j, tDataCon);
+
+                        } else {
+                            tDataCon.innerText = cons[j]["first_layer"];
+                        }
+
+                        rowCon.appendChild(tDataCon);
+                        $(rowCon).insertAfter(contraElement.children[contraElement.children.length - 1]);
+                    }
+                    console.log("| Contra: ", contraElement);
+
+                } else {
+                    eleToRemove = cardContainer.getElementsByClassName("contra")[0];
+                    eleToRemove.parentNode.removeChild(eleToRemove);
+                    console.log("| Kein Contra");
+                }
+
+                //Empfehlung
+                if (getInfoForIB("recommendations", ibArray[i]) === "") {
+                    eleToRemove = cardContainer.getElementsByClassName("recommendations")[0];
+                    eleToRemove.parentNode.removeChild(eleToRemove.nextElementSibling);
+                    eleToRemove.parentNode.removeChild(eleToRemove);
+                } else {
+                    cardContainer.getElementsByClassName("recommendations")[0].nextElementSibling.children[0].innerText = getInfoForIB("recommendations", ibArray[i]);
+                }
+                console.log("| " + i +" Fertige Karte: ",cardContainer);
+            });
+        })(i);
     }
-
-    // $(parentElement).click(function () {
-    //     $.get().then(function (data) {
-    //         $('[data-toggle="popover"]').popover({
-    //             html: true,
-    //             content: function(){
-    //                 return data;
-    //             }
-    //         });
-    //     }, function (reason) {
-    //         console.log("nä"+reason);
-    //     });
-    //
-    //     console.log("Popover triggered");
-    // });
+    console.log("komplette Karte: ", cardContainer);
 
 }
 //Baut den entsprechenden Banner für die Multiapp-Ansicht
@@ -168,22 +226,13 @@ function createPanel(appSquare, appDataArray, hasResults){
     var banner = document.createElement("div");
     banner.classList.add("pguard");
     var funde = document.createElement("span");
-    // appSquare.insertBefore(dummy,appSquare.childNodes[0]);
-    // $(dummy).attr({"data-toggle": "popover"});
-
-    // for(var j = 0; j < ibArray.length; j++){
-    //     for(i = 0; i < ibJson.length; i++){
-    //         if(ibArray[j] === ibJson[i].id){
-    //         }
-    //     }
-    // }
 
     if(hasResults){
-        funde.textContent = "Funde: ";
+        funde.innerText = "Funde: ";
 
         var badge = document.createElement("span");
         badge.classList.add("badge", "badge-secondary", "float-right");
-        badge.textContent = "" + ibArray.length;
+        badge.innerText = "" + ibArray.length;
         funde.appendChild(badge);
         for(var j = 0; j < ibArray.length; j++){
             for(var i = 0; i < ibJson.length; i++){
@@ -199,18 +248,28 @@ function createPanel(appSquare, appDataArray, hasResults){
             banner.style.backgroundColor = "#99ccff";
         }
 
-        createPopover(banner,ibArray);
+        $(banner).click(function () {
+            var popover = createPopover(banner,ibArray);
+            $('[data-toggle="popover"]').popover({
+                html: true,
+                content: function(){
+                    return popover;
+                    }
+                });
+
+            console.log("Popover triggered");
+        });
     } else {
-        funde.textContent = "Keine Ergebnisse";
+        funde.innerText = "Keine Ergebnisse";
         banner.style.backgroundColor = "#d1d1d1";
-        // testSpan.textContent = "Ergebnisse anzeigen";
+        // testSpan.innerText = "Ergebnisse anzeigen";
         // $(testSpan).click(function () {
         //     console.log("hole Ergebnisse");
         //     $.ajax({
         //         url: urlTriggerNewAnalysis,
         //         method: "POST",
         //         success: function(data){
-        //             testSpan.textContent = "Neue Analyse angefragt";
+        //             testSpan.innerText = "Neue Analyse angefragt";
         //             console.log("Anfrage erfolgreich: " + data);
         //         },
         //         dataType: "json"
@@ -220,7 +279,7 @@ function createPanel(appSquare, appDataArray, hasResults){
     }
 
     banner.appendChild(funde);
-    appSquare.insertBefore(banner,appSquare.childNodes[0]);
+    appSquare.insertBefore(banner,appSquare.children[0]);
 }
 
 function getNewestDseFromData(data){
@@ -313,18 +372,22 @@ function loadInfoPanels(appSquare) {
     }
 }
 
-//Lädt lokale Json-Bibliothek für Infoboxen
+//Lädt lokale Json-Bibliothek für
 $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
     ibJson = input;
     console.log("Lokale Json geladen.");
-
-    if(storageAvailable("localStorage")){
-        $(".square-cover").each(function () {
-            loadInfoPanels(this);
+    $(ibCardTemplate).load(chrome.extension.getURL("lib/templates/ibCardTemplate.html"), function () {
+        $(innerCollapseTemplate).load(chrome.extension.getURL("lib/templates/innerCollapseTemplate"), function(){
+            if(storageAvailable("localStorage")){
+                $(".square-cover").each(function () {
+                    loadInfoPanels(this);
+                });
+            } else {
+                console.log("kein local Storage verfügbar.")
+            }
         });
-    } else {
-        console.log("kein local Storage verfügbar.")
-    }
+    });
+
 
     //TODO SingleApp
     $(".JHTxhe").load(chrome.extension.getURL("lib/templates/showResults.html"));
