@@ -219,7 +219,6 @@ function createPopover(parentElement, ibArray){
 function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
     var ibArray;
     var popover;
-    //TODO redLines in popover
     //TODO parentNode umbennen
     if(isSinglePage){
         if(hasResults){
@@ -251,9 +250,11 @@ function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
                 }
             }
             if(redLine){
-                banner.style.backgroundColor = "#ff8c8c";
+                banner.style.backgroundColor = "#FF3333";
+                banner.style.color = "white";
             }else{
-                banner.style.backgroundColor = "#99ccff";
+                banner.style.backgroundColor = "#3BCCFF";
+                banner.style.color = "white";
             }
 
             $(banner).click(function () {
@@ -273,7 +274,11 @@ function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
         }
 
         banner.appendChild(funde);
-        parentNode.insertBefore(banner,parentNode.children[0]);
+        if($(parentNode).hasClass("card")){
+            parentNode.insertBefore(banner,parentNode.children[0]);
+        } else {
+            $(banner).insertBefore(parentNode);
+        }
     }
 
 }
@@ -315,9 +320,13 @@ function loadInfoPanels(parentNode, isSinglePage) {
         var currentURL = new URL(location.href);
         appID = currentURL.searchParams.get("id");
     } else {
-        appID = $(parentNode).attr("data-docid");
+        if($(parentNode).attr("data-docid")){
+            console.log("appID gefunden",$(parentNode).attr("data-docid"));
+            appID = $(parentNode).attr("data-docid");
+        }else {
+            appID = $(parentNode.children[0].children[0].children[3].children[0]).attr("href").split("id=")[1];
+        }
     }
-
     //Wurde eine App-ID gefunden?
     if (appID) {
         var appDataString = localStorage.getItem(appID);
@@ -374,9 +383,10 @@ function loadInfoPanels(parentNode, isSinglePage) {
 }
 
 function fillApps(){
-    if(document.getElementsByClassName("square-cover")[0]){
-        console.log("multiApp!", document.getElementsByClassName("square-cover"));
-        $(".square-cover").each(function () {
+    if(document.getElementsByClassName("card")[0]){
+        console.log("multiApp!");
+        $(".card").each(function () {
+            console.log("Multiapp gefunden");
             loadInfoPanels(this, false);
         });
     } else {
@@ -386,7 +396,6 @@ function fillApps(){
         }
         $(".Vpfmgd").each(function (){
             loadInfoPanels(this, false);
-            console.log("asdasd");
         });
     }
 }

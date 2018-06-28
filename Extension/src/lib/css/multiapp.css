@@ -6,12 +6,17 @@
 }
 
 .pguard{
-    height: 20px;
+    height: 7%;
+    width: calc(100% + 2px) !important;
+}
+
+.pguard:hover{
+    cursor: pointer;
 }
 
 .pguard > span{
-    font-size: 14px;
-    padding-left: 5px;
+    font-size: 12px;
+    padding-left: 4px;
 }
 
 .popover{
@@ -22,12 +27,19 @@
     font-size: 100% !important;
 }
 
-body .cluster.square-cover.normal .card-list{
-    height: 285px   !important;
+body .card-content {
+    height: 94%;
+    width: calc(100% + 2px) !important;
 }
 
-body .card.small.square-cover{
-    height: 285px   !important;
+body .card {
+}
+body .details {
+    width: calc(100% + 2px) !important;
+}
+
+body .reason-set{
+    width: 100% !important;
 }
 
 .btn {
