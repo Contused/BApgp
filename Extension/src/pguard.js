@@ -275,8 +275,10 @@ function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
 
         banner.appendChild(funde);
         if($(parentNode).hasClass("card")){
+            banner.classList.add("multiapp");
             parentNode.insertBefore(banner,parentNode.children[0]);
         } else {
+            banner.classList.add("similarapp");
             $(banner).insertBefore(parentNode);
         }
     }

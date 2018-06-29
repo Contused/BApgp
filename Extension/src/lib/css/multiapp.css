@@ -6,10 +6,15 @@
 }
 
 .pguard{
-    height: 7%;
     width: calc(100% + 2px) !important;
 }
 
+.multiapp {
+    height: 7%;
+}
+.similarapp {
+    height: 10%;
+}
 .pguard:hover{
     cursor: pointer;
 }
@@ -25,11 +30,16 @@
 
 .badge {
     font-size: 100% !important;
+    height: 100%;
 }
 
 body .card-content {
     height: 94%;
     width: calc(100% + 2px) !important;
+}
+
+body .vU6FJ {
+    height: 92%;
 }
 
 body .card {
