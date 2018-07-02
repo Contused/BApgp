@@ -24,17 +24,17 @@
         <entry file="file://$PROJECT_DIR$/Extension/src/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pguard.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pguard.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Extension/src/pguard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="270" column="16" lean-forward="true" selection-start-line="270" selection-start-column="16" selection-end-line="270" selection-end-column="16" />
+            <state relative-caret-position="268">
+              <caret line="261" column="27" lean-forward="true" selection-start-line="261" selection-start-column="27" selection-end-line="261" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -80,12 +80,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="multiapp.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="multiapp.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Extension/src/lib/css/multiapp.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="612">
+              <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+              <folding>
+                <marker date="1530280986308" expanded="true" signature="100:106" ph="{...}" />
+                <marker date="1530280986308" expanded="true" signature="528:531" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,7 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>popover</find>
       <find>result</find>
       <find>chrome</find>
       <find>classL</find>
@@ -153,6 +155,10 @@
       <find>done</find>
       <find>deutsch</find>
       <find>asd</find>
+      <find>acco</find>
+      <find>add</find>
+      <find>click</find>
+      <find>popover</find>
     </findStrings>
     <replaceStrings>
       <replace>parentNode</replace>
@@ -171,8 +177,8 @@
         <option value="$PROJECT_DIR$/Extension/src/lib/templates/multiAppBanner.html" />
         <option value="$PROJECT_DIR$/Extension/src/lib/templates/innerCollapseTemplate.html" />
         <option value="$PROJECT_DIR$/Extension/src/manifest.json" />
-        <option value="$PROJECT_DIR$/Extension/src/pguard.js" />
         <option value="$PROJECT_DIR$/Extension/src/lib/css/multiapp.css" />
+        <option value="$PROJECT_DIR$/Extension/src/pguard.js" />
       </list>
     </option>
   </component>
@@ -189,7 +195,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="372" />
     <option name="y" value="-16" />
     <option name="width" value="1111" />
@@ -211,6 +217,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,7 +287,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,17 +328,19 @@
       <workItem from="1530089681496" duration="10011000" />
       <workItem from="1530121983366" duration="4355000" />
       <workItem from="1530181260103" duration="11460000" />
+      <workItem from="1530280978677" duration="417000" />
+      <workItem from="1530519591033" duration="3413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45072000" />
+    <option name="totallyTimeSpent" value="48902000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.106770836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -397,7 +405,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
+          <folding>
+            <marker date="1530280986308" expanded="true" signature="100:106" ph="{...}" />
+            <marker date="1530280986308" expanded="true" signature="528:531" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -498,7 +509,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
+          <folding>
+            <marker date="1530280986308" expanded="true" signature="100:106" ph="{...}" />
+            <marker date="1530280986308" expanded="true" signature="528:531" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -568,7 +582,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
+          <folding>
+            <marker date="1530280986308" expanded="true" signature="100:106" ph="{...}" />
+            <marker date="1530280986308" expanded="true" signature="528:531" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -723,23 +740,26 @@
     <entry file="file://$PROJECT_DIR$/Extension/src/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Extension/src/pguard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="270" column="16" lean-forward="true" selection-start-line="270" selection-start-column="16" selection-end-line="270" selection-end-column="16" />
+          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Extension/src/lib/css/multiapp.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="612">
+          <caret line="36" column="16" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding>
+            <marker date="1530280986308" expanded="true" signature="100:106" ph="{...}" />
+            <marker date="1530280986308" expanded="true" signature="528:531" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Extension/src/pguard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="261" column="27" lean-forward="true" selection-start-line="261" selection-start-column="27" selection-end-line="261" selection-end-column="27" />
           <folding />
         </state>
       </provider>

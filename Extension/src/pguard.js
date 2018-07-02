@@ -257,16 +257,13 @@ function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
                 banner.style.color = "white";
             }
 
-            $(banner).click(function () {
-                popover = createPopover(banner, ibArray);
-                $('[data-toggle="popover"]').popover({
-                    html: true,
-                    content: function(){
-                        return popover;
-                    }
-                });
-
-                console.log("Popover triggered");
+            $(banner).popover({
+                title: "Details",
+                html: true,
+                trigger: "click",
+                content: function(){
+                    return createPopover(banner, ibArray);
+                }
             });
         } else {
             funde.innerText = "Keine Ergebnisse";
