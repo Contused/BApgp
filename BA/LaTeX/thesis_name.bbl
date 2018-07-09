@@ -1,0 +1,41 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Allgemeiner Deutscher Auto Club e.V.}()]{adac_night}
+{Allgemeiner Deutscher Auto Club e.V.}
+\newblock {Nachtunfälle}, last visited August 2014 .
+\newblock
+  \url{http://www.adac.de/_mmm/pdf/statistik_6_3_nachtunfaelle_42814.pdf}.
+
+\bibitem[GeneSys(2009)]{adma}
+GeneSys.
+\newblock \emph{Technische Dokumentation ADMA}.
+\newblock Offenburg: Genesys Elektronik GmbH, 2x.6.1.6 edition, September 2009.
+
+\bibitem[Jin and Sendhoff(2003)]{Jin2003}
+Y.~Jin and B.~Sendhoff.
+\newblock Extracting interpretable fuzzy rules from rbf networks.
+\newblock \emph{Neural Processing Letters}, 17\penalty0 (2):\penalty0 149--164,
+  2003.
+\newblock ISSN 1370-4621.
+\newblock \doi{10.1023/A:1023642126478}.
+\newblock URL \url{http://dx.doi.org/10.1023/A%3A1023642126478}.
+
+\bibitem[Julier and Uhlmann(1997)]{julier97}
+S.~J. Julier and J.~Uhlmann.
+\newblock A non-divergent estimation algorithm in the presence of unknown
+  correlations.
+\newblock In \emph{American Control Conference, 1997. Proceedings of the 1997},
+  volume~4, pages 2369--2373 vol.4, Jun 1997.
+\newblock \doi{10.1109/ACC.1997.609105}.
+
+\bibitem[Mitchell(1997)]{mitchell1997}
+T.~M. Mitchell.
+\newblock \emph{Machine Learning}.
+\newblock McGraw-Hill, New York, 1997.
+
+\end{thebibliography}

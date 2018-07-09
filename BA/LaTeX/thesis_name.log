@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.5.24)  26 MAR 2018 14:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.18)  9 JUL 2018 14:36
 entering extended mode
-**thesis_name.tex
+**./thesis_name.tex
 (thesis_name.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 68 languages loaded.
-("C:\Program Files\MiKTeX\tex\latex\base\book.cls"
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\book.cls"
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX\tex\latex\base\bk11.clo"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\bk11.clo"
 File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -21,11 +21,11 @@ File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Program Files\MiKTeX\tex\latex\ucs\ucs.sty"
+) ("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucs.sty"
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 
-("C:\Program Files\MiKTeX\tex\latex\ucs\uni-global.def"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-global
+.def"
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
 \uc@secondtry=\count88
@@ -33,52 +33,65 @@ File: uni-global.def 2013/05/13 UCS: Unicode global data
 \uc@combtoksb=\toks15
 \uc@temptokena=\toks16
 )
-("C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty"
-Package: inputenc 2014/04/30 v1.2b Input encoding file
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.
+sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 
-("C:\Program Files\MiKTeX\tex\latex\ucs\utf8x.def"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\utf8x.def"
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 ))
-("C:\Program Files\MiKTeX\tex\latex\babel\babel.sty"
-Package: babel 2014/09/25 3.9l The Babel package
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.
+sty"
+Package: babel 2018/02/14 3.18 The Babel package
 
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch
+.def"
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+)
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX\tex\latex\00miktex\bblopts.cfg"
-File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.
+cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
 )
-("C:\Program Files\MiKTeX\tex\latex\babel-german\german.ldf"
-Language: german 2014/10/10 v2.7b German support for babel (traditional orthogr
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\g
+erman.ldf"
+Language: german 2016/11/02 v2.9 German support for babel (traditional orthogra
+phy)
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-german\g
+ermanb.ldf"
+Language: germanb 2016/11/02 v2.9 German support for babel (traditional orthogr
 aphy)
 
-("C:\Program Files\MiKTeX\tex\latex\babel-german\germanb.ldf"
-Language: germanb 2014/10/10 v2.7b German support for babel (traditional orthog
-raphy)
-
-("C:\Program Files\MiKTeX\tex\latex\babel\babel.def"
-File: babel.def 2014/09/25 3.9l Babel common definitions
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.
+def"
+File: babel.def 2018/02/14 3.18 Babel common definitions
 \babel@savecnt=\count89
 \U@D=\dimen103
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbab
+el.def")
+\bbl@dirlevel=\count90
 )
-\l@austrian = a dialect from \language\l@german 
-Package babel Info: Making " an active character on input line 110.
+Package babel Info: Making " an active character on input line 139.
 )))
-("C:\Program Files\MiKTeX\tex\latex\csquotes\csquotes.sty"
-Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquo
+tes.sty"
+Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
 
-("C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty"
-Package: etoolbox 2015/03/10 v2.1b e-TeX tools for LaTeX (JAW)
-
-("C:\Program Files\MiKTeX\tex\latex\misc\etex.sty"
-Package: etex 2015/03/02 v2.1 eTeX basic definition package (PEB,DPC)
-\et@xins=\count90
-)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etool
+box.sty"
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count91
 )
-("C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyva
+l.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
@@ -90,41 +103,50 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \csq@tshold=\count97
 \csq@ltx@everypar=\toks20
 
-("C:\Program Files\MiKTeX\tex\latex\csquotes\csquotes.def"
-File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquo
+tes.def"
+File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-("C:\Program Files\MiKTeX\tex\latex\csquotes\csquotes.cfg"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\csquotes\csquo
+tes.cfg"
 File: csquotes.cfg 
 )
 Package csquotes Info: Redefining alias 'german' -> 'german/guillemets'.
 )
-("C:\Program Files\MiKTeX\tex\latex\libertine\libertine.sty"
-Package: libertine 2014/11/25 (Bob Tennent) Supports Libertine and Biolinum fon
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\libe
+rtine.sty"
+Package: libertine 2018/01/03 (Bob Tennent) Supports Libertine and Biolinum fon
 ts for all LaTeX engines.
 
-("C:\Program Files\MiKTeX\tex\generic\ifxetex\ifxetex.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxe
+tex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifl
+uatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-("C:\Program Files\MiKTeX\tex\latex\xkeyval\xkeyval.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyva
+l.sty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Program Files\MiKTeX\tex\generic\xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX\tex\generic\xkeyval\xkvutils.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkey
+val.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvu
+tils.tex"
 \XKV@toks=\toks21
 \XKV@tempa@toks=\toks22
 )
 \XKV@depth=\count98
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Program Files\MiKTeX\tex\latex\base\textcomp.sty"
-Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.
+sty"
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -136,100 +158,108 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             only a restricted character set as indicated.
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-("C:\Program Files\MiKTeX\tex\latex\base\ts1enc.def"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.de
+f"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
-LaTeX Info: Redefining \oldstylenums on input line 266.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
 
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
-Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
-Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
-Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
-Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
-Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
-Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
-Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
-Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
-Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
-Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
-Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
-Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
-Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
-Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-("C:\Program Files\MiKTeX\tex\latex\mweights\mweights.sty"
-Package: mweights 2013/07/21 (Bob Tennent) Support package for multiple-weight 
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mweights\mweig
+hts.sty"
+Package: mweights 2017/03/30 (Bob Tennent) Support package for multiple-weight 
 font packages. 
 LaTeX Info: Redefining \bfseries on input line 22.
-LaTeX Info: Redefining \mdseries on input line 29.
-LaTeX Info: Redefining \rmfamily on input line 36.
-LaTeX Info: Redefining \sffamily on input line 53.
-LaTeX Info: Redefining \ttfamily on input line 70.
+LaTeX Info: Redefining \mdseries on input line 30.
+LaTeX Info: Redefining \rmfamily on input line 38.
+LaTeX Info: Redefining \sffamily on input line 66.
+LaTeX Info: Redefining \ttfamily on input line 94.
 )
-("C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty"
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.s
+ty"
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 )
-("C:\Program Files\MiKTeX\tex\latex\fontaxes\fontaxes.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fontaxes\fonta
+xes.sty"
 Package: fontaxes 2014/03/23 v1.0d Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
 LaTeX Info: Redefining \slshape on input line 33.
 LaTeX Info: Redefining \scshape on input line 37.
 )
-LaTeX Info: Redefining \oldstylenums on input line 478.
+LaTeX Info: Redefining \oldstylenums on input line 490.
 
-("C:\Program Files\MiKTeX\tex\latex\libertine\LinLibertine_I.tex"))
-("C:\Program Files\MiKTeX\tex\latex\bera\beramono.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\LinL
+ibertine_I.tex"))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\bera\beramono.
+sty"
 Package: beramono 2004/01/31 (WaS)
 )
-("C:\Program Files\MiKTeX\tex\latex\float\float.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.st
+y"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count99
 \float@exts=\toks23
@@ -237,20 +267,23 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks24
 \@floatcapt=\box27
 )
-("C:\Program Files\MiKTeX\tex\latex\tools\array.sty"
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.st
+y"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen104
 \extrarowheight=\dimen105
 \NC@list=\toks25
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
-("C:\Program Files\MiKTeX\tex\latex\caption\caption.sty"
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\captio
+n.sty"
+Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
 
-("C:\Program Files\MiKTeX\tex\latex\caption\caption3.sty"
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\captio
+n3.sty"
+Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen106
 \captionmargin@=\dimen107
 \captionwidth=\dimen108
@@ -262,45 +295,58 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@ContinuedFloat=\count100
 Package caption Info: float package is loaded.
 )
-("C:\Program Files\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty"
-\fancy@headwidth=\skip45
-\f@ncyO@elh=\skip46
-\f@ncyO@erh=\skip47
-\f@ncyO@olh=\skip48
-\f@ncyO@orh=\skip49
-\f@ncyO@elf=\skip50
-\f@ncyO@erf=\skip51
-\f@ncyO@olf=\skip52
-\f@ncyO@orf=\skip53
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancy
+hdr.sty"
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip45
+\f@nch@O@elh=\skip46
+\f@nch@O@erh=\skip47
+\f@nch@O@olh=\skip48
+\f@nch@O@orh=\skip49
+\f@nch@O@elf=\skip50
+\f@nch@O@erf=\skip51
+\f@nch@O@olf=\skip52
+\f@nch@O@orf=\skip53
 )
-("C:\Program Files\MiKTeX\tex\latex\base\ifthen.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.st
+y"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files\MiKTeX\tex\latex\multirow\multirow.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\multirow\multi
+row.sty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip54
+\multirow@cntb=\count101
+\multirow@dima=\skip55
 \bigstrutjot=\dimen113
 )
-("C:\Program Files\MiKTeX\tex\latex\microtype\microtype.sty"
-Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\micr
+otype.sty"
+Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
 \MT@toks=\toks26
-\MT@count=\count101
-LaTeX Info: Redefining \textls on input line 766.
+\MT@count=\count102
+LaTeX Info: Redefining \textls on input line 793.
 \MT@outer@kern=\dimen114
-LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
-\MT@listname@count=\count102
+LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
+\MT@listname@count=\count103
 
-("C:\Program Files\MiKTeX\tex\latex\microtype\microtype-pdftex.def"
-File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\micr
+otype-pdftex.def"
+File: microtype-pdftex.def 2018/01/14 v2.7a Definitions specific to pdftex (RS)
 
-LaTeX Info: Redefining \lsstyle on input line 915.
-LaTeX Info: Redefining \lslig on input line 915.
-\MT@outer@space=\skip54
+LaTeX Info: Redefining \lsstyle on input line 913.
+LaTeX Info: Redefining \lslig on input line 913.
+\MT@outer@space=\skip56
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-("C:\Program Files\MiKTeX\tex\latex\microtype\microtype.cfg"
-File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\micr
+otype.cfg"
+File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
 ))
-("C:\Program Files\MiKTeX\tex\latex\booktabs\booktabs.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\bookt
+abs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen115
 \lightrulewidth=\dimen116
@@ -312,66 +358,73 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen122
 \cmidrulekern=\dimen123
 \defaultaddspace=\dimen124
-\@cmidla=\count103
-\@cmidlb=\count104
+\@cmidla=\count104
+\@cmidlb=\count105
 \@aboverulesep=\dimen125
 \@belowrulesep=\dimen126
-\@thisruleclass=\count105
-\@lastruleclass=\count106
+\@thisruleclass=\count106
+\@lastruleclass=\count107
 \@thisrulewidth=\dimen127
 )
-("C:\Program Files\MiKTeX\tex\latex\enumitem\enumitem.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumi
+tem.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip55
+\labelindent=\skip57
 \enit@outerparindent=\dimen128
 \enit@toks=\toks27
 \enit@inbox=\box28
-\enitdp@description=\count107
+\enitdp@description=\count108
 )
-("C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip56
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmat
+h.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty"
-Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty"
-File: amsgen.sty 1999/11/30 v2.0
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstex
+t.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen
+.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks28
 \ex@=\dimen129
 ))
-("C:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty"
-Package: amsbsy 1999/11/29 v1.2d
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy
+.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen130
 )
-("C:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty"
-Package: amsopn 1999/12/14 v2.01 operator names
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn
+.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count108
-LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count109
-\leftroot@=\count110
-LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count111
-\DOTSCASE@=\count112
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+\inf@bad=\count109
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count110
+\leftroot@=\count111
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count112
+\DOTSCASE@=\count113
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box29
 \strutbox@=\box30
 \big@size=\dimen131
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count113
-\c@MaxMatrixCols=\count114
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count114
+\c@MaxMatrixCols=\count115
 \dotsspace@=\muskip10
-\c@parentequation=\count115
-\dspbrk@lvl=\count116
+\c@parentequation=\count116
+\dspbrk@lvl=\count117
 \tag@help=\toks29
-\row@=\count117
-\column@=\count118
-\maxfields@=\count119
+\row@=\count118
+\column@=\count119
+\maxfields@=\count120
 \andhelp@=\toks30
 \eqnshift@=\dimen132
 \alignsep@=\dimen133
@@ -380,67 +433,77 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \totwidth@=\dimen136
 \lineht@=\dimen137
 \@envbody=\toks31
-\multlinegap=\skip57
-\multlinetaggap=\skip58
+\multlinegap=\skip59
+\multlinetaggap=\skip60
 \mathdisplay@stack=\toks32
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Program Files\MiKTeX\tex\latex\amsfonts\amsfonts.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfo
+nts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssy
+mb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Program Files\MiKTeX\tex\latex\amscls\amsthm.sty"
-Package: amsthm 2009/07/02 v2.20.1
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.
+sty"
+Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks33
 \thm@bodyfont=\toks34
 \thm@headfont=\toks35
 \thm@notefont=\toks36
 \thm@headpunct=\toks37
-\thm@preskip=\skip59
-\thm@postskip=\skip60
-\thm@headsep=\skip61
+\thm@preskip=\skip61
+\thm@postskip=\skip62
+\thm@headsep=\skip63
 \dth@everypar=\toks38
 )
-("C:\Program Files\MiKTeX\tex\latex\units\units.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\units\units.st
+y"
 Package: units 1998/08/04 v0.9b Typesetting units
 
-("C:\Program Files\MiKTeX\tex\latex\units\nicefrac.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\units\nicefrac
+.sty"
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip62
-\L@UnitsRaiseTextstyle=\skip63
-\L@UnitsRaiseScriptstyle=\skip64
+\L@UnitsRaiseDisplaystyle=\skip64
+\L@UnitsRaiseTextstyle=\skip65
+\L@UnitsRaiseScriptstyle=\skip66
 ))
-("C:\Program Files\MiKTeX\tex\latex\mathtools\mathtools.sty"
-Package: mathtools 2014/07/16 v1.15 mathematical typesetting tools
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\math
+tools.sty"
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
-("C:\Program Files\MiKTeX\tex\latex\tools\calc.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty
+"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count120
-\calc@Bcount=\count121
+\calc@Acount=\count121
+\calc@Bcount=\count122
 \calc@Adimen=\dimen138
 \calc@Bdimen=\dimen139
-\calc@Askip=\skip65
-\calc@Bskip=\skip66
-LaTeX Info: Redefining \setlength on input line 75.
-LaTeX Info: Redefining \addtolength on input line 76.
-\calc@Ccount=\count122
-\calc@Cskip=\skip67
+\calc@Askip=\skip67
+\calc@Bskip=\skip68
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count123
+\calc@Cskip=\skip69
 )
-("C:\Program Files\MiKTeX\tex\latex\mathtools\mhsetup.sty"
-Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mathtools\mhse
+tup.sty"
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count123
+\g_MT_multlinerow_int=\count124
 \l_MT_multwidth_dim=\dimen140
-\origjot=\skip68
+\origjot=\skip70
 \l_MT_shortvdotswithinadjustabove_dim=\dimen141
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen142
 \l_MT_above_intertext_sep=\dimen143
@@ -448,56 +511,66 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen145
 \l_MT_below_shortintertext_sep=\dimen146
 )
-("C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graph
+icx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty"
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graph
+ics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty"
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.
+sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\g
+raphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files\MiKTeX\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count124
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\p
+dftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen147
 \Gin@req@width=\dimen148
 )
-("C:\Program Files\MiKTeX\tex\latex\oberdiek\grffile.sty"
-Package: grffile 2012/04/05 v1.16 Extended file name support for graphics (HO)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grffi
+le.sty"
+Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)
 
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifp
+df.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
-("C:\Program Files\MiKTeX\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvopt
+ions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltx
+cmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvs
+etkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\inf
+warerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ete
+xcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdf
+texcmds.sty"
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -507,54 +580,71 @@ Package pdftexcmds Info: \pdfdraftmode found.
 Package grffile Info: Option `multidot' is set to `true'.
 Package grffile Info: Option `extendedchars' is set to `false'.
 Package grffile Info: Option `space' is set to `true'.
-Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
 )
-("C:\Program Files\MiKTeX\tex\latex\caption\subcaption.sty"
-Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcap
+tion.sty"
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
 \c@subfigure=\count125
 \c@subtable=\count126
 )
-("C:\Program Files\MiKTeX\tex\latex\graphics\color.sty"
-Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color
+.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX\tex\latex\00miktex\color.cfg"
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\c
+olor.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 137.
+Package color Info: Driver file: pdftex.def on input line 147.
 
-("C:\Program Files\MiKTeX\tex\latex\graphics\dvipsnam.def"
-File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\dvips
+nam.def"
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-("C:\Program Files\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty"
-("C:\Program Files\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty"
-("C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty"
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfutil-common.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\frontendla
+yer\tikz.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer
+\pgf.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\
+pgfrcs.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfutil-common.tex"
 \pgfutil@everybye=\toks39
 \pgfutil@tempdima=\dimen149
 \pgfutil@tempdimb=\dimen150
 
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfutil-common-lists.tex"))
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfutil-latex.def"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfutil-common-lists.tex"))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfutil-latex.def"
 \pgfutil@abb=\box31
 
-("C:\Program Files\MiKTeX\tex\latex\ms\everyshi.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ms\everyshi.st
+y"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex"
-Package: pgfrcs 2013/12/20 v3.0.0 (rcs-revision 1.28)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
-Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
-("C:\Program Files\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty"
-("C:\Program Files\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty"
-("C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex"
-Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\basiclayer
+\pgfcore.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\systemlaye
+r\pgfsys.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemla
+yer\pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfkeys.code.tex"
 \pgfkeys@pathtoks=\toks40
 \pgfkeys@temptoks=\toks41
 
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfkeysfiltered.code.tex"
 \pgfkeys@tmptoks=\toks42
 ))
 \pgf@x=\dimen151
@@ -574,49 +664,63 @@ Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 \t@pgf@toka=\toks43
 \t@pgf@tokb=\toks44
 \t@pgf@tokc=\toks45
-("C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgf.cfg"
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemla
+yer\pgf.cfg"
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-("C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def"
-File: pgfsys-pdftex.def 2013/07/18  (rcs-revision 1.33)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemla
+yer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-("C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemla
+yer\pgfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-))) ("C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.t
-ex"
+)))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemla
+yer\pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count131
 \pgfsyssoftpath@bigbuffer@items=\count132
-) ("C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
-"
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\systemla
+yer\pgfsysprotocol.code.tex"
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) ("C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty"
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.
+sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX\tex\latex\00miktex\color.cfg"
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\c
+olor.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-LaTeX Info: Redefining \color on input line 702.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex"
-Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex"
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathcalc.code.tex"
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathutil.code.tex")
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathparser.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+math.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathcalc.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathutil.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathparser.code.tex"
 \pgfmath@dimen=\dimen159
 \pgfmath@count=\count133
 \pgfmath@box=\box32
@@ -624,25 +728,30 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 \pgfmath@stack@operand=\toks47
 \pgfmath@stack@operation=\toks48
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.code.tex"
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex"
-)
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.trigonometric.c
-ode.tex")
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.random.code.tex
-")
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.comparison.code
-.tex")
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.base.code.tex")
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.round.code.tex"
-) ("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex
-")
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.integerarithmet
-ics.code.tex")))
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfloat.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.basic.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.trigonometric.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.random.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.comparison.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.base.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.round.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.misc.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfunctions.integerarithmetics.code.tex")))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+mathfloat.code.tex"
 \c@pgfmathroundto@lastzeros=\count134
 ))
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen160
 \pgf@picmaxx=\dimen161
@@ -659,102 +768,129 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@zx=\dimen172
 \pgf@zy=\dimen173
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.
-tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen174
 \pgf@path@lasty=\dimen175
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex"
-File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen176
 \pgf@shorten@start@additional=\dimen177
-) ("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex"
-File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box33
 \pgf@hbox=\box34
 \pgf@layerbox@main=\box35
 \pgf@picture@serial@count=\count135
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.t
-ex"
-File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen178
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransformations.cod
-e.tex"
-File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen179
 \pgf@pt@y=\dimen180
 \pgf@pt@temp=\dimen181
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorequick.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoreobjects.code.tex"
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code
-.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorepathprocessing.code.tex"
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex"
-File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen182
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen183
 \pgf@sys@shading@range@num=\count136
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex"
-File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box36
-)) ("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex"
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorelayers.code.tex"
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransparency.code.t
-ex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcoretransparency.code.tex"
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-("C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\basiclay
+er\pgfcorepatterns.code.tex"
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
-))) ("C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmoduleshapes.code.tex"
-File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
+)))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\
+pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box37
-) ("C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmoduleplot.code.tex"
-File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 )
-("C:\Program Files\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty"
-Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\
+pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibil
+ity\pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen184
 \pgf@nodesepend=\dimen185
-) ("C:\Program Files\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18.st
-y"
-Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
-)) ("C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgffor.sty"
-("C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty"
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex"))
-("C:\Program Files\MiKTeX\tex\latex\pgf\math\pgfmath.sty"
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex"))
-("C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex"
-Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\compatibil
+ity\pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\
+pgffor.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\utilities\
+pgfkeys.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgfkeys.code.tex"))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgf\math\pgfma
+th.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+math.code.tex"))
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\utilitie
+s\pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-("C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex")
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\math\pgf
+math.code.tex")
 \pgffor@iter=\dimen186
 \pgffor@skip=\dimen187
 \pgffor@stack=\toks49
 \pgffor@toks=\toks50
 ))
-("C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex"
-Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontend
+layer\tikz\tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-("C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.code
-.tex"
-File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\librarie
+s\pgflibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count137
 \pgfplotmarksize=\dimen188
 )
@@ -773,7 +909,8 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
 \tikznumberofcurrentchild=\count140
 \tikz@fig@count=\count141
 
-("C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\
+pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count142
 \pgfmatrixcurrentcolumn=\count143
@@ -781,113 +918,122 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 )
 \tikz@expandcount=\count145
 
-("C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibr
-arytopaths.code.tex"
-File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontend
+layer\tikz\libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-("C:\Program Files\MiKTeX\tex\latex\colortbl\colortbl.sty"
-Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\colortbl\color
+tbl.sty"
+Package: colortbl 2018/05/02 v1.0c Color table columns (DPC)
 \everycr=\toks51
-\minrowclearance=\skip69
+\minrowclearance=\skip71
 )
-("C:\Program Files\MiKTeX\tex\latex\url\url.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty"
-Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyper
+ref.sty"
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hob
+sub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hob
+sub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package hobsub Info: Skipping package `ifluatex' (already loaded).
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package hobsub Info: Skipping package `etexcmds' (already loaded).
 Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
-Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
-Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
-Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
-Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
-Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
-Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX\tex\latex\oberdiek\auxhook.sty"
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxho
+ok.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen195
 \Hy@linkcounter=\count146
 \Hy@pagecounter=\count147
 
-("C:\Program Files\MiKTeX\tex\latex\hyperref\pd1enc.def"
-File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1en
+c.def"
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count148
 
-("C:\Program Files\MiKTeX\tex\latex\00miktex\hyperref.cfg"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyper
+ref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `final' set `true' on input line 4319.
-Package hyperref Info: Hyper figures OFF on input line 4443.
-Package hyperref Info: Link nesting OFF on input line 4448.
-Package hyperref Info: Hyper index ON on input line 4451.
-Package hyperref Info: Plain pages OFF on input line 4458.
-Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Option `final' set `true' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4688.
+Package hyperref Info: Bookmarks ON on input line 4762.
 \c@Hy@tempcnt=\count149
-LaTeX Info: Redefining \url on input line 5041.
+LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen196
 \Fld@menulength=\count150
 \Field@Width=\dimen197
 \Fld@charsize=\dimen198
-Package hyperref Info: Hyper figures OFF on input line 6295.
-Package hyperref Info: Link nesting OFF on input line 6300.
-Package hyperref Info: Hyper index ON on input line 6303.
-Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring OFF on input line 6315.
-Package hyperref Info: Link coloring with OCG OFF on input line 6320.
-Package hyperref Info: PDF/A mode OFF on input line 6325.
-LaTeX Info: Redefining \ref on input line 6365.
-LaTeX Info: Redefining \pageref on input line 6369.
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
 \Hy@abspage=\count151
 \c@Item=\count152
 \c@Hfootnote=\count153
 )
+Package hyperref Info: Driver (autodetected): hpdftex.
 
-Package hyperref Message: Driver (autodetected): hpdftex.
-
-("C:\Program Files\MiKTeX\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdft
+ex.def"
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \Fld@listcount=\count154
 \c@bookmark@seq@number=\count155
 
-("C:\Program Files\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty"
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerun
+filecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip70
+\Hy@SectionHShift=\skip72
 )
-("C:\Program Files\MiKTeX\tex\latex\listings\listings.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listi
+ngs.sty"
 \lst@mode=\count156
 \lst@gtempboxa=\box42
 \lst@token=\toks52
@@ -895,120 +1041,138 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \lst@currlwidth=\dimen199
 \lst@column=\count158
 \lst@pos=\count159
-\lst@lostspace=\dimen200
-\lst@width=\dimen201
+\lst@lostspace=\dimen256
+\lst@width=\dimen257
 \lst@newlines=\count160
 \lst@lineno=\count161
-\lst@maxwidth=\dimen202
+\lst@maxwidth=\dimen258
 
-("C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty"
-File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmi
+sc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count162
 \lst@skipnumbers=\count163
 \lst@framebox=\box43
 )
-("C:\Program Files\MiKTeX\tex\latex\listings\listings.cfg"
-File: listings.cfg 2014/09/06 1.5e listings configuration
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listi
+ngs.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
-Package: listings 2014/09/06 1.5e (Carsten Heinz)
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Program Files\MiKTeX\tex\latex\algorithmicx\algpseudocode.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\a
+lgpseudocode.sty"
 Package: algpseudocode 
 
-("C:\Program Files\MiKTeX\tex\latex\algorithmicx\algorithmicx.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\a
+lgorithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@line=\count164
 \c@ALG@rem=\count165
 \c@ALG@nested=\count166
-\ALG@tlm=\skip71
-\ALG@thistlm=\skip72
+\ALG@tlm=\skip73
+\ALG@thistlm=\skip74
 \c@ALG@Lnr=\count167
 \c@ALG@blocknr=\count168
 \c@ALG@storecount=\count169
 \c@ALG@tmpcounter=\count170
-\ALG@tmplength=\skip73
+\ALG@tmplength=\skip75
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) ("C:\Program Files\MiKTeX\tex\latex\algorithms\algorithm.sty"
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\alg
+orithm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 \@float@every@algorithm=\toks53
 \c@algorithm=\count171
 )
-("C:\Program Files\MiKTeX\tex\latex\todonotes\todonotes.sty"
-Package: todonotes 2012/07/25 .dtx Todonotes source and documentation.
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\todonotes\todo
+notes.sty"
+Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
 Package: todonotes 2012/07/25
 
-("C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibr
-arypositioning.code.tex"
-File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontend
+layer\tikz\libraries\tikzlibrarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 )
 \c@@todonotes@numberoftodonotes=\count172
 )
-("C:\Program Files\MiKTeX\tex\latex\hvfloat\hvfloat.sty"
-Package: hvfloat 2012/03/04 rotating of floating objects
-
-`hvfloat' v1.1, 2012/03/04 (Herbert Voss)
-\hvObjectWidth=\skip74
-\hvCapWidth=\skip75
-\hvMaxCapWidth=\skip76
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hvfloat\hvfloa
+t.sty"
+Package: hvfloat 2017/01/28 rotating of floating objects
+ `hvfloat' v1.2b, 2017/12/22 (Herbert Voss)
+\hvObjectWidth=\skip76
+\hvCapWidth=\skip77
+\hvMaxCapWidth=\skip78
 \hvObjectBox=\box44
 \hvCaptionBox=\box45
 \hvOBox=\box46
-\hvAboveCaptionSkip=\skip77
-\hvBelowCaptionSkip=\skip78
+\hvAboveCaptionSkip=\skip79
+\hvBelowCaptionSkip=\skip80
 )
-("C:\Program Files\MiKTeX\tex\latex\graphics\lscape.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\lscap
+e.sty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-("C:\Program Files\MiKTeX\tex\latex\oberdiek\pdflscape.sty"
-Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\pdfls
+cape.sty"
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-("C:\Program Files\MiKTeX\tex\latex\ltxmisc\parskip.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ltxmisc\parski
+p.sty"
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-("C:\Program Files\MiKTeX\tex\latex\base\alltt.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\alltt.sty
+"
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
-("C:\Program Files\MiKTeX\tex\latex\lipsum\lipsum.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.
+sty"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count173
 )
-("C:\Program Files\MiKTeX\tex\latex\changepage\changepage.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\changepage\cha
+ngepage.sty"
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count174
 \cp@tempcnt=\count175
 )
-("C:\Program Files\MiKTeX\tex\latex\titlesec\titlesec.sty"
-Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\title
+sec.sty"
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box47
-\beforetitleunit=\skip79
-\aftertitleunit=\skip80
-\ttl@plus=\dimen203
-\ttl@minus=\dimen204
+\beforetitleunit=\skip81
+\aftertitleunit=\skip82
+\ttl@plus=\dimen259
+\ttl@minus=\dimen260
 \ttl@toksa=\toks54
-\titlewidth=\dimen205
-\titlewidthlast=\dimen206
-\titlewidthfirst=\dimen207
+\titlewidth=\dimen261
+\titlewidthlast=\dimen262
+\titlewidthfirst=\dimen263
 )
-("C:\Program Files\MiKTeX\tex\latex\natbib\natbib.sty"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\natbib.
+sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip81
-\bibsep=\skip82
+\bibhang=\skip83
+\bibsep=\skip84
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count176
 )
-("C:\Program Files\MiKTeX\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2014/09/06 1.5e listings language file
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstla
+ng1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'german'.
  (thesis_name.aux)
+\openout1 = `thesis_name.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 171.
 LaTeX Font Info:    ... okay on input line 171.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 171.
@@ -1025,7 +1189,8 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 171.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 171.
 
 
-("C:\Program Files\MiKTeX\tex\latex\base\ts1cmr.fd"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd
+"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 171.
@@ -1034,14 +1199,16 @@ LaTeX Font Info:    ... okay on input line 171.
 LaTeX Font Info:    Try loading font information for OT1+LinuxLibertineT-TLF on
  input line 171.
 
-("C:\Program Files\MiKTeX\tex\latex\libertine\ot1linuxlibertinet-tlf.fd"
-File: OT1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for OT1/
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\ot1l
+inuxlibertinet-tlf.fd"
+File: OT1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 171.
 
-("C:\Program Files\MiKTeX\tex\latex\ucs\ucsencs.def"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\ucsencs.de
+f"
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 \c@mv@tabular=\count177
@@ -1060,42 +1227,61 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-Package microtype Info: Loading generic settings for font family
+Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-("C:\Program Files\MiKTeX\tex\context\base\supp-pdf.mkii"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pd
+f.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count179
-\scratchdimen=\dimen208
+\scratchdimen=\dimen264
 \scratchbox=\box48
 \nofMPsegments=\count180
 \nofMParguments=\count181
 \everyMPshowfont=\toks55
 \MPscratchCnt=\count182
-\MPscratchDim=\dimen209
+\MPscratchDim=\dimen265
 \MPnumerator=\count183
 \makeMPintoPDFobject=\count184
 \everyMPtoPDFconversion=\toks56
+)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epsto
+pdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfex
+t.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box49
 Package hyperref Info: Link coloring OFF on input line 171.
 
-("C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty"
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\namer
+ef.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX\tex\generic\oberdiek\gettitlestring.sty"
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\get
+titlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count185
 )
 LaTeX Info: Redefining \ref on input line 171.
 LaTeX Info: Redefining \pageref on input line 171.
 LaTeX Info: Redefining \nameref on input line 171.
-
-(thesis_name.out) (thesis_name.out)
+ (thesis_name.out) (thesis_name.out)
 \@outlinefile=\write4
+\openout4 = `thesis_name.out'.
+
 \c@lstlisting=\count186
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 181.
@@ -1104,48 +1290,32 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 LaTeX Font Info:    Try loading font information for OT1+LinuxBiolinumT-TLF on 
 input line 181.
 
-("C:\Program Files\MiKTeX\tex\latex\libertine\ot1linuxbiolinumt-tlf.fd"
-File: OT1LinuxBiolinumT-TLF.fd 2012/11/26 (autoinst) Font definitions for OT1/L
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\ot1l
+inuxbiolinumt-tlf.fd"
+File: OT1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for OT1/L
 inuxBiolinumT-TLF.
 )
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/bx/n' in size <24.88> no
-t available
-(Font)              Font shape `OT1/LinuxBiolinumT-TLF/b/n' tried instead on in
-put line 181.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 24.88pt on input line 181.
-Package microtype Info: Loading generic settings for font family
+Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-("C:\Program Files\MiKTeX\tex\latex\ucs\uni-0.def"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ucs\uni-0.def"
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/bx/n' in size <10> not a
-vailable
-(Font)              Font shape `OT1/LinuxBiolinumT-TLF/b/n' tried instead on in
-put line 181.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 181.
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/bx/n' in size <12> not a
-vailable
-(Font)              Font shape `OT1/LinuxBiolinumT-TLF/b/n' tried instead on in
-put line 181.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 181.
-
-<./pics/siegel.png, id=154, 564.1075pt x 561.09625pt>
+<./pics/siegel.png, id=162, 564.1075pt x 561.09625pt>
 File: ./pics/siegel.png Graphic file (type png)
- <use ./pics/siegel.png>
-Package pdftex.def Info: ./pics/siegel.png used on input line 186.
+<use ./pics/siegel.png>
+Package pdftex.def Info: ./pics/siegel.png  used on input line 186.
 (pdftex.def)             Requested size: 113.81102pt x 113.20184pt.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 189.
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/bx/n' in size <14.4> not
- available
-(Font)              Font shape `OT1/LinuxBiolinumT-TLF/b/n' tried instead on in
-put line 189.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 189.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
@@ -1159,24 +1329,29 @@ Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/LinuxLibertineT-TLF/m/sc/17.28'.
 (microtype)             Ignoring protrusion settings for this character.
 
-("C:\Program Files\MiKTeX\tex\latex\microtype\mt-cmr.cfg"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt-c
+mr.cfg"
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 204.
 
-("C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.
+fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-("C:\Program Files\MiKTeX\tex\latex\microtype\mt-msa.cfg"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt-m
+sa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 204.
 
-("C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.
+fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-("C:\Program Files\MiKTeX\tex\latex\microtype\mt-msb.cfg"
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\mt-m
+sb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
@@ -1212,8 +1387,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 226.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 226.
-
-[2
+ [2
 
 ]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
@@ -1226,7 +1400,7 @@ LaTeX Font Info:    No file OT1fvm.fd. on input line 249.
 LaTeX Font Warning: Font shape `OT1/fvm/m/n' undefined
 (Font)              using `OT1/cmr/m/n' instead on input line 249.
 
-Package microtype Info: Loading generic settings for font family
+Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
@@ -1261,19 +1435,21 @@ Package babel Info: Redefining german shorthand "~
 
 ] (thesis_name.toc
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 32.
  [3])
 \tf@toc=\write5
+\openout5 = `thesis_name.toc'.
+
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 259.
 Package babel Info: Redefining german shorthand "|
@@ -1453,28 +1629,31 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 24.
+
+Underfull \vbox (badness 5847) has occurred while \output is active []
+
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 36.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 36.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 36.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 36.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 36.
-[5
+(babel)             in language  on input line 28.
+ [5
 
 ]
 Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 31.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 31.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 31.
+Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 36.
 Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 36.
@@ -1499,43 +1678,99 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 61.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 68.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 68.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 68.
-Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 73.
 Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 73.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 73.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 83.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 83.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 83.
+(babel)             in language  on input line 77.
+
+[6]
+
+Package Fancyhdr Warning: \headheight is too small (13.6pt): 
+ Make it at least 24.83585pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 83.
+(babel)             in language  on input line 128.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 83.
+(babel)             in language  on input line 128.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 83.
- [6]
+(babel)             in language  on input line 128.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 128.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 128.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 128.
+[7]
+Overfull \hbox (94.11491pt too wide) in paragraph at lines 129--138
+\OT1/LinuxLibertineT-TLF/m/n/10.95 (-20) sen der In-for-ma-tio-nen. []ALTER-TA-
+GE(TRENNZEICHEN)FREQ(TRENNZEICHEN)IB(TRENNZEICHEN)IB
+ []
+
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 148.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 148.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 148.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 173.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 173.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 173.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 173.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 173.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 173.
+[8]
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 178.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 178.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 178.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 188.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 188.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 188.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 194.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 194.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 194.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 202.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 202.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 202.
 ) (04_mainpart_2.tex
+
+Package Fancyhdr Warning: \headheight is too small (13.6pt): 
+ Make it at least 24.83585pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "|
@@ -1548,7 +1783,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
- [7]
+[9]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "|
@@ -1561,7 +1796,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
- [8
+ [10
 
 ]
 Kapitel 4.
@@ -1595,36 +1830,36 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 42.
-[9] <./pics/mvn_appendix_iso.png, id=297, 1681.482pt x 991.705pt>
+[11]
+<./pics/mvn_appendix_iso.png, id=296, 1681.482pt x 991.705pt>
 File: ./pics/mvn_appendix_iso.png Graphic file (type png)
-
 <use ./pics/mvn_appendix_iso.png>
-Package pdftex.def Info: ./pics/mvn_appendix_iso.png used on input line 54.
+Package pdftex.def Info: ./pics/mvn_appendix_iso.png  used on input line 54.
 (pdftex.def)             Requested size: 360.0pt x 212.31963pt.
 File: ./pics/mvn_appendix_iso.png Graphic file (type png)
- <use ./pics/mvn_appendix_iso.png>
-Package pdftex.def Info: ./pics/mvn_appendix_iso.png used on input line 64.
-(pdftex.def)             Requested size: 108.0011pt x 63.69135pt.
-File: ./pics/mvn_appendix_iso.png Graphic file (type png)
-
 <use ./pics/mvn_appendix_iso.png>
-Package pdftex.def Info: ./pics/mvn_appendix_iso.png used on input line 71.
+Package pdftex.def Info: ./pics/mvn_appendix_iso.png  used on input line 64.
 (pdftex.def)             Requested size: 108.0011pt x 63.69135pt.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 65.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 65.
 File: ./pics/mvn_appendix_iso.png Graphic file (type png)
- <use ./pics/mvn_appendix_iso.png>
-Package pdftex.def Info: ./pics/mvn_appendix_iso.png used on input line 78.
-(pdftex.def)             Requested size: 108.0011pt x 63.69135pt.
-File: ./pics/mvn_appendix_iso.png Graphic file (type png)
-
 <use ./pics/mvn_appendix_iso.png>
-Package pdftex.def Info: ./pics/mvn_appendix_iso.png used on input line 91.
+Package pdftex.def Info: ./pics/mvn_appendix_iso.png  used on input line 71.
+(pdftex.def)             Requested size: 108.0011pt x 63.69135pt.
+File: ./pics/mvn_appendix_iso.png Graphic file (type png)
+<use ./pics/mvn_appendix_iso.png>
+Package pdftex.def Info: ./pics/mvn_appendix_iso.png  used on input line 78.
+(pdftex.def)             Requested size: 108.0011pt x 63.69135pt.
+File: ./pics/mvn_appendix_iso.png Graphic file (type png)
+<use ./pics/mvn_appendix_iso.png>
+Package pdftex.def Info: ./pics/mvn_appendix_iso.png  used on input line 91.
 (pdftex.def)             Requested size: 284.52756pt x 167.80075pt.
-
-<./pics/mvn_appendix_bird.png, id=298, 1619.651pt x 1003.75pt>
+<./pics/mvn_appendix_bird.png, id=297, 1619.651pt x 1003.75pt>
 File: ./pics/mvn_appendix_bird.png Graphic file (type png)
-
 <use ./pics/mvn_appendix_bird.png>
-Package pdftex.def Info: ./pics/mvn_appendix_bird.png used on input line 97.
+Package pdftex.def Info: ./pics/mvn_appendix_bird.png  used on input line 97.
 (pdftex.def)             Requested size: 284.52756pt x 176.33278pt.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 120.
@@ -1638,7 +1873,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 120.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 120.
- [10 <./pics/mvn_appendix_iso.png>]
+ [12 <./pics/mvn_appendix_iso.png>]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 120.
 Package babel Info: Redefining german shorthand "|
@@ -1651,7 +1886,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 120.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 120.
- [11 <./pics/mvn_appendix_bird.png>]
+ [13 <./pics/mvn_appendix_bird.png>]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 121.
 Package babel Info: Redefining german shorthand "|
@@ -1664,27 +1899,6 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 162.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 162.
-
-
-Package natbib Warning: Citation `adac_night' on page 12 undefined on input lin
-e 164.
-
-
-Package natbib Warning: Citation `mitchell1997' on page 12 undefined on input l
-ine 164.
-
-
-Package natbib Warning: Citation `julier97' on page 12 undefined on input line 
-164.
-
-
-Package natbib Warning: Citation `Jin2003' on page 12 undefined on input line 1
-64.
-
-
-Package natbib Warning: Citation `adma' on page 12 undefined on input line 164.
-
-
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 165.
 Package babel Info: Redefining german shorthand "|
@@ -1697,7 +1911,8 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 165.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 165.
-[12]
+
+[14]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 167.
 Package babel Info: Redefining german shorthand "|
@@ -1706,13 +1921,15 @@ Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 167.
 LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
  input line 182.
- ("C:\Program Files\MiKTeX\tex\latex\libertine\ts1linuxlibertinet-tlf.fd"
-File: TS1LinuxLibertineT-TLF.fd 2012/11/26 (autoinst) Font definitions for TS1/
+
+("C:\Users\Alexander\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\ts1l
+inuxlibertinet-tlf.fd"
+File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 182.
-Package microtype Info: Loading generic settings for font family
+Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
@@ -1731,7 +1948,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 221.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 221.
- [13]
+ [15]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 270.
 Package babel Info: Redefining german shorthand "|
@@ -1755,7 +1972,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 290.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 290.
- [14]
+ [16]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 298.
 Package babel Info: Redefining german shorthand "|
@@ -1787,7 +2004,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 363.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 363.
- [15]
+ [17]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 364.
 Package babel Info: Redefining german shorthand "|
@@ -1801,7 +2018,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 364.
 
-[16]) (05_finaldiscussion.tex
+[18]) (05_finaldiscussion.tex
 Kapitel 5.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
@@ -1834,7 +2051,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
- [17
+ [19
 
 
 ]
@@ -1850,7 +2067,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
- [18
+ [20
 
 ]
 Kapitel 6.
@@ -1878,7 +2095,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 12.
-[19]
+[21]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 13.
 Package babel Info: Redefining german shorthand "|
@@ -1920,7 +2137,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 18.
- [20])
+ [22])
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 294.
 Package babel Info: Redefining german shorthand "|
@@ -1933,7 +2150,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 294.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 294.
- [21
+ [23
 
 
 ]
@@ -1949,10 +2166,12 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 294.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 294.
- [22
+ [24
 
 ] (thesis_name.lof)
 \tf@lof=\write6
+\openout6 = `thesis_name.lof'.
+
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 299.
 Package babel Info: Redefining german shorthand "|
@@ -1965,7 +2184,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 299.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 299.
- [23]
+ [25]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 299.
 Package babel Info: Redefining german shorthand "|
@@ -1978,13 +2197,42 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 299.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 299.
- [24
+ [26
+
+] (thesis_name.bbl
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 16.
+)
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 306.
+ [27
 
 ]
-No file thesis_name.bbl.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 306.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 306.
+ [28
 
-Package natbib Warning: There were undefined citations.
-
+]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 316.
 Package babel Info: Redefining german shorthand "|
@@ -1997,8 +2245,8 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 316.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 316.
-[25
 
+[29
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 316.
@@ -2007,67 +2255,47 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 316.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 316.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 316.
 Package rerunfilecheck Info: File `thesis_name.out' has not changed.
-(rerunfilecheck)             Checksum: 904565EB95CE08A0CE49FBD2DDF00B2A;2239.
+(rerunfilecheck)             Checksum: D7DB4CB40F57B8DBE405EA73690DDFD9;2496.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 27945 strings out of 493698
- 486382 string characters out of 3146012
- 1049626 words of memory out of 3000000
- 30407 multiletter control sequences out of 15000+200000
- 53709 words of font info for 148 fonts, out of 3000000 for 9000
- 1025 hyphenation exceptions out of 8191
- 55i,19n,92p,800b,1936s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.2.4.2} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.4.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.3.2.2} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.3.2} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.1.3.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.1.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-{C:/Program Files/MiKTeX/fonts/enc/dvips/libertine/lbtn_xogrpz.enc}{C:/Program 
-Files/MiKTeX/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Program Files/MiKTeX
-/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}{C:/Program Files/MiKTeX/fonts/enc/d
-vips/libertine/lbtn_lu7m2n.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/liberti
-ne/lbtn_tltjc6.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/libertine/lbtn_c6xm
-qr.enc}<C:/Program Files/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb>
-<C:/Program Files/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Pro
-gram Files/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Program F
-iles/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Program Files/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
-/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/publi
+ 28448 strings out of 493305
+ 510573 string characters out of 3128062
+ 1064644 words of memory out of 3000000
+ 31065 multiletter control sequences out of 15000+200000
+ 64796 words of font info for 185 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,19n,92p,802b,1935s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/liberti
+ne/lbtn_kijugd.enc}{C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/
+enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/Alexander/AppData/Local/Programs/
+MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{C:/Users/Alexander/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_lyu3x3.enc}{C:/Users
+/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/lbtn_n3g
+v2c.enc}{C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
+ibertine/lbtn_edcawa.enc}<C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/libertine/LinBiolinumTB.pfb><C:/Users/Alexander/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/
+Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/libertine/LinLib
+ertineTB.pfb><C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/libertine/LinLibertineTI.pfb><C:/Users/Alexander/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Alexander/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users
+/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+i7.pfb><C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb><C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Alexander/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Alexander/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/User
+s/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy6.pfb><C:/Users/Alexander/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmsy8.pfb>
-Output written on thesis_name.pdf (31 pages, 714994 bytes).
+Output written on thesis_name.pdf (35 pages, 729203 bytes).
 PDF statistics:
- 564 PDF objects out of 1000 (max. 8388607)
- 181 named destinations out of 1000 (max. 500000)
- 25924 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 584 PDF objects out of 1000 (max. 8388607)
+ 184 named destinations out of 1000 (max. 500000)
+ 34644 words of extra memory for PDF output out of 35830 (max. 10000000)
 
