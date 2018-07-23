@@ -2,14 +2,15 @@
  * Created by Alexander on 03.05.2018.
  */
 var today = new Date();
+var anfragencounter = 0;
 var ibJson = [];
 var ibCardTemplate = document.createElement("div");
 var innerCollapseTemplate = document.createElement("div");
-var trennZeichen = "§";
+var trennZeichen = "|";
 var dseOrigins = ["lcm", "playstore", "link_guesser", "app", "mtd", "manuall"];
 var route = "get_infai_dataset_by_bundle_id";
 var token = "uni_leipzig_ba_prull_2018_01_17_Aihungaem5ie7opheeme";
-var verbosity = "0";
+var verbosity = "3";
 var priority = "5";
 var trgDsePlay = "false";
 var trgLinkGuess = "false";
@@ -68,10 +69,10 @@ function castDseToStorageString(dse){
     console.log("Wähle: ", dse.origin , dse.date_infobox_calculation_finished);
     for(var o = 0; o < dse.infoboxes.length; o++){
         // 20 und 28 werden ignoriert
-        if(dse.infoboxes[o].id !== 28 && dse.infoboxes[o].id !== 20 && dse.infoboxes[o].result.short === "yes"){
+        if(dse.infoboxes[o].id !== 28 && dse.infoboxes[o].id !== 20){
             // 13 und 21 setzten mehrere Elemente bei den jeweiligen Eigenschaften voraus
-            if((dse.infoboxes[o].id !== 13 && dse.infoboxes[o].id !== 21) || (dse.infoboxes[o].id === 13 && dse.infoboxes[o].result.details.which_device_infos.length > 1) ||
-                (dse.infoboxes[o].id === 21 && dse.infoboxes[o].result.details.which_third_parties.length > 1)){
+            //TODO aktuell werden 13 und 21 ignoriert, da bei verbosity 3 die Information fehlt.
+            if((dse.infoboxes[o].id !== 13 && dse.infoboxes[o].id !== 21)){
                 ibs.push("" + dse.infoboxes[o].id);
             }
         }
@@ -349,6 +350,7 @@ function loadInfoPanels(parentNode, isSinglePage) {
             //Ansonsten lade die Informationen aus dem Backend
         } else {
             console.log("Frage (erstmalig) Daten ab für " + appID);
+            anfragencounter ++;
             $.ajax({
                 url: urlWholeDataSetNoRequest + "" +appID,
                 method: "POST",
@@ -360,12 +362,13 @@ function loadInfoPanels(parentNode, isSinglePage) {
                         var storageString = castDseToStorageString(getNewestDseFromData(data));
                         localStorage.setItem(appID, storageString);
                         console.log("STORAGE ANGELEGT", appID, storageString);
+                        console.log("länge:", localStorage.length);
                         appDataArray = storageString.split(trennZeichen);
                         createPanel(parentNode, appDataArray, true, isSinglePage);
                     } else {
                         console.log("KEINE DSE VORHANDEN", appID);
                             $.ajax({
-                                url: urlTriggerNewAnalysis,
+                                url: urlTriggerNewAnalysis + appID,
                                 method: "POST",
                                 success: function(){
                                     console.log("Anfrage erfolgreich: ");
@@ -377,6 +380,7 @@ function loadInfoPanels(parentNode, isSinglePage) {
                 },
                 dataType: "json"
             });
+            console.log("Anfragen bisher: ",anfragencounter);
         }
     }
 }
@@ -398,13 +402,30 @@ function fillApps(){
         });
     }
 }
+
+function testStorageCap(){
+    localStorage.clear();
+    localStorage.setItem("1","test");
+    var counter = 2;
+    while(localStorage.getItem("1")){
+        console.log(counter);
+        localStorage.setItem(""+counter, "ABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJ");
+        counter++;
+    }
+}
 //Lädt lokale Json-Bibliothek für
 $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
+    console.log("vorher: ", localStorage.length);
     ibJson = input;
     $(ibCardTemplate).load(chrome.extension.getURL("lib/templates/ibCardTemplate.html"), function (data) {
         $(innerCollapseTemplate).load(chrome.extension.getURL("lib/templates/innerCollapseTemplate.html"), function(){
             if(storageAvailable("localStorage")){
-                fillApps();
+                // for(var z = 0; z < localStorage.length; z++){
+                //     console.log("Key " + z +" :",localStorage.key(z), " Value: ", localStorage.getItem(localStorage.key(z)));
+                // }
+                testStorageCap();
+                console.log(localStorage.length);
+                //fillApps();
             } else {
                 console.log("kein local Storage verfügbar.")
             }

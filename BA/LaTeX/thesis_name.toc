@@ -1,7 +1,7 @@
 \babel@toc {german}{}
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Ziel}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Structure}{1}{section.1.2}
+\contentsline {section}{\numberline {1.2}Structure}{2}{section.1.2}
 \contentsline {chapter}{\numberline {2}Preliminaries}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Stuff One}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Stuff Tow}{3}{section.2.2}
@@ -20,10 +20,10 @@
 \contentsline {section}{\numberline {3.3}Evaluierung von Caching Methoden einer Browser Extension}{6}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Einleitung}{7}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Vorauswahl}{8}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Rahmenbedingungen}{9}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Vorgehensweise}{9}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Ergebnisse}{9}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Diskussion}{9}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.3}Rahmenbedingungen}{10}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Vorgehensweise}{10}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Ergebnisse}{10}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Diskussion}{10}{subsection.3.3.6}
 \contentsline {chapter}{\numberline {4}LaTeX snippets}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}Basics}{11}{section.4.1}
 \contentsline {section}{\numberline {4.2}Images}{12}{section.4.2}
