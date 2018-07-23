@@ -4,6 +4,7 @@
 var today = new Date();
 var anfragencounter = 0;
 var ibJson = [];
+var useLocalStorage = true;
 var ibCardTemplate = document.createElement("div");
 var innerCollapseTemplate = document.createElement("div");
 var trennZeichen = "|";
@@ -333,7 +334,7 @@ function loadInfoPanels(parentNode, isSinglePage) {
         console.log(appID, " hat folgenden Storage String: ", appDataString);
         var appDataArray = [];
         //Prüft ob bereits Daten im localStorage vorhanden und aktuell sind.
-        if(appDataString && appDataString.split(trennZeichen)[0]){
+        if(useLocalStorage && appDataString && appDataString.split(trennZeichen)[0]){
             var lastUpdate = new Date(appDataString.split(trennZeichen)[0] * 86400000);
             if((lastUpdate.getTime() + 259200000) >= today.getTime()){
                 console.log("Die aktuelle DSE ist weniger als 3 Tage alt.");
@@ -344,7 +345,7 @@ function loadInfoPanels(parentNode, isSinglePage) {
             }
         }
         //Falls Daten vorhanden baue das Element darauß
-        if(appDataArray.length > 0){
+        if(useLocalStorage && appDataArray.length > 0){
             console.log("STORAGE GEFUNDEN: ", appID, appDataArray);
             createPanel(parentNode, appDataArray, true , isSinglePage);
             //Ansonsten lade die Informationen aus dem Backend
@@ -391,6 +392,7 @@ function fillApps(){
         $(".card").each(function () {
             console.log("Multiapp gefunden");
             loadInfoPanels(this, false);
+            //createPanel(this, [], false, false)
         });
     } else {
         console.log("singleApp!");
