@@ -6,11 +6,11 @@
     "default_popup": "popup/popup.html"
   },
   "manifest_version": 2,
-  "permissions": ["storage", "declarativeContent", "activeTab" ],
+  "permissions": ["storage", "declarativeContent", "activeTab", "tabs" ],
   "content_scripts": [
     {
-      "matches": ["*://play.google.com/store/*"],
-      "js": ["lib/js/jquery-3.3.1.min.js", "lib/js/popper.js", "lib/js/bootstrap.min.js", "lib/js/fontawesome-all.js", "pguard.js"],
+      "matches": ["*://play.google.com/store/apps*"],
+      "js": ["lib/js/jquery-3.3.1.min.js", "lib/js/popper.js", "lib/js/bootstrap.min.js", "lib/js/fontawesome-all.js", "pguard.js", "popup/popup-controller.js"],
       "css": ["lib/css/bootstrap.min.css", "lib/css/multiapp.css"]
     }
   ],

@@ -425,9 +425,9 @@ $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
                 // for(var z = 0; z < localStorage.length; z++){
                 //     console.log("Key " + z +" :",localStorage.key(z), " Value: ", localStorage.getItem(localStorage.key(z)));
                 // }
-                testStorageCap();
+                //testStorageCap();
                 console.log(localStorage.length);
-                //fillApps();
+                fillApps();
             } else {
                 console.log("kein local Storage verfügbar.")
             }
