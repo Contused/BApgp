@@ -5,6 +5,9 @@ var today = new Date();
 var anfragencounter = 0;
 var ibJson = [];
 var useLocalStorage = true;
+var db;
+//TODO set Storage by toggle in popup
+var usedStorage = "indexedDB";
 var ibCardTemplate = document.createElement("div");
 var innerCollapseTemplate = document.createElement("div");
 var trennZeichen = "|";
@@ -30,6 +33,9 @@ var urlTriggerNewAnalysis = "https://infaibackend.pguard-tools.de/"+ route +"?ap
 
 //Funktion von Mozilla die Browser auf localStorage-Verfügbarkeit überprüft.
 function storageAvailable(type) {
+    if(type === "indexedDB" && type in window){
+        return true;
+    }
     try {
         var storage = window[type],
             x = '__storage_test__';
@@ -50,6 +56,61 @@ function storageAvailable(type) {
             e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
             // acknowledge QuotaExceededError only if there's something already stored
             storage.length !== 0;
+    }
+}
+
+function getStorageItem(itemKey){
+    switch (usedStorage){
+        case "none":
+            break;
+        case "localStorage":
+            localStorage.getItem(itemKey);
+            break;
+        case "indexedDB":
+            break;
+        default:
+            console.log("No storage method selected.");
+    }
+}
+
+function setStorageItem(itemKey, itemValue){
+    switch (usedStorage){
+        case "none":
+            break;
+        case "localStorage":
+            localStorage.setItem(itemKey, itemValue);
+            break;
+        case "indexedDB":
+            var transaction = db.transaction(["apps"], "readwrite");
+            var store = transaction.objectStore("apps");
+            var entry = {
+                appID: itemKey,
+                data: itemValue
+            };
+            var request = store.add(entry);
+            request.onerror = function (ev) {
+                console.log("Error", ev.target.error.name);
+            };
+            request.onsuccess = function (ev) {
+                console.log("IndexedDB funkt");
+            };
+            break;
+        default:
+            console.log("No storage method selected.");
+    }
+}
+
+function deleteStorageItem(itemKey) {
+    switch (usedStorage){
+        case "none":
+            break;
+        case "localStorage":
+            localStorage.removeItem(itemKey);
+            break;
+        case "indexedDB":
+            break;
+        default:
+            console.log("No storage method selected.");
     }
 }
 
@@ -330,7 +391,7 @@ function loadInfoPanels(parentNode, isSinglePage) {
     }
     //Wurde eine App-ID gefunden?
     if (appID) {
-        var appDataString = localStorage.getItem(appID);
+        var appDataString = getStorageItem(appID);
         console.log(appID, " hat folgenden Storage String: ", appDataString);
         var appDataArray = [];
         //Prüft ob bereits Daten im localStorage vorhanden und aktuell sind.
@@ -361,9 +422,8 @@ function loadInfoPanels(parentNode, isSinglePage) {
                     //Wurden bereits DSEs für die App gefunden?
                     if (data.dses && data.dses.length > 0) {
                         var storageString = castDseToStorageString(getNewestDseFromData(data));
-                        localStorage.setItem(appID, storageString);
-                        console.log("STORAGE ANGELEGT", appID, storageString);
-                        console.log("länge:", localStorage.length);
+                        setStorageItem(appID,storageString);
+                        console.log("Neuer Eintrag angelegt: ", appID, storageString);
                         appDataArray = storageString.split(trennZeichen);
                         createPanel(parentNode, appDataArray, true, isSinglePage);
                     } else {
@@ -421,15 +481,36 @@ $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
     ibJson = input;
     $(ibCardTemplate).load(chrome.extension.getURL("lib/templates/ibCardTemplate.html"), function (data) {
         $(innerCollapseTemplate).load(chrome.extension.getURL("lib/templates/innerCollapseTemplate.html"), function(){
-            if(storageAvailable("localStorage")){
+            if((usedStorage === "localStorage" || usedStorage === "indexedDB") && storageAvailable(usedStorage)){
                 // for(var z = 0; z < localStorage.length; z++){
                 //     console.log("Key " + z +" :",localStorage.key(z), " Value: ", localStorage.getItem(localStorage.key(z)));
                 // }
                 //testStorageCap();
-                console.log(localStorage.length);
+                //console.log(localStorage.length);
+                if(usedStorage === "indexedDB"){
+                    var openRequest = indexedDB.open("pguardExt",1);
+
+                    openRequest.onupgradeneeded = function(e){
+                        var thisDB = e.target.result;
+                        console.log("running onupgradeneeded");
+                        if(!thisDB.objectStoreNames.contains("apps")){
+                            var appsOS = thisDB.createObjectStore("apps",{keyPath: "appID"});
+                        }
+                    };
+
+                    openRequest.onsuccess = function (ev) {
+                        console.log("running onsucess");
+                        db = ev.target.result;
+                    };
+
+                    openRequest.onerror = function (ev) {
+                        console.log("onerror!");
+                        console.dir(ev);
+                    }
+                }
                 fillApps();
             } else {
-                console.log("kein local Storage verfügbar.")
+                console.log("kein Storage verfügbar.");
             }
         });
     });
