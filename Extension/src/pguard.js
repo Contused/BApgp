@@ -60,17 +60,24 @@ function storageAvailable(type) {
 }
 
 function getStorageItem(itemKey){
+    var appInfo;
+
     switch (usedStorage){
         case "none":
             break;
         case "localStorage":
-            localStorage.getItem(itemKey);
+            appInfo = localStorage.getItem(itemKey);
             break;
         case "indexedDB":
+            var transaction = db.transaction(["apps"], "readonly");
+            var store = transaction.objectStore("apps");
+            appInfo = store.get(itemKey);
             break;
+
         default:
             console.log("No storage method selected.");
     }
+    return appInfo;
 }
 
 function setStorageItem(itemKey, itemValue){
@@ -87,9 +94,10 @@ function setStorageItem(itemKey, itemValue){
                 appID: itemKey,
                 data: itemValue
             };
-            var request = store.add(entry);
+            var request = store.put(entry);
             request.onerror = function (ev) {
-                console.log("Error", ev.target.error.name);
+                console.log("Error", ev.target.error);
+                console.dir(ev.target);
             };
             request.onsuccess = function (ev) {
                 console.log("IndexedDB funkt");
@@ -120,13 +128,8 @@ function castDseToStorageString(dse){
     var ibString = "";
     var freqCount = "1";
     var ibs = [];
-    if(dse.origin === "dummy"){
-        extractionDate = new Date(dse.date_extracted);
-    } else {
-        extractionDate = new Date(dse.date_infobox_calculation_finished);
-    }
     //Auf Tage runden.
-    extractionDate = Math.floor(extractionDate.getTime() /86400000);
+    extractionDate = Math.floor(today.getTime() /86400000);
 
     console.log("Wähle: ", dse.origin , dse.date_infobox_calculation_finished);
     for(var o = 0; o < dse.infoboxes.length; o++){
@@ -383,8 +386,8 @@ function loadInfoPanels(parentNode, isSinglePage) {
         appID = currentURL.searchParams.get("id");
     } else {
         if($(parentNode).attr("data-docid")){
-            console.log("appID gefunden",$(parentNode).attr("data-docid"));
             appID = $(parentNode).attr("data-docid");
+            console.log("appID gefunden",appID);
         }else {
             appID = $(parentNode.children[0].children[0].children[3].children[0]).attr("href").split("id=")[1];
         }
@@ -392,42 +395,46 @@ function loadInfoPanels(parentNode, isSinglePage) {
     //Wurde eine App-ID gefunden?
     if (appID) {
         var appDataString = getStorageItem(appID);
-        console.log(appID, " hat folgenden Storage String: ", appDataString);
-        var appDataArray = [];
-        //Prüft ob bereits Daten im localStorage vorhanden und aktuell sind.
-        if(useLocalStorage && appDataString && appDataString.split(trennZeichen)[0]){
-            var lastUpdate = new Date(appDataString.split(trennZeichen)[0] * 86400000);
-            if((lastUpdate.getTime() + 259200000) >= today.getTime()){
-                console.log("Die aktuelle DSE ist weniger als 3 Tage alt.");
-                appDataArray = appDataString.split(trennZeichen);
-            } else {
-                console.log("Die aktuelle DSE ist älter als 3 Tage.");
-                console.log("Aktuallisiere Daten für " + appID);
+
+        var future = function(param) {
+
+            var appDataArray = [];
+            //Prüft ob bereits Daten im localStorage vorhanden und aktuell sind.
+            if(useLocalStorage && param && param.split(trennZeichen)[0]){
+                var lastUpdate = new Date(param.split(trennZeichen)[0] * 86400000);
+                if((lastUpdate.getTime() + 259200000) >= today.getTime()){
+                    appDataArray = param.split(trennZeichen);
+                } else {
+                    console.log("Aktuallisiere Daten für " + appID);
+                }
             }
-        }
-        //Falls Daten vorhanden baue das Element darauß
-        if(useLocalStorage && appDataArray.length > 0){
-            console.log("STORAGE GEFUNDEN: ", appID, appDataArray);
-            createPanel(parentNode, appDataArray, true , isSinglePage);
-            //Ansonsten lade die Informationen aus dem Backend
-        } else {
-            console.log("Frage (erstmalig) Daten ab für " + appID);
-            anfragencounter ++;
-            $.ajax({
-                url: urlWholeDataSetNoRequest + "" +appID,
-                method: "POST",
-                success: function (response) {
-                    var data = response.data;
-                    console.log(data);
-                    //Wurden bereits DSEs für die App gefunden?
-                    if (data.dses && data.dses.length > 0) {
-                        var storageString = castDseToStorageString(getNewestDseFromData(data));
-                        setStorageItem(appID,storageString);
-                        console.log("Neuer Eintrag angelegt: ", appID, storageString);
-                        appDataArray = storageString.split(trennZeichen);
-                        createPanel(parentNode, appDataArray, true, isSinglePage);
-                    } else {
-                        console.log("KEINE DSE VORHANDEN", appID);
+            //Falls Daten vorhanden baue das Element darauß
+            if(useLocalStorage && appDataArray.length === 1){
+                console.log("STORAGE OHNE ERGEBNISSE GEFUNDEN: ", appID, appDataArray);
+                createPanel(parentNode, appDataArray, false , isSinglePage);
+            } else if(useLocalStorage && appDataArray.length > 1){
+                console.log("STORAGE GEFUNDEN: ", appID, appDataArray);
+                createPanel(parentNode, appDataArray, true , isSinglePage);
+                //Ansonsten lade die Informationen aus dem Backend
+            } else {
+                console.log("Frage (erstmalig) Daten ab für " + appID);
+                anfragencounter ++;
+                $.ajax({
+                    url: urlWholeDataSetNoRequest + "" +appID,
+                    method: "POST",
+                    success: function (response) {
+                        var data = response.data;
+                        console.log(data);
+                        //Wurden bereits DSEs für die App gefunden?
+                        if (data.dses && data.dses.length > 0) {
+                            var storageString = castDseToStorageString(getNewestDseFromData(data));
+                            setStorageItem(appID,storageString);
+                            console.log("Neuer Eintrag angelegt: ", appID, storageString);
+                            appDataArray = storageString.split(trennZeichen);
+                            createPanel(parentNode, appDataArray, true, isSinglePage);
+                        } else {
+                            console.log("KEINE DSE VORHANDEN", appID);
+                            setStorageItem(appID,""+ Math.floor(today.getTime() /86400000));
                             $.ajax({
                                 url: urlTriggerNewAnalysis + appID,
                                 method: "POST",
@@ -436,26 +443,39 @@ function loadInfoPanels(parentNode, isSinglePage) {
                                 },
                                 dataType: "json"
                             });
-                        createPanel(parentNode, [], false, isSinglePage);
-                    }
-                },
-                dataType: "json"
-            });
-            console.log("Anfragen bisher: ",anfragencounter);
+                            createPanel(parentNode, [], false, isSinglePage);
+                        }
+                    },
+                    dataType: "json"
+                });
+                console.log("Anfragen bisher: ",anfragencounter);
+            }
+        };
+
+        // Promise
+        if (typeof appDataString === 'object') {
+
+            appDataString.onsuccess = function() {
+                if(appDataString.result){
+                    future(appDataString.result.data);
+                } else {
+                    future();
+                }
+            };
+
+        } else {
+            future(appDataString);
         }
     }
 }
 
 function fillApps(){
     if(document.getElementsByClassName("card")[0]){
-        console.log("multiApp!");
         $(".card").each(function () {
-            console.log("Multiapp gefunden");
             loadInfoPanels(this, false);
             //createPanel(this, [], false, false)
         });
     } else {
-        console.log("singleApp!");
         if(document.getElementsByClassName("JHTxhe")[0]){
             loadInfoPanels(document.getElementsByClassName("JHTxhe")[0], true);
         }
@@ -477,7 +497,6 @@ function testStorageCap(){
 }
 //Lädt lokale Json-Bibliothek für
 $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
-    console.log("vorher: ", localStorage.length);
     ibJson = input;
     $(ibCardTemplate).load(chrome.extension.getURL("lib/templates/ibCardTemplate.html"), function (data) {
         $(innerCollapseTemplate).load(chrome.extension.getURL("lib/templates/innerCollapseTemplate.html"), function(){
@@ -499,8 +518,9 @@ $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
                     };
 
                     openRequest.onsuccess = function (ev) {
-                        console.log("running onsucess");
+                        console.log("DB bereit");
                         db = ev.target.result;
+                        fillApps();
                     };
 
                     openRequest.onerror = function (ev) {
@@ -508,7 +528,6 @@ $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
                         console.dir(ev);
                     }
                 }
-                fillApps();
             } else {
                 console.log("kein Storage verfügbar.");
             }

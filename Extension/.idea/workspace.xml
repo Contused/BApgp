@@ -18,7 +18,7 @@
     <favorites_list name="Extension" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6441006">
+    <splitter split-orientation="horizontal" split-proportion="0.7969052">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
@@ -63,8 +63,15 @@
           <file leaf-file-name="pguard.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/pguard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="76" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="76" />
+                <state relative-caret-position="346">
+                  <caret line="409" column="13" lean-forward="true" selection-start-line="409" selection-start-column="13" selection-end-line="409" selection-end-column="13" />
+                  <folding>
+                    <element signature="n#!!block;n#deleteStorageItem#0" />
+                    <element signature="n#!!block;n#getInfoForIB#0" />
+                    <element signature="n#!!block;n#createPopover#0" />
+                    <element signature="n#!!block;n#createPanel#0" />
+                    <element signature="n#!!block;n#getNewestDseFromData#0" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -72,7 +79,7 @@
           <file leaf-file-name="IB_texte.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-11870">
+                <state relative-caret-position="272">
                   <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
                 </state>
               </provider>
@@ -145,8 +152,8 @@
           <file leaf-file-name="innerCollapseTemplate.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/lib/templates/innerCollapseTemplate.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+                <state relative-caret-position="221">
+                  <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
                   <folding>
                     <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                   </folding>
@@ -169,13 +176,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getDay</find>
-      <find>ibs</find>
-      <find>collapseThree</find>
-      <find>insert</find>
-      <find>data-to</find>
-      <find>$(&quot;.theader&quot;)</find>
-      <find>$(</find>
       <find>Id</find>
       <find>collapseS</find>
       <find>secondLayer</find>
@@ -199,6 +199,13 @@
       <find>useLocal</find>
       <find>fillapps</find>
       <find>localStorage</find>
+      <find>multiapp</find>
+      <find>db</find>
+      <find>getStor</find>
+      <find>getstorAGE</find>
+      <find>app</find>
+      <find>appDataString</find>
+      <find>today.get</find>
     </findStrings>
     <replaceStrings>
       <replace>data.data.</replace>
@@ -209,6 +216,7 @@
       <replace>children</replace>
       <replace>innerText</replace>
       <replace>firstLayerElement</replace>
+      <replace>param</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -249,10 +257,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-1928" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -377,25 +385,27 @@
       <workItem from="1532084165913" duration="6757000" />
       <workItem from="1532594194156" duration="4192000" />
       <workItem from="1535534568524" duration="6259000" />
+      <workItem from="1535984324703" duration="9932000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156314000" />
+    <option name="totallyTimeSpent" value="166246000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1921875" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32943678" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -644,16 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/templates/innerCollapseTemplate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/templates/IBCollapse.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -717,15 +717,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11870">
+        <state relative-caret-position="272">
           <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/templates/innerCollapseTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pguard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="76" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="76" />
+        <state relative-caret-position="346">
+          <caret line="409" column="13" lean-forward="true" selection-start-line="409" selection-start-column="13" selection-end-line="409" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!block;n#deleteStorageItem#0" />
+            <element signature="n#!!block;n#getInfoForIB#0" />
+            <element signature="n#!!block;n#createPopover#0" />
+            <element signature="n#!!block;n#createPanel#0" />
+            <element signature="n#!!block;n#getNewestDseFromData#0" />
+          </folding>
         </state>
       </provider>
     </entry>
