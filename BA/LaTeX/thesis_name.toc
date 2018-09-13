@@ -2,23 +2,23 @@
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Ziel}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Structure}{2}{section.1.2}
-\contentsline {chapter}{\numberline {2}Preliminaries}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Stuff One}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Stuff Tow}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Stuff Three}{3}{section.2.3}
+\contentsline {chapter}{\numberline {2}Vorarbeit}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Recherche zu Browser Extensions}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Projekt PGuard}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Implementierung einer Google Chrome Extension}{3}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Stuff Three.1}{4}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Stuff Three.2}{4}{subsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.2.1}Stuff Three.2.1}{4}{subsubsection.2.3.2.1}
-\contentsline {section}{\numberline {2.4}Stuff4}{4}{section.2.4}
-\contentsline {chapter}{\numberline {3}This is the first main part of the work}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}Aufgabenbeschreibung}{5}{section.3.1}
-\contentsline {section}{\numberline {3.2}Implementierung einer Browser Extension zur Anzeige von Datenschutzinformationen im PlayStore}{6}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Method}{6}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Data Source}{6}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Results}{6}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Discussion}{6}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Evaluierung von Caching Methoden einer Browser Extension}{6}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Einleitung}{7}{subsection.3.3.1}
+\contentsline {section}{\numberline {2.4}Caching-Methoden}{4}{section.2.4}
+\contentsline {chapter}{\numberline {3}Hauptteil}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Erl\IeC {\"a}uterung der Aufgabenstellungen}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Aufgabe 1: Implementierung einer Browser Extension zur Anzeige von Datenschutzinformationen im PlayStore}{5}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Nutzungsszenarien}{6}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Programmaufbau}{6}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Ergebnis}{6}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Diskussion}{6}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{6}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Anforderungen}{6}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Vorauswahl}{8}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Rahmenbedingungen}{10}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Vorgehensweise}{10}{subsection.3.3.4}

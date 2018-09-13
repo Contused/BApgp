@@ -1,23 +1,23 @@
 \BOOKMARK [0][-]{chapter.1}{Einleitung}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Ziel}{chapter.1}% 2
 \BOOKMARK [1][-]{section.1.2}{Structure}{chapter.1}% 3
-\BOOKMARK [0][-]{chapter.2}{Preliminaries}{}% 4
-\BOOKMARK [1][-]{section.2.1}{Stuff One}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.2}{Stuff Tow}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.3}{Stuff Three}{chapter.2}% 7
+\BOOKMARK [0][-]{chapter.2}{Vorarbeit}{}% 4
+\BOOKMARK [1][-]{section.2.1}{Recherche zu Browser Extensions}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{Projekt PGuard}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.3}{Implementierung einer Google Chrome Extension}{chapter.2}% 7
 \BOOKMARK [2][-]{subsection.2.3.1}{Stuff Three.1}{section.2.3}% 8
 \BOOKMARK [2][-]{subsection.2.3.2}{Stuff Three.2}{section.2.3}% 9
 \BOOKMARK [3][-]{subsubsection.2.3.2.1}{Stuff Three.2.1}{subsection.2.3.2}% 10
-\BOOKMARK [1][-]{section.2.4}{Stuff4}{chapter.2}% 11
-\BOOKMARK [0][-]{chapter.3}{This is the first main part of the work}{}% 12
-\BOOKMARK [1][-]{section.3.1}{Aufgabenbeschreibung}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.2}{Implementierung einer Browser Extension zur Anzeige von Datenschutzinformationen im PlayStore}{chapter.3}% 14
-\BOOKMARK [2][-]{subsection.3.2.1}{Method}{section.3.2}% 15
-\BOOKMARK [2][-]{subsection.3.2.2}{Data Source}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.3}{Results}{section.3.2}% 17
-\BOOKMARK [2][-]{subsection.3.2.4}{Discussion}{section.3.2}% 18
-\BOOKMARK [1][-]{section.3.3}{Evaluierung von Caching Methoden einer Browser Extension}{chapter.3}% 19
-\BOOKMARK [2][-]{subsection.3.3.1}{Einleitung}{section.3.3}% 20
+\BOOKMARK [1][-]{section.2.4}{Caching-Methoden}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Hauptteil}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Erl\344uterung der Aufgabenstellungen}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{Aufgabe 1: Implementierung einer Browser Extension zur Anzeige von Datenschutzinformationen im PlayStore}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.2.1}{Nutzungsszenarien}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.2}{Programmaufbau}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.3}{Ergebnis}{section.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.2.4}{Diskussion}{section.3.2}% 18
+\BOOKMARK [1][-]{section.3.3}{Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.3.1}{Anforderungen}{section.3.3}% 20
 \BOOKMARK [2][-]{subsection.3.3.2}{Vorauswahl}{section.3.3}% 21
 \BOOKMARK [2][-]{subsection.3.3.3}{Rahmenbedingungen}{section.3.3}% 22
 \BOOKMARK [2][-]{subsection.3.3.4}{Vorgehensweise}{section.3.3}% 23
