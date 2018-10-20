@@ -1,87 +1,16 @@
-\chapter{Hauptteil}
-\label{c:mainpart1}
-
-This chapter will first outline the problems that constitutes the main portion of this work. Each problem is described separately starting with the available data sources followed by a detailed description of the proposed solutions. After that, the proposed solutions are evaluated by empirical means and the results are presented. Performance studies are conducted to provide suitable recommendations concerning the real world application.
-
-
-
-\section{Erläuterung der Aufgabenstellungen}
-\label{s:prob_describtion}
-
-There are two main problems researched in this Bachelor/Master Thesis.
-
-As stated in the previous chapter~\ref{c:preliminaries}...
-
-\textbf{''Question 1''}. 
-
-When ... the second question arises: 
-
-\textbf{''Question 2''}
-
-This question will mainly be answered with the help of empirical data gathered from...
-
-
-\section{Aufgabe 1: Implementierung einer Browser Extension zur Anzeige von Datenschutzinformationen im PlayStore}
-\label{s:solution_prob_1}
-
-This subsection describes the solution for the first problem: ''Question 1?''. This problem is studied by using a simulation framework. Within the simulation it is possible to alter the configuration of t... . It is studied ... .
-
-
-
-\subsection{Nutzungsszenarien}
-\label{ss:method}
-
-describe the used method. how is the experiment conducted. which means were used
-
-\subsection{Programmaufbau}
-\label{ss:datasource}
-
-how is the data obtained. what are the properties of the data.
-
-
-\subsection{Ergebnis}
-\label{ss:results}
-
-This section will state and discuss the results obtained ... . First, the results for ... are presented. Thereafter, the results for ... are shown. After that, the obtained results will be discussed. Hints for ... will be given.
-
-
-
-
-\subsection{Diskussion}
-\label{ss:discussion_details}
-
-discuss the obtained results here in detail. what is promising, what is not so good. what could be done better. limitations of the used methods. suggest future research (sub-)topics.
-
-
-
-
-
-
-
 \section{Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}
-\label{s:solution_prob_2}
-
-TODO
-- Caching Methoden Teil skizzieren
-- Caching Evaluierung überlegen
-- gibt es PlugIn Profiler?
-- auslesen der Daten aus der Konsole
-
-Hier steht die Einleitung mit Beschreibung der Caching Evaluierung. Warum? Von Was? Bedingungen? Mögliche Resultate.
+\label{s:evaluierungcaching}
 
 
 \subsection{Anforderungen}
-Extension = Erweiterung des PlayStores um neue Informationen
-Erweiterung findet bei Anwendung immer Landing Page/Hauptseite statt
-
-//
+\label{ss:anforderungen}
+Extension erweitert die Landingpage.
 Diese in Kategorien unterteilt. Kategorien werden bei jedem Besuch wieder aufgerufen
 "Spiele mit Vorregistrierung" stellt über längere Zeit gleiche Apps dar.
 "New + Updated Games" und "Top-Bewertung: Spiele" lieferen jedes Mal ähnliche Ergebnisse => überlappende Information
 "Empfehlungen für dich" und "Das könnte dir Gefallen" passen sich vorherigen Suchen an und liefern daher auch redudante Ergebnisse
 Selbe App oft mehrmals in der Übersicht vertreten
 Konklusion: viel Redundanz. Ergänzende Information werden mehrfach benötigt
-//
 
 Verarbeitet Diese nur zu benutzerfreundlichen Format
 Informationen müssen von externen Quelle entnommen werden
@@ -160,7 +89,7 @@ Speicher wird auf Maximalkapazität geprüft und eine Approximation vom "Füllst
 
 
 \subsection{Vorauswahl}
-
+\label{vorauswahl}
 Welche Arten von Speicher stehen einer Extension für Browser (hier Chrome) zur Verfügung?
 
 Integriert: Session Storage und lokal Storage
@@ -217,7 +146,7 @@ Nachteile: Speicherpflege notwendig. Dadurch wird die Information länger (Count
 => Hohe Einsparung bei Anfragen an den Server möglich. Dafür müssen zusätzliche Operationen zur Speicherpflege und Prüfung der Informationen ausgeführt werden.
 
 \subsection{Rahmenbedingungen}
-\label{ss:method2}
+\label{ss:rahmenbedingungen}
 
 Plattform: Windows 10 Rechner Build, Specs
 Chrome Details
@@ -237,16 +166,12 @@ Chrome  67.0.3396.99 64 Bit
 
 
 \subsection{Vorgehensweise}
-\label{ss:datasource2}
+\label{ss:vorgehensweise}
 
-Datum des Experiments
 
-https://developers.google.com/web/tools/chrome-devtools/rendering-tools/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3
-
-Überprüfung mittels DevTools von Chrome
 
 \subsection{Ergebnisse}
-\label{ss:results2}
+\label{ss:ergebnisseht2}
 
 Storage: none
 Ladezeit: 1435ms
@@ -272,16 +197,4 @@ Anzahl der Anfragen an das Backend: 131
 
 
 \subsection{Diskussion}
-\label{ss:discussion_details2}
-
-discuss the obtained results here in detail. what is promising, what is not so good. what could be done better. limitations of the used methods. suggest future research (sub-)topics.
-
-
-
-
-
-
-
-
-
-
+\label{ss:diskussionht2}
