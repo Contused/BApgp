@@ -21,7 +21,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.7969052">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="manifest.json" pinned="false" current-in-tab="true">
+          <file leaf-file-name="manifest.json" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/manifest.json">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="102">
@@ -63,8 +63,8 @@
           <file leaf-file-name="pguard.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/pguard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="346">
-                  <caret line="409" column="13" lean-forward="true" selection-start-line="409" selection-start-column="13" selection-end-line="409" selection-end-column="13" />
+                <state relative-caret-position="3043">
+                  <caret line="409" column="13" selection-start-line="409" selection-start-column="13" selection-end-line="409" selection-end-column="13" />
                   <folding>
                     <element signature="n#!!block;n#deleteStorageItem#0" />
                     <element signature="n#!!block;n#getInfoForIB#0" />
@@ -76,11 +76,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="IB_texte.json" pinned="false" current-in-tab="false">
+          <file leaf-file-name="IB_texte.json" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+                <state relative-caret-position="288">
+                  <caret line="63" column="24" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -192,7 +192,7 @@
       <find>Storage</find>
       <find>trennzei</find>
       <find>ajax</find>
-      <find>Anfrage er</find>
+      <find />
       <find>id</find>
       <find>&quot;id&quot;</find>
       <find>setItem</find>
@@ -256,7 +256,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -267,6 +267,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,7 +296,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,14 +387,16 @@
       <workItem from="1535534568524" duration="6259000" />
       <workItem from="1535984324703" duration="10209000" />
       <workItem from="1536833327287" duration="598000" />
+      <workItem from="1540643297074" duration="1495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167121000" />
+    <option name="totallyTimeSpent" value="168616000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1921875" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -708,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/templates/innerCollapseTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -727,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pguard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="409" column="13" lean-forward="true" selection-start-line="409" selection-start-column="13" selection-end-line="409" selection-end-column="13" />
+        <state relative-caret-position="3043">
+          <caret line="409" column="13" selection-start-line="409" selection-start-column="13" selection-end-line="409" selection-end-column="13" />
           <folding>
             <element signature="n#!!block;n#deleteStorageItem#0" />
             <element signature="n#!!block;n#getInfoForIB#0" />
@@ -743,6 +738,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="63" column="24" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="24" />
         </state>
       </provider>
     </entry>
