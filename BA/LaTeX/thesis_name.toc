@@ -24,19 +24,19 @@
 \contentsline {subsection}{\numberline {3.2.2}Anforderungsanalyse}{8}{subsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.1}Funktionale Anforderungen}{8}{subsubsection.3.2.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2.2}Nichtfunktionale Anforderungen}{9}{subsubsection.3.2.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Programmaufbau}{9}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Ergebnis}{10}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Diskussion}{10}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{10}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Anforderungen}{10}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Vorauswahl}{11}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Rahmenbedingungen}{13}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Vorgehensweise}{13}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Ergebnisse}{13}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Diskussion}{13}{subsection.3.3.6}
-\contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Konklusion}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Fortsetzung der Forschung}{15}{section.4.2}
-\contentsline {chapter}{\numberline {5}Appendix}{17}{chapter.5}
-\contentsline {section}{\numberline {5.1}Derivations}{17}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Example Matlab Code}{18}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {3.2.3}Programmaufbau}{11}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Ergebnis}{11}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Diskussion}{11}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{11}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Anforderungen}{11}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Vorauswahl}{13}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Rahmenbedingungen}{15}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Vorgehensweise}{15}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Ergebnisse}{15}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Diskussion}{15}{subsection.3.3.6}
+\contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Konklusion}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Fortsetzung der Forschung}{17}{section.4.2}
+\contentsline {chapter}{\numberline {5}Appendix}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Derivations}{19}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Example Matlab Code}{20}{subsection.5.1.1}
