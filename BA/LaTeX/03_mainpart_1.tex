@@ -1,0 +1,246 @@
+\chapter{This is the first main part of the work}
+\label{c:mainpart1}
+
+This chapter will first outline the problems that constitutes the main portion of this work. Each problem is described separately starting with the available data sources followed by a detailed description of the proposed solutions. After that, the proposed solutions are evaluated by empirical means and the results are presented. Performance studies are conducted to provide suitable recommendations concerning the real world application.
+
+
+
+\section{Aufgabenbeschreibung}
+\label{s:prob_describtion}
+
+There are two main problems researched in this Bachelor/Master Thesis.
+
+As stated in the previous chapter~\ref{c:preliminaries}...
+
+\textbf{''Question 1''}. 
+
+When ... the second question arises: 
+
+\textbf{''Question 2''}
+
+This question will mainly be answered with the help of empirical data gathered from...
+
+
+\section{Implementierung einer Browser Extension zur Anzeige von Datenschutzinformationen im PlayStore}
+\label{s:solution_prob_1}
+
+This subsection describes the solution for the first problem: ''Question 1?''. This problem is studied by using a simulation framework. Within the simulation it is possible to alter the configuration of t... . It is studied ... .
+
+
+
+\subsection{Method}
+\label{ss:method}
+
+describe the used method. how is the experiment conducted. which means were used
+
+\subsection{Data Source}
+\label{ss:datasource}
+
+how is the data obtained. what are the properties of the data.
+
+
+\subsection{Results}
+\label{ss:results}
+
+This section will state and discuss the results obtained ... . First, the results for ... are presented. Thereafter, the results for ... are shown. After that, the obtained results will be discussed. Hints for ... will be given.
+
+
+
+
+\subsection{Discussion}
+\label{ss:discussion_details}
+
+discuss the obtained results here in detail. what is promising, what is not so good. what could be done better. limitations of the used methods. suggest future research (sub-)topics.
+
+
+
+
+
+
+
+\section{Evaluierung von Caching Methoden einer Browser Extension}
+\label{s:solution_prob_2}
+
+TODO
+- Caching Methoden Teil skizzieren
+- Caching Evaluierung überlegen
+- gibt es PlugIn Profiler?
+- auslesen der Daten aus der Konsole
+
+Hier steht die Einleitung mit Beschreibung der Caching Evaluierung. Warum? Von Was? Bedingungen? Mögliche Resultate.
+
+
+\subsection{Einleitung}
+Extension = Erweiterung des PlayStores um neue Informationen
+Erweiterung findet bei Anwendung immer Landing Page/Hauptseite statt
+
+//
+Diese in Kategorien unterteilt. Kategorien werden bei jedem Besuch wieder aufgerufen
+"Spiele mit Vorregistrierung" stellt über längere Zeit gleiche Apps dar.
+"New + Updated Games" und "Top-Bewertung: Spiele" lieferen jedes Mal ähnliche Ergebnisse => überlappende Information
+"Empfehlungen für dich" und "Das könnte dir Gefallen" passen sich vorherigen Suchen an und liefern daher auch redudante Ergebnisse
+Selbe App oft mehrmals in der Übersicht vertreten
+Konklusion: viel Redundanz. Ergänzende Information werden mehrfach benötigt
+//
+
+Verarbeitet Diese nur zu benutzerfreundlichen Format
+Informationen müssen von externen Quelle entnommen werden
+Dadurch entstehen Anfragen an einen Server mit Antworten
+Antworten und Anfragen durch // redundant.
+
+Thesen:
+Nutzung der Extension nach "Veröffentlichung" würde hohen Traffic verursachen mit vielen wiederholten Anfragen.
+Anfragen könnten ab einer bestimmten Nutzerzahl Server überlasten
+Performance der Extension leidet unter dieser Art der Infortionsbeschaffung
+Bei Ausfall der Quelle, bietet Extension keinen Mehrwert für den Nutzer mehr.
+
+Lösung:
+Einrichtung von unabhängigen Speicher zur Aufbewahrung der gewonnen Informationen. Insbesondere viele/wiederholt genutzt Informationen sollen ohne erneute Anfrage zur Verfügung stehen.
+Neue Anfragen nur bei Veraltung der Informationen bzw. nur von neu aufgetauchten Apps
+Aufbau einer Struktur zur Abspeicherung der wichtigen Informationen
+
+
+Verwendung des Speichers:
+
+Welche Informationen stehen pro App zur Verfügung?(1)
+Welche Informationen werden pro App benötigt? (2)
+Wie wird der Speicher gepflegt?(3)
+
+(1)
+
+Wird bei Aufbau der App schon Beschrieben?
+
+
+(2)
+Alter der Information:
+Ist die Information auf dem Aktuellen Stand wie die der Quelle?
+Ist die Information der Quelle veraltet?
+Wie oft wird so eine Information erneuert? (Neue DSE o.ä)
+=> Abspeichern des Analysedatums. Regelmäßige Überprüfungen(3 Tage), ob neue Information bei der Quelle vorhanden
+
+Aufruf der App:
+Wie oft wird diese App aufgerufen?
+Informationen über die App im Speicher können nach gewisser Zeit gelöscht werden, wenn sie nicht erneut aufgerufen wurde.
+=> Frequency Count: Zähler im Speicher der bei jedem Aufruf erhöht wird. Regelmäßig wird der Speicher nach niedrigen Zählern durchsucht und diese Einträge gelöscht.
+
+Informationen zur App:
+Inhalt entspricht Kennnummern der Infoboxen. Also Abspeichern der jeweilig vorhandenen Eigenschaft/Infobox
+ 
+(3)
+Aufbau des Speichers von Speichermethode abhängig (Chrome => key, value String)
+Möglichst kurze Zusammenfassung der benötigten Informationen:
+Alter der Information als Tageszähler seit festem Datum, da Tagesvergleich stattfindet
+Frequency Counter als einzelner Integer (ÜB: casten auf einstellige Zahl "Protect"-Faktor?)
+Abfolge von Kennnummer mit Infoboxen
+Trennzeichen zum korrekten Auslesen der Informationen.
+"ALTERTAGE(TRENNZEICHEN)FREQ(TRENNZEICHEN)IB(TRENNZEICHEN)IB ..."
+Bsp: "17500|3|1|2|3|4"
+
+Nach Antwort von Server werden Informationen im Speicher abgelegt mit Startcounter.
+Bei jedem erneuten Abrufen wird der Speicher abgefragt. Falls Information vorhanden und aktuell wird Counter angepasst und Informationen lokal ausgelesen. Ansonsten neue Anfrage an Server. Ist Antwort mit neuer Information vorhanden wird die alte gelöscht und durch die neue ersetzt.
+
+Extension prüft in regelmäßigen Abständen den Counter-Status. Ist dieser zu niedrig wird die Information aus dem Speicher entfernt.
+
+Speicher wird auf Maximalkapazität geprüft und eine Approximation vom "Füllstand" wird errechnet. Ist der Speicher voll, werden Einträge mit dem niedrigsten Counter gelöscht.
+
+
+
+\subsection{Vorauswahl}
+
+Welche Arten von Speicher stehen einer Extension für Browser (hier Chrome) zur Verfügung?
+
+Integriert: Session Storage und lokal Storage
+Session Storage: Daten bleiben nur während der Sitzung erhalten. Das Schließen des Browsers bzw. das Öffnen der Website in einem anderen Tab/Browserfenster beendet die Sitzung
+
+Local Storage: Daten bleiben über eine Sitzung hinaus erhalten und verfallen erst durch Überschreiben oder Löschen
+
+Kapazität: 5MB
+
+Aufbau: String-Tupel nach dem (Key, Value)-Prinzip
+
+Zugriff: getItem(key), setItem(key,value) und removeItem(key)
+
+
+Serverseitiger Speicher:
+Identifizierung notwendig. Aufwendig in Pflege und Wartung. Kein Mehrwert zu Anfragen an Informationsquelle
+
+Serverseitiger Speicher fällt vor vorne herein weg aus oben genannten Grund und datenschutzrechtlichen Bedenken.
+
+Vorteil von Session Storage: Speicherpflege nicht notwendig, da 5MB groß genug für Anzahl(?) an App-Informationen während einer Session im PlayStore. Informationen immer auf Stand der Quelle
+Nachteil: Bei erstmaligen Öffnen des Stores in neuer Browsersession werden viele Anfragen losgeschickt für Apps die bereits in der letzten Session schon angefragt wurden. Bei Serverausfällen fehlen die Informationen
+Lediglich in einer Session mehrfach aufgerufene Apps ersparen erneute Anfragen.
+=> Speicherpflege fällt weg, dafür kaum Mehrwert bei Anfragen.
+
+Vorteil von Lokal Storage: Apps werden einmal abgefragt und sind anschließend abgespeichert. Fällt der Server aus können die lokalen Informationen genutzt werden. Daten auch aus letzter Session bleiben vorhanden. Neue Anfragen werden nur dann geschickt wenn aktuelle Daten über 3 Tage alt sind.
+Nachteile: Speicherpflege notwendig. Dadurch wird die Information länger (Counter und Tag). Zusätzliche Rechenzeit für das Löschen von alten Informationen notwendig. Dadurch wird sichergestellt dass die 5MB nicht überschritten werden und somit Informationen ungewollt verloren gehen. Für Informationen mit hohem Counter muss regelmäßig überprüft werden, ob die Information noch aktuell ist, weil diese in der Regel lange im Speicher verweilt.
+=> Hohe Einsparung bei Anfragen an den Server möglich. Dafür müssen zusätzliche Operationen zur Speicherpflege und Prüfung der Informationen ausgeführt werden.
+
+\subsection{Rahmenbedingungen}
+\label{ss:method2}
+
+Plattform: Windows 10 Rechner Build, Specs
+Chrome Details
+App Details
+Was wird gemessen?
+Limitierungen
+
+Getestet auf:
+
+Windows 10 Education 64 Bit
+Build 10.0.17134
+Prozessor i7-6700K
+RAM: 16GB
+GPU: Nvidia GTX 1070
+
+Chrome  67.0.3396.99 64 Bit
+
+
+\subsection{Vorgehensweise}
+\label{ss:datasource2}
+
+Datum des Experiments
+
+https://developers.google.com/web/tools/chrome-devtools/rendering-tools/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3
+
+Überprüfung mittels DevTools von Chrome
+
+\subsection{Ergebnisse}
+\label{ss:results2}
+
+Storage: none
+Ladezeit: 1435ms
+Start der Extension-Funktionsaufrufe: 944ms
+Dauer: 491ms
+Anzahl der Anfragen an das Backend: 0
+
+
+Storage: Local Storage
+Ladezeit: 1711ms
+Start der Extension-Funktionsaufrufe: 892ms
+Dauer: 819ms
+Anzahl der Anfragen an das Backend: 125
+
+
+Storage: none
+Ladezeit: 1761ms
+Start der Extension-Funktionsaufrufe: 883ms
+Dauer: 878ms
+Anzahl der Anfragen an das Backend: 131
+
+
+
+
+\subsection{Diskussion}
+\label{ss:discussion_details2}
+
+discuss the obtained results here in detail. what is promising, what is not so good. what could be done better. limitations of the used methods. suggest future research (sub-)topics.
+
+
+
+
+
+
+
+
+
+

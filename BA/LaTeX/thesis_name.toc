@@ -23,17 +23,17 @@
 \contentsline {subsection}{\numberline {3.2.1}Anwendungsszenario}{7}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Anforderungsanalyse}{8}{subsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.1}Funktionale Anforderungen}{8}{subsubsection.3.2.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Nichtfunktionale Anforderungen}{9}{subsubsection.3.2.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Programmaufbau}{11}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Ergebnis}{11}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Diskussion}{11}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{11}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Anforderungen}{11}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Vorauswahl}{13}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Nichtfunktionale Anforderungen}{8}{subsubsection.3.2.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Programmaufbau}{10}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Ergebnis}{12}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Diskussion}{12}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{12}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Anforderungen}{12}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Vorauswahl}{14}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Rahmenbedingungen}{15}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Vorgehensweise}{15}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Ergebnisse}{15}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Diskussion}{15}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.4}Vorgehensweise}{16}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Ergebnisse}{16}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Diskussion}{16}{subsection.3.3.6}
 \contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{17}{chapter.4}
 \contentsline {section}{\numberline {4.1}Konklusion}{17}{section.4.1}
 \contentsline {section}{\numberline {4.2}Fortsetzung der Forschung}{17}{section.4.2}
