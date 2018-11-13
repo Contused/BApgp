@@ -101,10 +101,11 @@ Außerdem werden alle Dateien ihren Rollen zugewiesen.
 	Diese Ressourcen sind Dateien welche der Extension zur Verfügung stehen aber selber keine Skripte sind. Sie beinhalten ausgelagerte Informationen wie Fließtexte und Templates zum Bauen von HTML-Elementen. Die "popup.html" ist hier ein Sonderfall und wird direkt dem Popup zugewiesen.
 \end{itemize}
 
+Die Background.js besteht lediglich aus Callback-Funktionen der declarativeContent API. Hier wird zur Installation der Extension ein Listener eingebunden. Dieser funktioniert mit Regeln nach dem Konditionen-Aktionen-Prinzip. Zum Start des Aufrufs werden alle bereits vorhandenen Regeln des Listeners entfernt und anschließend die übergebenen Regeln installiert.
+Hier benötigt das Programm eine Regel. Die Kondition prüft ob der passende URL aufgerufen wurde. Dieser stimmt mit dem String aus der Manifest-Datei überein. Ist die Kondition erfüllt, aktiviert sich das Popup.
 
 
-
-
+\lstinputlisting[label={src:background}, caption={background.js}]{../../Extension/src/background.js}
 
 
 
