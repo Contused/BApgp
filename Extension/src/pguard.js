@@ -31,7 +31,7 @@ var urlTriggerNewAnalysis = "https://infaibackend.pguard-tools.de/"+ route +"?ap
     +"&trigger_link_guesser="+ "true" + "&trigger_dse_lcm_download="+ "true"
     +"&trigger_dse_mtd_download="+ "true" +"&trigger_dse_inapp_search="+ "true"+ "&bundle_id=";
 
-//Funktion von Mozilla die Browser auf localStorage-Verfügbarkeit überprüft.
+//Funktion von Mozilla die Browser auf localStorage-Verfuegbarkeit ueberprueft.
 function storageAvailable(type) {
     if(type === "indexedDB" && type in window){
         return true;
@@ -122,7 +122,7 @@ function deleteStorageItem(itemKey) {
     }
 }
 
-//Lädt neugewonnene Daten in den localStorage des Browsers
+//Laedt neugewonnene Daten in den localStorage des Browsers
 function castDseToStorageString(dse){
     var extractionDate;
     var ibString = "";
@@ -131,7 +131,7 @@ function castDseToStorageString(dse){
     //Auf Tage runden.
     extractionDate = Math.floor(today.getTime() /86400000);
 
-    console.log("Wähle: ", dse.origin , dse.date_infobox_calculation_finished);
+    console.log("Waehle: ", dse.origin , dse.date_infobox_calculation_finished);
     for(var o = 0; o < dse.infoboxes.length; o++){
         // 20 und 28 werden ignoriert
         if(dse.infoboxes[o].id !== 28 && dse.infoboxes[o].id !== 20){
@@ -281,11 +281,11 @@ function createPopover(parentElement, ibArray){
     return cardContainer;
 
 }
-//Baut den entsprechenden Banner für die Multiapp-Ansicht
+//Baut den entsprechenden Banner fuer die Multiapp-Ansicht
 function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
     var ibArray;
     var popover;
-    //TODO parentNode umbennen
+    //TODO parentNode umbenennen
     if(isSinglePage){
         if(hasResults){
             ibArray = appDataArray.slice(2,appDataArray.length + 1);
@@ -350,7 +350,7 @@ function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
 
 function getNewestDseFromData(data){
     var newestDse = null;
-    //Dummy-DSEs haben Vorang. Ansonsten wird die neuste DSE verwendet. Gibt es 2 DSE zum gleichen Analyse-Datum wird die aus der bevorzugten Quelle gewählt.
+    //Dummy-DSEs haben Vorang. Ansonsten wird die neuste DSE verwendet. Gibt es 2 DSE zum gleichen Analyse-Datum wird die aus der bevorzugten Quelle gewaehlt.
     for (var i = 0; i < data.dses.length; i++) {
         //Dummy
         if(data.dses[i].origin === "dummy"){
@@ -378,7 +378,7 @@ function getNewestDseFromData(data){
     return newestDse;
 }
 
-//Erstellt die Header für die Multiapp-Ansicht
+//Erstellt die Header fuer die Multiapp-Ansicht
 function loadInfoPanels(parentNode, isSinglePage) {
     var appID;
     if(isSinglePage){
@@ -399,16 +399,16 @@ function loadInfoPanels(parentNode, isSinglePage) {
         var future = function(param) {
 
             var appDataArray = [];
-            //Prüft ob bereits Daten im localStorage vorhanden und aktuell sind.
+            //Prueft ob bereits Daten im localStorage vorhanden und aktuell sind.
             if(useLocalStorage && param && param.split(trennZeichen)[0]){
                 var lastUpdate = new Date(param.split(trennZeichen)[0] * 86400000);
                 if((lastUpdate.getTime() + 259200000) >= today.getTime()){
                     appDataArray = param.split(trennZeichen);
                 } else {
-                    console.log("Aktuallisiere Daten für " + appID);
+                    console.log("Aktuallisiere Daten fuer " + appID);
                 }
             }
-            //Falls Daten vorhanden baue das Element darauß
+            //Falls Daten vorhanden baue das Element darauss
             if(useLocalStorage && appDataArray.length === 1){
                 console.log("STORAGE OHNE ERGEBNISSE GEFUNDEN: ", appID, appDataArray);
                 createPanel(parentNode, appDataArray, false , isSinglePage);
@@ -417,7 +417,7 @@ function loadInfoPanels(parentNode, isSinglePage) {
                 createPanel(parentNode, appDataArray, true , isSinglePage);
                 //Ansonsten lade die Informationen aus dem Backend
             } else {
-                console.log("Frage (erstmalig) Daten ab für " + appID);
+                console.log("Frage (erstmalig) Daten ab fuer " + appID);
                 anfragencounter ++;
                 $.ajax({
                     url: urlWholeDataSetNoRequest + "" +appID,
@@ -425,7 +425,7 @@ function loadInfoPanels(parentNode, isSinglePage) {
                     success: function (response) {
                         var data = response.data;
                         console.log(data);
-                        //Wurden bereits DSEs für die App gefunden?
+                        //Wurden bereits DSEs fuer die App gefunden?
                         if (data.dses && data.dses.length > 0) {
                             var storageString = castDseToStorageString(getNewestDseFromData(data));
                             setStorageItem(appID,storageString);
@@ -470,6 +470,7 @@ function loadInfoPanels(parentNode, isSinglePage) {
 }
 
 function fillApps(){
+    //Prueft, ob auf Single-App-Page oder Multi-App-Page
     if(document.getElementsByClassName("card")[0]){
         $(".card").each(function () {
             loadInfoPanels(this, false);
@@ -495,7 +496,7 @@ function testStorageCap(){
         counter++;
     }
 }
-//Lädt lokale Json-Bibliothek für
+//Laedt lokale Json-Bibliothek fuer
 $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
     ibJson = input;
     $(ibCardTemplate).load(chrome.extension.getURL("lib/templates/ibCardTemplate.html"), function (data) {
@@ -529,7 +530,7 @@ $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
                     }
                 }
             } else {
-                console.log("kein Storage verfügbar.");
+                console.log("kein Storage verfuegbar.");
             }
         });
     });

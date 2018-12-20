@@ -71,7 +71,8 @@ Extensions zeichnen sich durch ihre Einfachheit aus. Nutzer wissen vor der Insta
 	\item[/NF60/] Korrektheit der Daten
 	Alle Informationen zu Applikationen die dieses Programm darstellt werden extern von einem Server des privacy guard-Projekts eingespeist. Dieser gewinnt die Daten hauptsächlich auf automatischen Textmining-Verfahren. Ein Problem bei diesen Verfahren ist die fehlenden Validierung der Informationen. Ursachen wie das heterogene Format von Datenschutzerklärungen und Mehrfachverlinkungen von Datenschutzinformationen können zu bei dieser Methode zu Fehlern oder Ungenauigkeiten führen. Aus diesem Grund muss dem Nutzer verdeutlicht werden, dass alle Angaben als Empfehlungen zu betrachten sind und keine verbindlichen Aussagen über Applikationen getätigt werden.
 \end{itemize}
-
+\subsection{Aufbau der Website}
+Singlepage, Multipage, Kacheln, APP-ID
 \subsection{Programmaufbau}
 \label{ss:programmaufbau}
 Die Struktur des Programms orientiert sich an der beschriebenen Architektur in Kapitel~\ref{ss:darstellung}. Dieser Abschnitt befasst sich mit der Umsetzung der Anforderungen, welche im vorangegangen Kapitel aufgesetzt wurden. Dabei werden wichtige Eigenschaften aus an Teilen des Quellcodes betrachtet und getroffene Entscheidungen begründet. Außerdem werden kritische Stellen beleuchtet, welche für die Diskussion und fortführende Arbeit relevant sind.
@@ -107,8 +108,23 @@ Hier benötigt das Programm eine Regel. Die Kondition prüft ob der passende URL
 
 \lstinputlisting[label={src:background}, caption={background.js}]{../../Extension/src/background.js}
 
+Das Contentskript pguard.js bildet den Hauptteil der Extension und dient zur Erfassung aller, auf der Webseite dargestellten Apps, der Einbettung von zusätzlichen Informationen durch das PGuard-Backend und optischen Anpassung der Webseite, um die neuen Inhalte ordentlich einzubinden.
 
+Bei Skript-Aufruf werden zuerst die lokalen Bibliotheken der Extension geladen. Dazu gehören die IB texte.json sowie die HTML-Templates. Außerdem überprüft das Skript, ob lokaler Speicher zur Verfügung steht. (???)
 
+Anschließend prüft die Funktion "fillApps", ob die aktuelle Seite eine Single-App-Page oder Mutli-App-Page ist und ermittelt sämtliche Kandidaten, welche für die Einbettung der Informationen in Frage kommen. Dabei liest der JQuery-Selektor alle Elemente mit dem entsprechenden Klassnamen aus.
+
+Mit der Funktion "loadInfoPanels" wird jeder so gefundene Kandidat auf seine APP-ID überprüft. Diese befindet sich entweder in dem Attribut "data-docid" oder "href". Mithilfe dieser ID durchsucht die Funktion "getStorageItem" den lokalen Speicher auf Einträge. Der  Eintrag ist valide, falls er nicht leer ist und vor weniger als 3 Tagen angelegt wurde. Findet die Funktion keinen validen Eintrag im lokalen Speicher, wird eine neue Anfrage an das Backend, für die entsprechende APP-ID, erstellt.
+
+BEISPIEL ANFRAGE
+
+Liefert das Backend eine Antwort mit mindestens einem Ergebnis, speichert die Funktion die Informationen im lokalen Speicher ab. Bei mehr als einem Ergebnis, entscheidet eine Prioritätenliste abhängig von der zuverlässigsten Quelle, welcher Datensatz genutzt wird.
+
+Der gewählte Datensatz wird der Funktion "createPanel" übergeben. Handelt es sich bei dem Kandidaten um eine App-Page(Single-App), wird das Popover aus den Informationen direkt erstellt. Dazu wird der Datensatz mit Hilfe der IB texte.json in den entsprechenden Text umgewandelt und in die Html-Template einfügt.
+Bei App-Kacheln(Multi-app) baut die Funktion einen Banner in die Kachel ein. Auf diesem Banner wird mittels JQuery ein Event geladen, welches bei einem Klick auf den Banner das Popover erstellt.
+
+BEISPIEL IB texte
+\lstinputlisting[label={src:pguard}, caption={Aufbau der pguard.js}]{../../Extension/src/pguard.js}
 
 \subsection{Ergebnis}
 \label{ss:ergebnisseht1}
