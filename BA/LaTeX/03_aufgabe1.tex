@@ -74,12 +74,46 @@ Extensions zeichnen sich durch ihre Einfachheit aus. Nutzer wissen vor der Insta
 
 \subsection{Programmaufbau}
 \label{ss:programmaufbau}
+Die Struktur des Programms orientiert sich an der beschriebenen Architektur in Kapitel~\ref{ss:darstellung}. Dieser Abschnitt befasst sich mit der Umsetzung der Anforderungen, welche im vorangegangen Kapitel aufgesetzt wurden. Dabei werden wichtige Eigenschaften aus an Teilen des Quellcodes betrachtet und getroffene Entscheidungen begründet. Außerdem werden kritische Stellen beleuchtet, welche für die Diskussion und fortführende Arbeit relevant sind.
 
-\includegraphics{pics/Aufbau.png}
+
+\lstinputlisting[label={src:manifest}, caption={Aufbau der manifest.json}]{../../Extension/src/manifest.json}
+
+Das Manifest stellt die grundlegenden Zusammenhänge der Extension dar. Unter anderem den gewählten Entwicklungsnamen der Extension "PGuard AppRating" und die entsprechende Beschreibung.
+Weiterhin sind die nötigen Berechtigungen aufgeführt.
+\begin{itemize}
+	\item storage:
+	Berechtigung zum Zugriff auf Speicherplatz, um Informationen aus Backend-Anfragen zu speichern. Details dazu in Kapitel~\ref{ss:anforderungen}.
+	\item declarativeContent:
+	Bereitstellung von Events, wie Seitenaufruf oder -änderung und damit zusammenhängende Regeln, wie das Ausführen von Content-Skripten. Diese API wird vom Background-Skript genutzt,welches die genannten Aufgaben umsetzt.
+	\item activeTab und tab:
+	Gibt an, ob sich der Nutzer gerade in einem Tab befinden auf dem die Extension aktiv ist.
+\end{itemize}
+Außerdem werden alle Dateien ihren Rollen zugewiesen.
+\begin{itemize}
+	\item Content-Skript:
+	Unter dem Punkte "content scripts" wird festgelegt, welche Skripte unter welchem URL aktiv sind. Der Ausdruck 
+	"*://play.google.com/store/apps*" 
+	bedeutet, dass die Extension auf jeder Playstore-Seite der Kategorie Apps und deren Unterverzeichnis aktiv ist. Da es sich um eine page action Extension handelt, wird lediglich eine Website als "match" aufgeführt. Die beiden wichtigen Dateien hier sind "pguard.js" als das Content Skript für sämtliche Funktionen die die Erweiterung der Website betreffen und "popup-controller.js" für alle Funktionen des Popups. Hinzu kommen sämtliche Bibliotheken, welche von den Content-Skripten benötigt werden.
+	\item Background-Skript
+	Wie bereits erwähnt fungiert das Background-Skript "background.js" als Eventhandler der Extension ist deshalb separat im Manifest aufgeführt.
+	\item web\_accessible\_resources
+	Diese Ressourcen sind Dateien welche der Extension zur Verfügung stehen aber selber keine Skripte sind. Sie beinhalten ausgelagerte Informationen wie Fließtexte und Templates zum Bauen von HTML-Elementen. Die "popup.html" ist hier ein Sonderfall und wird direkt dem Popup zugewiesen.
+\end{itemize}
+
+Die Background.js besteht lediglich aus Callback-Funktionen der declarativeContent API. Hier wird zur Installation der Extension ein Listener eingebunden. Dieser funktioniert mit Regeln nach dem Konditionen-Aktionen-Prinzip. Zum Start des Aufrufs werden alle bereits vorhandenen Regeln des Listeners entfernt und anschließend die übergebenen Regeln installiert.
+Hier benötigt das Programm eine Regel. Die Kondition prüft ob der passende URL aufgerufen wurde. Dieser stimmt mit dem String aus der Manifest-Datei überein. Ist die Kondition erfüllt, aktiviert sich das Popup.
+
+
+\lstinputlisting[label={src:background}, caption={background.js}]{../../Extension/src/background.js}
+
+
+
 
 \subsection{Ergebnis}
 \label{ss:ergebnisseht1}
 
+\includegraphics{pics/Aufbau.png}
 
 \subsection{Diskussion}
 \label{ss:diskussionht1}
