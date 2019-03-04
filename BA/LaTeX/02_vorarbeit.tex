@@ -25,9 +25,21 @@ Die Recherche hat ergeben, dass unter den genannten Suchkriterien keine Chrome o
 
 \subsection{Vergleich führender Browser als Plattform für die Extension}
 \label{ss:vergleichbrowser}
+Die getroffene Auswahl des Browsers als Plattform für die Entwicklung der Extension basiert hauptsächlich auf den aktuellen Marktanteilen. Google Chrome führt mit ca. 71\%, gefolgt von Mozilla Firefox mit 9,5\%, Microsoft Internet Explorer mit ca. 5,7\%, Apple Safari mit ca. 5\%, Microsoft Edge mit 4,4\% und Opera mit ca. 2,4\%.
 
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{pics/MarktanteileBrowser.png}
+	\caption{StatCounter. n.d. Marktanteile der führenden Browserfamilien an der Internetnutzung weltweit von Januar 2009 bis Januar 2019. Statista. Zugriff am 4. März 2019. Verfügbar unter \url{https://de.statista.com/statistik/daten/studie/157944/umfrage/marktanteile-der-browser-bei-der-internetnutzung-weltweit-seit-2009/}.}
+	\label{marktanteilebrowser}
+\end{figure}
+Aufgrund mangelnder Relevanz der Extension für Safari-Nutzer, sowie der Obsoleszenz des Internet Explorers, wurden diese Browser nicht weiter berücksichtigt.
 
-\section{Projekt PGuard}
+Google Chrome ist den verbleibenden Alternativen Mozilla Firefox, Microsoft Edge und Opera im Punkt Marktanteile weit voraus und somit die gewählte Plattform zur Entwicklung der Extension.
+
+Unabhängig der Implementierung bieten sowohl Mozilla\footnote{\url{https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Porting_a_Google_Chrome_extension}}, als auch Edge\footnote{\url{https://docs.microsoft.com/en-us/microsoft-edge/extensions/guides/porting-chrome-extensions}} eine intuitive Lösung zur Portierung der fertigen Google Chrome-Extension.
+
+\section{PrivacyGuard}
 \label{s:pguard}
 
 \subsection{Vorstellung}
