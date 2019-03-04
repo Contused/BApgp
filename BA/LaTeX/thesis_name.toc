@@ -7,11 +7,11 @@
 \contentsline {subsection}{\numberline {2.1.1}Extension-Programmierung allgemein}{3}{subsection.2.1.1}% 
 \contentsline {subsection}{\numberline {2.1.2}Existieren bereits vergleichbare Extensions}{3}{subsection.2.1.2}% 
 \contentsline {subsection}{\numberline {2.1.3}Vergleich f\IeC {\"u}hrender Browser als Plattform f\IeC {\"u}r die Extension}{4}{subsection.2.1.3}% 
-\contentsline {section}{\numberline {2.2}Projekt PGuard}{5}{section.2.2}% 
+\contentsline {section}{\numberline {2.2}PrivacyGuard}{5}{section.2.2}% 
 \contentsline {subsection}{\numberline {2.2.1}Vorstellung}{5}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}API-Anbindung f\IeC {\"u}r die Extension}{5}{subsection.2.2.2}% 
-\contentsline {section}{\numberline {2.3}Implementierung einer Google Chrome Extension}{5}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Eigenschaften}{5}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.2.2}API-Anbindung f\IeC {\"u}r die Extension}{6}{subsection.2.2.2}% 
+\contentsline {section}{\numberline {2.3}Implementierung einer Google Chrome Extension}{6}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Eigenschaften}{6}{subsection.2.3.1}% 
 \contentsline {subsection}{\numberline {2.3.2}Funktionsumfang}{6}{subsection.2.3.2}% 
 \contentsline {subsection}{\numberline {2.3.3}Darstellung im Browser}{6}{subsection.2.3.3}% 
 \contentsline {section}{\numberline {2.4}Caching-Methoden}{6}{section.2.4}% 

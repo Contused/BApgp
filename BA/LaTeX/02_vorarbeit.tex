@@ -44,6 +44,15 @@ Unabhängig der Implementierung bieten sowohl Mozilla\footnote{\url{https://deve
 
 \subsection{Vorstellung}
 \label{ss:vorstellung}
+Das Forschungsprojekt Privacy Guard\footnote{\url{https://datenschutz-scanner.de/das-projekt.html}} wurde im Januar 2016 durch das Bundesministerium für Bildung und Forschung ins Leben gerufen. Das Institut für Angewandte Informatik\footnote{\url{https://infai.org/}}, die mediaTest digital GmbH\footnote{\url{https://appvisory.com/company}}, die Quadriga Hochschule Berlin\footnote{\url{https://www.quadriga-hochschule.com/}} und die selbstregulierung informationswirtschaft e.V.\footnote{\url{https://sriw.de/}} haben gemeinsam Möglichkeiten entwickelt, Verbraucher auf die Verarbeitung ihrer Daten durch Handy-Applikationen aufmerksam zu machen. Dabei werden Vor- und Nachteile einzelner Aspekte der Datenverarbeitung erläutert und, bei Bedarf, Gegenmaßnahmen empfohlen.
+
+\glqq Ziel [...] ist die Erleichterung des Selbstdatenschutzes für Verbraucher auf mobilen Endgeräten.\glqq{}(https://datenschutz-scanner.de/das-projekt.html,Stand 4.3.2019)
+
+Die Ergebnisse des Projekts teilen sich in 3 Kategorien ein. Im Rahmen der Datenbeschaffung entstanden verschiedene Werkzeuge um Informationen über Apps zu extrahieren. Besonderer Wert wurde hier auf verlinkte Datenschutzerklärungen im Playstore und in der später installierten App auf dem Handy gelegt. Desweiteren wurden die Datenschutzerklärungen mittels eines entwickelten Pre-Tagging Tools, aber auch manuell annotiert, um die Verarbeitung der Texte zu optimieren.
+
+Zur Datenverarbeitung entstand ein Backend\footnote{\url{https://pgadmin.datenschutz-scanner.de/api/docs.html}}, welches auf Anfrage der Bundle-ID einer App alle analysierten Daten übergibt. Dieses Backend bildet die Grundlage für die Datenvisualisierung von PGuard und ist die Schnittstelle der Informationen für die Browser-Extension.
+
+Mit dem Projektabschluss im Juni 2018 stellte PrivacyGuard eine Webseite zur Analyse von Datenschutzerklärungen und Apps zur Verfügung\footnote{\url{https://dseanalyser.pguard-tools.de/}}. Als Prototypen entstanden dabei eine App zur Analyse aller auf dem Handy installierten Applikationen auf ihren Datenschutz und die in dieser Arbeit behandelte Browser-Extension zur Visualisierung der, durch das Projekt gewonnenen, Informationen über Apps im PlayStore.
 
 \subsection{API-Anbindung für die Extension}
 \label{ss:apianbindung}

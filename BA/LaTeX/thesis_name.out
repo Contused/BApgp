@@ -6,7 +6,7 @@
 \BOOKMARK [2][-]{subsection.2.1.1}{Extension-Programmierung allgemein}{section.2.1}% 6
 \BOOKMARK [2][-]{subsection.2.1.2}{Existieren bereits vergleichbare Extensions}{section.2.1}% 7
 \BOOKMARK [2][-]{subsection.2.1.3}{Vergleich f\374hrender Browser als Plattform f\374r die Extension}{section.2.1}% 8
-\BOOKMARK [1][-]{section.2.2}{Projekt PGuard}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{PrivacyGuard}{chapter.2}% 9
 \BOOKMARK [2][-]{subsection.2.2.1}{Vorstellung}{section.2.2}% 10
 \BOOKMARK [2][-]{subsection.2.2.2}{API-Anbindung f\374r die Extension}{section.2.2}% 11
 \BOOKMARK [1][-]{section.2.3}{Implementierung einer Google Chrome Extension}{chapter.2}% 12
