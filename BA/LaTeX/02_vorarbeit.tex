@@ -8,11 +8,15 @@
 \subsection{Extension-Programmierung allgemein}
 \label{ss:extensionprogallg}
 
-Unter einer Extension versteht man ein Programm, welches den Browser um neue Funktionen ergänzt. Durch eigene Oberflächen oder Manipulation der Website erleichtern diese Erweiterungen das Nutzen des Browser. 
+Unter einer Extension versteht man ein Programm, welches den Browser um neue Funktionen ergänzt. Durch eigene Oberflächen oder Manipulation der Website erleichtern diese Erweiterungen das Nutzen des Browser.
+
 Im Gegensatz zu Plug-Ins haben Extensions Zugriff auf Browser-spezielle Funktionen und sind in der Lage über die Webseite hinaus zu agieren. Plug-Ins werden direkt in eine Webseite eingebettet und sind auf diese beschränkt. Der Oberbegriff „Add-on“ wird heutzutage Hauptsächlich als Synonym für Extension verwendet.
-Jeder größere Browser stellt eine Plattform zur Verfügung auf denen Extensions angeboten und installiert werden können. In der Regel sind Diese kostenlos. Können auch von außerhalb installiert werden zu Entwicklungszwecken oder wenn nicht auf der Plattform angeboten.
+
+Jeder größere Browser stellt eine Plattform zur Verfügung auf denen Extensions angeboten und installiert werden können. In der Regel sind Diese kostenlos. Wird eine Applikation nicht auf der Plattform angeboten oder dient sie zu Entwicklungszwecken, kann diese auch manuell aus externen Quelle installiert werden.
+
 Extensions werden in HTML, JavaScript und CSS implementiert. Dabei können alle Bibliotheken verwendet werden, welche den Browserstandards für Extensions entsprechen. Kapitel 2.3.2 befasst sich genauer damit, welche Bedingungen für diese Bibliotheken in Google Chrome gelten.
-Bekannte Beispiele sind Werbeblock wie UBlock Origin und VPN-Anwendungen wie Hola.
+
+Bekannte Beispiele sind Werbeblocker wie UBlock Origin und VPN-Anwendungen wie Hola.
 
 \subsection{Existieren bereits vergleichbare Extensions}
 \label{ss:vergleichbareextensions}
@@ -46,7 +50,7 @@ Unabhängig der Implementierung bieten sowohl Mozilla\footnote{\url{https://deve
 \label{ss:vorstellung}
 Das Forschungsprojekt Privacy Guard\footnote{\url{https://datenschutz-scanner.de/das-projekt.html}} wurde im Januar 2016 durch das Bundesministerium für Bildung und Forschung ins Leben gerufen. Das Institut für Angewandte Informatik\footnote{\url{https://infai.org/}}, die mediaTest digital GmbH\footnote{\url{https://appvisory.com/company}}, die Quadriga Hochschule Berlin\footnote{\url{https://www.quadriga-hochschule.com/}} und die selbstregulierung informationswirtschaft e.V.\footnote{\url{https://sriw.de/}} haben gemeinsam Möglichkeiten entwickelt, Verbraucher auf die Verarbeitung ihrer Daten durch Handy-Applikationen aufmerksam zu machen. Dabei werden Vor- und Nachteile einzelner Aspekte der Datenverarbeitung erläutert und, bei Bedarf, Gegenmaßnahmen empfohlen.
 
-\glqq Ziel [...] ist die Erleichterung des Selbstdatenschutzes für Verbraucher auf mobilen Endgeräten.\glqq{}(https://datenschutz-scanner.de/das-projekt.html,Stand 4.3.2019)
+\glqq Ziel [...] ist die Erleichterung des Selbstdatenschutzes für Verbraucher auf mobilen Endgeräten.\grqq{}(https://datenschutz-scanner.de/das-projekt.html,Stand 4.3.2019)
 
 Die Ergebnisse des Projekts teilen sich in 3 Kategorien ein. Im Rahmen der Datenbeschaffung entstanden verschiedene Werkzeuge um Informationen über Apps zu extrahieren. Besonderer Wert wurde hier auf verlinkte Datenschutzerklärungen im Playstore und in der später installierten App auf dem Handy gelegt. Desweiteren wurden die Datenschutzerklärungen mittels eines entwickelten Pre-Tagging Tools, aber auch manuell annotiert, um die Verarbeitung der Texte zu optimieren.
 
@@ -64,53 +68,109 @@ Bei einer hohen Ausführlichkeit umfassen die angeforderten Informationen komple
 
 Für den Anwendungsfall der Browser-Extension besteht eine hohe Priorität um Wartezeiten möglichst gering zu halten. Dagegen reicht eine niedrige Ausführlichkeit zur Darstellung der nötigen Informationen für den Verbraucher. Zusätzlich bleibt so der Datenverkehr der Extension eher gering.
 
-Die Infofelder sind der Hauptinformationsträger der Schnittstelle. Sie sind in 30 Eigenschaften unterteilt und können eine sogenannten "rote Linie" sein. Das bedeutet, dass bei Besitz dieser Eigenschaft, die entsprechende App potentiell gegen ein Gesetz verstößt. Folgenden Infofelder sind im Rahmen des PrivacyGuard Forschungsprojekts zur Beurteilung von Apps entstanden:
+Die Infofelder sind der Hauptinformationsträger der Schnittstelle. Sie sind in 31 Eigenschaften unterteilt und können eine sogenannten "rote Linie" sein. Das bedeutet, dass bei Besitz dieser Eigenschaft, die entsprechende App potentiell gegen ein Gesetz verstößt. Folgenden Infofelder sind im Rahmen des PrivacyGuard Forschungsprojekts zur Beurteilung von Apps entstanden:
+
 \begin{table}[h]
-	\begin{tabular}{p{4.0cm}C{3.6cm}C{4.0cm}}
+	\begin{tabular}{p{0.5cm}L{9.0cm}R{2.1cm}}
 		\toprule
-		\textbf{Property}		&	\textbf{Stereo Camera}		&	\textbf{Multi-Mode Radar \newline (near / far)}	\\
+		\textbf{Nr.}		&	\textbf{Bezeichnung}		&	\textbf{rote Linie}	\\
 		\midrule
-		meas. principle	&	CMOS sensor			&	FMCW			\\
-		cycle time		&	60ms				&	66ms			\\
-		latency			&	42ms				&	198ms			\\
-		\midrule
-		frequency		&	16fps				&	76 - 77 Ghz		\\
-		bandwidth		&	---					&	187 Mhz			\\
-		\midrule
-		opening angle	&	45°					&	60° / 18°			\\
-		range			&	500m \newline (3D-vision: 50m)	&	~60m	/ 200m		\\
-		\midrule
-		angle accuracy ($3\sigma$)		&	---	&	~~$\pm$ 1° / $\pm$ 0.1°		\\
-		distance accuracy ($3\sigma$)	&	---	&	$\pm$ 0.25m		\\
-		velocity accuracy ($3\sigma$)	&	---	&	$\pm 0.278 \tfrac{m}{s}$ / $\pm 0.139 \tfrac{m}{s}$	\\
+		1	&	Ihre Zahlungsdaten werden unverschlüsselt übermittelt	&	Ja		\\
+		2	&	Die App hat Internetzugriff	&	Nein	\\
+		3	&	Die App benennt keine Kontaktmöglichkeit für datenschutzrechtliche Anliegen	&	Ja	\\
+		4	&	Ihre Login-Daten werden unverschlüsselt übermittelt	&	Ja	\\
+		5	&	Die App stellt keine Datenschutzerklärung auf Deutsch bereit	&	Nein	\\
+		6	&	Die Datenschutzerklärung verwendet ungenaue Formulierungen	&	Nein	\\
+		7	&	Die Verschlüsselung der App ist unsicher	&	Nein	\\
+		8	&	Die App nutzt Standortdaten	&	Nein	\\
+		9	&	Die Datenschutzerklärung kann geändert werden, ohne Sie hierüber zu informieren	&	Ja	\\
+		10	&	Das über Sie erstellte Profil wird durch öffentliche Informationen über Sie ergänzt	&	Nein	\\
+		11	&	Ihre Daten werden durch Dienstleister verarbeitet	&	Nein	\\
+		12	&	Die App integriert Werbenetzwerke	&	Nein	\\
+		13	&	Die App erhebt eine Vielzahl an Geräteinformationen	&	Nein	\\
+		14	&	Die App stellt die Datenschutzerklärung erst nach Start der App bereit	&	Nein	\\
+		15	&	Die App hat Zugriff auf Ihr Adressbuch	&	Nein	\\
 		\bottomrule
 	\end{tabular}
-	\caption{Overview of the properties of several sensors}
-	\label{tab:sensor_properties}
+	\caption{Übersicht der Infofelder von PrivacyGuard}
+	\label{tabelleInfofelder}
+\end{table}
+
+\begin{table}[h]
+	\begin{tabular}{p{0.5cm}L{9.0cm}R{2.1cm}}
+		\toprule
+		\textbf{Nr.}		&	\textbf{Bezeichnung}		&	\textbf{rote Linie}	\\
+		\midrule
+		16	&	Die App enthält Malware	&	Ja	\\
+		17	&	Die App übermittelt Daten an Dritte	&	Nein	\\
+		18	&	Die App erhebt statische Gerätekennungen	&	Nein	\\
+		19	&	Die App verarbeitet Daten, die für die Funktion der App nicht erforderlich sind	&	Nein	\\
+		20	&	Die App verarbeitet Daten, die ausdrücklich ausgeschlossen wurden	&	Ja	\\
+		21	&	Die App ermöglicht einer Vielzahl von Drittanbietern Zugriff auf Ihre Nutzungsdaten	&	Nein	\\
+		22	&	Es wird ein Profil über Sie erstellt	&	Nein	\\
+		23	&	Ihre Daten werden in der Unternehmensgruppe geteilt	&	Nein	\\
+		24	&	Die App kann sich im Hintergrund unbemerkt aktualisieren	&	Nein	\\
+		25	&	Die Herkunft der App ist unbekannt	&	Nein	\\
+		26	&	Die App stellt keine Datenschutzerklärung bereit	&	Ja	\\
+		27	&	Ihre Daten werden für personalisierte Werbung genutzt	&	Nein	\\
+		28	&	Die App klärt nicht ordnungsgemäß über Datenverarbeitungen im Ausland auf	&	Nein	\\
+		29	&	Die App stellt unterschiedliche Datenschutzerklärungen in der App und im App-Store bereit	&	Ja	\\
+		30	&	Ihre Daten werden über die App veröffentlicht	&	Nein	\\
+		31	&	Die Sprachsteuerung ist dauerhaft im Hintergrund aktiv	&	Nein	\\
+		\bottomrule
+	\end{tabular}
+	\caption{Übersicht der Infofelder von PrivacyGuard}
+	\label{tabelleInfofelderzwei}
 \end{table}
 
 \section{Implementierung einer Google Chrome Extension}
 \label{s:implementierung}
- stsa
+
 \subsection{Eigenschaften}
 \label{ss:eigenschaften}
 
-Die Architektur einer Chrome Extension stellt ein Paket aus mehreren Dateien dar und ist vergleichbar mit anderen Web-Technologien wie zum Beispiel Webseiten.
-Grundvoraussetzung für eine funktionierende Extension ist die manifest.json, welche grundlegende Informationen für den Browser bereitstellt und festlegt mit welchen Dateien und Rechten die Extension aufgebaut ist. Hinzu kommt mindestens eine HTML-Datei zur Darstellung der Inhalte und mindestens ein Skript zur Umsetzung der Funktionalität. Erweitert werden diese oft durch CSS-Dateien.
-Externe Bibliotheken wie JQuery können ebenfalls eingebunden werden, müssen aber aufgrund der Policies von Google Chrome vollumfänglich lokal vorliegen. Mehr dazu Im nächsten Abschnitt.
-Die Manifest-Datei ist im JSON-Format aufgebaut und beinhaltet sämtliche Informationen über die Extension. Wichtige Punkte sind Name der Extension, Beschreibung, Rechte und Aufbau. Unter Rechten oder „permissions“ werden alle APIs aufgelistet, welche die Extension benötigt um ordnungsgemäß zu funktionieren. Bevor ein Nutzer später die Extension installiert, muss er diesen „permissions“ zustimmen. Mehr zu den APIs im entsprechenden Abschnitt.
-Der Aufbau wird unter „content scripts“ (BILD?) in drei Eigenschaften unterteilt: unter welchem URL sind die Skripte aktiv, welche Skripte sind dort aktiv und welche CSS-Dateien werden dort von der Extension eingesetzt.
+Die Architektur einer Google Chrome Extension stellt ein Paket aus mehreren Dateien dar und ist vergleichbar mit anderen Web-Technologien wie zum Beispiel Webseiten.
+
+Grundvoraussetzung für eine funktionierende Extension ist die manifest.json, welche nötigen Informationen für den Browser bereitstellt und festlegt mit welchen Dateien und Rechten die Extension aufgebaut ist. Hinzu kommt mindestens eine HTML-Datei zur Darstellung der Inhalte und mindestens ein Skript zur Umsetzung der Funktionalität. Erweitert werden diese oft durch CSS-Dateien.
+
+Externe Bibliotheken wie JQuery können ebenfalls eingebunden werden, müssen aber aufgrund der Policies\footnote{\url{https://developer.chrome.com/webstore/program_policies}} von Google Chrome vollumfänglich lokal vorliegen. Mehr dazu Im nächsten Abschnitt.
+
+Die Manifest-Datei ist im JSON-Format aufgebaut und beinhaltet sämtliche Informationen über die Extension. Wichtige Punkte sind Name der Extension, Beschreibung, Rechte und Aufbau. Unter Rechten oder „permissions“ werden alle APIs aufgelistet, welche die Extension benötigt um ordnungsgemäß zu funktionieren. Bevor ein Nutzer später die Extension installiert, muss er diesen „permissions“ zustimmen.
+
+Der Aufbau wird im Punkt „content scripts“ in drei Eigenschaften unterteilt: unter welchem URL sind die Skripte aktiv, welche Skripte sind dort aktiv und welche CSS-Dateien werden dort von der Extension eingesetzt.
+
 HTML-Dateien werden als „User-Interface Elemente“ zusammengefasst und beinhalten im Normalfall eine popup.html zur Darstellung des Fensters der Extension in der oberen rechten Ecke des Browser-Fensters (BILD?). Je nach Funktionsumfang können weitere UI-Elemente eingebunden sein, um zum Beispiel die besuchte Webseite zu erweitern.
 
 Die vorhandenen Skripte werden normalerweise in zwei Kategorien eingeteilt. Das sogenannte „Background-Skript“ dient als Event-Handler und kommuniziert zwischen Extension und Browser. Alle restlichen Skripte sind „Content-Skripte“. Sie beinhalten die eigentliche Funktionalität der Extension. 
 
-\subsection{Funktionsumfang}
+\subsection{Funktionsumfang und Richtlinien}
 \label{ss:funktionsumfang}
 
+Google setzt verschiedene Qualitätsansprüche an die Entwicklung einer Extension. Den Leitfaden bildet dabei das sogenannten \glqq single purpose\grqq{}-Prinzip\footnote{\url{https://developer.chrome.com/extensions/single_purpose}}. Das heißt, jede Anwendung muss auf sich entweder auf ein bestimmtes Thema fokussieren, wie zum Beispiel Datenschutzerklärungen und darf zu diesem Thema verschiedene Funktionen anbieten. Oder die Extension konzentriert sich auf eine bestimmte Funktion des Browser, wie zum Beispiel die Startseite und darf dort Inhalte zu mehreren Themen implementieren.
+
+Ein weiterer Aspekt, der mit dem \glqq single purpose\grqq{}-Prinzip zusammenhängt, ist die Reichweite der Extension. Google unterscheidet hier zwischen \glqq page-action\grqq{} und \glqq browser-action\grqq{}.
+
+\glqq page-action\grqq{} bedeutet, dass das Icon der Extension lediglich auf einer bestimmten Seite aktiv ist und soll den Nutzer darauf hinweisen, wo sich die Erweiterung einschaltet. Icons mit \glqq browser-action\grqq{} sind permanent aktiv und zeigen somit, dass die Extension seitenübergreifende Funktionen hat.
+
+Auch inhaltlich gibt es bestimmte Richtlinien\footnote{\url{https://developer.chrome.com/webstore/program_policies}} zu beachten. Die \glqq Content Policies \grqq{} untersagen die Einbindung von Material mit sexuell expliziten Inhalten, Gewaltdarstellungen, \glqq Hate Speech \grqq{}, Identitätsbetrug, Urheberrechtsverletzung, Schadsoftware, Glücksspiel, Spam oder anderen illegalen Aktivitäten.
+
+Ist Werbung ein Bestandteil der Erweiterung, unterliegen diese Inhalte ebenfalls strengen Auflagen. Der Nutzer muss in der Lage sein, die Werbung ohne Probleme zu entfernen, zum Beispiel durch Deinstallation der Extension. Werbeanzeigen dürfen keine Programmfunktionen versperren, imitieren oder andere schädliche Absichten verfolgen. Sind Anzeigen von externen Webseiten geschalten, muss das klar ausgewiesen sein.
+
+Erhebt, speichert oder verarbeitet die Extension sensitive Nutzerdaten, muss der Entwickler das entsprechend deklarieren und trägt Verantwortung für die Sicherheit der Daten. In diesem Zusammenhang benötigt die Anwendung eine eigene Datenschutzerklärung.
 \subsection{Darstellung im Browser}
 \label{ss:darstellung}
 
+Die Extension wird an mehreren Stellen im Browser integriert. Dabei besitzt jedes installierte Programm ein Icon in der Adresszeile des Browsers (Abbildung \ref{browser1}). Dieses Element dient als Steuerelement für Funktionen der Erweiterung, wie zum Beispiel das Aktivieren und Deaktivieren der Extension. Ein ausgegrautes Icon bedeutet dabei, dass die Extension inaktiv ist, bzw. das die zugehörige Webseite nicht in diesem Tab geöffnet ist.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{pics/browser1.png}
+	\caption{Browser-Extension Icon in der Adresszeile}
+	\label{browser1}
+\end{figure}
 
+Eine weitere Möglichkeit Inhalte und Funktionen der Erweiterung zu verwalten, ohne dafür Template des Icons zu verwenden, ist die dedizierte Optionenseite\footnote{\url{https://developer.chrome.com/extensions/options}}. Diese kommt vor allem bei umfangreicheren Browser-Extensions vor.
+
+Alle restlichen Elemente werden direkt in die angezeigte Webseite integriert und erweitern die Anzeige beliebig nach Funktion der Extension.(REF)
 \section{Caching-Methoden}
 \label{s:cachingmethoden}
 
