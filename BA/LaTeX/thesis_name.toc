@@ -12,32 +12,32 @@
 \contentsline {subsection}{\numberline {2.2.2}API-Anbindung f\IeC {\"u}r die Extension}{6}{subsection.2.2.2}% 
 \contentsline {section}{\numberline {2.3}Implementierung einer Google Chrome Extension}{6}{section.2.3}% 
 \contentsline {subsection}{\numberline {2.3.1}Eigenschaften}{6}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Funktionsumfang}{6}{subsection.2.3.2}% 
-\contentsline {subsection}{\numberline {2.3.3}Darstellung im Browser}{6}{subsection.2.3.3}% 
-\contentsline {section}{\numberline {2.4}Caching-Methoden}{6}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}Welche Rolle spielt Performance?}{6}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2.4.2}Verwendete Methoden und deren Eigenschaften}{6}{subsection.2.4.2}% 
-\contentsline {chapter}{\numberline {3}Hauptteil}{7}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Erlaeuterung der Aufgabenstellungen}{7}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Aufgabe 1: Implementierung einer Browser-Extension zur Anzeige von Datenschutzinformationen im PlayStore}{7}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Anwendungsszenario}{7}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Anforderungsanalyse}{8}{subsection.3.2.2}% 
-\contentsline {subsubsection}{\numberline {3.2.2.1}Funktionale Anforderungen}{8}{subsubsection.3.2.2.1}% 
-\contentsline {subsubsection}{\numberline {3.2.2.2}Nichtfunktionale Anforderungen}{8}{subsubsection.3.2.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Aufbau der Website}{10}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}Programmaufbau}{10}{subsection.3.2.4}% 
-\contentsline {subsection}{\numberline {3.2.5}Ergebnis}{20}{subsection.3.2.5}% 
-\contentsline {subsection}{\numberline {3.2.6}Diskussion}{20}{subsection.3.2.6}% 
-\contentsline {section}{\numberline {3.3}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{20}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Anforderungen}{20}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Vorauswahl}{22}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Rahmenbedingungen}{23}{subsection.3.3.3}% 
-\contentsline {subsection}{\numberline {3.3.4}Vorgehensweise}{24}{subsection.3.3.4}% 
-\contentsline {subsection}{\numberline {3.3.5}Ergebnisse}{24}{subsection.3.3.5}% 
-\contentsline {subsection}{\numberline {3.3.6}Diskussion}{24}{subsection.3.3.6}% 
-\contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{25}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Konklusion}{25}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Fortsetzung der Forschung}{25}{section.4.2}% 
-\contentsline {chapter}{\numberline {5}Appendix}{27}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Derivations}{27}{section.5.1}% 
-\contentsline {subsection}{\numberline {5.1.1}Example Matlab Code}{28}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Funktionsumfang}{8}{subsection.2.3.2}% 
+\contentsline {subsection}{\numberline {2.3.3}Darstellung im Browser}{8}{subsection.2.3.3}% 
+\contentsline {section}{\numberline {2.4}Caching-Methoden}{8}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Welche Rolle spielt Performance?}{8}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}Verwendete Methoden und deren Eigenschaften}{8}{subsection.2.4.2}% 
+\contentsline {chapter}{\numberline {3}Hauptteil}{9}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Erlaeuterung der Aufgabenstellungen}{9}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Aufgabe 1: Implementierung einer Browser-Extension zur Anzeige von Datenschutzinformationen im PlayStore}{9}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Anwendungsszenario}{9}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Anforderungsanalyse}{10}{subsection.3.2.2}% 
+\contentsline {subsubsection}{\numberline {3.2.2.1}Funktionale Anforderungen}{10}{subsubsection.3.2.2.1}% 
+\contentsline {subsubsection}{\numberline {3.2.2.2}Nichtfunktionale Anforderungen}{10}{subsubsection.3.2.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Aufbau der Website}{12}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.4}Programmaufbau}{12}{subsection.3.2.4}% 
+\contentsline {subsection}{\numberline {3.2.5}Ergebnis}{22}{subsection.3.2.5}% 
+\contentsline {subsection}{\numberline {3.2.6}Diskussion}{22}{subsection.3.2.6}% 
+\contentsline {section}{\numberline {3.3}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{22}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Anforderungen}{22}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Vorauswahl}{24}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Rahmenbedingungen}{25}{subsection.3.3.3}% 
+\contentsline {subsection}{\numberline {3.3.4}Vorgehensweise}{26}{subsection.3.3.4}% 
+\contentsline {subsection}{\numberline {3.3.5}Ergebnisse}{26}{subsection.3.3.5}% 
+\contentsline {subsection}{\numberline {3.3.6}Diskussion}{26}{subsection.3.3.6}% 
+\contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{27}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Konklusion}{27}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Fortsetzung der Forschung}{27}{section.4.2}% 
+\contentsline {chapter}{\numberline {5}Appendix}{29}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Derivations}{29}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Example Matlab Code}{30}{subsection.5.1.1}% 

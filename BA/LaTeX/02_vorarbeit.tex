@@ -52,15 +52,46 @@ Die Ergebnisse des Projekts teilen sich in 3 Kategorien ein. Im Rahmen der Daten
 
 Zur Datenverarbeitung entstand ein Backend\footnote{\url{https://pgadmin.datenschutz-scanner.de/api/docs.html}}, welches auf Anfrage der Bundle-ID einer App alle analysierten Daten übergibt. Dieses Backend bildet die Grundlage für die Datenvisualisierung von PGuard und ist die Schnittstelle der Informationen für die Browser-Extension.
 
-Mit dem Projektabschluss im Juni 2018 stellte PrivacyGuard eine Webseite zur Analyse von Datenschutzerklärungen und Apps zur Verfügung\footnote{\url{https://dseanalyser.pguard-tools.de/}}. Als Prototypen entstanden dabei eine App zur Analyse aller auf dem Handy installierten Applikationen auf ihren Datenschutz und die in dieser Arbeit behandelte Browser-Extension zur Visualisierung der, durch das Projekt gewonnenen, Informationen über Apps im PlayStore.
+Mit dem Projektabschluss im Juni 2018 stellte PrivacyGuard eine Webseite zur Analyse von Datenschutzerklärungen und Apps zur Verfügung\footnote{\url{https://dseanalyser.pguard-tools.de/}}. Als Prototypen entstanden zusätzlich eine App zur Analyse aller auf dem Handy installierten Applikationen auf ihren Datenschutz und die in dieser Arbeit behandelte Browser-Extension zur Visualisierung der, durch das Projekt gewonnenen, Informationen über Apps im PlayStore.
 
 \subsection{API-Anbindung für die Extension}
 \label{ss:apianbindung}
 
+Sämtliche, von der Extension visualisierte, Daten werden über die Schnittstelle des Backends angefragt. Dazu benötigt die API mindestens eine Bundle-ID der App, Priorität und die Ausführtlichkeit der Antwort.
+
+Je höher die Anfrage priorisiert ist, um so eher wird sie vom Backend verarbeitet. 
+Bei einer hohen Ausführlichkeit umfassen die angeforderten Informationen komplette Datenschutzerklärungen und alle Metainformationen zur Datenbeschaffung. Dagegen beinhaltet eine Antwort mit niedriger Ausführlichkeit lediglich Sprache, Quelle und Extraktionsdatum der Datenschutzerklärung, sowie die Nummer der geltenden Infofelder mit jeweiligen Textpassagen aus der Datenschutzerklärung.
+
+Für den Anwendungsfall der Browser-Extension besteht eine hohe Priorität um Wartezeiten möglichst gering zu halten. Dagegen reicht eine niedrige Ausführlichkeit zur Darstellung der nötigen Informationen für den Verbraucher. Zusätzlich bleibt so der Datenverkehr der Extension eher gering.
+
+Die Infofelder sind der Hauptinformationsträger der Schnittstelle. Sie sind in 30 Eigenschaften unterteilt und können eine sogenannten "rote Linie" sein. Das bedeutet, dass bei Besitz dieser Eigenschaft, die entsprechende App potentiell gegen ein Gesetz verstößt. Folgenden Infofelder sind im Rahmen des PrivacyGuard Forschungsprojekts zur Beurteilung von Apps entstanden:
+\begin{table}[h]
+	\begin{tabular}{p{4.0cm}C{3.6cm}C{4.0cm}}
+		\toprule
+		\textbf{Property}		&	\textbf{Stereo Camera}		&	\textbf{Multi-Mode Radar \newline (near / far)}	\\
+		\midrule
+		meas. principle	&	CMOS sensor			&	FMCW			\\
+		cycle time		&	60ms				&	66ms			\\
+		latency			&	42ms				&	198ms			\\
+		\midrule
+		frequency		&	16fps				&	76 - 77 Ghz		\\
+		bandwidth		&	---					&	187 Mhz			\\
+		\midrule
+		opening angle	&	45°					&	60° / 18°			\\
+		range			&	500m \newline (3D-vision: 50m)	&	~60m	/ 200m		\\
+		\midrule
+		angle accuracy ($3\sigma$)		&	---	&	~~$\pm$ 1° / $\pm$ 0.1°		\\
+		distance accuracy ($3\sigma$)	&	---	&	$\pm$ 0.25m		\\
+		velocity accuracy ($3\sigma$)	&	---	&	$\pm 0.278 \tfrac{m}{s}$ / $\pm 0.139 \tfrac{m}{s}$	\\
+		\bottomrule
+	\end{tabular}
+	\caption{Overview of the properties of several sensors}
+	\label{tab:sensor_properties}
+\end{table}
 
 \section{Implementierung einer Google Chrome Extension}
 \label{s:implementierung}
-
+ stsa
 \subsection{Eigenschaften}
 \label{ss:eigenschaften}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.4)  4 MAR 2019 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.4)  5 MAR 2019 12:50
 entering extended mode
 **./thesis_name.tex
 (thesis_name.tex
@@ -1643,7 +1643,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--40
 t-[]edge / extensions / guides /
  []
 
-[4 <./pics/MarktanteileBrowser.png>] [5]) (03_aufgabe1.tex [6]
+[4 <./pics/MarktanteileBrowser.png>] [5]
+Overfull \hbox (6.89778pt too wide) in paragraph at lines 65--66
+\OT1/LinuxLibertineT-TLF/m/n/10.95 (-20) War-te-zei-ten m[]oglichst ge-ring zu 
+hal-ten. Da-ge-gen reicht ei-ne nied-ri-ge Ausf[]uhrlichkeit
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
+ input line 80.
+
+("C:\Users\idivap62puny\AppData\Local\Programs\MiKTeX 2.9\tex/latex/libertine\t
+s1linuxlibertinet-tlf.fd"
+File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
+LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 80.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6]) (03_aufgabe1.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+[8]
 Kapitel 3.
 
 Overfull \hbox (21.1825pt too wide) in paragraph at lines 14--14
@@ -1657,7 +1685,7 @@ Overfull \hbox (8.71857pt too wide) in paragraph at lines 14--14
 -nen im Play-
  []
 
-[7
+[9
 
 ]
 Overfull \hbox (16.26036pt too wide) in paragraph at lines 44--46
@@ -1665,14 +1693,14 @@ Overfull \hbox (16.26036pt too wide) in paragraph at lines 44--46
 g bzw. De-ak-ti-vie-rung der Ex-ten-si-on zus[]atzliche
  []
 
-[8]
+[10]
 
 Package Fancyhdr Warning: \headheight is too small (13.6pt): 
 Make it at least 24.83585pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[9]
+[11]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 81.
  (../../Extension/src/manifest.json
@@ -1687,37 +1715,25 @@ LaTeX Font Warning: Font shape `OMS/LinuxLibertineT-TLF/m/n' undefined
 
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 6.0pt on input line 4.
-LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineT-TLF on
- input line 12.
-
-("C:\Users\idivap62puny\AppData\Local\Programs\MiKTeX 2.9\tex/latex/libertine\t
-s1linuxlibertinet-tlf.fd"
-File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
-LinuxLibertineT-TLF.
-)
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 12.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 )
 Overfull \hbox (10.10849pt too wide) in paragraph at lines 88--90
 []\OT1/LinuxLibertineT-TLF/m/n/10.95 (-20) declarativeContent: Be-reit-stel-lun
 g von Events, wie Sei-ten-auf-ruf oder -[]anderung
  []
 
-[10]
+[12]
 Overfull \hbox (80.2501pt too wide) in paragraph at lines 95--99
 \OT1/LinuxLibertineT-TLF/m/n/10.95 (-20) Skrip-te un-ter wel-chem URL ak-tiv si
 nd. Der Aus-druck "*://-play.google.com/store/apps*"bedeutet,
  []
 
-(../../Extension/src/background.js [11]) (../../Extension/src/pguard.js
-[12]
+(../../Extension/src/background.js [13]) (../../Extension/src/pguard.js
+[14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]
+ [15]
 LaTeX Font Info:    Try loading font information for OML+LinuxLibertineT-TLF on
  input line 135.
 LaTeX Font Info:    No file OMLLinuxLibertineT-TLF.fd. on input line 135.
@@ -1730,10 +1746,10 @@ LaTeX Font Warning: Font shape `OML/LinuxLibertineT-TLF/m/n' undefined
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
+ [16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
+ [17]
 Overfull \hbox (16.40363pt too wide) in paragraph at lines 276--277
 [][][][][][][][][][][][][][] 
  []
@@ -1741,10 +1757,10 @@ Overfull \hbox (16.40363pt too wide) in paragraph at lines 276--277
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
+ [18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17]
+ [19]
 Overfull \hbox (3274.43677pt too wide) in paragraph at lines 495--496
 [][][][][]  
  []
@@ -1752,13 +1768,13 @@ Overfull \hbox (3274.43677pt too wide) in paragraph at lines 495--496
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
+ [20]
 Overfull \hbox (16.40363pt too wide) in paragraph at lines 503--504
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 )
-<pics/Aufbau.png, id=945, 489.32813pt x 344.03531pt>
+<pics/Aufbau.png, id=958, 489.32813pt x 344.03531pt>
 File: pics/Aufbau.png Graphic file (type png)
 <use pics/Aufbau.png>
 Package pdftex.def Info: pics/Aufbau.png  used on input line 132.
@@ -1771,22 +1787,22 @@ Overfull \hbox (129.32692pt too wide) in paragraph at lines 132--133
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19])
-(04_aufgabe2.tex [20 <./pics/Aufbau.png>]
+ [21])
+(04_aufgabe2.tex [22 <./pics/Aufbau.png>]
 Overfull \hbox (210.8386pt too wide) in paragraph at lines 71--74
 []\OT1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worst Ca-se: 99999|1|2|3|4|5|6|7|8|9
 |10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|27|28|29|30|31
  []
 
-[21] [22] [23]) (05_diskussion.tex [24]
+[23] [24] [25]) (05_diskussion.tex [26]
 Kapitel 4.
-) (06_anhang.tex [25
+) (06_anhang.tex [27
 
-] [26
+] [28
 
 ]
 Kapitel 5.
-[27] (simple_kalman_example.m
+[29] (simple_kalman_example.m
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 6.0pt on input line 1.
 
@@ -1795,10 +1811,10 @@ LaTeX Font Warning: Font shape `OMS/LinuxLibertineT-TLF/m/it' undefined
 (Font)              using `OMS/LinuxLibertineT-TLF/m/n' instead
 (Font)              for symbol `textbackslash' on input line 10.
 
-)) [28] [29
+)) [30] [31
 
 
-] [30
+] [32
 
 ] (thesis_name.lof
 Overfull \hbox (253.26517pt too wide) in paragraph at lines 4--4
@@ -1811,17 +1827,17 @@ $[]\OT1/LinuxLibertineT-TLF/m/n/10.95 (-20) .[] [][]
 \tf@lof=\write6
 \openout6 = `thesis_name.lof'.
 
- [31] [32
+ [33] [34
 
 ] (thesis_name.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-) [33
+) [35
 
-] [34
+] [36
 
-] [35
+] [37
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
@@ -1837,13 +1853,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 39412 strings out of 492946
- 727509 string characters out of 3123159
+ 39421 strings out of 492946
+ 727694 string characters out of 3123159
  1510207 words of memory out of 3000000
- 41749 multiletter control sequences out of 15000+200000
- 589555 words of font info for 190 fonts, out of 3000000 for 9000
+ 41754 multiletter control sequences out of 15000+200000
+ 590258 words of font info for 192 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,92p,2195b,2024s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,15n,92p,2195b,2024s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/idivap62puny/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libe
 rtine/lbtn_kijugd.enc}{C:/Users/idivap62puny/AppData/Local/Programs/MiKTeX 2.9/
 fonts/enc/dvips/libertine/lbtn_naooyc.enc}{C:/Users/idivap62puny/AppData/Local/
@@ -1858,13 +1874,17 @@ ibertineT.pfb><C:/Users/idivap62puny/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/public/libertine/LinLibertineTB.pfb><C:/Users/idivap62puny/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/idi
 vap62puny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-6.pfb><C:/Users/idivap62puny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb><C:/Users/idivap62puny/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/idivap62puny/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on thesis_name.pdf (41 pages, 839193 bytes).
+10.pfb><C:/Users/idivap62puny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmi6.pfb><C:/Users/idivap62puny/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/idivap62puny/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/idiva
+p62puny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.p
+fb><C:/Users/idivap62puny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Users/idivap62puny/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+Output written on thesis_name.pdf (43 pages, 868113 bytes).
 PDF statistics:
- 1337 PDF objects out of 1440 (max. 8388607)
- 763 named destinations out of 1000 (max. 500000)
- 28108 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 1359 PDF objects out of 1440 (max. 8388607)
+ 766 named destinations out of 1000 (max. 500000)
+ 28620 words of extra memory for PDF output out of 29859 (max. 10000000)
 
