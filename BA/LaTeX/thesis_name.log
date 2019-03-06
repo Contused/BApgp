@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.4)  5 MAR 2019 16:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.4)  6 MAR 2019 12:01
 entering extended mode
 **./thesis_name.tex
 (thesis_name.tex
@@ -1692,7 +1692,7 @@ Overfull \hbox (0.58896pt too wide) in paragraph at lines 102--102
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6] [7]
-<pics/browser1.png, id=357, 1156.32pt x 620.3175pt>
+<pics/browser1.png, id=361, 1156.32pt x 620.3175pt>
 File: pics/browser1.png Graphic file (type png)
 <use pics/browser1.png>
 Package pdftex.def Info: pics/browser1.png  used on input line 166.
@@ -1812,7 +1812,7 @@ Overfull \hbox (16.40363pt too wide) in paragraph at lines 503--504
  []
 
 )
-<pics/Aufbau.png, id=988, 489.32813pt x 344.03531pt>
+<pics/Aufbau.png, id=990, 489.32813pt x 344.03531pt>
 File: pics/Aufbau.png Graphic file (type png)
 <use pics/Aufbau.png>
 Package pdftex.def Info: pics/Aufbau.png  used on input line 132.
@@ -1916,9 +1916,9 @@ vap62puny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
 ic/amsfonts/cm/cmr10.pfb><C:/Users/idivap62puny/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/idivap62puny/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on thesis_name.pdf (47 pages, 893974 bytes).
+Output written on thesis_name.pdf (47 pages, 894396 bytes).
 PDF statistics:
- 1383 PDF objects out of 1440 (max. 8388607)
+ 1385 PDF objects out of 1440 (max. 8388607)
  776 named destinations out of 1000 (max. 500000)
  28113 words of extra memory for PDF output out of 29859 (max. 10000000)
 
