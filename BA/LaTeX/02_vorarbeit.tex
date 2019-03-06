@@ -2,7 +2,7 @@
 \label{c:vorarbeit}
 
 
-\section{Recherche zu Browser Extensions}
+\section{Recherche zu Browser-Extensions}
 \label{s:recherchebrowserextensions}
 
 \subsection{Extension-Programmierung allgemein}
@@ -177,7 +177,7 @@ Alle restlichen Elemente werden direkt in die angezeigte Webseite integriert und
 \subsection{Anforderungen}
 \label{ss:rolleperformance}
 
-Diese Arbeit beschäftigt sich damit, welche Caching-Methoden für Browser-Extensions geeignet sind. Der Fokus liegt hierbei auf den in Aufgabe 1 \ref{s:aufgabenstellung} beschriebenen Anwendungsfall. Darauß ergeben sich folgende Anforderungen an den Speicher:
+Diese Arbeit beschäftigt sich damit, welche Caching-Methoden für Browser-Extensions geeignet sind. Der Fokus liegt hierbei auf den in Aufgabe \ref{s:aufgabenstellung} beschriebenen Anwendungsfall. Darauß ergeben sich folgende Anforderungen an den Speicher:
 
 Performanz spielt eine große Rolle, da dem Nutzer alle gespeicherten Daten der Extension zeitgleich zum Abschluss der Ladezeit der Webseite zur Verfügung stehen sollen. Werden Daten mit Verzögerung auf der Webseite dargestellt oder Verlängert der Prozess sogar die initiale Ladezeit, hat das eine beträchtliche Auswirkung auf die Nutzererfahrung. So zeigt eine Studie von Google Research auf dem Jahr 2017\footnote{\url{https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/}}, dass die Absprungrate sich bei Ladezeiten von über zwei Sekunden stark erhöht.
 
@@ -189,11 +189,22 @@ Alle Daten, die im Cache abgelegt werden sind durch PrivacyGuard gewonnene Infor
 
 Die Datenvisualisierung der Extension ist überschaubar und auch die zu Grunde liegende Datenstruktur der API ist einfach aufgebaut. Dadurch kann auf komplexe Datenbankstrukturen oder zusätzliche Frameworks verzichtet werden.
 
-\subsection{Verwendete Methoden und deren Eigenschaften}
+\subsection{Caching-Methoden und deren Eigenschaften}
 \label{ss:methodeneigenschaften}
 
-Die Recherche ergab viele Möglichkeiten zum Cach
+Um zu evaluieren, welche Caching-Methode am besten für den beschriebenen Anwendungsfall geeignet ist, befasst sich dieses Kapitel mit der Auflistung aller möglichen Speicherfunktionen für Browser-Extensions. Die dazu aufgelisteten Eigenschaften dienen als Vergleich für die spätere Vorauswahl der Methoden.
+Als Quelle für Teile der Recherche diente das Buch von Raymond Camden \glqq Client-Side Data Storgae \grqq{}
 
+Alle Daten der Extension sollen im Browser gespeichert werden. Datenbanken auf externen Servern bieten keinen Mehrwert, da die Informationen vom Backend nicht noch verarbeitet, personalisiert, oder gesichert werden müssen. In diesem Fall dient das Backend als Datenbank die durch lokale Speicherprozesse entlastet werden soll.
+
+Cookies sind kleine Textspeicher die normalerweise von Webseiten in Browsern genutzt werden, um Informationen über den Besucher zu speichern. Sie besitzen meist eine kurze Lebensdauer und werden über HTTP-Header übertragen. Auch Browser-Extensions können Cookies nutzen\footnote{\url{https://developer.chrome.com/extensions/cookies}}, um Informationen zu speichern. Das Buch verweist darauf, dass man bis zu 50 Cookies mit einer Gesamtgröße von 4KB pro Domäne ohne bedenken nutzen kann.
+Jedoch genießen Cookies, unter anderem aufgrund der EU-Richtlinie\footnote{\url{https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32002L0058:de:HTML}}, keinen guten Ruf. Webseiten müssen sich in der Regel vor Gebrauch die Genehmigung des Nutzers einholen. Dies könnte also auch bei Extension zu rechtlichen Problemen führen. Außerdem blockieren viele Nutzer diese Cookies eben aus datenschutzrechtlichen Gründen.
+
+Die Web Storage API\footnote{\url{https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API}} ist eine einheitlich Methode von mehreren Browser, Daten lokal zu speichern. Pro Domäne verfügt der Web Storage über 5-10MB, je nach Browser. Dabei besteht jede Einheit aus einem key-value-Paar, welches Daten in Form von Strings speichern kann. Die Web Storage API ist unterteilt in \glqq local storage\grqq{} und \glqq session storage\grqq{}. Während beim session storage alle Daten nur solange gespeichert sind, bis der Browser wieder geschlossen wird, bleiben die Daten beim local storage solange bestehen, bis sie manuell überschrieben oder gelöscht werden.
+
+Mit der IndexedDB API\footnote{\url{https://developer.mozilla.org/de/docs/IndexedDB}} ist die Extension in der Lage eine domainspezifische Datenbank zu erstellen. Diese Datenbank besteht aus sogenannten \glqq Object Stores\grqq{}, welche Tabellen mit flexiblen Datentypen beinhalten können. Die Speicherkapazität wird nicht exakt definiert und ist abhängig von der Größe der Festplatte\footnote{\url{https://developer.mozilla.org/de/docs/IndexedDB/Browser_storage_limits_and_eviction_criteria}}. So liegt der verfügbare Speicher zwischen 10MB und 50\% des freien Festplattenspeichers. IndexedDB wird nicht noch komplett unterstützt und gilt als vergleichsweise komplexe API.
+
+Ergänzend zu erwähnen ist die SQLite basierte Datenbank Web SQL. Seit 2010 wird diese Spezifikation von dem World-Wide-Web-Konsortium allerdings nicht mehr zur Implementierung empfohlen und gilt seit jeher als veraltet.
 
 
 
