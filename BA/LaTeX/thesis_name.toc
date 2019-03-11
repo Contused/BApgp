@@ -18,26 +18,25 @@
 \contentsline {subsection}{\numberline {2.4.1}Anforderungen}{9}{subsection.2.4.1}% 
 \contentsline {subsection}{\numberline {2.4.2}Caching-Methoden und deren Eigenschaften}{10}{subsection.2.4.2}% 
 \contentsline {chapter}{\numberline {3}Hauptteil}{15}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Erlaeuterung der Aufgabenstellungen}{15}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Aufgabe 1: Implementierung einer Browser-Extension zur Anzeige von Datenschutzinformationen im PlayStore}{15}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Anwendungsszenario}{15}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Anforderungsanalyse}{16}{subsection.3.2.2}% 
-\contentsline {subsubsection}{\numberline {3.2.2.1}Funktionale Anforderungen}{16}{subsubsection.3.2.2.1}% 
-\contentsline {subsubsection}{\numberline {3.2.2.2}Nichtfunktionale Anforderungen}{16}{subsubsection.3.2.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Aufbau der Website}{18}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}Programmaufbau}{18}{subsection.3.2.4}% 
-\contentsline {subsection}{\numberline {3.2.5}Ergebnis}{28}{subsection.3.2.5}% 
-\contentsline {subsection}{\numberline {3.2.6}Diskussion}{28}{subsection.3.2.6}% 
-\contentsline {section}{\numberline {3.3}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{28}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Anforderungen}{28}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Vorauswahl}{30}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Rahmenbedingungen}{31}{subsection.3.3.3}% 
-\contentsline {subsection}{\numberline {3.3.4}Vorgehensweise}{32}{subsection.3.3.4}% 
-\contentsline {subsection}{\numberline {3.3.5}Ergebnisse}{32}{subsection.3.3.5}% 
-\contentsline {subsection}{\numberline {3.3.6}Diskussion}{32}{subsection.3.3.6}% 
-\contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{33}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Konklusion}{33}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Fortsetzung der Forschung}{33}{section.4.2}% 
-\contentsline {chapter}{\numberline {5}Appendix}{35}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Derivations}{35}{section.5.1}% 
-\contentsline {subsection}{\numberline {5.1.1}Example Matlab Code}{36}{subsection.5.1.1}% 
+\contentsline {section}{\numberline {3.1}Aufgabe 1: Implementierung einer Browser-Extension zur Anzeige von Datenschutzinformationen im PlayStore}{15}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Anwendungsszenario}{15}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Anforderungsanalyse}{16}{subsection.3.1.2}% 
+\contentsline {subsubsection}{\numberline {3.1.2.1}Funktionale Anforderungen}{16}{subsubsection.3.1.2.1}% 
+\contentsline {subsubsection}{\numberline {3.1.2.2}Nichtfunktionale Anforderungen}{16}{subsubsection.3.1.2.2}% 
+\contentsline {subsection}{\numberline {3.1.3}Aufbau der Website}{18}{subsection.3.1.3}% 
+\contentsline {subsection}{\numberline {3.1.4}Programmaufbau}{18}{subsection.3.1.4}% 
+\contentsline {subsection}{\numberline {3.1.5}Ergebnis}{21}{subsection.3.1.5}% 
+\contentsline {subsection}{\numberline {3.1.6}Diskussion}{21}{subsection.3.1.6}% 
+\contentsline {section}{\numberline {3.2}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{21}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Anforderungen}{21}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Vorauswahl}{23}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Rahmenbedingungen}{24}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.4}Vorgehensweise}{25}{subsection.3.2.4}% 
+\contentsline {subsection}{\numberline {3.2.5}Ergebnisse}{25}{subsection.3.2.5}% 
+\contentsline {subsection}{\numberline {3.2.6}Diskussion}{25}{subsection.3.2.6}% 
+\contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{27}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Konklusion}{27}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Fortsetzung der Forschung}{27}{section.4.2}% 
+\contentsline {chapter}{\numberline {5}Appendix}{29}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Derivations}{29}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Example Matlab Code}{30}{subsection.5.1.1}% 

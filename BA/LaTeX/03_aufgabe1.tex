@@ -1,62 +1,62 @@
 \chapter{Hauptteil}
 \label{c:hauptteil}
 
-This chapter will first outline the problems that constitutes the main portion of this work. Each problem is described separately starting with the available data sources followed by a detailed description of the proposed solutions. After that, the proposed solutions are evaluated by empirical means and the results are presented. Performance studies are conducted to provide suitable recommendations concerning the real world application.
-
-
-
-\section{Erlaeuterung der Aufgabenstellungen}
-\label{s:erlaeuterungaufgabe}
-
-
-
-
 \section{Aufgabe 1: Implementierung einer Browser-Extension zur Anzeige von Datenschutzinformationen im PlayStore}
 \label{s:implementierungextension}
 
 \subsection{Anwendungsszenario}
 \label{ss:anwendungsszenario}
 
-QUELLE STATISTIK? 
+%QUELLE STATISTIK? 
 
 Während vor einigen Jahren Applikationen hauptsächlich auf eigenen Webseiten zum Download angeboten wurden, haben sich die
-AppStores mitlerweile durchgesetzt. Vorteile für diese Plattformen sind unter anderem: erleichterter Zugang, Vergleiche mit anderen Applikationen und individuelle Empfehlungen. Bei der Wahl für eine bestimmte Applikation achten Nutzer auf Aspekte, wie Preis, Anzahl der Downloads und Bewertungen von anderen Nutzern.
+Appstores mittlerweile durchgesetzt. Vorteile für diese Plattformen sind unter anderem erleichterter Zugang, Vergleiche mit anderen Applikationen und individuelle Empfehlungen.
 
-Immer wichtiger aber auch die Frage: Welche Daten gebe ich der Applikation frei und wie werden diese verarbeitet. Der PlayStore bietet zwar einen groben Überblick, welche Daten eine Applikation von dem Handy ausließt, aber nicht wie diese vom Anbieter verarbeitet werden.
+Bei der Wahl für eine bestimmte Applikation achten Nutzer auf Aspekte, wie Preis, Anzahl der Downloads und Bewertungen von anderen Nutzern. Immer wichtiger wird aber auch die Frage: Welche Daten gebe ich der Applikation frei und wie werden diese verarbeitet. Der PlayStore bietet zwar einen groben Überblick, welche Daten eine Applikation von dem Handy benutzt, aber nicht wie diese vom Anbieter weiterverarbeitet werden.
 
-Dadurch entstehen beim Nutzer Fragen, welche der Playstore nicht beantwortet:
+Außerdem sind Käufe von Apps in angelegten Benutzerkonten gespeichert. Mit diesem Benutzerkonto kann der Nutzer wiederum persönliche Daten für Login-Prozesse in Apps nutzen. So entsteht ein großes Netz an Informationen über das der Nutzer selbst keine Übersicht mehr hat.
+
+Um Nutzern eine genaue Übersicht zum Datenschutz gewähren, betrachtet die Extension dabei Fragen,welche der PlayStore nicht unmittelbar beantwortet:
  \begin{enumerate}
- 	\item Handhabung der Daten: Wie werden die Daten verarbeitet und an wen werden diese weitergeleitet? Wird ein Profil anhand der Daten erstellt? Welche Sicherheit besteht bei der Übertragung der Daten?
- 	\item Vor- und Nachteile der Datenverarbeitung: Kann der Anbieter die Applikation dadurch komfortabler gestalten? Wird Werbung in der Applikation personalisiert? Besteht Gefahr vor Missbrauch der Daten?
- 	\item Kontrolle über die Daten: Welche Möglichkeiten stehen zu Verfügung im Falle von Nichteinverständnis? Ist der Umgang mit den Daten nach der Installation noch einschränkbar. Kann der Nutzer die Verwendung der Daten verbieten und trotzdem die App weiterhin nutzen?
+ 	\item \textbf{Handhabung der Daten}: Wie werden die Daten verarbeitet und an wen werden diese weitergeleitet? Wird ein Profil anhand der Daten erstellt? Welche Sicherheit besteht bei der Übertragung der Daten?
+ 	
+ 	\item \textbf{Vor- und Nachteile der Datenverarbeitung}: Kann der Anbieter die Applikation dadurch komfortabler gestalten? Wird Werbung in der Applikation personalisiert? Besteht Gefahr vor Missbrauch der Daten?
+ 	
+ 	\item \textbf{Kontrolle über die Daten}: Welche Möglichkeiten stehen zu Verfügung im Falle von Nichteinverständnis? Ist der Umgang mit den Daten nach der Installation noch einschränkbar. Kann der Nutzer die Verwendung der Daten verbieten und trotzdem die App weiterhin nutzen?
  \end{enumerate}
 
+Ziel ist es Verbrauchern diese Fragen mittels der Erweiterung des Google PlayStores durch eine Extension zu beantworten.
 
 \subsection{Anforderungsanalyse}
 \label{ss:anforderungsanalyse}
 
 \subsubsection{Funktionale Anforderungen}
 
-Aus den Fragen die bei dem Anwendungsszenario entstanden sind werden funktionale Anforderungen gebildet um konkrete Aufgaben für die Extension zu schaffen. -Anforderungen in TEXTFORM-
+Aus den Fragen, die bei dem Anwendungsszenario entstanden sind, werden funktionale Anforderungen gebildet um konkrete Aufgaben für die Extension zu schaffen. %-Anforderungen in TEXTFORM-
 
--Direkt bei Apps in Anforderungen erwähnen
+%-Direkt bei Apps in Anforderungen erwähnen
 \begin{itemize}
-	\item[/F10/] Erweiterung der Informationen im PlayStore:
+	\item[/F10/] \textbf{Erweiterung der Informationen im PlayStore}:
 	Der Nutzer hat die Möglichkeit im Browserfenster per Aktivierung bzw. Deaktivierung der Extension zusätzliche Datenschutzinformationen zu den angezeigten Applikationen ein- bzw. auszublenden.
-	\item[/F20/] Anzahl von bedenklichen Eigenschaften einer Applikation:
-	Zu jeder Applikation erhält der Nutzer ein Feedback von der Extension, wieviele Bedenken vorliegen.
-	\item[/F30/] Darstellung von kritischen Eigenschaften einer Applikation:
+	
+	\item[/F20/] \textbf{Anzahl von bedenklichen Eigenschaften einer Applikation}:
+	Zu jeder Applikation erhält der Nutzer ein Feedback von der Extension, wie viele Bedenken vorliegen.
+	
+	\item[/F30/] \textbf{Darstellung von kritischen Eigenschaften einer Applikation}:
 	Eigenschaften einer Applikation, welche einen erheblichen Nachteil für den Nutzer darstellen oder einen möglichen Gesetzesverstoß beinhalten werden hervorgehoben.
-	\item[/F40/] Abrufen von Details zu den Bedenken:
+	
+	\item[/F40/] \textbf{Abrufen von Details zu den Bedenken}:
 	Wird ein Bedenken angezeigt, kann der Nutzer direkt Erläuterung, Handlungsempfehlung sowie Vor- und Nachteile zu diesem Bedenken abrufen.
-	\item[/F50/] Empfehlung bei Suchanfragen:
+	
+	\item[/F50/] \textbf{Empfehlung bei Suchanfragen}:
 	Basierend auf den Bedenken einer Applikation kann der Nutzer die Suchanfrage so anpassen, dass ihm unbedenkliche Applikationen priorisiert angezeigt werden.
 \end{itemize}
 
 \subsubsection{Nichtfunktionale Anforderungen}
-Das Programm richtet sich in erster Linie an Nutzer, denen keine besonderen informatischen Kenntnisse abverlangt werden
+
+Das Programm richtet sich in erster Linie an Nutzer, denen keine besonderen informatischen Kenntnisse abverlangt werden.
 Extensions zeichnen sich durch ihre Einfachheit aus. Nutzer wissen vor der Installation, welche Funktionen diese Programme haben. Die Extension soll auf den ersten Blick klar machen, welche Komponenten des Browsers erweitert oder verändert wurden.
--QUELLE- Was ist eine Nichtfunktionale Anforderung + kurze Auflistung (BUCH)
+%-QUELLE- Was ist eine Nichtfunktionale Anforderung + kurze Auflistung (BUCH)
 \begin{itemize}
 	\item[/NF10/] Darstellung und Einbindung der Informationen
 	Darstellung und Einbindung spielen bei Browser-Extensions eine wichtige Rolle. Hier wird keine grundlegend neue Oberfläche gestaltet sondern eine bereits vorhandene erweitert. Der Fokus fällt darauf, die bestehende Oberfläche so zu verändern, dass alle Elemente der Extension an der richtigen Stelle eingebaut werden. Der Nutzer soll auf den ersten Blick erkennen welche neuen Informationen zu welchen bereits bestehenden Teilen der Website gehören.
@@ -72,7 +72,16 @@ Extensions zeichnen sich durch ihre Einfachheit aus. Nutzer wissen vor der Insta
 	Alle Informationen zu Applikationen die dieses Programm darstellt werden extern von einem Server des privacy guard-Projekts eingespeist. Dieser gewinnt die Daten hauptsächlich auf automatischen Textmining-Verfahren. Ein Problem bei diesen Verfahren ist die fehlenden Validierung der Informationen. Ursachen wie das heterogene Format von Datenschutzerklärungen und Mehrfachverlinkungen von Datenschutzinformationen können zu bei dieser Methode zu Fehlern oder Ungenauigkeiten führen. Aus diesem Grund muss dem Nutzer verdeutlicht werden, dass alle Angaben als Empfehlungen zu betrachten sind und keine verbindlichen Aussagen über Applikationen getätigt werden.
 \end{itemize}
 \subsection{Aufbau der Website}
-Singlepage, Multipage, Kacheln, APP-ID
+
+Der Play Store, oder auch \glqq Google Play\grqq{} ist die Haupt-Vertriebsplattform von Google für digitale Güter wie Apps, Filme und Serien, Musik und Bücher. Diese Arbeit und somit die Entwicklung der Extension beschränkt sich auf die Kategorie Apps
+
+
+
+%Singlepage, Multipage, Kacheln, APP-ID
+
+
+Der in diesem Kapitel beschriebene Stand der Website bezieht sich auf den Zeitraum von März 2018 bis März 2019. Die Planung und Implementierung der Extension ist auf diesen optischen und technischen Stand der Website angepasst. Mögliche Probleme die ein veränderter Stand der Website mit sich bringt, werden in Abschnitt \ref{ss:diskussionht1} diskutiert.
+
 \subsection{Programmaufbau}
 \label{ss:programmaufbau}
 Die Struktur des Programms orientiert sich an der beschriebenen Architektur in Kapitel~\ref{ss:darstellung}. Dieser Abschnitt befasst sich mit der Umsetzung der Anforderungen, welche im vorangegangen Kapitel aufgesetzt wurden. Dabei werden wichtige Eigenschaften aus an Teilen des Quellcodes betrachtet und getroffene Entscheidungen begründet. Außerdem werden kritische Stellen beleuchtet, welche für die Diskussion und fortführende Arbeit relevant sind.
@@ -116,15 +125,15 @@ Anschließend prüft die Funktion "fillApps", ob die aktuelle Seite eine Single-
 
 Mit der Funktion "loadInfoPanels" wird jeder so gefundene Kandidat auf seine APP-ID überprüft. Diese befindet sich entweder in dem Attribut "data-docid" oder "href". Mithilfe dieser ID durchsucht die Funktion "getStorageItem" den lokalen Speicher auf Einträge. Der  Eintrag ist valide, falls er nicht leer ist und vor weniger als 3 Tagen angelegt wurde. Findet die Funktion keinen validen Eintrag im lokalen Speicher, wird eine neue Anfrage an das Backend, für die entsprechende APP-ID, erstellt.
 
-BEISPIEL ANFRAGE
+%BEISPIEL ANFRAGE
 
 Liefert das Backend eine Antwort mit mindestens einem Ergebnis, speichert die Funktion die Informationen im lokalen Speicher ab. Bei mehr als einem Ergebnis, entscheidet eine Prioritätenliste abhängig von der zuverlässigsten Quelle, welcher Datensatz genutzt wird.
 
 Der gewählte Datensatz wird der Funktion "createPanel" übergeben. Handelt es sich bei dem Kandidaten um eine App-Page(Single-App), wird das Popover aus den Informationen direkt erstellt. Dazu wird der Datensatz mit Hilfe der IB texte.json in den entsprechenden Text umgewandelt und in die Html-Template einfügt.
 Bei App-Kacheln(Multi-app) baut die Funktion einen Banner in die Kachel ein. Auf diesem Banner wird mittels JQuery ein Event geladen, welches bei einem Klick auf den Banner das Popover erstellt.
 
-BEISPIEL IB texte
-\lstinputlisting[label={src:pguard}, caption={Aufbau der pguard.js}]{../../Extension/src/pguard.js}
+%BEISPIEL IB texte
+%\lstinputlisting[label={src:pguard}, caption={Aufbau der pguard.js}]{../../Extension/src/pguard.js}
 
 \subsection{Ergebnis}
 \label{ss:ergebnisseht1}

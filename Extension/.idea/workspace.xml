@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43d69ff7-ef3f-46e2-b078-fb102f6df358" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/02_vorarbeit.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/02_vorarbeit.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/03_aufgabe1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/03_aufgabe1.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.aux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.log" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.out" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="Extension.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,7 +68,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pguard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-94">
+            <state relative-caret-position="17">
               <caret line="489" column="16" selection-start-line="489" selection-start-column="9" selection-end-line="489" selection-end-column="16" />
             </state>
           </provider>
@@ -220,9 +220,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="950" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -232,7 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,6 +274,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -376,17 +376,17 @@
       <workItem from="1551789305818" duration="382000" />
       <workItem from="1551789945300" duration="2201000" />
       <workItem from="1551881616618" duration="657000" />
+      <workItem from="1552043812282" duration="594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186739000" />
+    <option name="totallyTimeSpent" value="187333000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="761" y="0" width="782" height="831" extended-state="0" />
-    <editor active="true" />
+    <frame x="760" y="0" width="783" height="832" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -543,7 +543,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pguard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-94">
+        <state relative-caret-position="17">
           <caret line="489" column="16" selection-start-line="489" selection-start-column="9" selection-end-line="489" selection-end-column="16" />
         </state>
       </provider>
