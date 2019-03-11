@@ -73,14 +73,67 @@ Extensions zeichnen sich durch ihre Einfachheit aus. Nutzer wissen vor der Insta
 \end{itemize}
 \subsection{Aufbau der Website}
 
-Der Play Store, oder auch \glqq Google Play\grqq{} ist die Haupt-Vertriebsplattform von Google für digitale Güter wie Apps, Filme und Serien, Musik und Bücher. Diese Arbeit und somit die Entwicklung der Extension beschränkt sich auf die Kategorie Apps
+Der Play Store, oder auch \glqq Google Play\grqq{} ist die Haupt-Vertriebsplattform von Google für digitale Güter wie Apps, Filme und Serien, Musik und Bücher. Diese Arbeit und somit die Entwicklung der Extension beschränken sich auf die Kategorie \glqq Apps\grqq{}. Zu finden unter dem URL:
 
+\glqq \url{https://play.google.com/store/apps}\grqq{}
 
+Die Seite unterteilt sich durch ein linksbündiges Menü(Abb. \ref{playstore1} Nr.1) in die Bereiche \glqq Einkaufen\grqq{} und \glqq Meine Apps\grqq{}. Der Bereich \glqq Einkaufen\grqq{} ist in die drei Reiter(Abb. \ref{playstore1} Nr.2) \glqq Startseite\grqq{}, \glqq Top-Charts\grqq{} und \glqq Neuerscheinungen\grqq{} gegliedert. Links neben diesen Reitern befindet sich eine Auswahl für einzelne Kategorien.
 
-%Singlepage, Multipage, Kacheln, APP-ID
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{pics/playstore1num.png}
+	\caption{Kategorie Apps im Google Play Store (1: Apps-Menü; 2: Reiter; 3: Anzeigebereich der Apps; 4: Einzelne Kachel)}
+	\label{playstore1}
+\end{figure}
 
+Alle Auswahlpunkte zeigen im Darstellungsbereich(Abb. \ref{playstore1} Nr.3) Apps in der gleichen Struktur an. Wie in Abbildung \ref{playstore1} zu erkennen, werden zu einer Thematik mehrere Kacheln(Abb. \ref{playstore1} Nr.4) in einer Reihe dargestellt. Durch den Button \glqq Mehr\grqq{} klappt die entsprechende Reihe aus. Aufgeklappte Themengebiete, Suchergebnisse und \glqq Meine Apps\grqq{} werden als Raster dargestellt.
 
-Der in diesem Kapitel beschriebene Stand der Website bezieht sich auf den Zeitraum von März 2018 bis März 2019. Die Planung und Implementierung der Extension ist auf diesen optischen und technischen Stand der Website angepasst. Mögliche Probleme die ein veränderter Stand der Website mit sich bringt, werden in Abschnitt \ref{ss:diskussionht1} diskutiert.
+Durch den Klick auf eine Kachel lädt der Nutzer die Detailseite(Abbildung \ref{playstore2}). Diese zeigt neben der ausgewählten App auch ähnliche Programme an der rechten Seite an. Auf der Basis aller hier gezeigten Informationen trifft der Nutzer die Entscheidung, ob die App installiert werden soll.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{pics/playstore2.png}
+	\caption{Detailansicht einer App}
+	\label{playstore2}
+\end{figure}
+
+Für die Funktionen der Erweiterung sind die Kacheln mit Informationen zu einzelnen Apps ausschlaggebend. Insgesamt unterscheidet die Website in drei Arten von Kacheln:
+
+\begin{itemize}
+	\item \textbf{Kleine Kachel}:	
+	Wie in Abbildung \ref{playstore1} zu sehen, füllen kleine Kacheln alle Übersichtsseiten und sind als Reihe oder Raster angeordnet. Sie bestehen aus drei Bereichen. Das ist Vorschaubild oben, der Titel der App mit Herausgeber in der Mitte und die Bewertung unten zusammen mit dem Kaufpreis, falls vorhanden.
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics{pics/kachel1.png}
+		\caption{Kleine Kachel}
+		\label{kachel1}
+	\end{figure}
+
+	\item \textbf{Mittlere Kachel}:
+	Als Raster unter dem Menü-Punkt \glqq Meine Apps\grqq{} und als vertikale Reihe neben einer großen Kachel in der Detailansicht(Abb. \ref{playstore2}) werden mittlere Kacheln eingesetzt. Diese, im Querformat dargestellte, Variante nimmt mehr Platz ein und bietet mehr Informationen.
+	Das Vorschaubild ist links. In der rechten Hälfte oben befindet sich der Titel mit Herausgeber, darunter die Kurzbeschreibung der App. Am rechten unteren Rand sitzt die Bewertung mit dem Kaufpreis.
+	
+	\begin{figure}[ht]
+		\centering
+		\includegraphics{pics/kachel2.png}
+		\caption{Mittlere Kachel}
+		\label{kachel2}
+	\end{figure}
+
+	\item \textbf{Große Kachel}:
+	Jede App besitzt eine Detailansicht auf einer separaten Seite(Abb. \ref{playstore2}). Diese Details werden in der großen Kachel dargestellt.
+	Der obere Teil ist nahezu identisch aufgebaut wie die mittlere Kachel. Darunter folgen Vorschaubilder, eine ausführliche Beschreibung, Nutzerbewertungen, der Updateverlauf und zusätzliche Informationen in Steckbriefform.
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[scale=0.2]{pics/kachel3.png}
+		\caption{Große Kachel}
+		\label{kachel3}
+	\end{figure}
+
+\end{itemize}
+
+Der in diesem Kapitel beschriebene Stand der Website bezieht sich auf den Zeitraum von März 2018 bis März 2019. Die Planung und Implementierung der Extension ist auf diesen optischen und technischen Stand der Website angepasst. Mögliche Probleme, die ein veränderter Stand der Website mit sich bringt, werden in Abschnitt \ref{ss:diskussionht1} diskutiert.
 
 \subsection{Programmaufbau}
 \label{ss:programmaufbau}
