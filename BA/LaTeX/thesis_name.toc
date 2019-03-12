@@ -30,7 +30,7 @@
 \contentsline {section}{\numberline {3.2}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{24}{section.3.2}% 
 \contentsline {subsection}{\numberline {3.2.1}Anforderungen}{24}{subsection.3.2.1}% 
 \contentsline {subsection}{\numberline {3.2.2}Vorauswahl}{26}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Rahmenbedingungen}{28}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.3}Rahmenbedingungen}{27}{subsection.3.2.3}% 
 \contentsline {subsection}{\numberline {3.2.4}Vorgehensweise}{28}{subsection.3.2.4}% 
 \contentsline {subsection}{\numberline {3.2.5}Ergebnisse}{28}{subsection.3.2.5}% 
 \contentsline {subsection}{\numberline {3.2.6}Diskussion}{28}{subsection.3.2.6}% 

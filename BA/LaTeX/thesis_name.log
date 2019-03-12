@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.4)  11 MAR 2019 16:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.4)  12 MAR 2019 14:37
 entering extended mode
 **./thesis_name.tex
 (thesis_name.tex
@@ -1815,36 +1815,20 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [21 <./pics/kachel3.png>])
-Overfull \hbox (10.10849pt too wide) in paragraph at lines 150--152
-[]\OT1/LinuxLibertineT-TLF/m/n/10.95 (-20) declarativeContent: Be-reit-stel-lun
-g von Events, wie Sei-ten-auf-ruf oder -[]anderung
- []
-
-
-Overfull \hbox (80.2501pt too wide) in paragraph at lines 157--161
-\OT1/LinuxLibertineT-TLF/m/n/10.95 (-20) Skrip-te un-ter wel-chem URL ak-tiv si
-nd. Der Aus-druck "*://-play.google.com/store/apps*"bedeutet,
- []
-
-[22] (../../Extension/src/background.js) [23]
-<pics/Aufbau.png, id=527, 489.32813pt x 344.03531pt>
+ [21 <./pics/kachel3.png>]) [22]
+(../../Extension/src/background.js) [23]
+<pics/Aufbau.png, id=529, 489.32813pt x 344.03531pt>
 File: pics/Aufbau.png Graphic file (type png)
 <use pics/Aufbau.png>
-Package pdftex.def Info: pics/Aufbau.png  used on input line 194.
-(pdftex.def)             Requested size: 489.32692pt x 344.03447pt.
-
-Overfull \hbox (129.32692pt too wide) in paragraph at lines 194--195
-[] 
- []
-
-) (04_aufgabe2.tex [24 <./pics/Aufbau.png>] [25]
+Package pdftex.def Info: pics/Aufbau.png  used on input line 198.
+(pdftex.def)             Requested size: 360.0pt x 253.11226pt.
+) (04_aufgabe2.tex [24 <./pics/Aufbau.png>]
 Overfull \hbox (210.8386pt too wide) in paragraph at lines 71--74
 []\OT1/LinuxLibertineT-TLF/m/n/10.95 (-20) Worst Ca-se: 99999|1|2|3|4|5|6|7|8|9
 |10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|27|28|29|30|31
  []
 
-[26] [27]) (05_diskussion.tex [28]
+[25] [26] [27]) (05_diskussion.tex [28]
 Kapitel 4.
 ) (06_anhang.tex [29
 
@@ -1903,10 +1887,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 38623 strings out of 492946
- 714518 string characters out of 3123159
+ 38617 strings out of 492946
+ 714442 string characters out of 3123159
  1382980 words of memory out of 3000000
- 41478 multiletter control sequences out of 15000+200000
+ 41471 multiletter control sequences out of 15000+200000
  589555 words of font info for 190 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,92p,1202b,2588s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1927,9 +1911,9 @@ vap62puny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
 0.pfb><C:/Users/idivap62puny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmr9.pfb><C:/Users/idivap62puny/AppData/Local/Programs/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on thesis_name.pdf (45 pages, 2015245 bytes).
+Output written on thesis_name.pdf (45 pages, 2016321 bytes).
 PDF statistics:
- 777 PDF objects out of 1000 (max. 8388607)
- 245 named destinations out of 1000 (max. 500000)
+ 781 PDF objects out of 1000 (max. 8388607)
+ 246 named destinations out of 1000 (max. 500000)
  28130 words of extra memory for PDF output out of 29859 (max. 10000000)
 
