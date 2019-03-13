@@ -27,16 +27,16 @@
 \contentsline {subsection}{\numberline {3.1.4}Programmaufbau}{20}{subsection.3.1.4}% 
 \contentsline {subsection}{\numberline {3.1.5}Ergebnis}{24}{subsection.3.1.5}% 
 \contentsline {subsection}{\numberline {3.1.6}Diskussion}{25}{subsection.3.1.6}% 
-\contentsline {section}{\numberline {3.2}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{25}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Anforderungen}{25}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Vorauswahl}{26}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Rahmenbedingungen}{28}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}Vorgehensweise}{28}{subsection.3.2.4}% 
-\contentsline {subsection}{\numberline {3.2.5}Ergebnisse}{28}{subsection.3.2.5}% 
-\contentsline {subsection}{\numberline {3.2.6}Diskussion}{28}{subsection.3.2.6}% 
-\contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{29}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Konklusion}{29}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Fortsetzung der Forschung}{29}{section.4.2}% 
-\contentsline {chapter}{\numberline {5}Appendix}{31}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Derivations}{31}{section.5.1}% 
-\contentsline {subsection}{\numberline {5.1.1}Example Matlab Code}{32}{subsection.5.1.1}% 
+\contentsline {section}{\numberline {3.2}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{26}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Anforderungen}{26}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Vorauswahl}{28}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Rahmenbedingungen}{29}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.4}Vorgehensweise}{29}{subsection.3.2.4}% 
+\contentsline {subsection}{\numberline {3.2.5}Ergebnisse}{29}{subsection.3.2.5}% 
+\contentsline {subsection}{\numberline {3.2.6}Diskussion}{30}{subsection.3.2.6}% 
+\contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{31}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Konklusion}{31}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Fortsetzung der Forschung}{31}{section.4.2}% 
+\contentsline {chapter}{\numberline {5}Appendix}{33}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Derivations}{33}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Example Matlab Code}{34}{subsection.5.1.1}% 

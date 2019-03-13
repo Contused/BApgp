@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d69ff7-ef3f-46e2-b078-fb102f6df358" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/css/multiapp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/css/multiapp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pguard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pguard.js" afterDir="false" />
-    </list>
+    <list default="true" id="43d69ff7-ef3f-46e2-b078-fb102f6df358" name="Default" comment="" />
     <ignored path="Extension.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -382,16 +378,15 @@
       <workItem from="1551881616618" duration="657000" />
       <workItem from="1552043812282" duration="594000" />
       <workItem from="1552398162612" duration="918000" />
-      <workItem from="1552474502481" duration="3568000" />
+      <workItem from="1552474502481" duration="3817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191819000" />
+    <option name="totallyTimeSpent" value="192068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17977528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

@@ -215,19 +215,36 @@ Die Browser-Extension stellt Datenschutzinformationen an mehreren Stellen der We
 
 %BILD Banner
 
-Durch einen Klick auf den Banner erscheint das jeweilige Popover. Ein Fenster 
-%BILD Overlay
+Durch einen Klick auf den Banner erscheint das jeweilige Popover, bestehend aus einem Fenster mit der Liste an gefundenen Infoboxen. Diese Boxen sind aufklappbar und beinhalten die jeweilige Beschreibung, Handlungsempfehlungen, Vor- und Nachteile.
+
+%BILD Overlay aufgeklappt
+
+Auf den Detailseiten wird dieses Fenster direkt in die große Kachel, zwischen der Programmbeschreibung und den Bewertungen eingebettet. Die Templates sind hier identisch zu denen im Popover
 
 %BILD Boxen
+
+Alle, vom Backend gewonnenen, Informationen werden in eine lokale Datenbank abgespeichert und beim nächsten Auftauchen der gleichen Kachel wieder ausgelesen. Nach drei Tagen gilt die Information als veraltet und wird auf Abruf aktualisiert. Kapitel \ref{ss:anforderungen} befasst sich mit dem genauen Aufbau der Datenbank.
+
+%BILD Datenbank
+
+Das Icon besitzt ein Popup-Menü mit zwei Buttons zum Aktivieren/Deaktivieren der Extension und zum Löschen der angelegten Datenbank.
+
+%BILD Popup
 \subsection{Diskussion}
 \label{ss:diskussionht1}
 
+Im Verlauf der Programmierung sind technische und organisatorische Probleme aufgetreten. Hier werden einige davon erläutert und deren Konsequenzen aufgezeigt.
 
+Da sich diese Browser-Extension sehr an der aktuellen Struktur der Website orientiert, können in Zukunft Fehler bei der Darstellung der Banner und Templates auf der Seite auftreten. Während der Implementierung traten bereits einige dieser Fehler auf.
 
+Der Klick, welcher das Event zum Auf- und Zuklappen der Infoboxen auslöst, überlappt sich mit anderen Events der Webseite, auf die die Extension keinen Einfluss hat. Generell erschwert die Undurchsichtigkeit des technischen Aufbaus der Website die Anpassung der Funktionen einer Extension. Sodass bei der Implementierung das Testen aller eingefügten Elemente manuell geschieht und mit großen Mehraufwand verbunden ist.
 
+Weiterhin überarbeitet Google die Website in regelmäßigen Abständen. Die in dieser Arbeit getroffene Aufteilung in Kacheln kann mit der nächsten Überarbeitung bereits obsolet sein. Aufgefallen ist das bei Betrachtung der Website in den letzten Monaten. Dabei haben sich bereits einige Klassennamen von Elementen der Kacheln geändert, sodass die Banner in falscher Größe oder gar nicht dargestellt worden.
 
+Im Allgemeinen ist die Browser-Extension in ihrem aktuellen Zustand nicht \glqq marktreif \grqq{}. Das heißt, es Bedarf weiterer Überarbeitung und Organisation bevor man die Extension im Web-Store von Google anbieten kann. 
 
+Aufgrund der Evaluation von möglichen lokalen Datenspeichern für diese Extension, sind sowohl \glqq IndexedDB\grqq{} als auch \glqq LokalStorage\grqq{} implementiert. Für spätere Verbraucher müsste eine der beiden Methoden entfernt werden, um unnötige Verwirrung im Umgang mit der Extension zu vermeiden.
 
+Bereits in der Implementierungsphase sind inkonsistente Datensätze aufgefallen.Eine genauere Überprüfung ergab, dass die automatisierte Informationsgewinnung und Verarbeitung teilweise fehlerhaft ist. Dazu zählen das Crawlen von Datenschutzerklärungen aus unzuverlässigen Quellen und das priorisieren der falschen Sprache. Dadurch kann die Richtigkeit der anzeigten Informationen nicht vollumfänglich garantiert werden.
 
-
-
+Das Forschungsprojekt PrivacyGuard wurde im Juni 2018 beendet und somit auch die Verwaltung aller, in diesen Rahmen entstandenen, Produkte. Deshalb gibt es zum aktuellen Zeitpunkt keinen Verantwortlichen für die Veröffentlichung und Wartung des Backends und dieser Extension.
