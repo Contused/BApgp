@@ -202,7 +202,23 @@ Bei kleinen App-Kacheln baut die Funktion einen Banner in die Kachel ein. Auf di
 \subsection{Ergebnis}
 \label{ss:ergebnisseht1}
 
-Die Darstellung der 
+Die Browser-Extension stellt Datenschutzinformationen an mehreren Stellen der Webseite zur Verfügung. Bei kleinen und mittelgroßen Kacheln wird der erstellte Banner mit der Anzahl an gefundenen Infoboxen am oberen Rand eingeblendet. Die Darstellung unterscheidet sich dabei je nach Status der Informationen:
+
+\begin{itemize}
+	\item \textbf{\glqq Keine Ergebnisse\grqq{}}:
+	Aufgrund von technischen Problemen liefert das Backend keine Datenschutzinformationen zu der angefragten Applikation.
+	\item \textbf{Blauer Banner}:
+	Informationen zum Datenschutz über die Applikation sind vorhanden, aber es liegt kein möglicher Gesetzesverstoß oder erheblicher Nachteil für den Nutzer vor.
+	\item \textbf{Roter Banner (\glqq Rote Linie\grqq{})}:
+	Informationen zum Datenschutz über die Applikation sind vorhanden und es liegt ein möglicher Gesetzesverstoß, bzw. ein erheblicher Nachteil für den Nutzer vor.
+\end{itemize}
+
+%BILD Banner
+
+Durch einen Klick auf den Banner erscheint das jeweilige Popover. Ein Fenster 
+%BILD Overlay
+
+%BILD Boxen
 \subsection{Diskussion}
 \label{ss:diskussionht1}
 

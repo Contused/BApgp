@@ -13,7 +13,7 @@
     height: 7%;
 }
 .similarapp {
-    height: 10%;
+    height: 7%;
 }
 .pguard:hover{
     cursor: pointer;
@@ -38,8 +38,12 @@ body .card-content {
     width: calc(100% + 2px) !important;
 }
 
+body .Vpfmgd {
+    height: 228px;
+    width: calc(100% + 2px) !important;
+}
 body .vU6FJ {
-    height: 92%;
+    height: 92% !important;
 }
 
 body .card {

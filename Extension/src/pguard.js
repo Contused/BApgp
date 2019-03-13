@@ -337,7 +337,7 @@ function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
         }
 
         banner.appendChild(funde);
-        if($(parentNode).hasClass("y1APZe-eyJpod")){
+        if($(parentNode).hasClass("card")){
             banner.classList.add("multiapp");
             parentNode.insertBefore(banner,parentNode.children[0]);
         } else {
@@ -477,6 +477,7 @@ function fillApps(){
             //createPanel(this, [], false, false)
         });
     } else {
+        console.log("KEINe Kachel gefunden" );
         if(document.getElementsByClassName("JHTxhe")[0]){
             loadInfoPanels(document.getElementsByClassName("JHTxhe")[0], true);
         }
@@ -496,6 +497,7 @@ function testStorageCap(){
         counter++;
     }
 }
+
 //Laedt lokale Json-Bibliothek fuer
 $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
     ibJson = input;

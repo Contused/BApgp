@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43d69ff7-ef3f-46e2-b078-fb102f6df358" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/03_aufgabe1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/03_aufgabe1.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.lof" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.lof" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.log" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/css/multiapp.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/css/multiapp.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pguard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pguard.js" afterDir="false" />
     </list>
     <ignored path="Extension.iws" />
@@ -60,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pguard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="332" column="15" lean-forward="true" selection-start-line="332" selection-start-column="15" selection-end-line="332" selection-end-column="15" />
+            <state relative-caret-position="221">
+              <caret line="499" lean-forward="true" selection-start-line="499" selection-end-line="499" />
             </state>
           </provider>
         </entry>
@@ -69,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/css/multiapp.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="9" />
+            <state relative-caret-position="505">
+              <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -145,13 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>secondLayerElement</find>
-      <find>nextElemen</find>
-      <find>recommendation</find>
-      <find>|</find>
-      <find>console.log</find>
-      <find>span</find>
-      <find>classLi</find>
       <find>local</find>
       <find>Storage</find>
       <find>trennzei</find>
@@ -175,6 +163,13 @@
       <find>triggernew</find>
       <find>storage</find>
       <find>multiapp</find>
+      <find>console</find>
+      <find>loadinfo</find>
+      <find>kachel</find>
+      <find>card</find>
+      <find>banner</find>
+      <find>similarapp</find>
+      <find>console.log</find>
     </findStrings>
     <replaceStrings>
       <replace>data.data.</replace>
@@ -204,11 +199,11 @@
         <option value="$PROJECT_DIR$/src/lib/templates/showResults.html" />
         <option value="$PROJECT_DIR$/src/lib/templates/innerCollapseTemplate.html" />
         <option value="$PROJECT_DIR$/src/lib/templates/ibCardTemplate.html" />
-        <option value="$PROJECT_DIR$/src/lib/css/multiapp.css" />
         <option value="$PROJECT_DIR$/src/popup/popup.html" />
         <option value="$PROJECT_DIR$/src/popup/popup-controller.js" />
         <option value="$PROJECT_DIR$/src/manifest.json" />
         <option value="$PROJECT_DIR$/src/background.js" />
+        <option value="$PROJECT_DIR$/src/lib/css/multiapp.css" />
         <option value="$PROJECT_DIR$/src/pguard.js" />
       </list>
     </option>
@@ -221,10 +216,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -387,16 +382,18 @@
       <workItem from="1551881616618" duration="657000" />
       <workItem from="1552043812282" duration="594000" />
       <workItem from="1552398162612" duration="918000" />
+      <workItem from="1552474502481" duration="3568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188251000" />
+    <option name="totallyTimeSpent" value="191819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12491738" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17977528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -473,13 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/templates/showResults.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -504,13 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/popup/popup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/templates/IBCollapse.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -527,13 +510,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/popup/popup-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/templates/ibCardTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -544,17 +520,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/popup/popup-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/popup/popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/css/multiapp.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="505">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pguard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="332" column="15" lean-forward="true" selection-start-line="332" selection-start-column="15" selection-end-line="332" selection-end-column="15" />
+        <state relative-caret-position="221">
+          <caret line="499" lean-forward="true" selection-start-line="499" selection-end-line="499" />
         </state>
       </provider>
     </entry>
