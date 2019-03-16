@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d69ff7-ef3f-46e2-b078-fb102f6df358" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/02_vorarbeit.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/02_vorarbeit.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/03_aufgabe1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/03_aufgabe1.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/04_aufgabe2.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/04_aufgabe2.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.lof" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.lof" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.log" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.out" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pguard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pguard.js" afterDir="false" />
-    </list>
+    <list default="true" id="43d69ff7-ef3f-46e2-b078-fb102f6df358" name="Default" comment="" />
     <ignored path="Extension.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4857">
-              <caret line="720" selection-start-line="720" selection-end-line="721" />
+            <state relative-caret-position="182">
+              <caret line="445" column="22" lean-forward="true" selection-start-line="445" selection-start-column="22" selection-end-line="445" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -393,15 +380,16 @@
       <workItem from="1552398162612" duration="918000" />
       <workItem from="1552474502481" duration="3817000" />
       <workItem from="1552732921649" duration="1516000" />
-      <workItem from="1552741450634" duration="1269000" />
+      <workItem from="1552741450634" duration="1863000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194853000" />
+    <option name="totallyTimeSpent" value="195447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17977528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -560,8 +548,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4857">
-          <caret line="720" selection-start-line="720" selection-end-line="721" />
+        <state relative-caret-position="182">
+          <caret line="445" column="22" lean-forward="true" selection-start-line="445" selection-start-column="22" selection-end-line="445" selection-end-column="22" />
         </state>
       </provider>
     </entry>

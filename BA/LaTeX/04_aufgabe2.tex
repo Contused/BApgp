@@ -54,31 +54,16 @@ Das entspricht einer Länge von 50 characters für den key und 89 characters fü
 \subsection{Kriterien und Vorauswahl}
 \label{vorauswahl}
 
+Die Kriterien für eine geeignete Caching-Methode leiten sich aus den Anforderungen aus Kapitel \ref{ss:cacheanforderungen} ab. Zur Auswahl stehen nach Abschnitt \ref{ss:methodeneigenschaften} Cookies, WebSQL, die Web-Storage-API und IndexedDB. Nur Kandidaten, welche alle Kriterien erfüllen werden implementiert darüber hinaus evaluiert.
 
-Welche Arten von Speicher stehen einer Extension für Browser (hier Chrome) zur Verfügung?
+Die Grundlage für einen geeigneten Cache ist ausreichend Speicherplatz. Während alle anderen Kandidaten mindestens 5MB Speicherplatz zur Verfügung haben, besitzen Cookies mit 4KB Gesamtspeicher pro Domäne, und somit nach der Berechnung in Abschnitt \ref{ss:speichern} mit ca. 28 Datensätzen, zu wenig Speicher für die Extension. 
 
-Integriert: Session Storage und lokal Storage
-Session Storage: Daten bleiben nur während der Sitzung erhalten. Das Schließen des Browsers bzw. das Öffnen der Website in einem anderen Tab/Browserfenster beendet die Sitzung
+Das nächste Kriterium ist die Verfügbarkeit. Die Caching-Methode soll uneingeschränkt und überprüfbar zur Verfügung stehen, um die Speicherfunktion der Extension zu garantieren. Aufgrund der genannten EU-Richtlinie in Abschnitt \ref{ss:methodeneigenschaften} und dem Gebrauch von Cookies als Tracking-Methode, beschränken oder blocken viele Nutzer diese Speichermethode. Das stellt eine Ungewissheit dar und widerspricht der uneingeschränkten Nutzung als Kriterium.
+WebSQL ist zwar weiterhin in einigen Browsern verfügbar, von einer Implementierung in neue Programme rät der W3C ab\footnote{\url{https://www.w3.org/TR/webdatabase/}}. Durch diese Obsoleszenz erfüllt auch WebSQL das Kriterium nicht. IndexedDB wird als Nachfolger von WebSQL gesehen. Sowohl die Web-Storage-API als auch IndexedDB sind aktuelle Technologien und uneingeschränkt verfügbar.
 
-Local Storage: Daten bleiben über eine Sitzung hinaus erhalten und verfallen erst durch Überschreiben oder Löschen
+Abschließend wird der Zugriff auf die Caching-Methoden betrachtet. Der Fokus liegt hier bei einem Zugriff mit möglichst geringer Wartezeit auf viele kleine Datensätze. Alle Kandidaten verfügen über asynchrone Aufrufe, sodass die Extension keine zusätzlichen Wartephasen verursacht. Durch eine fehlende Indexierung verliert die Web-Storage-API jedoch an Performanz, wenn es um das Auslesen von großen Datensätzen geht. Das angestrebte Key-Value-Prinzip wird von IndexedDB und der Web-Storage-API unterstützt. Bei WebSQL erfolgt der Zugrifft über die \glqq Standard Query Language \grqq{} und die Datensätze lägen in Tabellenform vor, was die Handhabung mit den Datensätzen erschwert. Cookies speichern Informationen in Datenobjekte, welche die erwünschten Eigenschaften für den Zugriff ebenfalls erfüllen.
 
-Kapazität: 5MB
-
-Aufbau: String-Tupel nach dem (Key, Value)-Prinzip
-
-Zugriff: getItem(key), setItem(key,value) und removeItem(key)
-
-
-Serverseitiger Speicher:
-Identifizierung notwendig. Aufwendig in Pflege und Wartung. Kein Mehrwert zu Anfragen an Informationsquelle
-
-Serverseitiger Speicher fällt vor vorne herein weg aus oben genannten Grund und datenschutzrechtlichen Bedenken.
-
-
-Datenbanken:
-Verfügbar: IndexedDB und WebSQL
-
-WebSQL seit November 2010 von W3C nicht mehr empfohlen (veraltet).
+Weder Cookies noch WebSQL qualifizieren sich aufgrund der betrachteten Kriterien als geeignete Caching-Methoden. IndexedDB und die Web-Storage-API kommen beide in Frage und werden in den anschließenden Kapiteln anhand von Messergebnissen und ihren Eigenschaften bei der Implementierung evaluiert.
 
 IndexedDB: API in allen modernen Browser zur Speicherung von Daten und Dateien in einer object-orientierten Datenbank.
 synchron und asynchron möglich.
@@ -89,26 +74,6 @@ Verwendet Prinzip von Transaktionen
 Anfragen mit Rückgabewerten als Basis aller Operationen
 Verfolgt den NoSQL-Ansatz
 
-
-Speicherlimit nach global Limit (1/2 Festplatte) und Gruppenlimit (1/5 von global Limit, min 10MB max. 2GB)
-Gruppenlimit voll = voll (Fehler)
-Global Limit voll = löschen bis wieder frei (Quellenabhängig komplette Elemente gelöscht)
-
-Warum nicht IndexedDB?
-
-Vorteile von IndexedDB: Abspeicherung von großen strukturierten Datenmengen.
-Nachteile: hoher Aufwand bei Implementierung.Overhead lohnt nicht bei kleinen Datenmengen. Transaktionen blockieren bei Fehlern  eventuell den Datenabruf bzw. die Aktualisierung
-
-Storage API von Chrome ausreichend Speicher und geringer aufwand bei der Implementierung. Lediglich Strings benötigt. Indices bei gewählen value-Struktur nicht notwendig.
-
-Vorteil von Session Storage: Speicherpflege nicht notwendig, da 5MB groß genug für Anzahl(?) an App-Informationen während einer Session im PlayStore. Informationen immer auf Stand der Quelle
-Nachteil: Bei erstmaligen Öffnen des Stores in neuer Browsersession werden viele Anfragen losgeschickt für Apps die bereits in der letzten Session schon angefragt wurden. Bei Serverausfällen fehlen die Informationen
-Lediglich in einer Session mehrfach aufgerufene Apps ersparen erneute Anfragen.
-=> Speicherpflege fällt weg, dafür kaum Mehrwert bei Anfragen.
-
-Vorteil von Lokal Storage: Apps werden einmal abgefragt und sind anschließend abgespeichert. Fällt der Server aus können die lokalen Informationen genutzt werden. Daten auch aus letzter Session bleiben vorhanden. Neue Anfragen werden nur dann geschickt wenn aktuelle Daten über 3 Tage alt sind.
-Nachteile: Speicherpflege notwendig. Dadurch wird die Information länger (Counter und Tag). Zusätzliche Rechenzeit für das Löschen von alten Informationen notwendig. Dadurch wird sichergestellt dass die 5MB nicht überschritten werden und somit Informationen ungewollt verloren gehen. Für Informationen mit hohem Counter muss regelmäßig überprüft werden, ob die Information noch aktuell ist, weil diese in der Regel lange im Speicher verweilt.
-=> Hohe Einsparung bei Anfragen an den Server möglich. Dafür müssen zusätzliche Operationen zur Speicherpflege und Prüfung der Informationen ausgeführt werden.
 
 \subsection{Vorgehensweise}
 \label{ss:vorgehensweise}
@@ -152,7 +117,21 @@ Start der Extension-Funktionsaufrufe: 883ms
 Dauer: 878ms
 Anzahl der Anfragen an das Backend: 131
 
+Warum nicht IndexedDB?
 
+Vorteile von IndexedDB: Abspeicherung von großen strukturierten Datenmengen.
+Nachteile: hoher Aufwand bei Implementierung.Overhead lohnt nicht bei kleinen Datenmengen. Transaktionen blockieren bei Fehlern  eventuell den Datenabruf bzw. die Aktualisierung
+
+Storage API von Chrome ausreichend Speicher und geringer aufwand bei der Implementierung. Lediglich Strings benötigt. Indices bei gewählen value-Struktur nicht notwendig.
+
+Vorteil von Session Storage: Speicherpflege nicht notwendig, da 5MB groß genug für Anzahl(?) an App-Informationen während einer Session im PlayStore. Informationen immer auf Stand der Quelle
+Nachteil: Bei erstmaligen Öffnen des Stores in neuer Browsersession werden viele Anfragen losgeschickt für Apps die bereits in der letzten Session schon angefragt wurden. Bei Serverausfällen fehlen die Informationen
+Lediglich in einer Session mehrfach aufgerufene Apps ersparen erneute Anfragen.
+=> Speicherpflege fällt weg, dafür kaum Mehrwert bei Anfragen.
+
+Vorteil von Lokal Storage: Apps werden einmal abgefragt und sind anschließend abgespeichert. Fällt der Server aus können die lokalen Informationen genutzt werden. Daten auch aus letzter Session bleiben vorhanden. Neue Anfragen werden nur dann geschickt wenn aktuelle Daten über 3 Tage alt sind.
+Nachteile: Speicherpflege notwendig. Dadurch wird die Information länger (Counter und Tag). Zusätzliche Rechenzeit für das Löschen von alten Informationen notwendig. Dadurch wird sichergestellt dass die 5MB nicht überschritten werden und somit Informationen ungewollt verloren gehen. Für Informationen mit hohem Counter muss regelmäßig überprüft werden, ob die Information noch aktuell ist, weil diese in der Regel lange im Speicher verweilt.
+=> Hohe Einsparung bei Anfragen an den Server möglich. Dafür müssen zusätzliche Operationen zur Speicherpflege und Prüfung der Informationen ausgeführt werden.
 
 
 \subsection{Diskussion}
