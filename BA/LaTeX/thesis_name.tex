@@ -167,7 +167,47 @@
 \title{Programmierung eines Browser-Plugins zur Anzeige von Datenschutzinformationen im PlayStore sowie Evaluation der PlugIn-Performance}
 \date{\today} % This will not change the date on the title page!!!
 
+% manual mapping for UTF-8 / german Umlaute
+\lstset{literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{{\ss}}1
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
+	{~}{{\textasciitilde}}1
+}
 
+% Json highlighting
+\lstdefinelanguage{json}{
+	basicstyle=\normalfont\ttfamily,
+	numbers=left,
+	numberstyle=\scriptsize,
+	stepnumber=1,
+	numbersep=8pt,
+	showstringspaces=false,
+	breaklines=true,
+	frame=lines,
+	backgroundcolor=\color{background},
+	literate=
+	*{0}{{{\color{numb}0}}}{1}
+	{1}{{{\color{numb}1}}}{1}
+	{2}{{{\color{numb}2}}}{1}
+	{3}{{{\color{numb}3}}}{1}
+	{4}{{{\color{numb}4}}}{1}
+	{5}{{{\color{numb}5}}}{1}
+	{6}{{{\color{numb}6}}}{1}
+	{7}{{{\color{numb}7}}}{1}
+	{8}{{{\color{numb}8}}}{1}
+	{9}{{{\color{numb}9}}}{1}
+	{:}{{{\color{punct}{:}}}}{1}
+	{,}{{{\color{punct}{,}}}}{1}
+	{\{}{{{\color{delim}{\{}}}}{1}
+	{\}}{{{\color{delim}{\}}}}}{1}
+	{[}{{{\color{delim}{[}}}}{1}
+	{]}{{{\color{delim}{]}}}}{1},
+}
 
 \begin{document}
 %\linenumbers	
@@ -191,7 +231,7 @@
 			\vspace{0.5cm}
 			
 			 \textsc{ \LARGE
-			Programmierung einer Browser-Extension zur Anzeige von Datenschutzinformationen im PlayStore sowie Evaluation der Extension-Performance}
+			Entwicklung einer Browser-Extention zur Anzeige von Datenschutzinformationen im PlayStore und Evaluierung von Caching-Methoden}
 			
 			\vspace{1.0cm}
 			\textbf{Author} \\

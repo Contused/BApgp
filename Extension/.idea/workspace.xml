@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43d69ff7-ef3f-46e2-b078-fb102f6df358" name="Default" comment="" />
+    <list default="true" id="43d69ff7-ef3f-46e2-b078-fb102f6df358" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/02_vorarbeit.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/02_vorarbeit.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/03_aufgabe1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/03_aufgabe1.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/04_aufgabe2.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/04_aufgabe2.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.lof" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.lof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.log" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.out" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/LaTeX/thesis_name.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pguard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pguard.js" afterDir="false" />
+    </list>
     <ignored path="Extension.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pguard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="499" lean-forward="true" selection-start-line="499" selection-end-line="499" />
+            <state relative-caret-position="624">
+              <caret line="366" column="29" selection-start-line="366" selection-start-column="25" selection-end-line="366" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -60,16 +73,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/css/multiapp.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
+            <state relative-caret-position="782">
               <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12240">
+            <state relative-caret-position="4857">
               <caret line="720" selection-start-line="720" selection-end-line="721" />
             </state>
           </provider>
@@ -136,7 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>local</find>
       <find>Storage</find>
       <find>trennzei</find>
       <find>ajax</find>
@@ -166,6 +178,7 @@
       <find>banner</find>
       <find>similarapp</find>
       <find>console.log</find>
+      <find>date</find>
     </findStrings>
     <replaceStrings>
       <replace>data.data.</replace>
@@ -214,8 +227,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="1939" />
-    <option name="height" value="1049" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -225,7 +238,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,6 +287,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -379,11 +392,13 @@
       <workItem from="1552043812282" duration="594000" />
       <workItem from="1552398162612" duration="918000" />
       <workItem from="1552474502481" duration="3817000" />
+      <workItem from="1552732921649" duration="1516000" />
+      <workItem from="1552741450634" duration="1269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192068000" />
+    <option name="totallyTimeSpent" value="194853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -465,6 +480,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/templates/showResults.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -482,10 +504,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
+    <entry file="file://$PROJECT_DIR$/src/lib/css/multiapp.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12240">
-          <caret line="720" selection-start-line="720" selection-end-line="721" />
+        <state relative-caret-position="782">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/popup/popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -505,6 +534,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/popup/popup-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/templates/ibCardTemplate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -515,38 +551,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/popup/popup-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/popup/popup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/css/multiapp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pguard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="499" lean-forward="true" selection-start-line="499" selection-end-line="499" />
+        <state relative-caret-position="624">
+          <caret line="366" column="29" selection-start-line="366" selection-start-column="25" selection-end-line="366" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/data/IB_texte.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4857">
+          <caret line="720" selection-start-line="720" selection-end-line="721" />
         </state>
       </provider>
     </entry>

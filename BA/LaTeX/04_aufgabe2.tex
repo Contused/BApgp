@@ -2,94 +2,59 @@
 \label{s:evaluierungcaching}
 
 
-\subsection{Anforderungen}
-\label{ss:anforderungen}
-Extension erweitert die Landingpage.
-Diese in Kategorien unterteilt. Kategorien werden bei jedem Besuch wieder aufgerufen
-"Spiele mit Vorregistrierung" stellt über längere Zeit gleiche Apps dar.
-"New + Updated Games" und "Top-Bewertung: Spiele" lieferen jedes Mal ähnliche Ergebnisse => überlappende Information
-"Empfehlungen für dich" und "Das könnte dir Gefallen" passen sich vorherigen Suchen an und liefern daher auch redudante Ergebnisse
-Selbe App oft mehrmals in der Übersicht vertreten
-Konklusion: viel Redundanz. Ergänzende Information werden mehrfach benötigt
+\subsection{Speichern von Informationen}
+\label{ss:speichern}
 
-Verarbeitet Diese nur zu benutzerfreundlichen Format
-Informationen müssen von externen Quelle entnommen werden
-Dadurch entstehen Anfragen an einen Server mit Antworten
-Antworten und Anfragen durch // redundant.
+Bevor diese Arbeit mögliche Methoden zur Speicherung von Datensätzen evaluiert, werden zuerst grundlegende Fragen beantwortet:
 
-Thesen:
-Nutzung der Extension nach "Veröffentlichung" würde hohen Traffic verursachen mit vielen wiederholten Anfragen.
-Anfragen könnten ab einer bestimmten Nutzerzahl Server überlasten
-Performance der Extension leidet unter dieser Art der Infortionsbeschaffung
-Bei Ausfall der Quelle, bietet Extension keinen Mehrwert für den Nutzer mehr.
+\textbf{Warum benötigt die Extension einen Cache?}:
+In Kapitel \ref{ss:aufbauwebsite} zeigt die Abbildung \ref{playstore1} den Aufbau der Internetseite nach bestimmten Themen. Jedes Thema wird mit einer Reihe von Apps dargestellt. Je nach Bildschirmauflösung beinhaltet eine Reihe 7 bis 10 dieser Kacheln.
+Beim initialen Aufruf lädt die Seite 8 Themen. Weitere Reihen werden dynamisch beim Scrollen nachgeladen. So findet die Extension zwischen 60 bis 80 App-IDs allein durch den Aufruf der Seite. Wird eine Thema durch den Button \glqq Mehr\grqq{} aufgeklappt, lädt die Seite 120 bis 540 weitere Kacheln. Dabei sind Applikationen oft in mehr als einem Thema vorhanden und bereits auf der Startseite doppelt oder dreifach abgebildet.
 
-Lösung:
-Einrichtung von unabhängigen Speicher zur Aufbewahrung der gewonnen Informationen. Insbesondere viele/wiederholt genutzt Informationen sollen ohne erneute Anfrage zur Verfügung stehen.
-Neue Anfragen nur bei Veraltung der Informationen bzw. nur von neu aufgetauchten Apps
-Aufbau einer Struktur zur Abspeicherung der wichtigen Informationen
+Da die Extension pro gefundener App-ID eine Anfrage an das Backend schickt. Entstehen pro Seitenaufruf mindestens 60 und pro Klick auf ein Themengebiet mindestens weitere 120 Anfragen. Also würde ein Nutzer bei einem Besuch der Seite grob geschätzt mehrere hunderte Backend-Anfragen auslösen.
+
+Da diese Webseite als Such- und Einkaufsplattform fungiert, bleibt es in der Regel nicht bei einem einzigen Besuch. Hinzu kommt also eine hohe Redundanz der Anfragen bei erneutem Besuch der Seite. Denn viele Themen und Kategorien, wie zum Beispiel \glqq Empfehlungen für dich \grqq{} sind personalisiert und bleiben über eine Vielzahl an Seitenaufrufen identisch.
+
+Zusammenfassend entstehen bei der Nutzung des Google Play Stores also eine hohe Anzahl an benötigten Informationen mit einer Vielzahl an Redundanz sowohl bei einem Besuch, als auch über mehrere Sitzungen hinweg. Die Veröffentlichung der Extension würde also einen hohes Anfrageaufkommen an das Backend verursachen. Durch eine folgende Überlastung könnte die Extension keine Informationen mehr darstellen und hätte keinen Nutzen mehr.
+
+Der Lösungsansatz ist ein, vom Backend unabhängiger, Speicher, welcher gewonnene Informationen für den Nutzer bereithält. Vor allem langlebige und redundante Daten stehen so ohne wiederholte Anfragen zur Verfügung.
 
 
-Verwendung des Speichers:
+\textbf{Welche Informationen sollen im Cache gespeichert werden?}:
+Damit nicht nur die Anzahl der Anfragen an das Backend, sondern auch der Umfang der Daten möglichst gering bleibt, werden die nötigten Informationen und ihrer komprimierten Form angefragt. Dem Backend wird durch bestimmte Parameter signalisiert, nur die Kennzahl der zutreffenden Infobox(siehe Tabellen \ref{tabelleInfofelder} und  \ref{tabelleInfofelderzwei}) zusammen mit der Extraktionsquelle und dem Datum der Extraktion zu der jeweiligen App-ID zu übermitteln.
 
-Welche Informationen stehen pro App zur Verfügung?(1)
-Welche Informationen werden pro App benötigt? (2)
-Wie wird der Speicher gepflegt?(3)
+So entsteht folgender key-value-Datensatz:
 
-(1)
+\big\{ \textbf{key}: \textit{App-ID}, \textbf{value}: \textit{Extraktionstag in Tagen},\textit{Array von Infoboxen als Zahlen} \big\}
 
-Wird bei Aufbau der App schon Beschrieben?
-Aynchron!
-
-(2)
-Alter der Information:
-Ist die Information auf dem Aktuellen Stand wie die der Quelle?
-Ist die Information der Quelle veraltet?
-Wie oft wird so eine Information erneuert? (Neue DSE o.ä)
-=> Abspeichern des Analysedatums. Regelmäßige Überprüfungen(3 Tage), ob neue Information bei der Quelle vorhanden
-
-Aufruf der App:
-Wie oft wird diese App aufgerufen?
-Informationen über die App im Speicher können nach gewisser Zeit gelöscht werden, wenn sie nicht erneut aufgerufen wurde.
-=> Frequency Count: Zähler im Speicher der bei jedem Aufruf erhöht wird. Regelmäßig wird der Speicher nach niedrigen Zählern durchsucht und diese Einträge gelöscht.
-
-Informationen zur App:
-Inhalt entspricht Kennnummern der Infoboxen. Also Abspeichern der jeweilig vorhandenen Eigenschaft/Infobox
-
-(3)
-LRU Konzept oder Fehler falls Speicher voll.
-Aufbau des Speichers von Speichermethode abhängig (Chrome => key, value String)
-Möglichst kurze Zusammenfassung der benötigten Informationen:
-Alter der Information als Tageszähler seit festem Datum, da Tagesvergleich stattfindet
-Frequency Counter als einzelner Integer (ÜB: casten auf einstellige Zahl "Protect"-Faktor?)
-Abfolge von Kennnummer mit Infoboxen
-Trennzeichen zum korrekten Auslesen der Informationen.
-"ALTERTAGE(TRENNZEICHEN)FREQ(TRENNZEICHEN)IB(TRENNZEICHEN)IB ..."
-Bsp: "17500|3|1|2|3|4"
-
-FREQ FÄLLT WEG???
-
-Worst Case:
-99999|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|27|28|29|30|31
-86 Character ~ 86Bytes
-
-Limit = 5MB = 5242880 Bytes
-
-5242880 / 86 = 60963 Einträge
-
-Appanfragen pro Initialladen ~70
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{pics/cache1.png}
+	\caption{Beispiel eines key-value-Datensatzes}
+	\label{cache1}
+\end{figure}
 
 
-Nach Antwort von Server werden Informationen im Speicher abgelegt mit Startcounter.
-Bei jedem erneuten Abrufen wird der Speicher abgefragt. Falls Information vorhanden und aktuell wird Counter angepasst und Informationen lokal ausgelesen. Ansonsten neue Anfrage an Server. Ist Antwort mit neuer Information vorhanden wird die alte gelöscht und durch die neue ersetzt.
-
-Extension prüft in regelmäßigen Abständen den Counter-Status. Ist dieser zu niedrig wird die Information aus dem Speicher entfernt.
-
-Speicher wird auf Maximalkapazität geprüft und eine Approximation vom "Füllstand" wird errechnet. Ist der Speicher voll, werden Einträge mit dem niedrigsten Counter gelöscht.
+Die gespeicherten Indizes der Infoboxen werden lokal von der Extension über die Datei \glqq IB\_texte.json \grqq{}(Auszug in Abbildung \ref{cache2}) auf ihre entsprechenden Texte gemappt, sodass diese nicht über das Backend abgefragt werden müssen. Der Extraktionstag dient zur Feststellung des Alters eines Datensatzes. Aktuell ist festgelegt, dass eine Information dann als veraltet gilt, wenn ihr Extraktionsdatum älter als drei Tage ist. Erst sobald die Zeitspanne überschritten wurde, sendet die Extension mit dem nächsten Aufruf der jeweiligen Applikation eine neue Anfrage.
 
 
+\lstinputlisting[label={cache2},caption={Infobox 19 aus der IB\_texte.json}, firstline=442, lastline=470]{../../Extension/src/lib/data/IB_texte.json}
 
-\subsection{Vorauswahl}
+\textbf{Wie viele Informationen können gespeichert werden?}:
+Für die oben gezeigte Struktur der Datensätze ergibt sich folgender \textit{worst-case}:
+
+\textbf{key}: \big\{ \textit{max. 50 characters}\footnote{Gemessen durch Analyse aller App-ID-Einträge während der Evaluation} \big\}
+
+\textbf{value}: \big\{\textit{99999,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,}
+	
+\textit{18,19,20,21,22,23,24,25,26,27,28,29,30,31} \big\}
+
+Das entspricht einer Länge von 50 characters für den key und 89 characters für den value. In UTF-8 sind das umgerechnet ca. 139Byte. Geht man in Google Chrome von einem Limit des Cache-Speichers auf 5200000 characters\footnote{\url{https://arty.name/localstorage.html}} aus, können so ca. 37410 Datensätze gespeichert werden.
+
+\subsection{Kriterien und Vorauswahl}
 \label{vorauswahl}
+
+
 Welche Arten von Speicher stehen einer Extension für Browser (hier Chrome) zur Verfügung?
 
 Integriert: Session Storage und lokal Storage
@@ -145,8 +110,8 @@ Vorteil von Lokal Storage: Apps werden einmal abgefragt und sind anschließend a
 Nachteile: Speicherpflege notwendig. Dadurch wird die Information länger (Counter und Tag). Zusätzliche Rechenzeit für das Löschen von alten Informationen notwendig. Dadurch wird sichergestellt dass die 5MB nicht überschritten werden und somit Informationen ungewollt verloren gehen. Für Informationen mit hohem Counter muss regelmäßig überprüft werden, ob die Information noch aktuell ist, weil diese in der Regel lange im Speicher verweilt.
 => Hohe Einsparung bei Anfragen an den Server möglich. Dafür müssen zusätzliche Operationen zur Speicherpflege und Prüfung der Informationen ausgeführt werden.
 
-\subsection{Rahmenbedingungen}
-\label{ss:rahmenbedingungen}
+\subsection{Vorgehensweise}
+\label{ss:vorgehensweise}
 
 Plattform: Windows 10 Rechner Build, Specs
 Chrome Details
@@ -163,12 +128,6 @@ RAM: 16GB
 GPU: Nvidia GTX 1070
 
 Chrome  67.0.3396.99 64 Bit
-
-
-\subsection{Vorgehensweise}
-\label{ss:vorgehensweise}
-
-
 
 \subsection{Ergebnisse}
 \label{ss:ergebnisseht2}
@@ -198,3 +157,5 @@ Anzahl der Anfragen an das Backend: 131
 
 \subsection{Diskussion}
 \label{ss:diskussionht2}
+
+Zeitspanne verlängern

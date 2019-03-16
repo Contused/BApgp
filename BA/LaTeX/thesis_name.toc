@@ -28,11 +28,11 @@
 \contentsline {subsection}{\numberline {3.1.5}Ergebnis}{24}{subsection.3.1.5}% 
 \contentsline {subsection}{\numberline {3.1.6}Diskussion}{25}{subsection.3.1.6}% 
 \contentsline {section}{\numberline {3.2}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{26}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Anforderungen}{26}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Vorauswahl}{28}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Speichern von Informationen}{26}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Kriterien und Vorauswahl}{28}{subsection.3.2.2}% 
 \contentsline {subsection}{\numberline {3.2.3}Rahmenbedingungen}{29}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}Vorgehensweise}{29}{subsection.3.2.4}% 
-\contentsline {subsection}{\numberline {3.2.5}Ergebnisse}{29}{subsection.3.2.5}% 
+\contentsline {subsection}{\numberline {3.2.4}Vorgehensweise}{30}{subsection.3.2.4}% 
+\contentsline {subsection}{\numberline {3.2.5}Ergebnisse}{30}{subsection.3.2.5}% 
 \contentsline {subsection}{\numberline {3.2.6}Diskussion}{30}{subsection.3.2.6}% 
 \contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{31}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Konklusion}{31}{section.4.1}% 

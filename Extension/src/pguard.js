@@ -21,6 +21,7 @@ var trgLinkGuess = "false";
 var trgDseLcm = "false";
 var trgDseMtd = "false";
 var trgDseInApp = "false";
+var appcounter = 0;
 //var forceExec = "&force_execution=true";
 var urlWholeDataSetNoRequest = "https://infaibackend.pguard-tools.de/"+ route +"?api_token="+ token
     +"&verbosity="+ verbosity +"&priority="+ priority + "&trigger_dse_playstore_download="+ trgDsePlay
@@ -394,6 +395,7 @@ function loadInfoPanels(parentNode, isSinglePage) {
     }
     //Wurde eine App-ID gefunden?
     if (appID) {
+        console.log(appcounter);
         var appDataString = getStorageItem(appID);
 
         var future = function(param) {
@@ -473,15 +475,17 @@ function fillApps(){
     //Prueft, ob auf Single-App-Page oder Multi-App-Page
     if(document.getElementsByClassName("card")[0]){
         $(".card").each(function () {
+            appcounter++;
             loadInfoPanels(this, false);
             //createPanel(this, [], false, false)
         });
     } else {
-        console.log("KEINe Kachel gefunden" );
         if(document.getElementsByClassName("JHTxhe")[0]){
+            appcounter++;
             loadInfoPanels(document.getElementsByClassName("JHTxhe")[0], true);
         }
         $(".Vpfmgd").each(function (){
+            appcounter++;
             loadInfoPanels(this, false);
         });
     }
