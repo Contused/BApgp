@@ -65,37 +65,44 @@ Abschließend wird der Zugriff auf die Caching-Methoden betrachtet. Der Fokus li
 
 Weder Cookies noch WebSQL qualifizieren sich aufgrund der betrachteten Kriterien als geeignete Caching-Methoden. IndexedDB und die Web-Storage-API kommen beide in Frage und werden in den anschließenden Kapiteln anhand von Messergebnissen und ihren Eigenschaften bei der Implementierung evaluiert.
 
-IndexedDB: API in allen modernen Browser zur Speicherung von Daten und Dateien in einer object-orientierten Datenbank.
-synchron und asynchron möglich.
-Funktioniert nach key, value prinzip
-Alle Datentypen von JavaScript werden unterstützt.
-Kann indexiert werden um Suchen effizient zu machen.
-Verwendet Prinzip von Transaktionen
-Anfragen mit Rückgabewerten als Basis aller Operationen
-Verfolgt den NoSQL-Ansatz
-
-
 \subsection{Vorgehensweise}
 \label{ss:vorgehensweise}
 
-Plattform: Windows 10 Rechner Build, Specs
-Chrome Details
-App Details
-Was wird gemessen?
-Limitierungen
+Die Extension nutzt für die Evaluation den \glqq localStorage \grqq{} der Web-Storage-API, da der \glqq sessionStorage \grqq{} gespeicherte Daten nach Beenden der Sitzung löscht. Die vorgesehene Messung soll Daten über mehrere Sitzungen erfassen. \textit{IndexedDB} wird ohne Framework implementiert.
 
-Getestet auf:
+In drei aufeinanderfolgende Durchläufen werden hier der Aufruf der Website ohne Cache, mit vorhandenem \textit{localStorage} und mit \textit{IndexedDB} verglichen. Die Messung richtet sich nach einer normalen, kurzen Nutzung der Internetseite. Dazu gehört das Laden der Startseite, die Auswahl einer bestimmten Kategorie und das Öffnen einer Detailseite. 
 
-Windows 10 Education 64 Bit
-Build 10.0.17134
-Prozessor i7-6700K
-RAM: 16GB
-GPU: Nvidia GTX 1070
+Gemessen wird dieser Prozess mittels der Browser-Konsole von Google Chrome im Reiter \glqq Performance \grqq{}. Dieser ist in der Lage die Ladezeit einer Webseite mit Unterteilung in \textit{Scripting} , \textit{Rendering}, \textit{Painting}, \textit{Other} und \textit{Idle} darzustellen. Die Messung fokussiert sich vor allem die Bereiche \textit{Scripting} und \textit{Rendering} bis zum Ende des \textit{Painting}-Prozesses der Extension. Der zweite Messpunkt sind die Anzahl der Anfragen an das Backend. Diese werden im Reiter \glqq Network \grqq ausgelesen.
 
-Chrome  67.0.3396.99 64 Bit
+Durchführt wurden die Messungen auf der folgenden Plattform:
+
+\begin{table}[h]
+	\begin{tabular}{p{4.6cm}R{7.0cm}}
+		\toprule
+		\textbf{Komponente}	&	\textbf{Eigenschaften/Version}	\\
+		\midrule
+		Prozessor	&	i7-6700K @ 4.00GHz (8CPUs)	\\
+		Speicher	&	16384MB RAM	\\
+		Grafik	&	GeForce GTX 1070	\\
+		Auflösung	&	2560 x 1440	\\
+		\midrule
+		Betriebssystem	&	Windows 10 Education 64-Bit-Version (10.0, Build 17134)	\\
+		Browser	&	Google Chrome Version 73.0.3683.75 64-Bit	\\
+		Internetverbindung	&	Download: 100MBit/s , Upload: 6Mbit/s	\\
+		\bottomrule
+	\end{tabular}
+	\caption{Spezifikationen der Testumgebung}
+	\label{cache3}
+\end{table}
 
 \subsection{Ergebnisse}
 \label{ss:ergebnisseht2}
+
+
+
+
+
+
 
 Storage: none
 Ladezeit: 1435ms
@@ -116,6 +123,15 @@ Ladezeit: 1761ms
 Start der Extension-Funktionsaufrufe: 883ms
 Dauer: 878ms
 Anzahl der Anfragen an das Backend: 131
+
+IndexedDB: API in allen modernen Browser zur Speicherung von Daten und Dateien in einer object-orientierten Datenbank.
+synchron und asynchron möglich.
+Funktioniert nach key, value prinzip
+Alle Datentypen von JavaScript werden unterstützt.
+Kann indexiert werden um Suchen effizient zu machen.
+Verwendet Prinzip von Transaktionen
+Anfragen mit Rückgabewerten als Basis aller Operationen
+Verfolgt den NoSQL-Ansatz
 
 Warum nicht IndexedDB?
 
