@@ -4,7 +4,7 @@
 var today = new Date();
 var anfragencounter = 0;
 var ibJson = [];
-var useLocalStorage = true;
+var isStorageWorking;
 var db;
 //TODO set Storage by toggle in popup
 var usedStorage = "indexedDB";
@@ -101,14 +101,14 @@ function setStorageItem(itemKey, itemValue){
                 console.dir(ev.target);
             };
             request.onsuccess = function (ev) {
-                console.log("IndexedDB funkt");
+                console.log("IndexedDB entry successfull");
             };
             break;
         default:
             console.log("No storage method selected.");
     }
 }
-
+//TODO clearstorage
 function deleteStorageItem(itemKey) {
     switch (usedStorage){
         case "none":
@@ -295,6 +295,9 @@ function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
             infoCard.appendChild(popover);
             parentNode.appendChild(infoCard);
         }
+        else{
+            console.log("keine Ergebnisse angekommen singlePage");
+        }
     } else {
         var redLine = false;
         var banner = document.createElement("div");
@@ -333,6 +336,7 @@ function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
                 }
             });
         } else {
+            console.log("keine Ergebnisse angekommen multipage");
             funde.innerText = "Keine Ergebnisse";
             banner.style.backgroundColor = "#d1d1d1";
         }
@@ -399,10 +403,9 @@ function loadInfoPanels(parentNode, isSinglePage) {
         var appDataString = getStorageItem(appID);
 
         var future = function(param) {
-
             var appDataArray = [];
             //Prueft ob bereits Daten im localStorage vorhanden und aktuell sind.
-            if(useLocalStorage && param && param.split(trennZeichen)[0]){
+            if(isStorageWorking && param && param.split(trennZeichen)[0]){
                 var lastUpdate = new Date(param.split(trennZeichen)[0] * 86400000);
                 if((lastUpdate.getTime() + 259200000) >= today.getTime()){
                     appDataArray = param.split(trennZeichen);
@@ -411,10 +414,10 @@ function loadInfoPanels(parentNode, isSinglePage) {
                 }
             }
             //Falls Daten vorhanden baue das Element darauss
-            if(useLocalStorage && appDataArray.length === 1){
+            if(isStorageWorking && appDataArray.length === 1){
                 console.log("STORAGE OHNE ERGEBNISSE GEFUNDEN: ", appID, appDataArray);
                 createPanel(parentNode, appDataArray, false , isSinglePage);
-            } else if(useLocalStorage && appDataArray.length > 1){
+            } else if(isStorageWorking && appDataArray.length > 1){
                 console.log("STORAGE GEFUNDEN: ", appID, appDataArray);
                 createPanel(parentNode, appDataArray, true , isSinglePage);
                 //Ansonsten lade die Informationen aus dem Backend
@@ -437,14 +440,7 @@ function loadInfoPanels(parentNode, isSinglePage) {
                         } else {
                             console.log("KEINE DSE VORHANDEN", appID);
                             setStorageItem(appID,""+ Math.floor(today.getTime() /86400000));
-                            $.ajax({
-                                url: urlTriggerNewAnalysis + appID,
-                                method: "POST",
-                                success: function(){
-                                    console.log("Anfrage erfolgreich: ");
-                                },
-                                dataType: "json"
-                            });
+
                             createPanel(parentNode, [], false, isSinglePage);
                         }
                     },
@@ -455,8 +451,7 @@ function loadInfoPanels(parentNode, isSinglePage) {
         };
 
         // Promise
-        if (typeof appDataString === 'object') {
-
+        if (typeof appDataString === 'object' && usedStorage === "indexedDB") {
             appDataString.onsuccess = function() {
                 if(appDataString.result){
                     future(appDataString.result.data);
@@ -491,28 +486,13 @@ function fillApps(){
     }
 }
 
-function testStorageCap(){
-    localStorage.clear();
-    localStorage.setItem("1","test");
-    var counter = 2;
-    while(localStorage.getItem("1")){
-        console.log(counter);
-        localStorage.setItem(""+counter, "ABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJABCDEFGHIJ");
-        counter++;
-    }
-}
-
 //Laedt lokale Json-Bibliothek fuer
 $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
     ibJson = input;
     $(ibCardTemplate).load(chrome.extension.getURL("lib/templates/ibCardTemplate.html"), function (data) {
         $(innerCollapseTemplate).load(chrome.extension.getURL("lib/templates/innerCollapseTemplate.html"), function(){
             if((usedStorage === "localStorage" || usedStorage === "indexedDB") && storageAvailable(usedStorage)){
-                // for(var z = 0; z < localStorage.length; z++){
-                //     console.log("Key " + z +" :",localStorage.key(z), " Value: ", localStorage.getItem(localStorage.key(z)));
-                // }
-                //testStorageCap();
-                //console.log(localStorage.length);
+                isStorageWorking = true;
                 if(usedStorage === "indexedDB"){
                     var openRequest = indexedDB.open("pguardExt",1);
 
@@ -525,20 +505,25 @@ $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
                     };
 
                     openRequest.onsuccess = function (ev) {
-                        console.log("DB bereit");
+                        console.log("IndexedDB initialized");
                         db = ev.target.result;
                         fillApps();
                     };
 
                     openRequest.onerror = function (ev) {
-                        console.log("onerror!");
+                        console.log("IndexedDB error while initializing!");
                         console.dir(ev);
                     }
                 }
+                else if(usedStorage === "localStorage"){
+                    console.log("localStorage initialized");
+                    fillApps();
+                }
             } else {
-                console.log("kein Storage verfuegbar.");
+                console.log("No Storage available!");
+                isStorageWorking = false;
+                fillApps();
             }
         });
     });
-    console.log("Lokale Json geladen.");
 });

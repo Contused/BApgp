@@ -54,8 +54,8 @@
       <file leaf-file-name="pguard.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pguard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2720">
-              <caret line="367" column="29" lean-forward="false" selection-start-line="367" selection-start-column="29" selection-end-line="367" selection-end-column="29" />
+            <state relative-caret-position="306">
+              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -64,14 +64,9 @@
       <file leaf-file-name="multiapp.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/css/multiapp.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-              <folding>
-                <marker date="1552816622488" expanded="true" signature="187:201" ph="{...}" />
-                <marker date="1552816622488" expanded="true" signature="614:617" ph="{...}" />
-                <marker date="1552816622488" expanded="true" signature="648:691" ph="{...}" />
-                <marker date="1552816622488" expanded="true" signature="709:740" ph="{...}" />
-              </folding>
+            <state relative-caret-position="255">
+              <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -149,16 +144,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Storage</find>
-      <find>trennzei</find>
-      <find>ajax</find>
-      <find />
       <find>id</find>
       <find>&quot;id&quot;</find>
       <find>setItem</find>
       <find>useLocal</find>
       <find>fillapps</find>
-      <find>localStorage</find>
       <find>db</find>
       <find>getStor</find>
       <find>getstorAGE</find>
@@ -179,6 +169,11 @@
       <find>similarapp</find>
       <find>console.log</find>
       <find>date</find>
+      <find>keine erge</find>
+      <find>ajax</find>
+      <find>indexedDB</find>
+      <find>localStorage</find>
+      <find>test</find>
     </findStrings>
     <replaceStrings>
       <replace>data.data.</replace>
@@ -231,8 +226,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
+    <option name="x" value="438" />
+    <option name="y" value="-8" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
@@ -240,7 +235,17 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -293,6 +298,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -402,18 +408,18 @@
       <workItem from="1552474502481" duration="3817000" />
       <workItem from="1552732921649" duration="1516000" />
       <workItem from="1552741450634" duration="1863000" />
-      <workItem from="1552818785535" duration="605000" />
+      <workItem from="1552818785535" duration="7444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196052000" />
+    <option name="totallyTimeSpent" value="202891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11111111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -488,12 +494,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-          <folding>
-            <marker date="1552816622488" expanded="true" signature="187:201" ph="{...}" />
-            <marker date="1552816622488" expanded="true" signature="614:617" ph="{...}" />
-            <marker date="1552816622488" expanded="true" signature="648:691" ph="{...}" />
-            <marker date="1552816622488" expanded="true" signature="709:740" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -616,19 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/css/multiapp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-          <folding>
-            <marker date="1552816622488" expanded="true" signature="187:201" ph="{...}" />
-            <marker date="1552816622488" expanded="true" signature="614:617" ph="{...}" />
-            <marker date="1552816622488" expanded="true" signature="648:691" ph="{...}" />
-            <marker date="1552816622488" expanded="true" signature="709:740" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/popup/popup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -679,10 +667,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/css/multiapp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pguard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2720">
-          <caret line="367" column="29" lean-forward="false" selection-start-line="367" selection-start-column="29" selection-end-line="367" selection-end-column="29" />
+        <state relative-caret-position="306">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding />
         </state>
       </provider>

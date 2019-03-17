@@ -32,7 +32,7 @@
 \contentsline {subsection}{\numberline {3.2.2}Kriterien und Vorauswahl}{28}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Vorgehensweise}{29}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Ergebnisse}{29}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Diskussion}{31}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.5}Diskussion}{32}{subsection.3.2.5}
 \contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{33}{chapter.4}
 \contentsline {section}{\numberline {4.1}Konklusion}{33}{section.4.1}
 \contentsline {section}{\numberline {4.2}Fortsetzung der Forschung}{33}{section.4.2}

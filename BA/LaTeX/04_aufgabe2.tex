@@ -70,7 +70,7 @@ Weder Cookies noch WebSQL qualifizieren sich aufgrund der betrachteten Kriterien
 
 Die Extension nutzt für die Evaluation den \glqq localStorage \grqq{} der Web-Storage-API, da der \glqq sessionStorage \grqq{} gespeicherte Daten nach Beenden der Sitzung löscht. Die vorgesehene Messung soll Daten über mehrere Sitzungen erfassen. \textit{IndexedDB} wird ohne Framework implementiert.
 
-In drei aufeinanderfolgende Durchläufen werden hier der Aufruf der Website ohne Cache, mit vorhandenem \textit{localStorage} und mit \textit{IndexedDB} verglichen. Die Messung richtet sich nach einer normalen, kurzen Nutzung der Internetseite. Dazu gehört das Laden der Startseite, die Auswahl einer bestimmten Kategorie und das Öffnen einer Detailseite. 
+In drei aufeinanderfolgende Durchläufen werden hier der Aufruf der Website ohne Cache, mit vorhandenem \textit{localStorage} und mit \textit{IndexedDB} verglichen. Die Messung richtet sich nach einer normalen, kurzen Nutzung der Internetseite. Dazu gehört das Laden der Startseite, die Auswahl eines weiteren Reiters und das Öffnen einer Detailseite. 
 
 Gemessen wird dieser Prozess mittels der Browser-Konsole von Google Chrome im Reiter \glqq Performance \grqq{}. Dieser ist in der Lage die Ladezeit einer Webseite mit Unterteilung in \textit{Scripting} , \textit{Rendering}, \textit{Painting}, \textit{Other} und \textit{Idle} darzustellen. Die Messung fokussiert sich vor allem die Bereiche \textit{Scripting} und \textit{Rendering} bis zum Ende des \textit{Painting}-Prozesses der Extension. Der zweite Messpunkt sind die Anzahl der Anfragen an das Backend. Diese werden im Reiter \glqq Network \grqq ausgelesen.
 
@@ -87,7 +87,7 @@ Durchführt wurden die Messungen auf der folgenden Plattform:
 		Auflösung	&	2560 x 1440	\\
 		\midrule
 		Betriebssystem	&	Windows 10 Education 64-Bit-Version (10.0, Build 17134)	\\
-		Browser	&	Google Chrome Version 73.0.3683.75 64-Bit	\\
+		Browser	&	Google Chrome Version 71.0.3578.80 64-Bit	\\
 		Internetverbindung	&	Download: 100MBit/s , Upload: 6Mbit/s	\\
 		\bottomrule
 	\end{tabular}
@@ -98,57 +98,68 @@ Durchführt wurden die Messungen auf der folgenden Plattform:
 \subsection{Ergebnisse}
 \label{ss:ergebnisseht2}
 
+Die Ergebnisse der Messung stammen vom 17.03.2019. Jede Tabelle stellt den Aufruf einer Seite des Google Play Stores mit allen drei Durchläufen dar. Pro angewandte Methode wird die Gesamtladezeit der Extension in der oberen Reihe angegeben. Darunter befindet sich das Verhältnis von Anfragen an das Backend zu allen, von der Extension gefundenen, Apps auf der Seite.
 
 
+\begin{table}[h]
+	\begin{tabular}{p{2.8cm}C{3.0cm}C{2.8cm}C{3.0cm}}
+		\toprule
+		\textbf{Seite}	&	\textbf{1. Durchlauf}	&	\textbf{2. Durchlauf}	& \textbf{3. Durchlauf}\\
+			\midrule
+			ohne Cache	&	292.8ms	&	292.0ms	&	294.8ms	\\
+						&	70/70	&	74/74	&	74/74	\\
 
+			localStorage	&	283.6ms	&	123.0ms	&	108.5ms	\\
+						&	74/74	&	0/74	&	0/74	\\
 
+			indexedDB	&	274.4ms	&	95.3ms	&	104.3ms	\\
+						&	74/74	&	0/74	&	0/74	\\
 
+			\bottomrule
+		\end{tabular}
+		\caption{Ladezeiten und Anfragen auf der Startseite}
+		\label{ergebnis11}
+\end{table}
 
-Storage: none
-Ladezeit: 1435ms
-Start der Extension-Funktionsaufrufe: 944ms
-Dauer: 491ms
-Anzahl der Anfragen an das Backend: 0
+\begin{table}[h]
+	\begin{tabular}{p{2.8cm}C{3.0cm}C{2.8cm}C{3.0cm}}
+		\toprule
+		\textbf{Seite}	&	\textbf{1. Durchlauf}	&	\textbf{2. Durchlauf}	& \textbf{3. Durchlauf}\\
+		\midrule
+		ohne Cache	&	559.8ms	&	469.8ms	&	445.6ms	\\
+		&	144/144	&	144/144	&	144/144	\\
+		
+		localStorage	&	439.5ms	&	213.4ms	&	214.7ms	\\
+		&	126/144		&	0/144	&	0/144	\\
+		
+		indexedDB	&	393.3ms	&	162.6ms	&	161.1ms	\\
+		&	126/144	&	0/144	&	0/144	\\
+		
+		\bottomrule
+	\end{tabular}
+	\caption{Ladezeiten und Anfragen auf dem Reiter \glqq Top-Charts \grqq{}}
+	\label{ergebnis2}
+\end{table}
 
-
-Storage: Local Storage
-Ladezeit: 1711ms
-Start der Extension-Funktionsaufrufe: 892ms
-Dauer: 819ms
-Anzahl der Anfragen an das Backend: 125
-
-
-Storage: none
-Ladezeit: 1761ms
-Start der Extension-Funktionsaufrufe: 883ms
-Dauer: 878ms
-Anzahl der Anfragen an das Backend: 131
-
-IndexedDB: API in allen modernen Browser zur Speicherung von Daten und Dateien in einer object-orientierten Datenbank.
-synchron und asynchron möglich.
-Funktioniert nach key, value prinzip
-Alle Datentypen von JavaScript werden unterstützt.
-Kann indexiert werden um Suchen effizient zu machen.
-Verwendet Prinzip von Transaktionen
-Anfragen mit Rückgabewerten als Basis aller Operationen
-Verfolgt den NoSQL-Ansatz
-
-Warum nicht IndexedDB?
-
-Vorteile von IndexedDB: Abspeicherung von großen strukturierten Datenmengen.
-Nachteile: hoher Aufwand bei Implementierung.Overhead lohnt nicht bei kleinen Datenmengen. Transaktionen blockieren bei Fehlern  eventuell den Datenabruf bzw. die Aktualisierung
-
-Storage API von Chrome ausreichend Speicher und geringer aufwand bei der Implementierung. Lediglich Strings benötigt. Indices bei gewählen value-Struktur nicht notwendig.
-
-Vorteil von Session Storage: Speicherpflege nicht notwendig, da 5MB groß genug für Anzahl(?) an App-Informationen während einer Session im PlayStore. Informationen immer auf Stand der Quelle
-Nachteil: Bei erstmaligen Öffnen des Stores in neuer Browsersession werden viele Anfragen losgeschickt für Apps die bereits in der letzten Session schon angefragt wurden. Bei Serverausfällen fehlen die Informationen
-Lediglich in einer Session mehrfach aufgerufene Apps ersparen erneute Anfragen.
-=> Speicherpflege fällt weg, dafür kaum Mehrwert bei Anfragen.
-
-Vorteil von Lokal Storage: Apps werden einmal abgefragt und sind anschließend abgespeichert. Fällt der Server aus können die lokalen Informationen genutzt werden. Daten auch aus letzter Session bleiben vorhanden. Neue Anfragen werden nur dann geschickt wenn aktuelle Daten über 3 Tage alt sind.
-Nachteile: Speicherpflege notwendig. Dadurch wird die Information länger (Counter und Tag). Zusätzliche Rechenzeit für das Löschen von alten Informationen notwendig. Dadurch wird sichergestellt dass die 5MB nicht überschritten werden und somit Informationen ungewollt verloren gehen. Für Informationen mit hohem Counter muss regelmäßig überprüft werden, ob die Information noch aktuell ist, weil diese in der Regel lange im Speicher verweilt.
-=> Hohe Einsparung bei Anfragen an den Server möglich. Dafür müssen zusätzliche Operationen zur Speicherpflege und Prüfung der Informationen ausgeführt werden.
-
+\begin{table}[h]
+	\begin{tabular}{p{2.8cm}C{3.0cm}C{2.8cm}C{3.0cm}}
+		\toprule
+		\textbf{Seite}	&	\textbf{1. Durchlauf}	&	\textbf{2. Durchlauf}	& \textbf{3. Durchlauf}\\
+		\midrule
+		ohne Cache	&	61.1ms	&	69.5ms	&	71.1ms	\\
+		&	8/8	&	8/8	&	8/8	\\
+		
+		localStorage	&	44.2ms	&	44.0ms	&	46.0ms	\\
+		&	0/8		&	0/8	&	0/8	\\
+		
+		indexedDB	&	57.3ms	&	45.2ms	&	42.8ms	\\
+		&	6/8	&	0/8	&	0/8	\\
+		
+		\bottomrule
+	\end{tabular}
+	\caption{Ladezeiten und Anfragen auf der Detailseite von \glqq WhatsApp \grqq{}}
+	\label{ergebnis3}
+\end{table}
 
 \subsection{Diskussion}
 \label{ss:diskussionht2}
