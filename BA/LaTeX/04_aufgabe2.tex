@@ -167,11 +167,17 @@ Auf der Seite \glqq Top-Charts \grqq{} wurde die App \glqq WhatsApp \grqq{} ausg
 	\label{ergebnis33}
 \end{table}
 
-Zusammenfassend zeigen die Messwerte deutliche Unterschiede zwischen den Ladezeiten mit und ohne Cache. Während die Extension auf der Detailseite ca. 34\% schneller lädt, verdoppelt bzw. verdreifacht sich die Geschwindigkeit durch den Gebrauch von \textit{localStorage} oder \textins{indexedDB}. In den hier gemessenen Durchläufen schlägt \textit{indexedDB} den \textit{localStorage} in puncto Ladezeiten. Gerade bei Seiten mit einer größeren Menge an Speicherzugriffen erzielt \textit{indexedDB} bessere Ergebnisse.
+Zusammenfassend zeigen die Messwerte deutliche Unterschiede zwischen den Ladezeiten mit und ohne Cache. Während die Extension auf der Detailseite ca. 34\% schneller lädt, verdoppelt bzw. verdreifacht sich die Geschwindigkeit durch den Gebrauch von \textit{localStorage} oder \textit{indexedDB}. In den hier gemessenen Durchläufen schlägt \textit{indexedDB} den \textit{localStorage} in puncto Ladezeiten. Gerade bei Seiten mit einer größeren Menge an Speicherzugriffen erzielt \textit{indexedDB} bessere Ergebnisse.
 
-Insgesamt konnten bereits beim ersten Durchlauf bis zu 26 der der 226 Anfragen eingespart werden und in darauffolgenden Durchgängen wurden keine Anfragen an das Backend mehr benötigt. Das spart nicht nur Ladezeit, sondern entlastet das Backend merklich.
+Insgesamt konnten bereits beim ersten Durchlauf bis zu 26 der der 226 Anfragen eingespart werden und in darauffolgenden Durchgängen wurden keine Anfragen an das Backend mehr benötigt. Dadurch wird das Backend merklich entlastet.
 
 \subsection{Diskussion}
 \label{ss:diskussionht2}
 
-Zeitspanne verlängern
+Die gewonnenen Messwerte reichen aus um den Unterschied zwischen der Extension ohne Cache und mit Cache aufzuzeigen. Auch die einzelnen Caching-Methoden konnten unter diesen Bedingungen gut miteinander verglichen werden. Um genauere und umfassendere Ergebnisse zu erhalten, ist es natürlich möglich, weitere Szenarien auf der Website testen. Hinzu kommt, dass bei einer längeren Testphase mit mehreren Durchläufen die Ladezeiten weiter optimiert werden, da weitere Datensätze abgespeichert werden. In dem angewandten Szenario wurden 200 Einträge erstellt und die Kapazität der lokalen Speicher nicht ansatzweise erreicht.
+
+Erhält die Extension keine Informationen zur einer App. Schickt die dem Backend eine Aufforderung, welche den Analyse-Prozess des Backends für diese App startet. Diese Aufforderungen wurden für die Messung deaktiviert, da sie keinen Einfluss auf die Ergebnisse haben und die Gewinnung der Messwerte nur erschweren.
+
+Weiterhin werden hier nur Optimierungen in der Extension betrachtet. Veränderungen am Prozess für Anfragen an das Backend könnten, gerade bei einer hohen Anzahl an Anfragen, zusätzlich positive Auswirkungen haben. Das gleiche gilt für die Struktur von Anfragen und Antworten.
+
+Nicht betrachtet wurde die Leistung der Extension im Mehrbenutzerbetrieb. In diesem Fall wäre eine weitere Maßnahme zur Vermeidung von zu vielen Anfragen, die Anpassung der Tage, nachdem eine Information als veraltete gilt. Drei Tage sind eine relativ kurze Zeitspanne. Datenschutzerklärungen werden in der Regel nur alle paar Monate geändert.

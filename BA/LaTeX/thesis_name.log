@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.19)  18 MAR 2019 14:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.19)  18 MAR 2019 17:14
 entering extended mode
 **./thesis_name.tex
 (thesis_name.tex
@@ -1487,7 +1487,7 @@ LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 222.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 222.
-<./pics/siegel.png, id=166, 564.1075pt x 561.09625pt>
+<./pics/siegel.png, id=170, 564.1075pt x 561.09625pt>
 File: ./pics/siegel.png Graphic file (type png)
 <use ./pics/siegel.png>
 Package pdftex.def Info: ./pics/siegel.png  used on input line 227.
@@ -1639,40 +1639,46 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 20.74pt on input line 1.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 8.
+(Font)              scaled to size 14.4pt on input line 4.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 4.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 19.
+(babel)             in language  on input line 21.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 21.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 21.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 
+l.21 
       [1
 
 
 ]
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 23.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 23.
 ) (02_vorarbeit.tex
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
@@ -1746,7 +1752,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 30.
-<pics/MarktanteileBrowser.png, id=259, 1003.75pt x 745.78625pt>
+<pics/MarktanteileBrowser.png, id=266, 1003.75pt x 745.78625pt>
 File: pics/MarktanteileBrowser.png Graphic file (type png)
 <use pics/MarktanteileBrowser.png>
 Package pdftex.def Info: pics/MarktanteileBrowser.png  used on input line 36.
@@ -1896,7 +1902,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 160.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 160.
-<pics/browser1.png, id=327, 1156.32pt x 620.3175pt>
+<pics/browser1.png, id=334, 1156.32pt x 620.3175pt>
 File: pics/browser1.png Graphic file (type png)
 <use pics/browser1.png>
 Package pdftex.def Info: pics/browser1.png  used on input line 166.
@@ -2148,12 +2154,12 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 74.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 74.
-<pics/playstore1num.png, id=403, 1156.32pt x 595.62524pt>
+<pics/playstore1num.png, id=410, 1156.32pt x 595.62524pt>
 File: pics/playstore1num.png Graphic file (type png)
 <use pics/playstore1num.png>
 Package pdftex.def Info: pics/playstore1num.png  used on input line 85.
 (pdftex.def)             Requested size: 360.0pt x 185.4326pt.
-<pics/playstore2.png, id=408, 1156.32pt x 595.023pt>
+<pics/playstore2.png, id=415, 1156.32pt x 595.023pt>
 File: pics/playstore2.png Graphic file (type png)
 <use pics/playstore2.png>
 Package pdftex.def Info: pics/playstore2.png  used on input line 96.
@@ -2171,17 +2177,17 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 99.
  [18 <./pics/playstore1num.png>]
-<pics/kachel1.png, id=417, 131.2905pt x 198.14024pt>
+<pics/kachel1.png, id=424, 131.2905pt x 198.14024pt>
 File: pics/kachel1.png Graphic file (type png)
 <use pics/kachel1.png>
 Package pdftex.def Info: pics/kachel1.png  used on input line 109.
 (pdftex.def)             Requested size: 131.29016pt x 198.13974pt.
-<pics/kachel2.png, id=419, 262.581pt x 133.6995pt>
+<pics/kachel2.png, id=426, 262.581pt x 133.6995pt>
 File: pics/kachel2.png Graphic file (type png)
 <use pics/kachel2.png>
 Package pdftex.def Info: pics/kachel2.png  used on input line 120.
 (pdftex.def)             Requested size: 262.58034pt x 133.69916pt.
-<pics/kachel3.png, id=421, 562.35094pt x 1908.37968pt>
+<pics/kachel3.png, id=428, 562.35094pt x 1908.37968pt>
 File: pics/kachel3.png Graphic file (type png)
 <use pics/kachel3.png>
 Package pdftex.def Info: pics/kachel3.png  used on input line 130.
@@ -2309,7 +2315,7 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 194.
 [23]
-<pics/Aufbau.png, id=499, 489.32813pt x 344.03531pt>
+<pics/Aufbau.png, id=506, 489.32813pt x 344.03531pt>
 File: pics/Aufbau.png Graphic file (type png)
 <use pics/Aufbau.png>
 Package pdftex.def Info: pics/Aufbau.png  used on input line 197.
@@ -2340,17 +2346,17 @@ Package babel Info: Redefining german shorthand "|
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 215.
 [24 <./pics/Aufbau.png>]
-<pics/ergebnis1.png, id=508, 1925.69438pt x 1026.08344pt>
+<pics/ergebnis1.png, id=515, 1925.69438pt x 1026.08344pt>
 File: pics/ergebnis1.png Graphic file (type png)
 <use pics/ergebnis1.png>
 Package pdftex.def Info: pics/ergebnis1.png  used on input line 219.
 (pdftex.def)             Requested size: 360.0pt x 191.81087pt.
-<pics/ergebnis2.png, id=509, 1925.69438pt x 1028.34187pt>
+<pics/ergebnis2.png, id=516, 1925.69438pt x 1028.34187pt>
 File: pics/ergebnis2.png Graphic file (type png)
 <use pics/ergebnis2.png>
 Package pdftex.def Info: pics/ergebnis2.png  used on input line 228.
 (pdftex.def)             Requested size: 360.0pt x 192.23305pt.
-<pics/ergebnis4.png, id=510, 1927.2pt x 1026.08344pt>
+<pics/ergebnis4.png, id=517, 1927.2pt x 1026.08344pt>
 File: pics/ergebnis4.png Graphic file (type png)
 <use pics/ergebnis4.png>
 Package pdftex.def Info: pics/ergebnis4.png  used on input line 237.
@@ -2432,7 +2438,7 @@ Package babel Info: Redefining german shorthand "~
 [27 <./pics/ergebnis4.png>]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 28.
-<pics/cache1.png, id=533, 457.10776pt x 36.135pt>
+<pics/cache1.png, id=540, 457.10776pt x 36.135pt>
 File: pics/cache1.png Graphic file (type png)
 <use pics/cache1.png>
 Package pdftex.def Info: pics/cache1.png  used on input line 32.
@@ -2558,7 +2564,7 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 174.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 174.
-) (05_diskussion.tex
+
 
 Package Fancyhdr Warning: \headheight is too small (13.6pt): 
  Make it at least 24.83585pt.
@@ -2566,33 +2572,37 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 1.
+(babel)             in language  on input line 180.
 [33]
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "f
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining german shorthand "~
-(babel)             in language  on input line 1.
- [34
+Overfull \hbox (12.96667pt too wide) in paragraph at lines 181--182
+[]\OT1/LinuxLibertineT-TLF/m/n/10.95 (-20) Weiterhin wer-den hier nur Op-ti-mie
+-run-gen in der Ex-ten-si-on be-trach-tet. Ver[]anderungen
+ []
 
-]
+) (05_diskussion.tex
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "f
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining german shorthand "~
+(babel)             in language  on input line 1.
+ [34]
 Kapitel 4.
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
@@ -2625,7 +2635,9 @@ Package babel Info: Redefining german shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "~
 (babel)             in language  on input line 1.
- [35]
+ [35
+
+]
 Package babel Info: Redefining german shorthand "f
 (babel)             in language  on input line 1.
 Package babel Info: Redefining german shorthand "|
@@ -2820,7 +2832,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 345.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
 Package rerunfilecheck Info: File `thesis_name.out' has not changed.
-(rerunfilecheck)             Checksum: 56FB36C55F7ECCD2DFAF1FFAE34EC36F;3013.
+(rerunfilecheck)             Checksum: 9BD41BB476553EB99B510A86FA875352;3064.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2830,11 +2842,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 38092 strings out of 492973
- 698936 string characters out of 3126249
+ 38098 strings out of 492973
+ 699046 string characters out of 3126249
  1368953 words of memory out of 3000000
- 40860 multiletter control sequences out of 15000+200000
- 594629 words of font info for 210 fonts, out of 3000000 for 9000
+ 40862 multiletter control sequences out of 15000+200000
+ 594902 words of font info for 212 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,13n,92p,1202b,2533s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/AlexAG/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/libertine/
@@ -2856,9 +2868,9 @@ ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/AlexAG/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Al
 exAG/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 >
-Output written on thesis_name.pdf (51 pages, 4132863 bytes).
+Output written on thesis_name.pdf (51 pages, 4136156 bytes).
 PDF statistics:
- 863 PDF objects out of 1000 (max. 8388607)
- 292 named destinations out of 1000 (max. 500000)
- 34190 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 870 PDF objects out of 1000 (max. 8388607)
+ 293 named destinations out of 1000 (max. 500000)
+ 34198 words of extra memory for PDF output out of 35830 (max. 10000000)
 
