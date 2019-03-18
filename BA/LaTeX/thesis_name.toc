@@ -27,15 +27,15 @@
 \contentsline {subsection}{\numberline {3.1.4}Programmaufbau}{20}{subsection.3.1.4}
 \contentsline {subsection}{\numberline {3.1.5}Ergebnis}{24}{subsection.3.1.5}
 \contentsline {subsection}{\numberline {3.1.6}Diskussion}{25}{subsection.3.1.6}
-\contentsline {section}{\numberline {3.2}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{26}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Speichern von Informationen}{26}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Kriterien und Vorauswahl}{28}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Vorgehensweise}{29}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Ergebnisse}{29}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Diskussion}{32}{subsection.3.2.5}
-\contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Konklusion}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Fortsetzung der Forschung}{33}{section.4.2}
-\contentsline {chapter}{\numberline {5}Appendix}{35}{chapter.5}
-\contentsline {section}{\numberline {5.1}Derivations}{35}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Example Matlab Code}{36}{subsection.5.1.1}
+\contentsline {section}{\numberline {3.2}Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{27}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Speichern von Informationen}{27}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Kriterien und Vorauswahl}{29}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Vorgehensweise}{30}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Ergebnisse}{31}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Diskussion}{33}{subsection.3.2.5}
+\contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Konklusion}{35}{section.4.1}
+\contentsline {section}{\numberline {4.2}Fortsetzung der Forschung}{35}{section.4.2}
+\contentsline {chapter}{\numberline {5}Appendix}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Derivations}{37}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Example Matlab Code}{38}{subsection.5.1.1}

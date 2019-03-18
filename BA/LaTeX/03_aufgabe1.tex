@@ -192,18 +192,18 @@ Liefert das Backend eine Antwort mit mindestens einem Ergebnis, speichert die Fu
 Der gewählte Datensatz wird der Funktion \glqq createPanel\grqq{} übergeben. Handelt es sich bei dem Kandidaten um eine App-Page(Single-App), wird das Popover aus den Informationen direkt erstellt. Dazu wird der Datensatz mit Hilfe der IB texte.json in den entsprechenden Text umgewandelt und in die Html-Template einfügt.
 Bei kleinen App-Kacheln baut die Funktion einen Banner in die Kachel ein. Auf diesem Banner wird mittels JQuery ein Event geladen, welches bei einem Klick auf den Banner das Popover erstellt.
 
-%BEISPIEL IB texte
-%\lstinputlisting[label={src:pguard}, caption={Aufbau der pguard.js}]{../../Extension/src/pguard.js}
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=1\textwidth]{pics/Aufbau.png}
 	\caption{Aufbau und Interaktionen der Extension}
 	\label{aufbau}
 \end{figure}
+
+
 \subsection{Ergebnis}
 \label{ss:ergebnisseht1}
 
-Die Browser-Extension stellt Datenschutzinformationen an mehreren Stellen der Webseite zur Verfügung. Bei kleinen und mittelgroßen Kacheln wird der erstellte Banner mit der Anzahl an gefundenen Infoboxen am oberen Rand eingeblendet. Die Darstellung unterscheidet sich dabei je nach Status der Informationen:
+Die Browser-Extension stellt Datenschutzinformationen an mehreren Stellen der Webseite zur Verfügung. Bei kleinen und mittelgroßen Kacheln wird der erstellte Banner mit der Anzahl an gefundenen Infoboxen am oberen Rand eingeblendet (siehe Abbildung \ref{ergebnis1}). Die Darstellung unterscheidet sich dabei je nach Status der Informationen:
 
 \begin{itemize}
 	\item \textbf{\glqq Keine Ergebnisse\grqq{}}:
@@ -214,23 +214,35 @@ Die Browser-Extension stellt Datenschutzinformationen an mehreren Stellen der We
 	Informationen zum Datenschutz über die Applikation sind vorhanden und es liegt ein möglicher Gesetzesverstoß, bzw. ein erheblicher Nachteil für den Nutzer vor.
 \end{itemize}
 
-%BILD Banner
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{pics/ergebnis1.png}
+	\caption{Ergänzung der Kacheln durch farbige Banner.}
+	\label{ergebnis1}
+\end{figure}
 
 Durch einen Klick auf den Banner erscheint das jeweilige Popover, bestehend aus einem Fenster mit der Liste an gefundenen Infoboxen. Diese Boxen sind aufklappbar und beinhalten die jeweilige Beschreibung, Handlungsempfehlungen, Vor- und Nachteile.
 
-%BILD Overlay aufgeklappt
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{pics/ergebnis2.png}
+	\caption{Popover mit der Auflistung an Infoboxen. \glqq rote Linien \grqq{} sind entsprechend markiert.}
+	\label{ergebnis2}
+\end{figure}
 
-Auf den Detailseiten wird dieses Fenster direkt in die große Kachel, zwischen der Programmbeschreibung und den Bewertungen eingebettet. Die Templates sind hier identisch zu denen im Popover
+Auf den Detailseiten wird dieses Fenster direkt in die große Kachel, zwischen der Programmbeschreibung und den Bewertungen eingebettet. Die Templates sind hier identisch zu denen im Popover.
 
-%BILD Boxen
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=1\textwidth]{pics/ergebnis4.png}
+	\caption{Detailseite mit eingefügten Infoboxen.}
+	\label{ergebnis4}
+\end{figure}
 
 Alle, vom Backend gewonnenen, Informationen werden in eine lokale Datenbank abgespeichert und beim nächsten Auftauchen der gleichen Kachel wieder ausgelesen. Nach drei Tagen gilt die Information als veraltet und wird auf Abruf aktualisiert. Kapitel \ref{ss:anforderungen} befasst sich mit dem genauen Aufbau der Datenbank.
 
-%BILD Datenbank
-
 Das Icon besitzt ein Popup-Menü mit zwei Buttons zum Aktivieren/Deaktivieren der Extension und zum Löschen der angelegten Datenbank.
 
-%BILD Popup
 \subsection{Diskussion}
 \label{ss:diskussionht1}
 

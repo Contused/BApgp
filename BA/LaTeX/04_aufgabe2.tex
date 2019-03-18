@@ -75,7 +75,6 @@ In drei aufeinanderfolgende Durchläufen werden hier der Aufruf der Website ohne
 Gemessen wird dieser Prozess mittels der Browser-Konsole von Google Chrome im Reiter \glqq Performance \grqq{}. Dieser ist in der Lage die Ladezeit einer Webseite mit Unterteilung in \textit{Scripting} , \textit{Rendering}, \textit{Painting}, \textit{Other} und \textit{Idle} darzustellen. Die Messung fokussiert sich vor allem die Bereiche \textit{Scripting} und \textit{Rendering} bis zum Ende des \textit{Painting}-Prozesses der Extension. Der zweite Messpunkt sind die Anzahl der Anfragen an das Backend. Diese werden im Reiter \glqq Network \grqq ausgelesen.
 
 Durchführt wurden die Messungen auf der folgenden Plattform:
-
 \begin{table}[h]
 	\begin{tabular}{p{4.6cm}R{7.0cm}}
 		\toprule
@@ -100,11 +99,14 @@ Durchführt wurden die Messungen auf der folgenden Plattform:
 
 Die Ergebnisse der Messung stammen vom 17.03.2019. Jede Tabelle stellt den Aufruf einer Seite des Google Play Stores mit allen drei Durchläufen dar. Pro angewandte Methode wird die Gesamtladezeit der Extension in der oberen Reihe angegeben. Darunter befindet sich das Verhältnis von Anfragen an das Backend zu allen, von der Extension gefundenen, Apps auf der Seite.
 
+Im ersten Durchlauf ist gut zu erkennen, dass die Ladezeit der Extension ohne gespeicherte Datensätze mit ca. 275 bis 295 Millisekunden immer ungefähr gleich bleiben. Dagegen unterscheiden sich die Zeiten im zweiten Durchlauf schon deutlich. Dadurch, dass im \textit{localStorage} und der \textit{indexedDB} bereits die Daten aller Apps aus dem vorherigen Aufruf abgespeichert sind, halbiert sich die Ladezeit der Extension mit \textit{localStorage}. Mit \textit{indexedDB} verringert sich die benötigte Zeit sogar um ca. 67\%. Im letzten Durchgang bestätigen sich die Messungen, wobei die Extension hier mit beiden Caching-Methoden etwa gleich lange lädt. 
+
+Ursache für kürzeren Ladezeiten sind hauptsächlich die 74 eingesparten Anfragen an das Backend ab dem zweiten Durchlauf. Weiterhin ist zu erkennen, dass beim Laden der Extension auf der Startseite unter gleichen Bedingungen eine Messschwankung von bis zu 20 Millisekunden auftritt.
 
 \begin{table}[h]
 	\begin{tabular}{p{2.8cm}C{3.0cm}C{2.8cm}C{3.0cm}}
 		\toprule
-		\textbf{Seite}	&	\textbf{1. Durchlauf}	&	\textbf{2. Durchlauf}	& \textbf{3. Durchlauf}\\
+		\textbf{Methode}	&	\textbf{1. Durchlauf}	&	\textbf{2. Durchlauf}	& \textbf{3. Durchlauf}\\
 			\midrule
 			ohne Cache	&	292.8ms	&	292.0ms	&	294.8ms	\\
 						&	70/70	&	74/74	&	74/74	\\
@@ -121,10 +123,13 @@ Die Ergebnisse der Messung stammen vom 17.03.2019. Jede Tabelle stellt den Aufru
 		\label{ergebnis11}
 \end{table}
 
+Der Wechsel zum Reiter \glqq Top-Charts \grqq{} findet direkt nach dem Aufruf der Startseite statt. Der Vorteil dabei ist, dass die beiden Caches bereits 18 der 144 in dem Reiter gefundenen Apps von der Startseite gespeichert haben. Damit ist die Gesamtladezeit der Extension mit lokalen Speicher bereits im ersten Durchlauf geringer. Ungefähr 120 bis 160 Millisekunden, also bis zu 30\% werden dadurch eingespart. In den nächsten beiden Durchläufen halbiert sich die Ladezeit mit \textit{localStorage} gegenüber der speicherlosen Variante, da erneut alle Applikationen bereits im Cache vorhanden sind und keine neuen Anfragen an das Backend geschickt werden müssen. Auffällig ist auf dieser Seite, dass \textins{indexedDB} beide Male weniger Ladezeit benötigt als \text{localStorage} mit konstanten 67\% Ersparnis. 
+
+Eine mögliche Ursache könnten die gestiegene Anzahl an abzuspeichernden Datensätzen sein. Außerdem sind die Schwankungen der Gesamtladezeit ohne Cache mit ca. 115 Millisekunden, also etwa 20\% hier wesentlich höher als auf der Startseite mit ca. 6\%. Das deutet auf eventuelle Browser-seitige Optimierung für Erweiterungen hin.
 \begin{table}[h]
 	\begin{tabular}{p{2.8cm}C{3.0cm}C{2.8cm}C{3.0cm}}
 		\toprule
-		\textbf{Seite}	&	\textbf{1. Durchlauf}	&	\textbf{2. Durchlauf}	& \textbf{3. Durchlauf}\\
+		\textbf{Methode}	&	\textbf{1. Durchlauf}	&	\textbf{2. Durchlauf}	& \textbf{3. Durchlauf}\\
 		\midrule
 		ohne Cache	&	559.8ms	&	469.8ms	&	445.6ms	\\
 		&	144/144	&	144/144	&	144/144	\\
@@ -138,13 +143,14 @@ Die Ergebnisse der Messung stammen vom 17.03.2019. Jede Tabelle stellt den Aufru
 		\bottomrule
 	\end{tabular}
 	\caption{Ladezeiten und Anfragen auf dem Reiter \glqq Top-Charts \grqq{}}
-	\label{ergebnis2}
+	\label{ergebnis22}
 \end{table}
 
+Auf der Seite \glqq Top-Charts \grqq{} wurde die App \glqq WhatsApp \grqq{} ausgewählt und damit die Detailseite aufgerufen. Auf dieser Seite finden sich neben der ausgewählten App weitere Kacheln mit Empfehlungen. Von den 8 angezeigten Apps, wurden alle bereits auf der Startseite oder unter \glqq Top-Charts \grqq{} aufgelistet und somit von den Caching-Methoden erfasst. Lediglich beim ersten Durchlauf mit \textit{indexedDB} wurden 6 neue Empfehlungen auf der Detailseite anzeigt. Ohne Cache schwankt die Ladezeit der Extension zwischen 61 und 71 Millisekunden. Durch die 8 eingesparten Anfragen wird die Ladezeit mit Cache immerhin auf 43 bis 46 Millisekunden verringert. Das entspricht einer etwa 34\% kürzeren Ladezeit der Extension.
 \begin{table}[h]
 	\begin{tabular}{p{2.8cm}C{3.0cm}C{2.8cm}C{3.0cm}}
 		\toprule
-		\textbf{Seite}	&	\textbf{1. Durchlauf}	&	\textbf{2. Durchlauf}	& \textbf{3. Durchlauf}\\
+		\textbf{Methode}	&	\textbf{1. Durchlauf}	&	\textbf{2. Durchlauf}	& \textbf{3. Durchlauf}\\
 		\midrule
 		ohne Cache	&	61.1ms	&	69.5ms	&	71.1ms	\\
 		&	8/8	&	8/8	&	8/8	\\
@@ -158,8 +164,12 @@ Die Ergebnisse der Messung stammen vom 17.03.2019. Jede Tabelle stellt den Aufru
 		\bottomrule
 	\end{tabular}
 	\caption{Ladezeiten und Anfragen auf der Detailseite von \glqq WhatsApp \grqq{}}
-	\label{ergebnis3}
+	\label{ergebnis33}
 \end{table}
+
+Zusammenfassend zeigen die Messwerte deutliche Unterschiede zwischen den Ladezeiten mit und ohne Cache. Während die Extension auf der Detailseite ca. 34\% schneller lädt, verdoppelt bzw. verdreifacht sich die Geschwindigkeit durch den Gebrauch von \textit{localStorage} oder \textins{indexedDB}. In den hier gemessenen Durchläufen schlägt \textit{indexedDB} den \textit{localStorage} in puncto Ladezeiten. Gerade bei Seiten mit einer größeren Menge an Speicherzugriffen erzielt \textit{indexedDB} bessere Ergebnisse.
+
+Insgesamt konnten bereits beim ersten Durchlauf bis zu 26 der der 226 Anfragen eingespart werden und in darauffolgenden Durchgängen wurden keine Anfragen an das Backend mehr benötigt. Das spart nicht nur Ladezeit, sondern entlastet das Backend merklich.
 
 \subsection{Diskussion}
 \label{ss:diskussionht2}
