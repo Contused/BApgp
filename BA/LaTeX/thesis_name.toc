@@ -34,9 +34,6 @@
 \contentsline {subsection}{\numberline {3.2.3}Vorgehensweise}{30}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Ergebnisse}{31}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Diskussion}{33}{subsection.3.2.5}
-\contentsline {chapter}{\numberline {4}Abschlie\IeC {\ss }ende Diskussion}{35}{chapter.4}
-\contentsline {section}{\numberline {4.1}Konklusion}{35}{section.4.1}
-\contentsline {section}{\numberline {4.2}Fortsetzung der Forschung}{35}{section.4.2}
-\contentsline {chapter}{\numberline {5}Appendix}{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}Derivations}{37}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Example Matlab Code}{38}{subsection.5.1.1}
+\contentsline {chapter}{\numberline {4}Zusammenfassung der Arbeit}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Zusammenfassung}{35}{section.4.1}
+\contentsline {section}{\numberline {4.2}Ausblick}{36}{section.4.2}
