@@ -234,7 +234,7 @@
 			Entwicklung einer Browser-Extention zur Anzeige von Datenschutzinformationen im PlayStore und Evaluierung von Caching-Methoden}
 			
 			\vspace{1.0cm}
-			\textbf{Author} \\
+			\textbf{Autor} \\
 		Alexander Prull \\ 
 		\href{mailto:ap62puny@studserv.uni-leipzig.de}{ap62puny@studserv.uni-leipzig.de} \\
 		Institut für Informatik \\
@@ -275,7 +275,13 @@
 
 \chapter*{Abstract}
 \label{c:abstract}
-In dieser Arbeit wird sich mit den Eigenheiten der Browser Extension Programmierung auseinander gesetzt. Speziell geht es um Extension die Webseiten um bestimmte Informationen erweitern. Diese werden von einem Backend empfangen und zur Ladezeit der Seite eingespeist. Dabei setzt sich die Arbeit mit zwei Punkten auseinander. In erster Linie geht es darum die Ladezeit der Webseite durch das Anfordern von Informationen so wenig wie möglich zu beeinflussen. Also die Performance der Extension zu maximieren. Auf der anderen Seite wird durch die Nutzung der Extension von einer steigenden Nutzerzahl der Backend-Server mit einer steigenden Anzahl von Anfragen belastet. Um diese Probleme zu lösen werden in der Arbeit verschiedene Möglichkeiten zur Speicherung von Daten betrachtet und eine Auswahl der Methoden auf ihre Performance hin getestet.
+
+Diese Arbeit beschäftigt sich mit der Umsetzung einer Extension für den Google Chrome Browser. Inhalt dieser Erweiterung ist die Darstellung von datenschutzrelevanten Informationen auf der Internetseite des Google Play Store.
+
+Die Aufgabe der Extension ist es, Verbraucher auf mögliche Schwachstellen einer App aufmerksam zu machen, bevor diese installiert wird. Als Informationsquelle dienen dabei ausgewertete Daten im Rahmen des Forschungsprojekts \glqq PrivacyGuard \grqq{}.
+Dabei wird die Internetseite um optische Indikatoren, sowie abrufbare Informationen über Handlungsempfehlungen und  Vor- beziehungsweise Nachteile zu den konkreten Bedenken erweitert.
+
+Weiterhin werden Caching-Methoden evaluiert, um die Zahl an Serveranfragen zu minimieren und dadurch die Performanz der Extension zu erhöhen. Getätigte Messungen ergeben, dass die Methoden \glqq indexedDB \grqq{} und \glqq localStorage \grqq{} durch das Abspeichern von Datensätzen redundante Anfragen verhindern und die Ladezeiten der Browser-Extension damit um bis zu 67\% reduzieren.
 
 %%% end abstract
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
