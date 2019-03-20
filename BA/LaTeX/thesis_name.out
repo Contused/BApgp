@@ -5,7 +5,7 @@
 \BOOKMARK [0][-]{chapter.2}{Vorarbeit}{}% 5
 \BOOKMARK [1][-]{section.2.1}{Recherche zu Browser-Extensions}{chapter.2}% 6
 \BOOKMARK [2][-]{subsection.2.1.1}{Extension-Programmierung allgemein}{section.2.1}% 7
-\BOOKMARK [2][-]{subsection.2.1.2}{Existieren bereits vergleichbare Extensions}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.2}{Existenz vergleichbarer Extensions}{section.2.1}% 8
 \BOOKMARK [2][-]{subsection.2.1.3}{Vergleich f\374hrender Browser als Plattform f\374r die Extension}{section.2.1}% 9
 \BOOKMARK [1][-]{section.2.2}{PrivacyGuard}{chapter.2}% 10
 \BOOKMARK [2][-]{subsection.2.2.1}{Vorstellung}{section.2.2}% 11
@@ -18,7 +18,7 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Anforderungen}{section.2.4}% 18
 \BOOKMARK [2][-]{subsection.2.4.2}{Caching-Methoden und deren Eigenschaften}{section.2.4}% 19
 \BOOKMARK [0][-]{chapter.3}{Hauptteil}{}% 20
-\BOOKMARK [1][-]{section.3.1}{Aufgabe 1: Implementierung einer Browser-Extension zur Anzeige von Datenschutzinformationen im PlayStore}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.1}{Aufgabe 1: Implementierung einer Browser-Extension zur Anzeige von Datenschutzinformationen im Play Store}{chapter.3}% 21
 \BOOKMARK [2][-]{subsection.3.1.1}{Anwendungsszenario}{section.3.1}% 22
 \BOOKMARK [2][-]{subsection.3.1.2}{Anforderungsanalyse}{section.3.1}% 23
 \BOOKMARK [3][-]{subsubsection.3.1.2.1}{Funktionale Anforderungen}{subsection.3.1.2}% 24
@@ -27,7 +27,7 @@
 \BOOKMARK [2][-]{subsection.3.1.4}{Programmaufbau}{section.3.1}% 27
 \BOOKMARK [2][-]{subsection.3.1.5}{Ergebnis}{section.3.1}% 28
 \BOOKMARK [2][-]{subsection.3.1.6}{Diskussion}{section.3.1}% 29
-\BOOKMARK [1][-]{section.3.2}{Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.2}{Aufgabe 2: Evaluierung von Caching-Methoden einer Browser Extension}{chapter.3}% 30
 \BOOKMARK [2][-]{subsection.3.2.1}{Speichern von Informationen}{section.3.2}% 31
 \BOOKMARK [2][-]{subsection.3.2.2}{Kriterien und Vorauswahl}{section.3.2}% 32
 \BOOKMARK [2][-]{subsection.3.2.3}{Vorgehensweise}{section.3.2}% 33

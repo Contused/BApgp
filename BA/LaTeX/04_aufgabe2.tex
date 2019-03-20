@@ -1,4 +1,4 @@
-\section{Aufgabe 2: Evaluierung von Caching Methoden einer Browser Extension}
+\section{Aufgabe 2: Evaluierung von Caching-Methoden einer Browser Extension}
 \label{s:evaluierungcaching}
 
 
@@ -8,20 +8,20 @@
 Bevor diese Arbeit mögliche Methoden zur Speicherung von Datensätzen evaluiert, werden zuerst grundlegende Fragen beantwortet:
 
 \textbf{Warum benötigt die Extension einen Cache?}:
-In Kapitel \ref{ss:aufbauwebsite} zeigt die Abbildung \ref{playstore1} den Aufbau der Internetseite nach bestimmten Themen. Jedes Thema wird mit einer Reihe von Apps dargestellt. Je nach Bildschirmauflösung beinhaltet eine Reihe 7 bis 10 dieser Kacheln.
-Beim initialen Aufruf lädt die Seite 8 Themen. Weitere Reihen werden dynamisch beim Scrollen nachgeladen. So findet die Extension zwischen 60 bis 80 App-IDs allein durch den Aufruf der Seite. Wird eine Thema durch den Button \glqq Mehr\grqq{} aufgeklappt, lädt die Seite 120 bis 540 weitere Kacheln. Dabei sind Applikationen oft in mehr als einem Thema vorhanden und bereits auf der Startseite doppelt oder dreifach abgebildet.
+In Kapitel \ref{ss:aufbauwebsite} zeigt die Abbildung \ref{playstore1} den Aufbau der Internetseite nach bestimmten Themen. Jedes Thema wird mit einer Reihe von Apps dargestellt. Je nach Bildschirmauflösung beinhaltet eine Reihe sieben bis zehn dieser Kacheln.
+Beim initialen Aufruf lädt die Seite acht Themen. Weitere Reihen werden dynamisch beim Scrollen nachgeladen. So findet die Extension zwischen 60 bis 80 App-IDs allein durch den Aufruf der Seite. Wird ein Thema durch den Button \glqq Mehr\grqq{} aufgeklappt, lädt die Seite 120 bis 540 weitere Kacheln. Dabei sind Applikationen oft in mehr als einem Thema vorhanden und bereits auf der Startseite doppelt oder dreifach abgebildet.
 
-Da die Extension pro gefundener App-ID eine Anfrage an das Backend schickt. Entstehen pro Seitenaufruf mindestens 60 und pro Klick auf ein Themengebiet mindestens weitere 120 Anfragen. Also würde ein Nutzer bei einem Besuch der Seite grob geschätzt mehrere hunderte Backend-Anfragen auslösen.
+Da die Extension pro gefundener App-ID eine Anfrage an das Backend schickt, entstehen pro Seitenaufruf mindestens 60 und pro Klick auf ein Themengebiet mindestens weitere 120 Anfragen. Also würde ein Nutzer bei einem Besuch der Seite grob geschätzt mehrere hunderte Backend-Anfragen auslösen.
 
-Da diese Webseite als Such- und Einkaufsplattform fungiert, bleibt es in der Regel nicht bei einem einzigen Besuch. Hinzu kommt also eine hohe Redundanz der Anfragen bei erneutem Besuch der Seite. Denn viele Themen und Kategorien, wie zum Beispiel \glqq Empfehlungen für dich \grqq{} sind personalisiert und bleiben über eine Vielzahl an Seitenaufrufen identisch.
+Da diese Webseite als Such- und Einkaufsplattform fungiert, bleibt es in der Regel nicht bei einem einzigen Besuch. Hinzu kommt also eine hohe Redundanz der Anfragen bei erneutem Besuch der Seite. Denn viele Themen und Kategorien, wie zum Beispiel \glqq Empfehlungen für dich \grqq{}, sind personalisiert und bleiben über eine Vielzahl an Seitenaufrufen identisch.
 
-Zusammenfassend entstehen bei der Nutzung des Google Play Stores also eine hohe Anzahl an benötigten Informationen mit einer Vielzahl an Redundanz sowohl bei einem Besuch, als auch über mehrere Sitzungen hinweg. Die Veröffentlichung der Extension würde also einen hohes Anfrageaufkommen an das Backend verursachen. Durch eine folgende Überlastung könnte die Extension keine Informationen mehr darstellen und hätte keinen Nutzen mehr.
+Zusammenfassend entstehen bei der Nutzung des Google Play Stores also eine hohe Anzahl an benötigten Informationen mit einer Vielzahl an Redundanzen sowohl bei einem Besuch als auch über mehrere Sitzungen hinweg. Die Veröffentlichung der Extension würde also einen hohes Anfrageaufkommen an das Backend verursachen. Durch eine folgende Überlastung könnte die Extension keine Informationen mehr darstellen und hätte keinen Nutzen mehr.
 
-Der Lösungsansatz ist ein, vom Backend unabhängiger, Speicher, welcher gewonnene Informationen für den Nutzer bereithält. Vor allem langlebige und redundante Daten stehen so ohne wiederholte Anfragen zur Verfügung.
+Der Lösungsansatz ist ein vom Backend unabhängiger Speicher, welcher gewonnene Informationen für den Nutzer bereithält. Vor allem langlebige und redundante Daten stehen so ohne wiederholte Anfragen zur Verfügung.
 
 
 \textbf{Welche Informationen sollen im Cache gespeichert werden?}:
-Damit nicht nur die Anzahl der Anfragen an das Backend, sondern auch der Umfang der Daten möglichst gering bleibt, werden die nötigten Informationen und ihrer komprimierten Form angefragt. Dem Backend wird durch bestimmte Parameter signalisiert, nur die Kennzahl der zutreffenden Infobox(siehe Tabellen \ref{tabelleInfofelder} und  \ref{tabelleInfofelderzwei}) zusammen mit der Extraktionsquelle und dem Datum der Extraktion zu der jeweiligen App-ID zu übermitteln.
+Damit nicht nur die Anzahl der Anfragen an das Backend, sondern auch der Umfang der Daten möglichst gering bleibt, werden die nötigten Informationen in ihrer komprimierten Form angefragt. Dem Backend wird durch bestimmte Parameter signalisiert, nur die Kennzahl der zutreffenden Infobox (siehe Tabellen \ref{tabelleInfofelder} und  \ref{tabelleInfofelderzwei}) zusammen mit der Extraktionsquelle und dem Datum der Extraktion zu der jeweiligen App-ID zu übermitteln.
 
 So entsteht folgender key-value-Datensatz:
 
@@ -35,7 +35,7 @@ So entsteht folgender key-value-Datensatz:
 \end{figure}
 
 
-Die gespeicherten Indizes der Infoboxen werden lokal von der Extension über die Datei \glqq IB\_texte.json \grqq{}(Auszug in Abbildung \ref{cache2}) auf ihre entsprechenden Texte gemappt, sodass diese nicht über das Backend abgefragt werden müssen. Der Extraktionstag dient zur Feststellung des Alters eines Datensatzes. Aktuell ist festgelegt, dass eine Information dann als veraltet gilt, wenn ihr Extraktionsdatum älter als drei Tage ist. Erst sobald die Zeitspanne überschritten wurde, sendet die Extension mit dem nächsten Aufruf der jeweiligen Applikation eine neue Anfrage.
+Die gespeicherten Indizes der Infoboxen werden lokal von der Extension über die Datei \glqq IB\_texte.json \grqq{} (Auszug in Abbildung \ref{cache2}) auf ihre entsprechenden Texte gemappt, sodass diese nicht über das Backend abgefragt werden müssen. Der Extraktionstag dient zur Feststellung des Alters eines Datensatzes. Aktuell ist festgelegt, dass eine Information dann als veraltet gilt, wenn ihr Extraktionsdatum älter als drei Tage ist. Erst sobald die Zeitspanne überschritten wurde, sendet die Extension mit dem nächsten Aufruf der jeweiligen Applikation eine neue Anfrage.
 
 
 \lstinputlisting[label={cache2},caption={Infobox 19 aus der IB\_texte.json}, firstline=442, lastline=470]{../../Extension/src/lib/data/IB_texte.json}
@@ -49,17 +49,17 @@ Für die oben gezeigte Struktur der Datensätze ergibt sich folgender \textit{wo
 	
 \textit{18,19,20,21,22,23,24,25,26,27,28,29,30,31} \big\}
 
-Das entspricht einer Länge von 50 characters für den key und 89 characters für den value. In UTF-8 sind das umgerechnet ca. 139Byte. Geht man in Google Chrome von einem Limit des Cache-Speichers auf 5200000 characters\footnote{\url{https://arty.name/localstorage.html}} aus, können so ca. 37410 Datensätze gespeichert werden.
+Das entspricht einer Länge von 50 characters für den key und 89 characters für den value. In UTF-8 sind das umgerechnet ca. 139 Byte. Geht man in Google Chrome von einem Limit des Cache-Speichers auf 5200000 characters\cite{test} aus, können so ca. 37410 Datensätze gespeichert werden.
 
 \subsection{Kriterien und Vorauswahl}
 \label{vorauswahl}
 
-Die Kriterien für eine geeignete Caching-Methode leiten sich aus den Anforderungen aus Kapitel \ref{ss:cacheanforderungen} ab. Zur Auswahl stehen nach Abschnitt \ref{ss:methodeneigenschaften} Cookies, WebSQL, die Web-Storage-API und IndexedDB. Nur Kandidaten, welche alle Kriterien erfüllen werden implementiert darüber hinaus evaluiert.
+Die Kriterien für eine geeignete Caching-Methode leiten sich aus den Anforderungen aus Kapitel \ref{ss:cacheanforderungen} ab. Zur Auswahl stehen nach Abschnitt \ref{ss:methodeneigenschaften} Cookies, WebSQL, die Web-Storage-API und IndexedDB. Nur Kandidaten, welche alle Kriterien erfüllen werden, implementiert und darüber hinaus evaluiert.
 
 Die Grundlage für einen geeigneten Cache ist ausreichend Speicherplatz. Während alle anderen Kandidaten mindestens 5MB Speicherplatz zur Verfügung haben, besitzen Cookies mit 4KB Gesamtspeicher pro Domäne, und somit nach der Berechnung in Abschnitt \ref{ss:speichern} mit ca. 28 Datensätzen, zu wenig Speicher für die Extension. 
 
-Das nächste Kriterium ist die Verfügbarkeit. Die Caching-Methode soll uneingeschränkt und überprüfbar zur Verfügung stehen, um die Speicherfunktion der Extension zu garantieren. Aufgrund der genannten EU-Richtlinie in Abschnitt \ref{ss:methodeneigenschaften} und dem Gebrauch von Cookies als Tracking-Methode, beschränken oder blocken viele Nutzer diese Speichermethode. Das stellt eine Ungewissheit dar und widerspricht der uneingeschränkten Nutzung als Kriterium.
-WebSQL ist zwar weiterhin in einigen Browsern verfügbar, von einer Implementierung in neue Programme rät der W3C ab\footnote{\url{https://www.w3.org/TR/webdatabase/}}. Durch diese Obsoleszenz erfüllt auch WebSQL das Kriterium nicht. IndexedDB wird als Nachfolger von WebSQL gesehen. Sowohl die Web-Storage-API als auch IndexedDB sind aktuelle Technologien und uneingeschränkt verfügbar.
+Das nächste Kriterium ist die Verfügbarkeit. Die Caching-Methode soll uneingeschränkt und überprüfbar zur Verfügung stehen, um die Speicherfunktion der Extension zu garantieren. Aufgrund der genannten EU-Richtlinie in Abschnitt \ref{ss:methodeneigenschaften} und dem Gebrauch von Cookies als Tracking-Methode beschränken oder blocken viele Nutzer diese Speichermethode. Das stellt eine Ungewissheit dar und widerspricht der uneingeschränkten Nutzung als Kriterium.
+WebSQL ist zwar weiterhin in einigen Browsern verfügbar, von einer Implementierung in neue Programme rät der W3C ab\cite{websql}. Durch diese Obsoleszenz erfüllt auch WebSQL das Kriterium nicht. IndexedDB wird als Nachfolger von WebSQL gesehen. Sowohl die Web-Storage-API als auch IndexedDB sind aktuelle Technologien und uneingeschränkt verfügbar.
 
 Abschließend wird der Zugriff auf die Caching-Methoden betrachtet. Der Fokus liegt hier bei einem Zugriff mit möglichst geringer Wartezeit auf viele kleine Datensätze. Alle Kandidaten verfügen über asynchrone Aufrufe, sodass die Extension keine zusätzlichen Wartephasen verursacht. Durch eine fehlende Indexierung verliert die Web-Storage-API jedoch an Performanz, wenn es um das Auslesen von großen Datensätzen geht. Das angestrebte Key-Value-Prinzip wird von IndexedDB und der Web-Storage-API unterstützt. Bei WebSQL erfolgt der Zugrifft über die \glqq Standard Query Language \grqq{} und die Datensätze lägen in Tabellenform vor, was die Handhabung mit den Datensätzen erschwert. Cookies speichern Informationen in Datenobjekte, welche die erwünschten Eigenschaften für den Zugriff ebenfalls erfüllen.
 
@@ -68,11 +68,11 @@ Weder Cookies noch WebSQL qualifizieren sich aufgrund der betrachteten Kriterien
 \subsection{Vorgehensweise}
 \label{ss:vorgehensweise}
 
-Die Extension nutzt für die Evaluation den \glqq localStorage \grqq{} der Web-Storage-API, da der \glqq sessionStorage \grqq{} gespeicherte Daten nach Beenden der Sitzung löscht. Die vorgesehene Messung soll Daten über mehrere Sitzungen erfassen. \textit{IndexedDB} wird ohne Framework implementiert.
+Die Extension nutzt für die Evaluation den \glqq localStorage\grqq{} der Web-Storage-API, da der \glqq sessionStorage \grqq{} gespeicherte Daten nach Beenden der Sitzung löscht. Die vorgesehene Messung soll Daten über mehrere Sitzungen erfassen. \textit{IndexedDB} wird ohne Framework implementiert.
 
-In drei aufeinanderfolgende Durchläufen werden hier der Aufruf der Website ohne Cache, mit vorhandenem \textit{localStorage} und mit \textit{IndexedDB} verglichen. Die Messung richtet sich nach einer normalen, kurzen Nutzung der Internetseite. Dazu gehört das Laden der Startseite, die Auswahl eines weiteren Reiters und das Öffnen einer Detailseite. 
+In drei aufeinanderfolgenden Durchläufen werden hier der Aufruf der Website ohne Cache, mit vorhandenem \textit{localStorage} und mit \textit{IndexedDB} verglichen. Die Messung richtet sich nach einer normalen, kurzen Nutzung der Internetseite. Dazu gehört das Laden der Startseite, die Auswahl eines weiteren Reiters und das Öffnen einer Detailseite. 
 
-Gemessen wird dieser Prozess mittels der Browser-Konsole von Google Chrome im Reiter \glqq Performance \grqq{}. Dieser ist in der Lage die Ladezeit einer Webseite mit Unterteilung in \textit{Scripting} , \textit{Rendering}, \textit{Painting}, \textit{Other} und \textit{Idle} darzustellen. Die Messung fokussiert sich vor allem die Bereiche \textit{Scripting} und \textit{Rendering} bis zum Ende des \textit{Painting}-Prozesses der Extension. Der zweite Messpunkt sind die Anzahl der Anfragen an das Backend. Diese werden im Reiter \glqq Network \grqq ausgelesen.
+Gemessen wird dieser Prozess mittels der Browser-Konsole von Google Chrome im Reiter \glqq Performance \grqq{}. Dieser ist in der Lage, die Ladezeit einer Webseite mit Unterteilung in \textit{Scripting} , \textit{Rendering}, \textit{Painting}, \textit{Other} und \textit{Idle} darzustellen. Die Messung fokussiert sich vor allem die Bereiche \textit{Scripting} und \textit{Rendering} bis zum Ende des \textit{Painting}-Prozesses der Extension. Der zweite Messpunkt sind die Anzahl der Anfragen an das Backend. Diese werden im Reiter \glqq Network \grqq ausgelesen.
 
 Durchführt wurden die Messungen auf der folgenden Plattform:
 \begin{table}[h]
@@ -97,11 +97,11 @@ Durchführt wurden die Messungen auf der folgenden Plattform:
 \subsection{Ergebnisse}
 \label{ss:ergebnisseht2}
 
-Die Ergebnisse der Messung stammen vom 17.03.2019. Jede Tabelle stellt den Aufruf einer Seite des Google Play Stores mit allen drei Durchläufen dar. Pro angewandte Methode wird die Gesamtladezeit der Extension in der oberen Reihe angegeben. Darunter befindet sich das Verhältnis von Anfragen an das Backend zu allen, von der Extension gefundenen, Apps auf der Seite.
+Die Ergebnisse der Messung stammen vom 17.03.2019. Jede Tabelle stellt den Aufruf einer Seite des Google Play Stores mit allen drei Durchläufen dar. Pro angewandter Methode wird die Gesamtladezeit der Extension in der oberen Reihe angegeben. Darunter befindet sich das Verhältnis von Anfragen an das Backend zu allen von der Extension gefundenen Apps auf der Seite.
 
-Im ersten Durchlauf ist gut zu erkennen, dass die Ladezeit der Extension ohne gespeicherte Datensätze mit ca. 275 bis 295 Millisekunden immer ungefähr gleich bleiben. Dagegen unterscheiden sich die Zeiten im zweiten Durchlauf schon deutlich. Dadurch, dass im \textit{localStorage} und der \textit{indexedDB} bereits die Daten aller Apps aus dem vorherigen Aufruf abgespeichert sind, halbiert sich die Ladezeit der Extension mit \textit{localStorage}. Mit \textit{indexedDB} verringert sich die benötigte Zeit sogar um ca. 67\%. Im letzten Durchgang bestätigen sich die Messungen, wobei die Extension hier mit beiden Caching-Methoden etwa gleich lange lädt. 
+Im ersten Durchlauf ist gut zu erkennen, dass die Ladezeit der Extension ohne gespeicherte Datensätze mit ca. 275 bis 295 Millisekunden immer ungefähr gleich bleibt. Dagegen unterscheiden sich die Zeiten im zweiten Durchlauf schon deutlich. Dadurch, dass im \textit{localStorage} und der \textit{indexedDB} bereits die Daten aller Apps aus dem vorherigen Aufruf abgespeichert sind, halbiert sich die Ladezeit der Extension mit \textit{localStorage}. Mit \textit{indexedDB} verringert sich die benötigte Zeit sogar um ca. 67\%. Im letzten Durchgang bestätigen sich die Messungen, wobei die Extension hier mit beiden Caching-Methoden etwa gleich lange lädt. 
 
-Ursache für kürzeren Ladezeiten sind hauptsächlich die 74 eingesparten Anfragen an das Backend ab dem zweiten Durchlauf. Weiterhin ist zu erkennen, dass beim Laden der Extension auf der Startseite unter gleichen Bedingungen eine Messschwankung von bis zu 20 Millisekunden auftritt.
+Ursache für die kürzeren Ladezeiten sind hauptsächlich die 74 eingesparten Anfragen an das Backend ab dem zweiten Durchlauf. Weiterhin ist zu erkennen, dass beim Laden der Extension auf der Startseite unter gleichen Bedingungen eine Messschwankung von bis zu 20 Millisekunden auftritt.
 
 \begin{table}[h]
 	\begin{tabular}{p{2.8cm}C{3.0cm}C{2.8cm}C{3.0cm}}
@@ -123,9 +123,9 @@ Ursache für kürzeren Ladezeiten sind hauptsächlich die 74 eingesparten Anfrag
 		\label{ergebnis11}
 \end{table}
 
-Der Wechsel zum Reiter \glqq Top-Charts \grqq{} findet direkt nach dem Aufruf der Startseite statt. Der Vorteil dabei ist, dass die beiden Caches bereits 18 der 144 in dem Reiter gefundenen Apps von der Startseite gespeichert haben. Damit ist die Gesamtladezeit der Extension mit lokalen Speicher bereits im ersten Durchlauf geringer. Ungefähr 120 bis 160 Millisekunden, also bis zu 30\% werden dadurch eingespart. In den nächsten beiden Durchläufen halbiert sich die Ladezeit mit \textit{localStorage} gegenüber der speicherlosen Variante, da erneut alle Applikationen bereits im Cache vorhanden sind und keine neuen Anfragen an das Backend geschickt werden müssen. Auffällig ist auf dieser Seite, dass \textins{indexedDB} beide Male weniger Ladezeit benötigt als \text{localStorage} mit konstanten 67\% Ersparnis. 
+Der Wechsel zum Reiter \glqq Top-Charts \grqq{} findet direkt nach dem Aufruf der Startseite statt. Der Vorteil dabei ist, dass die beiden Caches bereits 18 der 144 in dem Reiter gefundenen Apps von der Startseite gespeichert haben. Damit ist die Gesamtladezeit der Extension mit lokalem Speicher bereits im ersten Durchlauf geringer. Ungefähr 120 bis 160 Millisekunden, also bis zu 30\%, werden dadurch eingespart. In den nächsten beiden Durchläufen halbiert sich die Ladezeit mit \textit{localStorage} gegenüber der speicherlosen Variante, da erneut alle Applikationen bereits im Cache vorhanden sind und keine neuen Anfragen an das Backend geschickt werden müssen. Auffällig ist auf dieser Seite, dass \textit{indexedDB} beide Male weniger Ladezeit benötigt als \textit{localStorage} mit konstanten 67\% Ersparnis. 
 
-Eine mögliche Ursache könnten die gestiegene Anzahl an abzuspeichernden Datensätzen sein. Außerdem sind die Schwankungen der Gesamtladezeit ohne Cache mit ca. 115 Millisekunden, also etwa 20\% hier wesentlich höher als auf der Startseite mit ca. 6\%. Das deutet auf eventuelle Browser-seitige Optimierung für Erweiterungen hin.
+Eine mögliche Ursache könnte die gestiegene Anzahl an abzuspeichernden Datensätzen sein. Außerdem sind die Schwankungen der Gesamtladezeit ohne Cache mit ca. 115 Millisekunden, also etwa 20\%, hier wesentlich höher als auf der Startseite mit ca. 6\%. Das deutet auf eventuelle Browser-seitige Optimierung für Erweiterungen hin.
 \begin{table}[h]
 	\begin{tabular}{p{2.8cm}C{3.0cm}C{2.8cm}C{3.0cm}}
 		\toprule
@@ -146,7 +146,7 @@ Eine mögliche Ursache könnten die gestiegene Anzahl an abzuspeichernden Datens
 	\label{ergebnis22}
 \end{table}
 
-Auf der Seite \glqq Top-Charts \grqq{} wurde die App \glqq WhatsApp \grqq{} ausgewählt und damit die Detailseite aufgerufen. Auf dieser Seite finden sich neben der ausgewählten App weitere Kacheln mit Empfehlungen. Von den 8 angezeigten Apps, wurden alle bereits auf der Startseite oder unter \glqq Top-Charts \grqq{} aufgelistet und somit von den Caching-Methoden erfasst. Lediglich beim ersten Durchlauf mit \textit{indexedDB} wurden 6 neue Empfehlungen auf der Detailseite anzeigt. Ohne Cache schwankt die Ladezeit der Extension zwischen 61 und 71 Millisekunden. Durch die 8 eingesparten Anfragen wird die Ladezeit mit Cache immerhin auf 43 bis 46 Millisekunden verringert. Das entspricht einer etwa 34\% kürzeren Ladezeit der Extension.
+Auf der Seite \glqq Top-Charts \grqq{} wurde die App \glqq WhatsApp \grqq{} ausgewählt und damit die Detailseite aufgerufen. Auf dieser Seite finden sich neben der ausgewählten App weitere Kacheln mit Empfehlungen. Von den acht angezeigten Apps, wurden alle bereits auf der Startseite oder unter \glqq Top-Charts \grqq{} aufgelistet und somit von den Caching-Methoden erfasst. Lediglich beim ersten Durchlauf mit \textit{indexedDB} wurden sechs neue Empfehlungen auf der Detailseite anzeigt. Ohne Cache schwankt die Ladezeit der Extension zwischen 61 und 71 Millisekunden. Durch die acht eingesparten Anfragen wird die Ladezeit mit Cache immerhin auf 43 bis 46 Millisekunden verringert. Das entspricht einer etwa 34\% kürzeren Ladezeit der Extension.
 \begin{table}[h]
 	\begin{tabular}{p{2.8cm}C{3.0cm}C{2.8cm}C{3.0cm}}
 		\toprule
@@ -174,10 +174,10 @@ Insgesamt konnten bereits beim ersten Durchlauf bis zu 26 der der 226 Anfragen e
 \subsection{Diskussion}
 \label{ss:diskussionht2}
 
-Die gewonnenen Messwerte reichen aus um den Unterschied zwischen der Extension ohne Cache und mit Cache aufzuzeigen. Auch die einzelnen Caching-Methoden konnten unter diesen Bedingungen gut miteinander verglichen werden. Um genauere und umfassendere Ergebnisse zu erhalten, ist es natürlich möglich, weitere Szenarien auf der Website testen. Hinzu kommt, dass bei einer längeren Testphase mit mehreren Durchläufen die Ladezeiten weiter optimiert werden, da weitere Datensätze abgespeichert werden. In dem angewandten Szenario wurden 200 Einträge erstellt und die Kapazität der lokalen Speicher nicht ansatzweise erreicht.
+Die gewonnenen Messwerte reichen aus um den Unterschied zwischen der Extension ohne Cache und mit Cache aufzuzeigen. Auch die einzelnen Caching-Methoden konnten unter diesen Bedingungen gut miteinander verglichen werden. Um genauere und umfassendere Ergebnisse zu erhalten, ist es natürlich möglich, weitere Szenarien auf der Website zu testen. Hinzu kommt, dass bei einer längeren Testphase mit mehreren Durchläufen die Ladezeiten weiter optimiert werden, da weitere Datensätze abgespeichert werden. In dem angewandten Szenario wurden 200 Einträge erstellt und die Kapazität der lokalen Speicher nicht ansatzweise erreicht.
 
-Erhält die Extension keine Informationen zur einer App. Schickt die dem Backend eine Aufforderung, welche den Analyse-Prozess des Backends für diese App startet. Diese Aufforderungen wurden für die Messung deaktiviert, da sie keinen Einfluss auf die Ergebnisse haben und die Gewinnung der Messwerte nur erschweren.
+Erhält die Extension keine Informationen zur einer App, schickt sie dem Backend eine Aufforderung, welche den Analyse-Prozess des Backends für diese App startet. Diese Aufforderungen wurden für die Messung deaktiviert, da sie keinen Einfluss auf die Ergebnisse haben und die Gewinnung der Messwerte nur erschweren.
 
-Weiterhin werden hier nur Optimierungen in der Extension betrachtet. Veränderungen am Prozess für Anfragen an das Backend könnten, gerade bei einer hohen Anzahl an Anfragen, zusätzlich positive Auswirkungen haben. Das gleiche gilt für die Struktur von Anfragen und Antworten.
+Weiterhin werden hier nur Optimierungen in der Extension betrachtet. Verände-rungen am Prozess für Anfragen an das Backend könnten, gerade bei einer hohen Anzahl an Anfragen, zusätzlich positive Auswirkungen haben. Das gleiche gilt für die Struktur von Anfragen und Antworten.
 
-Nicht betrachtet wurde die Leistung der Extension im Mehrbenutzerbetrieb. In diesem Fall wäre eine weitere Maßnahme zur Vermeidung von zu vielen Anfragen, die Anpassung der Tage, nachdem eine Information als veraltete gilt. Drei Tage sind eine relativ kurze Zeitspanne. Datenschutzerklärungen werden in der Regel nur alle paar Monate geändert.
+Nicht betrachtet wurde die Leistung der Extension im Mehrbenutzerbetrieb. In diesem Fall wäre eine weitere Maßnahme zur Vermeidung von zu vielen Anfragen, die Anpassung der Tage nachdem eine Information als veraltete gilt. Drei Tage sind eine relativ kurze Zeitspanne, da Datenschutzerklärungen in der Regel nur alle paar Monate geändert werden.

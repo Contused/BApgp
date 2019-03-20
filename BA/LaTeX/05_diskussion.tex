@@ -6,38 +6,40 @@
 \section{Zusammenfassung}
 \label{s:zusammenfassung}
 
-Im Rahmen dieser Arbeit entstand eine Browser-Extension zur Erweiterung des Google Play Stores um datenschutzrelevante Informationen. Dabei werden mit Hilfe des Backends von PrivacyGuard angezeigte Apps um Infoboxen mit Vor- und Nachteilen, sowie Handlungsempfehlungen erweitert. Zusätzlich zeigen eingefügte Banner die Anzahl und Funde an und warnen den Nutzer vor sogenannten \glqq roten Linien\grqq{}.
+Im Rahmen dieser Arbeit entstand eine Browser-Extension zur Erweiterung des Google Play Stores um datenschutzrelevante Informationen. Dabei werden mit Hilfe des Backends von PrivacyGuard angezeigte Apps um Infoboxen mit Vor- und Nachteilen sowie Handlungsempfehlungen erweitert. Zusätzlich zeigen eingefügte Banner die Anzahl der Funde an und warnen den Nutzer vor sogenannten \glqq roten Linien\grqq{}.
 
 Zu Beginn wurden dabei Recherchen angestellt, die zeigen, dass der Google Chrome Browser durch seinen hohen Marktanteil als Plattform am besten geeignet ist und keine Erweiterung mit den genannten Funktionen bereits existiert. Der zweite Teil der Vorarbeit hat sich mit dem genauen Aufbau und der Implementierung einer Chrome-Extension beschäftigt und welche Richtlinien dabei eingehalten werden müssen.
 
-Anschließend wurde das Forschungsprojekt \textit{PrivacyGuard} vorgestellt zusammen mit dem Backend, welches als Quelle für Datenschutzinformationen dient. Um dieses Backend nicht zu überlasten besteht der Bedarf eines lokalen Speichers in der Extension. Welche Methoden zur Verfügung stehen und sich für diesen Anwendungsfall eignen wurde ebenfalls Teil der Recherche.
+Anschließend wurde das Forschungsprojekt \textit{PrivacyGuard} vorgestellt zusammen mit dem Backend, welches als Quelle für Datenschutzinformationen dient. Um dieses Backend nicht zu überlasten, besteht der Bedarf eines lokalen Speichers in der Extension. Welche Methoden zur Verfügung stehen und sich für diesen Anwendungsfall eignen, wurde ebenfalls Teil der Recherche.
 
-Aus den gewonnen Informationen entstand eine Anforderungsanalyse mit funktionalen und nicht-funktionalen Nutzerszenarien für die Browser-Extension. Zur bestmöglichen Umsetzung wurde die Website des Google Play Stores betrachtet und eine möglichst einfache aber klare Darstellung der Informationen gewählt. Bis auf die Empfehlung bei Suchanfragen wurden alle Anforderungen umgesetzt und das Ergebnis anschließend betrachtet und einige Kritikpunkte diskutiert.
+Aus den gewonnenen Informationen entstand eine Anforderungsanalyse mit funktionalen und nicht-funktionalen Nutzerszenarien für die Browser-Extension. Zur bestmöglichen Umsetzung wurde die Website des Google Play Stores betrachtet und eine möglichst einfache aber klare Darstellung der Informationen gewählt. Bis auf die Empfehlung bei Suchanfragen wurden alle Anforderungen umgesetzt und das Ergebnis anschließend betrachtet und einige Kritikpunkte diskutiert.
 
-Nach der Implementierung wurden die recherchierten Caching-Methoden anhand bestimmten Kriterien verglichen und zwei Kandidaten für die weitere Evaluation ausgewählt. Diese Methoden wurde in die Erweiterung integriert. Messungen ergaben, dass die Extension durch das lokale Speichern von Informationen bis zu 67\% ihrer Ladezeit einsparen konnte, welche hauptsächlich durch Anfragen an das Backend beeinflusst wurde. Dabei lag die Caching-Methode \textit{indexedDB} vorne. Abschließend wurden Möglichkeiten diskutiert, um die Messungen zu erweitern und die Gesamtperformanz der Browser-Extrension weiter zu steigern.
+Nach der Implementierung wurden die recherchierten Caching-Methoden anhand bestimmter Kriterien verglichen und zwei Kandidaten für die weitere Evaluation ausgewählt. Diese Methoden wurde in die Erweiterung integriert. Messungen ergaben, dass die Extension durch das lokale Speichern von Informationen bis zu 67\% ihrer Ladezeit einsparen konnte, welche hauptsächlich durch Anfragen an das Backend beeinflusst wurde. Dabei lag die Caching-Methode \textit{indexedDB} vorne. Abschließend wurden Möglichkeiten diskutiert, um die Messungen zu erweitern und die Gesamtperformanz der Browser-Extrension weiter zu steigern.
 
 \section{Ausblick}
 \label{s:ausblick}
 
-Während der Umsetzung der Aufgabenstellungen ergaben sich bereits Punkte die aus zeitlichen oder organisatorischen Gründen nicht mehr umgesetzt werden konnten. Dieser Ausblick beschreibt eine mögliche Weiterentwicklung der Browser-Extension und neue Punkte zur Verbesserung der Performanz.
+Während der Umsetzung der Aufgabenstellungen ergaben sich bereits Punkte, die aus zeitlichen oder organisatorischen Gründen nicht mehr umgesetzt werden konnten. Dieser Ausblick beschreibt eine mögliche Weiterentwicklung der Browser-Extension und neue Punkte zur Verbesserung der Performanz.
 
 Der erste und wichtigste Punkt ist die Veröffentlichung der Extension. Um das zu ermöglichen bedarf es folgender Schritte:
 
 \begin{itemize}
 	\item \textbf{Wartung und Support}:
-	Sowohl das Backend, als auch die Extension müssen fortlaufend gewartet werden. Im Rahmen der Umsetzung der App kam es öfter zu Ausfällen im Backend aufgrund von Fehlern oder Speicherauslastungen. Auch die Extension selbst musste im Rahmen der Arbeit mehrmals angepasst werden, um alle Kacheln mit Apps zu erkennen. Auch neue Browser-Events wurden erst nach und nach entdeckt, was zu Lücken beim Laden von Apps führte. Nach einer Veröffentlichung benötigt die Extension also eine verantwortliche Person zur Wartung dieser und weiterer auftretender Probleme.
+	Sowohl das Backend als auch die Extension müssen fortlaufend gewartet werden. Im Rahmen der Umsetzung der App kam es öfter zu Ausfällen im Backend aufgrund von Fehlern oder Speicherauslastungen. Auch die Extension selbst musste im Rahmen der Arbeit mehrmals angepasst werden, um alle Kacheln mit Apps zu erkennen. Auch neue Browser-Events wurden erst nach und nach entdeckt, was zu Lücken beim Laden von Apps führte. Nach einer Veröffentlichung benötigt die Extension also eine verantwortliche Person zur Wartung dieser und weiterer auftretender Probleme.
 	\item \textbf{Evaluierung der Datenqualität}:
-	Die automatische Datenverarbeitung läuft nicht durchweg zuverlässig und es treten hin und wieder Fehler bei Ausgabe von Datenschutzerklärungen auf. Um nach der Veröffentlichung rechtliche Konsequenzen zu vermeiden und das Vertrauen der Nutzer nicht zu verlieren, muss die Qualität der Daten noch einmal überprüft werden.
+	Die automatische Datenverarbeitung läuft nicht durchweg zuverlässig und es treten hin und wieder Fehler bei der Ausgabe von Datenschutzerklärungen auf. Um nach der Veröffentlichung rechtliche Konsequenzen zu vermeiden und das Vertrauen der Nutzer nicht zu verlieren, muss die Qualität der Daten noch einmal überprüft werden.
 	\item \textbf{Empfehlung bei Suchanfragen /F50/}:
 	Stimmt die Datenqualität, kann auch das Nutzerszenario zur Empfehlung von alternativen Apps implementiert werden. Dadurch bekommt der Verbraucher Apps mit möglichst wenigen datenschutzrechtlichen Bedenken vorgeschlagen.
 \end{itemize}
 
-Gegen Ende der Bearbeitungszeit wurde eine weitere Methode zur lokalen Datenspeicherung veröffentlicht: \glqq File API \grqq{}\footnote{\url{https://www.w3.org/TR/FileAPI/}}.
+Optional kann die Extension auch auf andere Browser portiert werden. Dazu bieten Mozilla und Microsoft entsprechende Anleitung an(\cite{mozilla,edge}).
+
+Gegen Ende der Bearbeitungszeit wurde eine weitere Methode zur lokalen Datenspeicherung veröffentlicht: \glqq File API \grqq{}\cite{file}.
 Diese ermöglicht es Dateien anzulegen und als lokalen Speicher zu nutzen. Aktuell wird die API allerdings nicht vollständig von allen Browsern unterstützt. Eine weitere Evaluation könnte zeigen, ob das Vorteile in puncto Performanz gegenüber den in dieser Arbeit vorgestellten Caching-Methoden hat. 
 
-Weiterhin wurde \textit{indexedDB} in dieser Arbeit ohne Frameworks umgesetzt. Unter Umständen bieten zum Beispiel \glqq localForage \grqq{}\footnote{\url{https://github.com/localForage/localForage}} oder \glqq Dexie.js \grqq{}\footnote{\url{https://dexie.org/}} eine bessere Performanz.
+Weiterhin wurde \textit{indexedDB} in dieser Arbeit ohne Frameworks umgesetzt. Unter Umständen bieten zum Beispiel \glqq localForage \grqq{}\cite{forage} oder \glqq Dexie.js \grqq{}\cite{dexie} eine bessere Performanz.
 
-Abschließend sei erwähnt, dass mit der Veröffentlichung von Google Chrome Version 73 am 12. März eine neue Richtlinie eingeführt wird. Die sogenannte \glqq Cross-Origin-Resource-Policy \grqq{}\footnote{\url{https://www.chromestatus.com/feature/4647328103268352}} soll \glqq Spectre\grqq{}-Angriffe\footnote{\url{https://meltdownattack.com/}} verhindern und vor kompromittierten Renderern schützt. Dazu können Http-Server über den Browser Anfragen von externen Seiten blockieren. Diese Richtlinie könnte auch Einfluss auf die Kommunikation zwischen der Extension und dem Backend haben und müsste entsprechend angepasst werden.
+Abschließend sei erwähnt, dass mit der Veröffentlichung von Google Chrome Version 73 am 12. März eine neue Richtlinie eingeführt wird. Die sogenannte \glqq Cross-Origin-Resource-Policy \grqq{}\cite{corb} soll \glqq Spectre\grqq{}-Angriffe\cite{spectre} verhindern und vor kompromittierten Renderern schützt. Dazu können Http-Server über den Browser Anfragen von externen Seiten blockieren. Diese Richtlinie könnte auch Einfluss auf die Kommunikation zwischen der Extension und dem Backend haben und die API müsste entsprechend angepasst werden.
 
 
 

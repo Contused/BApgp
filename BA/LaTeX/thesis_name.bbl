@@ -1,29 +1,224 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Appvisory.com()]{mediaTest}
+Appvisory.com.
+\newblock \emph{mediaTest digital GmbH}.
+\newblock URL \url{https://appvisory.com/company}.
+\newblock Stand: 03.2019.
+
+\bibitem[Arty.name()]{test}
+Arty.name.
+\newblock \emph{Test of localStorage limits/quota}.
+\newblock URL \url{https://arty.name/localstorage.html}.
+\newblock Stand: 03.2019.
+
 \bibitem[Camden(2016)]{local}
 R.~Camden.
 \newblock \emph{Client-Side Data Storage}.
 \newblock O'Reilly Media, 2016.
+
+\bibitem[Chrome.com({\natexlab{a}})]{chrome}
+Chrome.com.
+\newblock \emph{Developer Program Policies}.
+\newblock {\natexlab{a}}.
+\newblock URL \url{https://developer.chrome.com/webstore/program_policies}.
+\newblock Stand: 03.2019.
+
+\bibitem[Chrome.com({\natexlab{b}})]{cookies}
+Chrome.com.
+\newblock \emph{chrome.cookies}.
+\newblock {\natexlab{b}}.
+\newblock URL \url{https://developer.chrome.com/extensions/cookies}.
+\newblock Stand: 03.2019.
+
+\bibitem[Chrome.com({\natexlab{c}})]{options}
+Chrome.com.
+\newblock \emph{Give Users Options}.
+\newblock {\natexlab{c}}.
+\newblock URL \url{https://developer.chrome.com/extensions/options}.
+\newblock Stand: 03.2019.
+
+\bibitem[Chrome.com({\natexlab{d}})]{single}
+Chrome.com.
+\newblock \emph{Extensions Quality Guidelines}.
+\newblock {\natexlab{d}}.
+\newblock URL \url{https://developer.chrome.com/extensions/single_purpose}.
+\newblock Stand: 03.2019.
+
+\bibitem[Chromestatus.com()]{corb}
+Chromestatus.com.
+\newblock \emph{Cross-Origin Resource Policy}.
+\newblock URL \url{https://www.chromestatus.com/feature/4647328103268352}.
+\newblock Stand: 03.2019.
+
+\bibitem[Datenschutz-scanner.de({\natexlab{a}})]{backend}
+Datenschutz-scanner.de.
+\newblock \emph{PrivacyGuard Backend}.
+\newblock {\natexlab{a}}.
+\newblock URL \url{https://pgadmin.datenschutz-scanner.de/api/docs.html}.
+\newblock Stand: 03.2019.
+
+\bibitem[Datenschutz-scanner.de({\natexlab{b}})]{pguard}
+Datenschutz-scanner.de.
+\newblock \emph{DATENSCHUTZscanner by PrivacyGuard}.
+\newblock {\natexlab{b}}.
+\newblock URL \url{https://datenschutz-scanner.de/das-projekt.html}.
+\newblock Stand: 03.2019.
+
+\bibitem[Dexie.org()]{dexie}
+Dexie.org.
+\newblock \emph{dexie.js}.
+\newblock URL \url{https://dexie.org/}.
+\newblock Stand: 03.2019.
+
+\bibitem[Dsgvo-gesetz.de({\natexlab{a}})]{dsgvo12}
+Dsgvo-gesetz.de.
+\newblock \emph{Transparente Information, Kommunikation und Modalitäten für
+  die Ausübung der Rechte der betroffenen Person}.
+\newblock {\natexlab{a}}.
+\newblock URL \url{https://dsgvo-gesetz.de/art-12-dsgvo/}.
+\newblock Stand: 03.2019.
+
+\bibitem[Dsgvo-gesetz.de({\natexlab{b}})]{dsgvo13}
+Dsgvo-gesetz.de.
+\newblock \emph{Informationspflicht bei Erhebung von personenbezogenen Daten
+  bei der betroffenen Person}.
+\newblock {\natexlab{b}}.
+\newblock URL \url{https://dsgvo-gesetz.de/art-13-dsgvo/}.
+\newblock Stand: 03.2019.
 
 \bibitem[Ebert(2014)]{eng1}
 C.~Ebert.
 \newblock \emph{Systematisches Requirements Engineering}.
 \newblock dpunkt.verlag, 2014.
 
+\bibitem[Europa.eu()]{richtlinie}
+Europa.eu.
+\newblock \emph{Richtlinie 2002/58/EG des Europäischen Parlaments und des
+  Rates vom 12. Juli 2002 über die Verarbeitung personenbezogener Daten und
+  den Schutz der Privatsphäre in der elektronischen Kommunikation}.
+\newblock URL
+  \url{https://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32002L0058:de:HTML}.
+\newblock Stand: 03.2019.
+
+\bibitem[Github.org()]{forage}
+Github.org.
+\newblock \emph{localForage}.
+\newblock URL \url{https://github.com/localForage/localForage}.
+\newblock Stand: 03.2019.
+
+\bibitem[Infai.org()]{infai}
+Infai.org.
+\newblock \emph{Institut für Angewandte Informatik}.
+\newblock URL \url{https://infai.org/}.
+\newblock Stand: 03.2019.
+
 \bibitem[Mehta(2016)]{extension}
 P.~Mehta.
 \newblock \emph{Creating Google Chrome Extensions}.
 \newblock Apress, 2016.
+
+\bibitem[Meltdownattack.com()]{spectre}
+Meltdownattack.com.
+\newblock \emph{Meltdown and Spectre}.
+\newblock URL \url{https://meltdownattack.com/}.
+\newblock Stand: 03.2019.
+
+\bibitem[Microsoft.com()]{edge}
+Microsoft.com.
+\newblock \emph{Porting an extension from Chrome to Microsoft Edge}.
+\newblock URL
+  \url{https://docs.microsoft.com/en-us/microsoft-edge/extensions/guides/porting-chrome-extensions}.
+\newblock Stand: 03.2019.
+
+\bibitem[Mozilla.org({\natexlab{a}})]{indexed}
+Mozilla.org.
+\newblock \emph{IndexedDB}.
+\newblock {\natexlab{a}}.
+\newblock URL \url{https://developer.mozilla.org/de/docs/IndexedDB}.
+\newblock Stand: 03.2019.
+
+\bibitem[Mozilla.org({\natexlab{b}})]{limit}
+Mozilla.org.
+\newblock \emph{Browser storage limits and eviction criteria}.
+\newblock {\natexlab{b}}.
+\newblock URL
+  \url{https://developer.mozilla.org/de/docs/IndexedDB/Browser_storage_limits_and_eviction_criteria}.
+\newblock Stand: 03.2019.
+
+\bibitem[Mozilla.org({\natexlab{c}})]{mozilla}
+Mozilla.org.
+\newblock \emph{Porting a Google Chrome extension}.
+\newblock {\natexlab{c}}.
+\newblock URL
+  \url{https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Porting_a_Google_Chrome_extension}.
+\newblock Stand: 03.2019.
+
+\bibitem[Mozilla.org({\natexlab{d}})]{webStorage}
+Mozilla.org.
+\newblock \emph{Web Storage concepts and usage}.
+\newblock {\natexlab{d}}.
+\newblock URL
+  \url{https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API}.
+\newblock Stand: 03.2019.
+
+\bibitem[PGuard-tools.de()]{tools}
+PGuard-tools.de.
+\newblock \emph{PrivacyGuard Tools}.
+\newblock URL \url{https://dseanalyser.pguard-tools.de/}.
+\newblock Stand: 03.2019.
+
+\bibitem[Quadriga-hochschule.com()]{quadriga}
+Quadriga-hochschule.com.
+\newblock \emph{Quadriga Hochschule}.
+\newblock URL \url{https://www.quadriga-hochschule.com/}.
+\newblock Stand: 03.2019.
 
 \bibitem[Robertson(2012)]{eng2}
 S.~Robertson.
 \newblock \emph{Mastering the Requirements Process: Getting Requirements
   Right}.
 \newblock Addison-Wesley Professional, 2012.
+
+\bibitem[Sriw.de()]{sriw}
+Sriw.de.
+\newblock \emph{selbstregulierung informationswirtschaft e.V.}
+\newblock URL \url{https://sriw.de/}.
+\newblock Stand: 03.2019.
+
+\bibitem[Statista.com()]{stat1}
+Statista.com.
+\newblock \emph{Marktanteile der führenden Browserfamilien an der
+  Internetnutzung weltweit von Januar 2009 bis Januar 2019}.
+\newblock URL
+  \url{https://de.statista.com/statistik/daten/studie/157944/umfrage/marktanteile-der-browser-bei-der-internetnutzung-weltweit-seit-2009/}.
+\newblock Stand: 03.2019.
+
+\bibitem[Thinkwithgoogle.com()]{benchmark}
+Thinkwithgoogle.com.
+\newblock \emph{Find out how you stack up to new industry benchmarks for mobile
+  page speed}.
+\newblock URL
+  \url{https://www.thinkwithgoogle.com/marketing-resources/data-measurement/mobile-page-speed-new-industry-benchmarks/}.
+\newblock Stand: 03.2019.
+
+\bibitem[W3.org({\natexlab{a}})]{file}
+W3.org.
+\newblock \emph{File API}.
+\newblock {\natexlab{a}}.
+\newblock URL \url{https://www.w3.org/TR/FileAPI/}.
+\newblock Stand: 03.2019.
+
+\bibitem[W3.org({\natexlab{b}})]{websql}
+W3.org.
+\newblock \emph{Web SQL Database}.
+\newblock {\natexlab{b}}.
+\newblock URL \url{https://www.w3.org/TR/webdatabase/}.
+\newblock Stand: 03.2019.
 
 \end{thebibliography}

@@ -3,11 +3,11 @@
 
 \section{Motivation}
 \label{s:motivation}
-Laut dem Telemediengesetz muss jeder Dienstanbieter in einer sogenannten Datenschutzerklärung \textit{\glqq den Nutzer zu Beginn des Nutzungsvorgangs über Art, Umfang und Zwecke der Erhebung und Verwendung personenbezogener Daten sowie über die Verarbeitung seiner Daten in Staaten außerhalb des Anwendungsbereichs [...] in allgemein verständlicher Form zu unterrichten\grqq{}}(Telemediengesetz Paragraph 13 Abschnitt 1, Satz 1\footnote{\url{https://www.gesetze-im-internet.de/tmg/__13.html}})
+Laut der Datenschutz-Grundverordnung unterliegt jeder Dienstanbieter bei Erhebung von personenbezogenen Daten der Informationspflicht gegenüber der betroffenen Person (vgl. § 13 Absatz 1 Satz 1 DSGVO\cite{dsgvo13}). Dazu muss der Verantwortliche geeignete Maßnahmen treffen, \textit{\glqq um der betroffenen Person alle Informationen [...] und alle Mitteilungen [...], die sich auf die Verarbeitung beziehen, in präziser, transparenter, verständlicher und leicht zugänglicher Form [...] zu übermitteln;\grqq{}}(§12 Absatz 1 Satz 1 DSGVO\cite{dsgvo12}).
 
-Jedoch sind diese Dokumente im Regelfall sehr umfangreich und wichtige Informationen nicht auf Anhieb erkennbar. Das Ziel des Forschungsprojekts \glqq PrivacyGuard \grqq{} ist es, den Verbrauchern wesentliche Punkte zu präsentieren und somit den Selbstdatenschutz zu vereinfachen. Dazu analysieren Juristen und Informatiker Datenschutzerklärungen von Apps annotieren mögliche Bedenken. 
+Jedoch sind diese Dokumente im Regelfall sehr umfangreich und wichtige Informationen nicht auf Anhieb erkennbar. Das Ziel des Forschungsprojekts \glqq PrivacyGuard \grqq{} ist es, den Verbrauchern wesentliche Punkte zu präsentieren und somit den Selbstdatenschutz zu vereinfachen. Dazu analysieren Juristen und Informatiker Datenschutzerklärungen von Apps und annotieren mögliche Bedenken. 
 
-Um diese Informationen bereits vor der Installation zur Verfügung zu stellen, entstand die Idee, eine Browser-Extension zu entwickeln, welche den Verbraucher bereits auf der Einkaufsseite vor möglichen Bedenken vorwarnt.
+Um diese Informationen bereits vor der Installation zur Verfügung zu stellen, entstand die Idee, eine Browser-Extension zu entwickeln, welche den Verbraucher bereits auf der Einkaufsseite vor möglichen Bedenken warnt.
 
 \section{Aufgabenstellung}
 \label{s:aufgabenstellung}
@@ -15,17 +15,17 @@ Um diese Informationen bereits vor der Installation zur Verfügung zu stellen, e
 Die Arbeit befasst sich mit den folgenden Aufgaben:
 \begin{enumerate}
 	\item \textbf{''Programmierung einer Browser-Extension zur Anzeige von Datenschutzinformationen im PlayStore''}
-	\item \textbf{''Evaluierung von Caching Methoden einer Browser Extension''}
+	\item \textbf{''Evaluierung von Caching-Methoden einer Browser Extension''}
 \end{enumerate}
 
-Als Grundlage für diese Aufgaben entsteht eine Recherche um die Themengebiete einzugrenzen. Auf Basis dieser Zwischenergebnisse werden genaue Szenarien formuliert und eine Vorgehensweise erläutert. Die auf diese Weise erlangten Endergebnisse werden präsentiert und abschließend diskutiert.
+Als Grundlage für diese Aufgaben dient eine Recherche um die Themengebiete einzugrenzen. Auf Basis dieser Zwischenergebnisse werden genaue Szenarien formuliert und eine Vorgehensweise erläutert. Die auf diese Weise erlangten Endergebnisse werden präsentiert und abschließend diskutiert.
 
 \section{Gliederung}
 \label{s:aufbauderarbeit}
 
-Die Arbeit ist in vier Teile untergliedert. Am Anfang steht eine umfassende Recherche, in der geklärt wird was eine Browser-Extension ist, ob die genannte Aufgabenstellung bereits durch eine andere Erweiterung erfüllt wurde und welche Plattform am besten für die Umsetzung geeignet ist. Anschließend wird das Forschungsprojekt \glqq PrivacyGuard \grqq{} vorgestellt und erläutert auf welcher Grundlage die Informationen für die Extension basieren. Danach werden spezielle Richtlinien, Funktionen und die Darstellung im Browser erläutert. Der letzte Abschnitt beschäftigt sich mit der Aufstellung bestimmter Anforderungen an den Cache der Extension und stellt mögliche Methoden vor.
+Die Arbeit ist in vier Teile untergliedert. Am Anfang steht eine umfassende Recherche, in der geklärt wird, was eine Browser-Extension ist, ob die genannte Aufgabenstellung bereits durch eine andere Erweiterung erfüllt wurde und welche Plattform am besten für die Umsetzung geeignet ist. Anschließend wird das Forschungsprojekt \glqq PrivacyGuard \grqq{} vorgestellt und erläutert, auf welcher Grundlage die Informationen für die Extension basieren. Danach werden spezielle Richtlinien, Funktionen und die Darstellung im Browser erläutert. Der letzte Abschnitt beschäftigt sich mit der Aufstellung bestimmter Anforderungen an den Cache der Extension und stellt mögliche Methoden vor.
 
-Auf Basis dieser Recherche erfolgt im zweiten Teil die Umsetzungen der ersten Aufgabe. Dazu wird ein Anwendungsszenario definiert und funktionale, sowie nicht-funktionale Anforderungen erstellt. Anschließend überprüft der Abschnitt den Aufbau der Website. Darauf aufbauend werden Programmaufbau und das Ergebnis vorgestellt. Abschließend findet eine Diskussion über aufgetretene Probleme bei der Umsetzung statt.
+Auf Basis dieser Recherche erfolgt im zweiten Teil die Umsetzungen der ersten Aufgabe. Dazu wird ein Anwendungsszenario definiert und funktionale sowie nicht-funktionale Anforderungen erstellt. Anschließend überprüft der Abschnitt den Aufbau der Website. Darauf aufbauend werden Programmaufbau und das Ergebnis vorgestellt. Abschließend findet eine Diskussion über aufgetretene Probleme bei der Umsetzung statt.
 
 Der nächste Teil der Arbeit behandelt die Evaluation der recherchierten Caching-Methoden. Einleitend werden grundlegende Fragen zum Speichern der Informationen geklärt und Kriterien für die Auswahl der geeigneten Methoden aufgestellt. Im Anschluss erläutert dieser Teil die Vorgehensweise der Messungen und deren Ergebnisse. Auch in diesem Teil findet eine Diskussion über mögliche Verbesserungen statt.
 
