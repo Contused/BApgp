@@ -1,14 +1,17 @@
 /**
  * Created by Alexander on 08.05.2018.
  */
-function toggleInfo(){
-    chrome.tabs.getSelected(null, function(tab) {
-        var code = 'window.location.reload();';
-        chrome.tabs.executeScript(tab.id, {code: code});
-    });
+
+function togglePowerButton(){
+    console.log("klappt");
+        chrome.runtime.sendMessage(
+            {extensionState: "get"}, function (response) {
+                console.log("re: "+response);
+                chrome.runtime.sendMessage({extensionState: "set", state: response});
+            });
+
 }
 
-$("#powerButton").click(toggleInfo());
-
-document.getElementById('powerButton').addEventListener('click', toggleInfo);
-console.log("ich funktioniere");
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('powerButton').addEventListener('click', togglePowerButton);
+});

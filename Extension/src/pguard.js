@@ -98,7 +98,6 @@ function setStorageItem(itemKey, itemValue){
                 console.dir(ev.target);
             };
             request.onsuccess = function (ev) {
-                console.log("IndexedDB entry successfull");
             };
             break;
         default:
@@ -126,10 +125,10 @@ function castDseToStorageString(dse){
     var ibString = "";
     var freqCount = "1";
     var ibs = [];
+
     //Auf Tage runden.
     extractionDate = Math.floor(today.getTime() /86400000);
 
-    console.log("Waehle: ", dse.origin , dse.date_infobox_calculation_finished);
     for(var o = 0; o < dse.infoboxes.length; o++){
         // 20 und 28 werden ignoriert
         if(dse.infoboxes[o].id !== 28 && dse.infoboxes[o].id !== 20){
@@ -275,7 +274,6 @@ function createPopover(parentElement, ibArray){
         }
         cardContainer.appendChild(cardTemplate);
     }
-    console.log("Karte erstellt: ", cardContainer);
     return cardContainer;
 
 }
@@ -293,7 +291,6 @@ function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
             parentNode.appendChild(infoCard);
         }
         else{
-            console.log("keine Ergebnisse angekommen singlePage");
         }
     } else {
         var redLine = false;
@@ -333,7 +330,6 @@ function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
                 }
             });
         } else {
-            console.log("keine Ergebnisse angekommen multipage");
             funde.innerText = "Keine Ergebnisse";
             banner.style.backgroundColor = "#d1d1d1";
         }
@@ -407,15 +403,12 @@ function loadInfoPanels(parentNode, isSinglePage) {
                 if((lastUpdate.getTime() + 259200000) >= today.getTime()){
                     appDataArray = param.split(trennZeichen);
                 } else {
-                    console.log("Aktuallisiere Daten fuer " + appID);
                 }
             }
             //Falls Daten vorhanden baue das Element darauss
             if(isStorageWorking && appDataArray.length === 1){
-                console.log("STORAGE OHNE ERGEBNISSE GEFUNDEN: ", appID, appDataArray);
                 createPanel(parentNode, appDataArray, false , isSinglePage);
             } else if(isStorageWorking && appDataArray.length > 1){
-                console.log("STORAGE GEFUNDEN: ", appID, appDataArray);
                 createPanel(parentNode, appDataArray, true , isSinglePage);
                 //Ansonsten lade die Informationen aus dem Backend
             } else {
@@ -457,23 +450,36 @@ function loadInfoPanels(parentNode, isSinglePage) {
 }
 
 function fillApps(){
-    //Prueft, ob auf Single-App-Page oder Multi-App-Page
-    if(document.getElementsByClassName("card")[0]){
-        $(".card").each(function () {
-            appcounter++;
-            loadInfoPanels(this, false);
-            //createPanel(this, [], false, false)
-        });
-    } else {
-        if(document.getElementsByClassName("JHTxhe")[0]){
-            appcounter++;
-            loadInfoPanels(document.getElementsByClassName("JHTxhe")[0], true);
+
+    chrome.runtime.sendMessage(
+        {extensionState: "get"}, function (response) {
+
+            if(response == "on"){
+                console.log("PGuard-AppRating online");
+                //Prueft, ob auf Single-App-Page oder Multi-App-Page
+                if(document.getElementsByClassName("card")[0]){
+                    $(".card").each(function () {
+                        appcounter++;
+                        loadInfoPanels(this, false);
+                        //createPanel(this, [], false, false)
+                    });
+                } else {
+                    if(document.getElementsByClassName("JHTxhe")[0]){
+                        appcounter++;
+                        loadInfoPanels(document.getElementsByClassName("JHTxhe")[0], true);
+                    }
+                    $(".Vpfmgd").each(function (){
+                        appcounter++;
+                        loadInfoPanels(this, false);
+                    });
+                }
+            } else {
+                console.log("PGuard-AppRating offline");
+            }
         }
-        $(".Vpfmgd").each(function (){
-            appcounter++;
-            loadInfoPanels(this, false);
-        });
-    }
+
+    );
+
 }
 
 //Laedt lokale Json-Bibliothek fuer
