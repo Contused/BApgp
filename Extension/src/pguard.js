@@ -6,7 +6,6 @@ var anfragencounter = 0;
 var ibJson = [];
 var isStorageWorking;
 var db;
-//TODO set Storage by toggle in popup
 var usedStorage = "indexedDB";
 var ibCardTemplate = document.createElement("div");
 var innerCollapseTemplate = document.createElement("div");
@@ -23,10 +22,8 @@ var trgDseMtd = "false";
 var trgDseInApp = "false";
 var appcounter = 0;
 //var forceExec = "&force_execution=true";
-var urlWholeDataSetNoRequest = "https://infaibackend.pguard-tools.de/"+ route +"?api_token="+ token
-    +"&verbosity="+ verbosity +"&priority="+ priority + "&trigger_dse_playstore_download="+ trgDsePlay
-    +"&trigger_link_guesser="+ trgLinkGuess + "&trigger_dse_lcm_download="+ trgDseLcm
-    +"&trigger_dse_mtd_download="+ trgDseMtd +"&trigger_dse_inapp_search="+ trgDseInApp +"&bundle_id=";
+var urlWholeDataSetNoRequest =
+    "https://infaibackend.pguard-tools.de/get_infai_dataset_by_bundle_id?api_token=uni_leipzig_ba_prull_2018_01_17_Aihungaem5ie7opheeme&verbosity=3&priority=5&trigger_dse_playstore_download=false&trigger_link_guesser=false&trigger_dse_lcm_download=false&trigger_dse_mtd_download=false&trigger_dse_inapp_search=false&bundle_id=";
 var urlTriggerNewAnalysis = "https://infaibackend.pguard-tools.de/"+ route +"?api_token="+ token
     +"&verbosity="+ "3" +"&priority="+ priority + "&trigger_dse_playstore_download="+ "true"
     +"&trigger_link_guesser="+ "true" + "&trigger_dse_lcm_download="+ "true"
@@ -422,17 +419,12 @@ function loadInfoPanels(parentNode, isSinglePage) {
                 createPanel(parentNode, appDataArray, true , isSinglePage);
                 //Ansonsten lade die Informationen aus dem Backend
             } else {
-                console.log("Frage (erstmalig) Daten ab fuer " + appID);
                 anfragencounter ++;
-                $.ajax({
-                    url: urlWholeDataSetNoRequest + "" +appID,
-                    method: "POST",
-                    success: function (response) {
-                        var data = response.data;
-                        console.log(data);
-                        //Wurden bereits DSEs fuer die App gefunden?
-                        if (data.dses && data.dses.length > 0) {
-                            var storageString = castDseToStorageString(getNewestDseFromData(data));
+
+                chrome.runtime.sendMessage(
+                    {contentScriptQuery: "appIDQuery", appID: appID},function (response) {
+                        if (response.dses && response.dses.length > 0) {
+                            var storageString = castDseToStorageString(getNewestDseFromData(response));
                             setStorageItem(appID,storageString);
                             console.log("Neuer Eintrag angelegt: ", appID, storageString);
                             appDataArray = storageString.split(trennZeichen);
@@ -443,9 +435,7 @@ function loadInfoPanels(parentNode, isSinglePage) {
 
                             createPanel(parentNode, [], false, isSinglePage);
                         }
-                    },
-                    dataType: "json"
-                });
+                    });
                 console.log("Anfragen bisher: ",anfragencounter);
             }
         };

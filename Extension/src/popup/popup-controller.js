@@ -6,7 +6,6 @@ function toggleInfo(){
         var code = 'window.location.reload();';
         chrome.tabs.executeScript(tab.id, {code: code});
     });
-    console.log("JOOOOO!");
 }
 
 $("#powerButton").click(toggleInfo());
