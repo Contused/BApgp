@@ -26,14 +26,14 @@
 \contentsline {subsubsection}{\numberline {3.1.2.2}Nichtfunktionale Anforderungen}{14}{subsubsection.3.1.2.2}
 \contentsline {subsection}{\numberline {3.1.3}Aufbau der Website}{16}{subsection.3.1.3}
 \contentsline {subsection}{\numberline {3.1.4}Programmaufbau}{19}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Ergebnis}{22}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Diskussion}{25}{subsection.3.1.6}
-\contentsline {section}{\numberline {3.2}Aufgabe 2: Evaluierung von Caching-Methoden einer Browser Extension}{26}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Speichern von Informationen}{26}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Kriterien und Vorauswahl}{28}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Vorgehensweise}{29}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Ergebnisse}{29}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Diskussion}{32}{subsection.3.2.5}
-\contentsline {chapter}{\numberline {4}Zusammenfassung der Arbeit}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Zusammenfassung}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Ausblick}{34}{section.4.2}
+\contentsline {subsection}{\numberline {3.1.5}Ergebnis}{24}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Diskussion}{26}{subsection.3.1.6}
+\contentsline {section}{\numberline {3.2}Aufgabe 2: Evaluierung von Caching-Methoden einer Browser Extension}{27}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Speichern von Informationen}{27}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Kriterien und Vorauswahl}{29}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Vorgehensweise}{30}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Ergebnisse}{31}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Diskussion}{33}{subsection.3.2.5}
+\contentsline {chapter}{\numberline {4}Zusammenfassung der Arbeit}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Zusammenfassung}{35}{section.4.1}
+\contentsline {section}{\numberline {4.2}Ausblick}{36}{section.4.2}

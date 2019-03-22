@@ -39,7 +39,7 @@ Diese ermöglicht es Dateien anzulegen und als lokalen Speicher zu nutzen. Aktue
 
 Weiterhin wurde \textit{indexedDB} in dieser Arbeit ohne Frameworks umgesetzt. Unter Umständen bieten zum Beispiel \glqq localForage \grqq{}\cite{forage} oder \glqq Dexie.js \grqq{}\cite{dexie} eine bessere Performanz.
 
-Abschließend sei erwähnt, dass mit der Veröffentlichung von Google Chrome Version 73 am 12. März eine neue Richtlinie eingeführt wird. Die sogenannte \glqq Cross-Origin-Resource-Policy \grqq{}\cite{corb} soll \glqq Spectre\grqq{}-Angriffe\cite{spectre} verhindern und vor kompromittierten Renderern schützt. Dazu können Http-Server über den Browser Anfragen von externen Seiten blockieren. Diese Richtlinie könnte auch Einfluss auf die Kommunikation zwischen der Extension und dem Backend haben und die API müsste entsprechend angepasst werden.
+Abschließend sei erwähnt, dass mit der Veröffentlichung von Google Chrome Version 73 am 12. März eine neue Richtlinie eingeführt wird. Die sogenannte \glqq Cross-Origin-Resource-Policy \grqq{}\cite{corb} soll \glqq Spectre\grqq{}-Angriffe\cite{spectre} verhindern und vor kompromittierten Renderern schützt. Dazu können Http-Server über den Browser Anfragen von externen Seiten blockieren. Diese Richtlinie könnte auch Einfluss auf die Kommunikation zwischen der Extension und dem Backend haben und die API müsste entsprechend angepasst werden. Vorläufig wurde das Problem durch den Lösungsansatz von \textit{Chromium.org}\cite{corb2} behoben (siehe Listing \ref{src:loadInfoPanels}, Zeilen 35 - 52).
 
 
 

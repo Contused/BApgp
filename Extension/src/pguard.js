@@ -2,7 +2,6 @@
  * Created by Alexander on 03.05.2018.
  */
 var today = new Date();
-var anfragencounter = 0;
 var ibJson = [];
 var isStorageWorking;
 var db;
@@ -11,23 +10,10 @@ var ibCardTemplate = document.createElement("div");
 var innerCollapseTemplate = document.createElement("div");
 var trennZeichen = "|";
 var dseOrigins = ["lcm", "playstore", "link_guesser", "app", "mtd", "manuall"];
-var route = "get_infai_dataset_by_bundle_id";
-var token = "uni_leipzig_ba_prull_2018_01_17_Aihungaem5ie7opheeme";
-var verbosity = "3";
-var priority = "5";
-var trgDsePlay = "false";
-var trgLinkGuess = "false";
-var trgDseLcm = "false";
-var trgDseMtd = "false";
-var trgDseInApp = "false";
-var appcounter = 0;
-//var forceExec = "&force_execution=true";
-var urlWholeDataSetNoRequest =
-    "https://infaibackend.pguard-tools.de/get_infai_dataset_by_bundle_id?api_token=uni_leipzig_ba_prull_2018_01_17_Aihungaem5ie7opheeme&verbosity=3&priority=5&trigger_dse_playstore_download=false&trigger_link_guesser=false&trigger_dse_lcm_download=false&trigger_dse_mtd_download=false&trigger_dse_inapp_search=false&bundle_id=";
-var urlTriggerNewAnalysis = "https://infaibackend.pguard-tools.de/"+ route +"?api_token="+ token
-    +"&verbosity="+ "3" +"&priority="+ priority + "&trigger_dse_playstore_download="+ "true"
-    +"&trigger_link_guesser="+ "true" + "&trigger_dse_lcm_download="+ "true"
-    +"&trigger_dse_mtd_download="+ "true" +"&trigger_dse_inapp_search="+ "true"+ "&bundle_id=";
+var urlTriggerNewAnalysis = "https://infaibackend.pguard-tools.de/get_infai_dataset_by_bundle_id" +
+    "?api_token=uni_leipzig_ba_prull_2018_01_17_Aihungaem5ie7opheeme&verbosity=3&priority=5" +
+    "&trigger_dse_playstore_download=true&trigger_link_guesser=true&trigger_dse_lcm_download=true" +
+    "&trigger_dse_mtd_download=true&trigger_dse_inapp_search=true&bundle_id=";
 
 //Funktion von Mozilla die Browser auf localStorage-Verfuegbarkeit ueberprueft.
 function storageAvailable(type) {
@@ -43,20 +29,15 @@ function storageAvailable(type) {
     }
     catch(e) {
         return e instanceof DOMException && (
-                // everything except Firefox
             e.code === 22 ||
-            // Firefox
             e.code === 1014 ||
-            // test name field too, because code might not be present
-            // everything except Firefox
             e.name === 'QuotaExceededError' ||
-            // Firefox
             e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
-            // acknowledge QuotaExceededError only if there's something already stored
             storage.length !== 0;
     }
 }
 
+//Abrufen von gespeicherten Datensätzen
 function getStorageItem(itemKey){
     var appInfo;
 
@@ -73,11 +54,12 @@ function getStorageItem(itemKey){
             break;
 
         default:
-            console.log("No storage method selected.");
+            console.log("Warnung: Kein Speicher aktiv!");
     }
     return appInfo;
 }
 
+//Abspeichern von angefragten Datensätzen
 function setStorageItem(itemKey, itemValue){
     switch (usedStorage){
         case "none":
@@ -101,21 +83,7 @@ function setStorageItem(itemKey, itemValue){
             };
             break;
         default:
-            console.log("No storage method selected.");
-    }
-}
-//TODO clearstorage
-function deleteStorageItem(itemKey) {
-    switch (usedStorage){
-        case "none":
-            break;
-        case "localStorage":
-            localStorage.removeItem(itemKey);
-            break;
-        case "indexedDB":
-            break;
-        default:
-            console.log("No storage method selected.");
+            console.log("Warnung: Kein Speicher aktiv!");
     }
 }
 
@@ -123,7 +91,6 @@ function deleteStorageItem(itemKey) {
 function castDseToStorageString(dse){
     var extractionDate;
     var ibString = "";
-    var freqCount = "1";
     var ibs = [];
 
     //Auf Tage runden.
@@ -133,7 +100,7 @@ function castDseToStorageString(dse){
         // 20 und 28 werden ignoriert
         if(dse.infoboxes[o].id !== 28 && dse.infoboxes[o].id !== 20){
             // 13 und 21 setzten mehrere Elemente bei den jeweiligen Eigenschaften voraus
-            //TODO aktuell werden 13 und 21 ignoriert, da bei verbosity 3 die Information fehlt.
+            //Aktuell werden 13 und 21 ignoriert, da bei verbosity 3 die Information fehlt.
             if((dse.infoboxes[o].id !== 13 && dse.infoboxes[o].id !== 21)){
                 ibs.push("" + dse.infoboxes[o].id);
             }
@@ -148,8 +115,10 @@ function castDseToStorageString(dse){
         }
     }
 
-    return "" + extractionDate + trennZeichen + freqCount + trennZeichen + ibString;
+    return "" + extractionDate + trennZeichen + ibString;
 }
+
+//Auslesen der IB_texte.json
 function getInfoForIB(attr, ib){
         for(var i = 0; i < ibJson.length; i++){
             if(ib === ibJson[i].id){
@@ -158,11 +127,15 @@ function getInfoForIB(attr, ib){
         }
         return "";
 }
+
+//Erstellt mithilfe der ausgelesenen Informationen das Popover
 function createPopover(parentElement, ibArray){
     var eleToRemove;
     $(parentElement).attr({"data-toggle": "popover","data-trigger": "focus"});
     var cardContainer = document.createElement("div");
     cardContainer.id = "accordion";
+
+    //Mapping eines Eintrags aus der IB_texte.json auf das Template
     for(var i = 0; i < ibArray.length; i++){
 
         //Template
@@ -193,7 +166,8 @@ function createPopover(parentElement, ibArray){
             eleToRemove = cardTemplate.getElementsByClassName("description")[0];
             eleToRemove.parentNode.removeChild(eleToRemove);
         } else {
-            cardTemplate.getElementsByClassName("description")[0].children[0].innerText = getInfoForIB("description", ibArray[i]);
+            cardTemplate.getElementsByClassName("description")[0].children[0]
+                .innerText = getInfoForIB("description", ibArray[i]);
         }
 
 
@@ -221,7 +195,6 @@ function createPopover(parentElement, ibArray){
                 }
 
                 row.appendChild(tData);
-                //$(row).insertAfter(proElement.children[proElement.children.length - 1]);
                 $(row).insertAfter(proElement);
             }
 
@@ -270,27 +243,28 @@ function createPopover(parentElement, ibArray){
             eleToRemove.parentNode.removeChild(eleToRemove.nextElementSibling);
             eleToRemove.parentNode.removeChild(eleToRemove);
         } else {
-            cardTemplate.getElementsByClassName("recommendations")[0].nextElementSibling.children[0].innerText = getInfoForIB("recommendations", ibArray[i]);
+            cardTemplate.getElementsByClassName("recommendations")[0].nextElementSibling.children[0]
+                .innerText = getInfoForIB("recommendations", ibArray[i]);
         }
         cardContainer.appendChild(cardTemplate);
     }
     return cardContainer;
 
 }
-//Baut den entsprechenden Banner fuer die Multiapp-Ansicht
+
+//Baut den entsprechenden Banner fuer die Multi-App-Ansicht.
 function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
     var ibArray;
     var popover;
-    //TODO parentNode umbenennen
+
+    //Für die große Kachel wird kein Banner angelegt
     if(isSinglePage){
         if(hasResults){
-            ibArray = appDataArray.slice(2,appDataArray.length + 1);
+            ibArray = appDataArray.slice(1,appDataArray.length + 1);
             var infoCard = document.createElement("div");
             popover = createPopover(infoCard,ibArray);
             infoCard.appendChild(popover);
             parentNode.appendChild(infoCard);
-        }
-        else{
         }
     } else {
         var redLine = false;
@@ -299,7 +273,7 @@ function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
         var funde = document.createElement("span");
 
         if(hasResults){
-            ibArray = appDataArray.slice(2,appDataArray.length + 1);
+            ibArray = appDataArray.slice(1,appDataArray.length + 1);
             funde.innerText = "Funde: ";
             var badge = document.createElement("span");
             badge.classList.add("badge", "badge-secondary", "float-right");
@@ -346,11 +320,13 @@ function createPanel(parentNode, appDataArray, hasResults, isSinglePage){
 
 }
 
+//Dummy-DSEs haben Vorang. Ansonsten wird die neuste DSE verwendet. Gibt es 2 DSE zum gleichen Analyse-Datum
+//wird die aus der bevorzugten Quelle gewaehlt.
 function getNewestDseFromData(data){
     var newestDse = null;
-    //Dummy-DSEs haben Vorang. Ansonsten wird die neuste DSE verwendet. Gibt es 2 DSE zum gleichen Analyse-Datum wird die aus der bevorzugten Quelle gewaehlt.
+
     for (var i = 0; i < data.dses.length; i++) {
-        //Dummy
+
         if(data.dses[i].origin === "dummy"){
             newestDse = data.dses[i];
             break;
@@ -376,7 +352,7 @@ function getNewestDseFromData(data){
     return newestDse;
 }
 
-//Erstellt die Header fuer die Multiapp-Ansicht
+//Erstellt die Header fuer die Multi-App-Ansicht
 function loadInfoPanels(parentNode, isSinglePage) {
     var appID;
     if(isSinglePage){
@@ -385,35 +361,32 @@ function loadInfoPanels(parentNode, isSinglePage) {
     } else {
         if($(parentNode).attr("data-docid")){
             appID = $(parentNode).attr("data-docid");
-            console.log("appID gefunden",appID);
         }else {
             appID = $(parentNode.children[0].children[0].children[3].children[0]).attr("href").split("id=")[1];
         }
     }
     //Wurde eine App-ID gefunden?
     if (appID) {
-        console.log(appcounter);
+
         var appDataString = getStorageItem(appID);
 
-        var future = function(param) {
+        var useStorageItem = function(item) {
             var appDataArray = [];
             //Prueft ob bereits Daten im localStorage vorhanden und aktuell sind.
-            if(isStorageWorking && param && param.split(trennZeichen)[0]){
-                var lastUpdate = new Date(param.split(trennZeichen)[0] * 86400000);
+            if(isStorageWorking && item && item.split(trennZeichen)[0]){
+                var lastUpdate = new Date(item.split(trennZeichen)[0] * 86400000);
                 if((lastUpdate.getTime() + 259200000) >= today.getTime()){
-                    appDataArray = param.split(trennZeichen);
-                } else {
+                    appDataArray = item.split(trennZeichen);
                 }
             }
-            //Falls Daten vorhanden baue das Element darauss
+            //Falls Daten vorhanden, baue das Element darauss
             if(isStorageWorking && appDataArray.length === 1){
                 createPanel(parentNode, appDataArray, false , isSinglePage);
             } else if(isStorageWorking && appDataArray.length > 1){
                 createPanel(parentNode, appDataArray, true , isSinglePage);
-                //Ansonsten lade die Informationen aus dem Backend
             } else {
-                anfragencounter ++;
 
+                //Anfrage an die Background.js zum Einholen der Informationen vom Backend
                 chrome.runtime.sendMessage(
                     {contentScriptQuery: "appIDQuery", appID: appID},function (response) {
                         if (response.dses && response.dses.length > 0) {
@@ -423,70 +396,67 @@ function loadInfoPanels(parentNode, isSinglePage) {
                             appDataArray = storageString.split(trennZeichen);
                             createPanel(parentNode, appDataArray, true, isSinglePage);
                         } else {
-                            console.log("KEINE DSE VORHANDEN", appID);
+                            console.log("Keine DSE vorhanden für: ", appID);
                             setStorageItem(appID,""+ Math.floor(today.getTime() /86400000));
 
                             createPanel(parentNode, [], false, isSinglePage);
                         }
                     });
-                console.log("Anfragen bisher: ",anfragencounter);
             }
         };
 
-        // Promise
+        //Erzeugt Promise mit Storage-Element
         if (typeof appDataString === 'object' && usedStorage === "indexedDB") {
             appDataString.onsuccess = function() {
                 if(appDataString.result){
-                    future(appDataString.result.data);
+                    useStorageItem(appDataString.result.data);
                 } else {
-                    future();
+                    useStorageItem();
                 }
             };
 
         } else {
-            future(appDataString);
+            useStorageItem(appDataString);
         }
     }
 }
 
+//Liesst alle geladenen Kacheln aus und übergibt diese zum Einfügen der Informationen
 function fillApps(){
+        //Anfrage, ob Extension aktiv ist.
+        chrome.runtime.sendMessage(
+            {extensionState: "get"}, function (response) {
 
-    chrome.runtime.sendMessage(
-        {extensionState: "get"}, function (response) {
+                if(response == "on"){
+                    console.log("PGuard-AppRating online");
 
-            if(response == "on"){
-                console.log("PGuard-AppRating online");
-                //Prueft, ob auf Single-App-Page oder Multi-App-Page
-                if(document.getElementsByClassName("card")[0]){
-                    $(".card").each(function () {
-                        appcounter++;
-                        loadInfoPanels(this, false);
-                        //createPanel(this, [], false, false)
-                    });
-                } else {
-                    if(document.getElementsByClassName("JHTxhe")[0]){
-                        appcounter++;
-                        loadInfoPanels(document.getElementsByClassName("JHTxhe")[0], true);
+                    //Prueft, ob Single-App-Ansicht (Detailseite) oder Multi-App-Ansicht
+                    if(document.getElementsByClassName("card")[0]){
+                        $(".card").each(function () {
+                            loadInfoPanels(this, false);
+                        });
+                    } else {
+                        if(document.getElementsByClassName("JHTxhe")[0]){
+                            loadInfoPanels(document.getElementsByClassName("JHTxhe")[0], true);
+                        }
+                        $(".Vpfmgd").each(function (){
+                            loadInfoPanels(this, false);
+                        });
                     }
-                    $(".Vpfmgd").each(function (){
-                        appcounter++;
-                        loadInfoPanels(this, false);
-                    });
+                } else {
+                    console.log("PGuard-AppRating offline");
                 }
-            } else {
-                console.log("PGuard-AppRating offline");
             }
-        }
 
-    );
-
+        );
 }
 
-//Laedt lokale Json-Bibliothek fuer
+//Laedt lokale Json-Bibliothek
 $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
     ibJson = input;
     $(ibCardTemplate).load(chrome.extension.getURL("lib/templates/ibCardTemplate.html"), function (data) {
         $(innerCollapseTemplate).load(chrome.extension.getURL("lib/templates/innerCollapseTemplate.html"), function(){
+            //Überprüft auf Storage-Nutzung
             if((usedStorage === "localStorage" || usedStorage === "indexedDB") && storageAvailable(usedStorage)){
                 isStorageWorking = true;
                 if(usedStorage === "indexedDB"){
@@ -494,29 +464,28 @@ $.getJSON(chrome.extension.getURL("lib/data/IB_texte.json"), function (input) {
 
                     openRequest.onupgradeneeded = function(e){
                         var thisDB = e.target.result;
-                        console.log("running onupgradeneeded");
                         if(!thisDB.objectStoreNames.contains("apps")){
                             var appsOS = thisDB.createObjectStore("apps",{keyPath: "appID"});
                         }
                     };
 
                     openRequest.onsuccess = function (ev) {
-                        console.log("IndexedDB initialized");
+                        console.log("IndexedDB initialisiert");
                         db = ev.target.result;
                         fillApps();
                     };
 
                     openRequest.onerror = function (ev) {
-                        console.log("IndexedDB error while initializing!");
+                        console.log("IndexedDB: Fehler beim Initialisieren!");
                         console.dir(ev);
                     }
                 }
                 else if(usedStorage === "localStorage"){
-                    console.log("localStorage initialized");
+                    console.log("localStorage initialisiert");
                     fillApps();
                 }
             } else {
-                console.log("No Storage available!");
+                console.log("Kein lokaler Speicher verfügbar!");
                 isStorageWorking = false;
                 fillApps();
             }

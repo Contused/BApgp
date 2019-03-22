@@ -152,9 +152,6 @@ Der in diesem Kapitel beschriebene Stand der Website bezieht sich auf den Zeitra
 \label{ss:programmaufbau}
 Die Implementierung des Programms orientiert sich an den beschriebenen Richtlinien in Kapitel~\ref{ss:funktionsumfang}. Dieser Abschnitt befasst sich mit der Umsetzung der Anforderungen aus Kapitel \ref{sss:funktionaleanforderungen}. Dabei werden relevante Ausschnitte des Quellcodes betrachtet und getroffene Entscheidungen begründet. Außerdem werden kritische Stellen beleuchtet und in Kapitel \ref{ss:diskussionht1} diskutiert.
 
-
-\lstinputlisting[label={src:manifest}, caption={Aufbau der manifest.json}]{../../Extension/src/manifest.json}
-
 Das Manifest stellt die grundlegenden Zusammenhänge der Extension dar, unter anderem den gewählten Entwicklungsnamen der Extension \glqq PrivacyGuard App-Rating\grqq{} und die entsprechende Beschreibung.
 Weiterhin sind die nötigen Berechtigungen aufgeführt:
 
@@ -171,7 +168,7 @@ Außerdem werden alle Dateien ihren Rollen zugewiesen:
 
 \begin{itemize}
 	\item \textbf{Content-Skript}:
-	Unter dem Punkte \glqq content scripts \grqq{} wird festgelegt, welche Skripte unter welchem URL aktiv sind.
+	Unter dem Punkte \glqq content scripts \grqq{} wird festgelegt, welche Skripte unter welchem URL aktiv sind. Durch die Eigenschaft \glqq run\_at: document\_end \grqq{} wartet die Extension ab, bis die Seite fertig geladen ist, bevor das Skript startet.
 	
 	Der Ausdruck \glqq *://play.google.com/store/apps*\grqq{}
 	bedeutet, dass die Extension auf jeder Play Store-Seite der Kategorie Apps und deren Unterverzeichnis aktiv ist. Da es sich um eine \glqq page action\grqq{} Extension handelt, wird lediglich eine Website als \glqq match \grqq{} aufgeführt. Die beiden wichtigen Dateien hier sind \glqq pguard.js\grqq{} als das Content-Skript für sämtliche Funktionen die die Erweiterung der Website betreffen und \glqq popup-controller.js\grqq{} für alle Funktionen des Popups. Hinzu kommen sämtliche Bibliotheken, welche von den Content-Skripten benötigt werden.
@@ -183,24 +180,28 @@ Außerdem werden alle Dateien ihren Rollen zugewiesen:
 	Diese Ressourcen sind Dateien, welche der Extension zur Verfügung stehen, aber selber keine Skripte sind. Sie beinhalten ausgelagerte Informationen wie Fließtexte und Templates zum Bauen von HTML-Elementen. Die \glqq popup.html\grqq{} ist hier ein Sonderfall und wird direkt dem Popup zugewiesen.
 \end{itemize}
 
+
+\lstinputlisting[label={src:manifest}, caption={Aufbau der manifest.json}]{../../Extension/src/manifest.json}
+
 Die Background.js besteht lediglich aus Callback-Funktionen der declarativeContent API. Hier wird zur Installation der Extension ein Listener eingebunden. Dieser funktioniert mit Regeln nach dem Konditionen-Aktionen-Prinzip. Zum Start des Aufrufs werden alle bereits vorhandenen Regeln des Listeners entfernt und anschließend die übergebenen Regeln installiert.
 Hier benötigt das Programm eine Regel. Die Kondition prüft, ob die passende URL aufgerufen wurde. Dieser stimmt mit dem String aus der Manifest-Datei überein. Ist die Kondition erfüllt, aktiviert sich das Popup.
-
-
-\lstinputlisting[label={src:background}, caption={background.js}]{../../Extension/src/background.js}
 
 Das Content-Skript \glqq pguard.js \grqq{} bildet den Hauptteil der Extension und dient zur Erfassung aller auf der Webseite dargestellten Apps, der Einbettung von zusätzlichen Informationen durch das PGuard-Backend und optischen Anpassung der Webseite, um die neuen Inhalte ordentlich einzubinden.
 
 Bei Skript-Aufruf werden zuerst die lokalen Bibliotheken der Extension geladen. Dazu gehören die IB texte.json sowie die HTML-Templates. Außerdem überprüft das Skript, ob lokaler Speicher zur Verfügung steht.
 
-Anschließend prüft die Funktion \glqq fillApps\grqq{}, ob die aktuelle Seite eine Single-App-Page (Detailseite) oder Mutli-App-Page (z.B. die Startseite) ist und ermittelt sämtliche Kandidaten, welche für die Einbettung der Informationen in Frage kommen. Dabei liest der JQuery-Selektor alle Elemente mit dem entsprechenden Klassennamen aus.
+Anschließend prüft die Funktion \glqq fillApps\grqq{} (siehe Listing \ref{src:fillApps}), ob die aktuelle Seite eine Single-App-Page (Detailseite) oder Mutli-App-Page (z.B. die Startseite) ist und ermittelt sämtliche Kandidaten, welche für die Einbettung der Informationen in Frage kommen. Dabei liest der JQuery-Selektor alle Elemente mit dem entsprechenden Klassennamen aus.
 
-Mit der Funktion \glqq loadInfoPanels\grqq{} wird jeder so gefundene Kandidat auf seine APP-ID überprüft. Diese befindet sich entweder in dem Attribut \glqq data-docid\grqq{} oder \glqq href\grqq{}. Mithilfe dieser ID durchsucht die Funktion \glqq getStorageItem\grqq{} den lokalen Speicher auf Einträge. Der  Eintrag ist valide, falls er nicht leer ist und vor weniger als drei Tagen angelegt wurde. Findet die Funktion keinen validen Eintrag im lokalen Speicher, wird eine neue Anfrage an das Backend für die entsprechende APP-ID erstellt.
+Mit der Funktion \glqq loadInfoPanels\grqq{} (siehe Listing \ref{src:loadInfoPanels}) wird jeder so gefundene Kandidat auf seine APP-ID überprüft. Diese befindet sich entweder in dem Attribut \glqq data-docid\grqq{} oder \glqq href\grqq{}. Mithilfe dieser ID durchsucht die Funktion \glqq getStorageItem\grqq{} den lokalen Speicher auf Einträge. Der  Eintrag ist valide, falls er nicht leer ist und vor weniger als drei Tagen angelegt wurde. Findet die Funktion keinen validen Eintrag im lokalen Speicher, wird eine neue Anfrage an das Backend für die entsprechende APP-ID erstellt.
 
 Liefert das Backend eine Antwort mit mindestens einem Ergebnis, speichert die Funktion die Informationen im lokalen Speicher ab. Bei mehr als einem Ergebnis entscheidet eine Prioritätenliste abhängig von der zuverlässigsten Quelle, welcher Datensatz genutzt wird.
 
 Der gewählte Datensatz wird der Funktion \glqq createPanel\grqq{} übergeben. Handelt es sich bei dem Kandidaten um eine Detailseite, wird das Popover aus den Informationen direkt erstellt. Dazu wird der Datensatz mit Hilfe der IB texte.json in den entsprechenden Text umgewandelt und in die Html-Template einfügt.
 Bei kleinen App-Kacheln baut die Funktion einen Banner in die Kachel ein. Auf diesem Banner wird mittels JQuery ein Event geladen, welches bei einem Klick auf den Banner das Popover erstellt.
+
+\lstinputlisting[label={src:fillApps}, caption={Die Funktion \textit{fillApps} in pguard.js},firstline=424, lastline=452]{../../Extension/src/pguard.js}
+
+\lstinputlisting[label={src:loadInfoPanels}, caption={Die Funktion \textit{loadInfoPanels} in pguard.js},firstline=355, lastline=422]{../../Extension/src/pguard.js}
 
 \begin{figure}[ht]
 	\centering
@@ -217,7 +218,7 @@ Die Browser-Extension stellt Datenschutzinformationen an mehreren Stellen der We
 
 \begin{itemize}
 	\item \textbf{\glqq Keine Ergebnisse\grqq{}}:
-	Aufgrund von technischen Problemen liefert das Backend keine Datenschutzinformationen zu der angefragten Applikation.
+	Aufgrund von technischen Problemen liefert das Back-end keine Datenschutzinformationen zu der angefragten Applikation.
 	\item \textbf{Blauer Banner}:
 	Informationen zum Datenschutz über die Applikation sind vorhanden, aber es liegt kein möglicher Gesetzesverstoß oder erheblicher Nachteil für den Nutzer vor.
 	\item \textbf{Roter Banner (\glqq Rote Linie\grqq{})}:
@@ -260,11 +261,11 @@ Im Verlauf der Programmierung sind technische und organisatorische Probleme aufg
 
 Da sich diese Browser-Extension sehr an der aktuellen Struktur der Website orientiert, können in Zukunft Fehler bei der Darstellung der Banner und Templates auf der Seite auftreten. Während der Implementierung traten bereits einige dieser Fehler auf.
 
-Der Klick, welcher das Event zum Auf- und Zuklappen der Infoboxen auslöst, überlappt sich mit anderen Events der Webseite, auf die die Extension keinen Einfluss hat. Generell erschwert die Undurchsichtigkeit des technischen Aufbaus der Website die Anpassung der Funktionen einer Extension, sodass bei der Implementierung das Testen aller eingefügten Elemente manuell geschieht und mit großem Mehraufwand verbunden ist.
+Der Klick, welcher das Event zum Auf- und Zuklappen der Infoboxen auslöst, überlappt sich mit anderen Events der Webseite, auf die die Extension keinen Einfluss hat. Generell erschwert die Undurchsichtigkeit des technischen Aufbaus der Website die Anpassung der Funktionen einer Extension, sodass bei der Implementierung das Testen aller eingefügten Elemente manuell geschieht und mit großem Mehraufwand verbunden ist. Beispielsweise signalisiert die Website nicht, ob das DOM vollständig geladen ist. Dadurch wird das Content-Skript manchmal zum falschen Zeitpunkt ausgeführt. Ein Lösungsansatz ist das Implementieren eines \glqq MutationOberservers\grqq{}\cite{mutation}. Das sorgt jedoch für Einbußen bei der Performanz.
 
-Weiterhin überarbeitet Google die Website in regelmäßigen Abständen. Die in dieser Arbeit getroffene Aufteilung in Kacheln kann mit der nächsten Überarbeitung bereits obsolet sein. Aufgefallen ist das bei Betrachtung der Website in den letzten Monaten. Dabei haben sich bereits einige Klassennamen von Elementen der Kacheln geändert, sodass die Banner in falscher Größe oder gar nicht dargestellt wurden.
+Weiterhin überarbeitet Google die Website in regelmäßigen Abständen. Die in dieser Arbeit getroffene Aufteilung in Kacheln kann mit der nächsten Überarbeitung bereits obsolet sein. Aufgefallen ist das bei Betrachtung der Website in den letzten Monaten. Dabei haben sich bereits einige Klassennamen von Elementen der Kacheln geändert, sodass die Banner in falscher Größe oder gar nicht dargestellt wurden. Beispielweise der Klassenname \glqq JHTxhe \grqq{} (siehe Listing \ref{src:fillApps}, Zeile 16)
 
-Im Allgemeinen ist die Browser-Extension in ihrem aktuellen Zustand nicht \glqq marktreif \grqq{}. Das heißt, es bedarf weiterer Überarbeitung und Organisation, bevor man die Extension im Web-Store von Google anbieten kann. 
+Im Allgemeinen ist die Browser-Extension in ihrem aktuellen Zustand nicht \glqq marktreif \grqq{}. Das heißt, es bedarf weiterer Überarbeitung und Organisation, bevor man die Extension im Web-Store von Google anbieten kann (siehe Ausblick, Kapitel \ref{s:ausblick}). 
 
 Aufgrund der Evaluation von möglichen lokalen Datenspeichern für diese Extension sind sowohl \glqq IndexedDB\grqq{} als auch \glqq LokalStorage\grqq{} implementiert. Für spätere Verbraucher müsste eine der beiden Methoden entfernt werden, um unnötige Verwirrung im Umgang mit der Extension zu vermeiden.
 

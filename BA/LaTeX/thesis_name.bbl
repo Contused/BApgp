@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -54,6 +54,14 @@ Chrome.com.
 Chromestatus.com.
 \newblock \emph{Cross-Origin Resource Policy}.
 \newblock URL \url{https://www.chromestatus.com/feature/4647328103268352}.
+\newblock Stand: 03.2019.
+
+\bibitem[Chromium.org()]{corb2}
+Chromium.org.
+\newblock \emph{Changes to Cross-Origin Requests in Chrome Extension Content
+  Scripts}.
+\newblock URL
+  \url{https://www.chromium.org/Home/chromium-security/extension-content-script-fetches}.
 \newblock Stand: 03.2019.
 
 \bibitem[Datenschutz-scanner.de({\natexlab{a}})]{backend}
@@ -159,10 +167,18 @@ Mozilla.org.
   \url{https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Porting_a_Google_Chrome_extension}.
 \newblock Stand: 03.2019.
 
-\bibitem[Mozilla.org({\natexlab{d}})]{webStorage}
+\bibitem[Mozilla.org({\natexlab{d}})]{mutation}
+Mozilla.org.
+\newblock \emph{MutationObserver}.
+\newblock {\natexlab{d}}.
+\newblock URL
+  \url{https://developer.mozilla.org/de/docs/Web/API/MutationObserver}.
+\newblock Stand: 03.2019.
+
+\bibitem[Mozilla.org({\natexlab{e}})]{webStorage}
 Mozilla.org.
 \newblock \emph{Web Storage concepts and usage}.
-\newblock {\natexlab{d}}.
+\newblock {\natexlab{e}}.
 \newblock URL
   \url{https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API}.
 \newblock Stand: 03.2019.
